@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>Item 0</key>
+	<dict>
+		<key>Nombre</key>
+		<string>Plantas</string>
+		<key>Elementos</key>
+		<array>
+			<dict>
+				<key>Adquisicion</key>
+				<string>Mercado Juarez</string>
+				<key>Nombre</key>
+				<string>romero</string>
+				<key>Imagen</key>
+				<string>romero.png</string>
+				<key>Descripcion</key>
+				<string>Rosmarinus officinalis, el romero, es una especie del género Rosmarinus cuyo hábitat natural es la región mediterránea, sur de Europa, norte de África.</string>
+			</dict>
+		</array>
+	</dict>
+</dict>
+</plist>

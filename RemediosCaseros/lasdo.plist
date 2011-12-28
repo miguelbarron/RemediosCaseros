@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<array>
+	<dict>
+		<key>nombre</key>
+		<string>Salud</string>
+		<key>tipos</key>
+		<array>
+			<dict>
+				<key>instrucciones</key>
+				<string>Mezclar la albahaca con el jugo de sandía</string>
+				<key>ingredientes</key>
+				<string>Albahaca, jugo de sandia</string>
+				<key>imagen</key>
+				<string>imagen.png</string>
+				<key>remedio</key>
+				<string>Pa la cruda</string>
+			</dict>
+		</array>
+	</dict>
+</array>
+</plist>
