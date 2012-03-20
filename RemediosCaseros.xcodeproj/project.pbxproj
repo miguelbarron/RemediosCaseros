@@ -39,6 +39,11 @@
 		06624A4914ABA20300FDAFA7 /* RootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 06624A3B14ABA20300FDAFA7 /* RootViewController.m */; };
 		06624A4A14ABA20300FDAFA7 /* RootViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 06624A3C14ABA20300FDAFA7 /* RootViewController.xib */; };
 		06624A4B14ABA20300FDAFA7 /* tweet.png in Resources */ = {isa = PBXBuildFile; fileRef = 06624A3D14ABA20300FDAFA7 /* tweet.png */; };
+		D9382EBE151929B900959A9B /* Categoria.m in Sources */ = {isa = PBXBuildFile; fileRef = D9382EBD151929B900959A9B /* Categoria.m */; };
+		D9382EC2151929D500959A9B /* Glosario.m in Sources */ = {isa = PBXBuildFile; fileRef = D9382EC1151929D500959A9B /* Glosario.m */; };
+		D9382EC5151929F700959A9B /* Remedios.m in Sources */ = {isa = PBXBuildFile; fileRef = D9382EC4151929F700959A9B /* Remedios.m */; };
+		D9F89BFF1519268C00DDCBAC /* Model.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = D9F89BFD1519268C00DDCBAC /* Model.xcdatamodeld */; };
+		D9F89C02151927BE00DDCBAC /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D9F89C01151927BE00DDCBAC /* CoreData.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -87,6 +92,14 @@
 		06624A3B14ABA20300FDAFA7 /* RootViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RootViewController.m; sourceTree = "<group>"; };
 		06624A3C14ABA20300FDAFA7 /* RootViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RootViewController.xib; sourceTree = "<group>"; };
 		06624A3D14ABA20300FDAFA7 /* tweet.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = tweet.png; sourceTree = "<group>"; };
+		D9382EBC151929B900959A9B /* Categoria.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Categoria.h; sourceTree = "<group>"; };
+		D9382EBD151929B900959A9B /* Categoria.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Categoria.m; sourceTree = "<group>"; };
+		D9382EC0151929D500959A9B /* Glosario.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Glosario.h; sourceTree = "<group>"; };
+		D9382EC1151929D500959A9B /* Glosario.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Glosario.m; sourceTree = "<group>"; };
+		D9382EC3151929F700959A9B /* Remedios.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Remedios.h; sourceTree = "<group>"; };
+		D9382EC4151929F700959A9B /* Remedios.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Remedios.m; sourceTree = "<group>"; };
+		D9F89BFE1519268C00DDCBAC /* Model.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Model.xcdatamodel; sourceTree = "<group>"; };
+		D9F89C01151927BE00DDCBAC /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,6 +107,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D9F89C02151927BE00DDCBAC /* CoreData.framework in Frameworks */,
 				0662492414A8F2A800FDAFA7 /* UIKit.framework in Frameworks */,
 				0662492614A8F2A800FDAFA7 /* Foundation.framework in Frameworks */,
 				0662492814A8F2A800FDAFA7 /* CoreGraphics.framework in Frameworks */,
@@ -106,6 +120,7 @@
 		0662491414A8F2A800FDAFA7 = {
 			isa = PBXGroup;
 			children = (
+				D9F89C01151927BE00DDCBAC /* CoreData.framework */,
 				0662492914A8F2A900FDAFA7 /* RemediosCaseros */,
 				0662492214A8F2A800FDAFA7 /* Frameworks */,
 				0662492014A8F2A800FDAFA7 /* Products */,
@@ -171,6 +186,7 @@
 				0662494314A8F2A900FDAFA7 /* FirstViewController.xib */,
 				0662494614A8F2A900FDAFA7 /* SecondViewController.xib */,
 				0662492A14A8F2A900FDAFA7 /* Supporting Files */,
+				D9F89BFD1519268C00DDCBAC /* Model.xcdatamodeld */,
 			);
 			path = RemediosCaseros;
 			sourceTree = "<group>";
@@ -182,6 +198,12 @@
 				0662492C14A8F2A900FDAFA7 /* InfoPlist.strings */,
 				0662492F14A8F2A900FDAFA7 /* main.m */,
 				0662493114A8F2A900FDAFA7 /* RemediosCaseros-Prefix.pch */,
+				D9382EBC151929B900959A9B /* Categoria.h */,
+				D9382EBD151929B900959A9B /* Categoria.m */,
+				D9382EC0151929D500959A9B /* Glosario.h */,
+				D9382EC1151929D500959A9B /* Glosario.m */,
+				D9382EC3151929F700959A9B /* Remedios.h */,
+				D9382EC4151929F700959A9B /* Remedios.m */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -276,6 +298,10 @@
 				06624A4514ABA20300FDAFA7 /* GlosarioViewController.m in Sources */,
 				06624A4814ABA20300FDAFA7 /* Remedio.m in Sources */,
 				06624A4914ABA20300FDAFA7 /* RootViewController.m in Sources */,
+				D9F89BFF1519268C00DDCBAC /* Model.xcdatamodeld in Sources */,
+				D9382EBE151929B900959A9B /* Categoria.m in Sources */,
+				D9382EC2151929D500959A9B /* Glosario.m in Sources */,
+				D9382EC5151929F700959A9B /* Remedios.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -396,6 +422,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		D9F89BFD1519268C00DDCBAC /* Model.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				D9F89BFE1519268C00DDCBAC /* Model.xcdatamodel */,
+			);
+			currentVersion = D9F89BFE1519268C00DDCBAC /* Model.xcdatamodel */;
+			path = Model.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 0662491614A8F2A800FDAFA7 /* Project object */;
 }

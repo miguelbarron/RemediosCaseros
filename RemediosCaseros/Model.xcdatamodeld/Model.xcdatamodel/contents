@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model name="" userDefinedModelVersionIdentifier="" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="878" systemVersion="11D50d" minimumToolsVersion="Automatic" macOSVersion="Automatic" iOSVersion="Automatic">
+    <entity name="Categoria" representedClassName="Categoria" syncable="YES">
+        <attribute name="titulo" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="remedio" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Remedios" syncable="YES"/>
+    </entity>
+    <entity name="Glosario" representedClassName="Glosario" syncable="YES">
+        <attribute name="detalleIngrediente" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="nombreIngrediente" optional="YES" attributeType="String" syncable="YES"/>
+    </entity>
+    <entity name="Remedios" representedClassName="Remedios" syncable="YES">
+        <attribute name="ingredientes" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="nombreRemedio" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="preparacion" optional="YES" attributeType="String" syncable="YES"/>
+    </entity>
+    <elements>
+        <element name="Categoria" positionX="-171" positionY="-126" width="128" height="75"/>
+        <element name="Remedios" positionX="-261" positionY="0" width="128" height="90"/>
+        <element name="Glosario" positionX="-63" positionY="9" width="128" height="75"/>
+    </elements>
+</model>
