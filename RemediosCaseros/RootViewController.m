@@ -8,9 +8,10 @@
 
 #import "RootViewController.h"
 #import "DetalleViewController.h"
+#import "AppDelegate.h"
 
 @implementation RootViewController
-@synthesize arrayConDOEnGrupos, miRemedio;
+@synthesize arrayConDOEnGrupos, miRemedio,fetchedResultsController,managedObjectContext;
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -34,6 +35,18 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    
+    AppDelegate *appDelegate=(AppDelegate *)[[UIApplication sharedApplication]delegate];
+    managedObjectContext=appDelegate.managedObjectContext;
+    
+   NSError *error = nil;
+	if (![[self fetchedResultsController] performFetch:&error]) {
+		
+		NSLog(@"Unresolved error %@, %@", error, [error userInfo]);
+		abort();
+	}
+    
+    
     // Do any additional setup after loading the view from its nib.
     NSString *path = [[NSBundle mainBundle] pathForResource:@"lasdo" ofType:@"plist"];
     //inicializamos nuestra propiedad arrayConDOEnGrupos con el
@@ -158,4 +171,46 @@
 - (void)dealloc {
     [super dealloc];
 }
+
+#pragma mark fetchedResultsController
+- (NSFetchedResultsController *)fetchedResultsController {
+    
+    
+    if (fetchedResultsController != nil) {
+        return fetchedResultsController;
+    }
+    
+    NSFetchRequest *fetchRequest = [[NSFetchRequest alloc] init];
+    // Edit the entity name as appropriate.
+    NSEntityDescription *entity = [NSEntityDescription entityForName:/**/@"Categoria" inManagedObjectContext:managedObjectContext];
+    [fetchRequest setEntity:entity];
+    
+    // Set the batch size to a suitable number.
+    [fetchRequest setFetchBatchSize:20];
+    // NSPredicate *predicate =[NSPredicate predicateWithFormat:@"seccion.titulo = %@" , @"Eventos"];  
+    //[NSFetchedResultsController deleteCacheWithName:nil];
+    
+    //[fetchRequest setPredicate:predicate];
+    
+    // Edit the sort key as appropriate.
+    NSSortDescriptor *sortDescriptor = [[NSSortDescriptor alloc] initWithKey:@"titulo" ascending:YES];
+    
+    // Edit the sort key as appropriate.
+    //NSSortDescriptor *sortDescriptor = [[NSSortDescriptor alloc] initWithKey:@"numero" ascending:YES];
+    NSArray *sortDescriptors = [[NSArray alloc] initWithObjects:sortDescriptor, nil];
+    
+    [fetchRequest setSortDescriptors:sortDescriptors];
+    NSFetchedResultsController *aFetchedResultsController = [[NSFetchedResultsController alloc] initWithFetchRequest:fetchRequest managedObjectContext:managedObjectContext sectionNameKeyPath:@"titulo" cacheName:@"Root"];
+    aFetchedResultsController.delegate = self;
+    self.fetchedResultsController = aFetchedResultsController;
+    
+    [aFetchedResultsController release];
+    [fetchRequest release];
+    [sortDescriptor release];
+    [sortDescriptors release];
+    
+    return fetchedResultsController;
+}
+
+
 @end

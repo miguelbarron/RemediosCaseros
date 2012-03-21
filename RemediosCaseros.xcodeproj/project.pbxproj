@@ -120,7 +120,6 @@
 		0662491414A8F2A800FDAFA7 = {
 			isa = PBXGroup;
 			children = (
-				D9F89C01151927BE00DDCBAC /* CoreData.framework */,
 				0662492914A8F2A900FDAFA7 /* RemediosCaseros */,
 				0662492214A8F2A800FDAFA7 /* Frameworks */,
 				0662492014A8F2A800FDAFA7 /* Products */,
@@ -138,6 +137,7 @@
 		0662492214A8F2A800FDAFA7 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				D9F89C01151927BE00DDCBAC /* CoreData.framework */,
 				0662492314A8F2A800FDAFA7 /* UIKit.framework */,
 				0662492514A8F2A800FDAFA7 /* Foundation.framework */,
 				0662492714A8F2A800FDAFA7 /* CoreGraphics.framework */,
@@ -148,17 +148,19 @@
 		0662492914A8F2A900FDAFA7 /* RemediosCaseros */ = {
 			isa = PBXGroup;
 			children = (
+				D9FC47F6151A6CFE002F1D4B /* Test */,
+				D9FC479D151A5115002F1D4B /* Imagenes */,
 				0662493214A8F2A900FDAFA7 /* AppDelegate.h */,
 				0662493314A8F2A900FDAFA7 /* AppDelegate.m */,
-				06624A2014ABA1B100FDAFA7 /* glosario.plist */,
 				06624A2114ABA1B100FDAFA7 /* GlosaryDetailViewController.h */,
 				06624A2214ABA1B100FDAFA7 /* GlosaryDetailViewController.m */,
 				06624A2314ABA1B100FDAFA7 /* GlosaryDetailViewController.xib */,
-				06624A2414ABA1B100FDAFA7 /* lasdo.plist */,
 				0662493514A8F2A900FDAFA7 /* FirstViewController.h */,
 				0662493614A8F2A900FDAFA7 /* FirstViewController.m */,
-				0662493814A8F2A900FDAFA7 /* first.png */,
-				0662493A14A8F2A900FDAFA7 /* first@2x.png */,
+				0662494314A8F2A900FDAFA7 /* FirstViewController.xib */,
+				0662493C14A8F2A900FDAFA7 /* SecondViewController.h */,
+				0662493D14A8F2A900FDAFA7 /* SecondViewController.m */,
+				0662494614A8F2A900FDAFA7 /* SecondViewController.xib */,
 				06624A2A14ABA20300FDAFA7 /* CompartirViewController.h */,
 				06624A2B14ABA20300FDAFA7 /* CompartirViewController.m */,
 				06624A2C14ABA20300FDAFA7 /* CompartirViewController.xib */,
@@ -168,23 +170,16 @@
 				06624A3014ABA20300FDAFA7 /* DetalleViewController.h */,
 				06624A3114ABA20300FDAFA7 /* DetalleViewController.m */,
 				06624A3214ABA20300FDAFA7 /* DetalleViewController.xib */,
-				06624A3314ABA20300FDAFA7 /* glosario.png */,
 				06624A3414ABA20300FDAFA7 /* GlosarioViewController.h */,
 				06624A3514ABA20300FDAFA7 /* GlosarioViewController.m */,
 				06624A3614ABA20300FDAFA7 /* GlosarioViewController.xib */,
-				06624A3714ABA20300FDAFA7 /* receta.png */,
 				06624A3814ABA20300FDAFA7 /* Remedio.h */,
 				06624A3914ABA20300FDAFA7 /* Remedio.m */,
 				06624A3A14ABA20300FDAFA7 /* RootViewController.h */,
 				06624A3B14ABA20300FDAFA7 /* RootViewController.m */,
 				06624A3C14ABA20300FDAFA7 /* RootViewController.xib */,
-				06624A3D14ABA20300FDAFA7 /* tweet.png */,
-				0662493C14A8F2A900FDAFA7 /* SecondViewController.h */,
-				0662493D14A8F2A900FDAFA7 /* SecondViewController.m */,
-				0662493F14A8F2A900FDAFA7 /* second.png */,
-				0662494114A8F2A900FDAFA7 /* second@2x.png */,
-				0662494314A8F2A900FDAFA7 /* FirstViewController.xib */,
-				0662494614A8F2A900FDAFA7 /* SecondViewController.xib */,
+				06624A2414ABA1B100FDAFA7 /* lasdo.plist */,
+				06624A2014ABA1B100FDAFA7 /* glosario.plist */,
 				0662492A14A8F2A900FDAFA7 /* Supporting Files */,
 				D9F89BFD1519268C00DDCBAC /* Model.xcdatamodeld */,
 			);
@@ -206,6 +201,27 @@
 				D9382EC4151929F700959A9B /* Remedios.m */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		D9FC479D151A5115002F1D4B /* Imagenes */ = {
+			isa = PBXGroup;
+			children = (
+				06624A3D14ABA20300FDAFA7 /* tweet.png */,
+				0662493F14A8F2A900FDAFA7 /* second.png */,
+				0662494114A8F2A900FDAFA7 /* second@2x.png */,
+				06624A3714ABA20300FDAFA7 /* receta.png */,
+				06624A3314ABA20300FDAFA7 /* glosario.png */,
+				0662493814A8F2A900FDAFA7 /* first.png */,
+				0662493A14A8F2A900FDAFA7 /* first@2x.png */,
+			);
+			name = Imagenes;
+			sourceTree = "<group>";
+		};
+		D9FC47F6151A6CFE002F1D4B /* Test */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Test;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */

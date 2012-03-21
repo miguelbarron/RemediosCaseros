@@ -8,10 +8,16 @@
 
 #import <UIKit/UIKit.h>
 #import "Remedio.h"
+#import "AppDelegate.h"
 
-@interface RootViewController : UITableViewController{
+@interface RootViewController : UITableViewController<NSFetchedResultsControllerDelegate>{
+    NSFetchedResultsController *fetchedResultsController;
+	NSManagedObjectContext *managedObjectContext; 
+    
     NSArray *arrayConDOEnGrupos;
 }
+@property(retain,nonatomic)NSFetchedResultsController *fetchedResultsController;
+@property (nonatomic, retain) NSManagedObjectContext *managedObjectContext;
 @property (nonatomic, retain) NSArray *arrayConDOEnGrupos;
 @property (nonatomic, retain) Remedio *miRemedio;
 
