@@ -6,8 +6,9 @@
 //  Copyright (c) 2012 Somos Software. All rights reserved.
 //
 
-#import <Foundation/Foundation.h>
+//#import <Foundation/Foundation.h>
 
-@protocol ConstantRemedios <NSObject>
-
-@end
+// Cuando esta seteado a 1, crea información a través de código y a insterta en la base de datos
+#ifndef DEBUG_CREATE_DATA
+#define DEBUG_CREATE_DATA 1
+#endif
