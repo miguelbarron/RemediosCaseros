@@ -9,7 +9,8 @@
 #import "AppDelegate.h"
 
 #import "RootViewController.h"
-
+#import "TestData.h"
+#import "ConstantRemedios.h"
 
 
 @implementation AppDelegate
@@ -42,7 +43,14 @@
   
   [self.window addSubview:navigationController.view];
   [self.window makeKeyAndVisible];
-  return YES;
+    
+    
+#if DEBUG_CREATE_DATA
+    TestData *newTestData = [[TestData alloc] init];
+    [newTestData createData];
+#endif 
+    return YES;
+    
 }
 
 

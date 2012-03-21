@@ -39,6 +39,7 @@
 		06624A4914ABA20300FDAFA7 /* RootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 06624A3B14ABA20300FDAFA7 /* RootViewController.m */; };
 		06624A4A14ABA20300FDAFA7 /* RootViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 06624A3C14ABA20300FDAFA7 /* RootViewController.xib */; };
 		06624A4B14ABA20300FDAFA7 /* tweet.png in Resources */ = {isa = PBXBuildFile; fileRef = 06624A3D14ABA20300FDAFA7 /* tweet.png */; };
+		D91EA935151A702D00EACB54 /* TestData.m in Sources */ = {isa = PBXBuildFile; fileRef = D91EA934151A702D00EACB54 /* TestData.m */; };
 		D9382EBE151929B900959A9B /* Categoria.m in Sources */ = {isa = PBXBuildFile; fileRef = D9382EBD151929B900959A9B /* Categoria.m */; };
 		D9382EC2151929D500959A9B /* Glosario.m in Sources */ = {isa = PBXBuildFile; fileRef = D9382EC1151929D500959A9B /* Glosario.m */; };
 		D9382EC5151929F700959A9B /* Remedios.m in Sources */ = {isa = PBXBuildFile; fileRef = D9382EC4151929F700959A9B /* Remedios.m */; };
@@ -92,6 +93,9 @@
 		06624A3B14ABA20300FDAFA7 /* RootViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RootViewController.m; sourceTree = "<group>"; };
 		06624A3C14ABA20300FDAFA7 /* RootViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RootViewController.xib; sourceTree = "<group>"; };
 		06624A3D14ABA20300FDAFA7 /* tweet.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = tweet.png; sourceTree = "<group>"; };
+		D91EA933151A702D00EACB54 /* TestData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestData.h; sourceTree = "<group>"; };
+		D91EA934151A702D00EACB54 /* TestData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestData.m; sourceTree = "<group>"; };
+		D91EA937151A78AA00EACB54 /* ConstantRemedios.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ConstantRemedios.h; sourceTree = "<group>"; };
 		D9382EBC151929B900959A9B /* Categoria.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Categoria.h; sourceTree = "<group>"; };
 		D9382EBD151929B900959A9B /* Categoria.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Categoria.m; sourceTree = "<group>"; };
 		D9382EC0151929D500959A9B /* Glosario.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Glosario.h; sourceTree = "<group>"; };
@@ -220,6 +224,9 @@
 		D9FC47F6151A6CFE002F1D4B /* Test */ = {
 			isa = PBXGroup;
 			children = (
+				D91EA933151A702D00EACB54 /* TestData.h */,
+				D91EA934151A702D00EACB54 /* TestData.m */,
+				D91EA937151A78AA00EACB54 /* ConstantRemedios.h */,
 			);
 			name = Test;
 			sourceTree = "<group>";
@@ -318,6 +325,7 @@
 				D9382EBE151929B900959A9B /* Categoria.m in Sources */,
 				D9382EC2151929D500959A9B /* Glosario.m in Sources */,
 				D9382EC5151929F700959A9B /* Remedios.m in Sources */,
+				D91EA935151A702D00EACB54 /* TestData.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
