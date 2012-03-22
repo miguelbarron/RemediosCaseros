@@ -9,9 +9,13 @@
 #import "RootViewController.h"
 #import "DetalleViewController.h"
 #import "AppDelegate.h"
+#import "Categoria.h"
+#import "Remedios.h"
+#import "Glosario.h"
+
 
 @implementation RootViewController
-@synthesize arrayConDOEnGrupos, miRemedio,fetchedResultsController,managedObjectContext;
+@synthesize fetchedResultsController,managedObjectContext;
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -46,12 +50,13 @@
 		abort();
 	}
     
+       
     
     // Do any additional setup after loading the view from its nib.
-    NSString *path = [[NSBundle mainBundle] pathForResource:@"lasdo" ofType:@"plist"];
+    //NSString *path = [[NSBundle mainBundle] pathForResource:@"lasdo" ofType:@"plist"];
     //inicializamos nuestra propiedad arrayConDOEnGrupos con el
     //contenido de ese fichero
-    arrayConDOEnGrupos = [[NSArray alloc] initWithContentsOfFile:path];
+   // arrayConDOEnGrupos = [[NSArray alloc] initWithContentsOfFile:path];
     
 
 }
@@ -67,9 +72,14 @@
 
 
 #pragma mark Table view methods
+- (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    return 70;
+    
+}
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
-    return [arrayConDOEnGrupos count];
+    return [[fetchedResultsController sections]count];   
     
 
 }
@@ -77,21 +87,18 @@
 
 // Customize the number of rows in the table view.
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-    
-	NSDictionary *diccionarioConDatosDO = [arrayConDOEnGrupos objectAtIndex:section];
-    
-    NSArray *tipos = [diccionarioConDatosDO objectForKey:@"tipos"];
-    
-    return [tipos count];
-}
+    id <NSFetchedResultsSectionInfo> sectionInfo = [[fetchedResultsController sections] objectAtIndex:section];    
+    return [sectionInfo numberOfObjects];
+    }
 
 - (NSString *)tableView:(UITableView *)tableView titleForHeaderInSection:(NSInteger)section {
     
-    NSDictionary *diccionarioConDatosDO = [arrayConDOEnGrupos objectAtIndex:section];
+    id <NSFetchedResultsSectionInfo> sectionInfo = [[fetchedResultsController sections] objectAtIndex:section];   
     
-    NSString *nombre = [diccionarioConDatosDO objectForKey:@"nombre"];
+    NSString *clasificacion = [sectionInfo name];
     
-    return nombre;
+    return clasificacion;
+    
     
 }
 
@@ -101,31 +108,22 @@
   
   UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier];
   if (cell == nil) {
-    cell = [[[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:CellIdentifier] autorelease];
+    cell = [[[UITableViewCell alloc] initWithStyle:UITableViewCellStyleSubtitle reuseIdentifier:CellIdentifier] autorelease];
   }
   
   // Configure the cell...
-  //cell.textLabel.text = @"Hola";
-    int seccion =	[indexPath section];
-    
-    NSDictionary *diccionarioConDatosDO = [arrayConDOEnGrupos objectAtIndex:seccion];
-    
-    NSArray *tipos = [diccionarioConDatosDO objectForKey:@"tipos"];
-    
-    
-    int fila	=	[indexPath row];
-    
-    NSDictionary *elemento = [tipos objectAtIndex:fila];
- 
-    
-  self.miRemedio = [[Remedio alloc] init];
-  self.miRemedio.remedio = [elemento objectForKey:@"remedio"];
-  self.miRemedio.imagen = [elemento objectForKey:@"imagen"];
-  self.miRemedio.ingredientes = [elemento objectForKey:@"ingredientes"];
-  self.miRemedio.instrucciones = [elemento objectForKey:@"instrucciones"];
   
-    cell.textLabel.text = self.miRemedio.remedio;
-    cell.accessoryType = UITableViewCellAccessoryDisclosureIndicator;
+    cell.accessoryType=UITableViewCellAccessoryDetailDisclosureButton;
+    cell.textLabel.font = [UIFont fontWithName:@"Helvetica-Bold"  size:13.0];     
+    cell.detailTextLabel.font= [UIFont fontWithName:@"Helvetica" size:11.0];    
+    cell.detailTextLabel.numberOfLines=2;
+    cell.textLabel.numberOfLines=2;
+
+    Remedios *rem=[fetchedResultsController objectAtIndexPath:indexPath ];
+    cell.textLabel.text=rem.nombreRemedio;
+    cell.detailTextLabel.text=rem.preparacion;
+    
+    
   return cell;
 }
 
@@ -135,27 +133,26 @@
   
 	//DestinoDetailViewController *ddvController;
     DetalleViewController *dvc = [[DetalleViewController alloc] init];
-  dvc.miRemedio = self.miRemedio;
+ 
 	[self.navigationController pushViewController:dvc animated:YES];
   
 	[dvc release];
 	dvc = nil;
     
-    NSLog(@"seccion %i, fila %i", [indexPath section], [indexPath row]);
+       
     
-    /*
      
-     DetailViewController *detailViewController = [[DetailViewController alloc] initWithNibName:@"Nib name" bundle:nil];
+    // DetailViewController *detailViewController = [[DetailViewController alloc] initWithNibName:@"Nib name" bundle:nil];
      
      // ...
      
      // Pass the selected object to the new view controller.
      
-     [self.navigationController pushViewController:detailViewController animated:YES];
+    // [self.navigationController pushViewController:detailViewController animated:YES];
      
-     [detailViewController release];
+    // [detailViewController release];
      
-     */
+     
   
 }
 
@@ -182,25 +179,25 @@
     
     NSFetchRequest *fetchRequest = [[NSFetchRequest alloc] init];
     // Edit the entity name as appropriate.
-    NSEntityDescription *entity = [NSEntityDescription entityForName:/**/@"Categoria" inManagedObjectContext:managedObjectContext];
+    NSEntityDescription *entity = [NSEntityDescription entityForName:/**/@"Remedios" inManagedObjectContext:managedObjectContext];
     [fetchRequest setEntity:entity];
     
     // Set the batch size to a suitable number.
     [fetchRequest setFetchBatchSize:20];
-    // NSPredicate *predicate =[NSPredicate predicateWithFormat:@"seccion.titulo = %@" , @"Eventos"];  
+   //  NSPredicate *predicate =[NSPredicate predicateWithFormat:@"Categoria.titulo = %@" , self.remedio];  
     //[NSFetchedResultsController deleteCacheWithName:nil];
     
     //[fetchRequest setPredicate:predicate];
     
     // Edit the sort key as appropriate.
-    NSSortDescriptor *sortDescriptor = [[NSSortDescriptor alloc] initWithKey:@"titulo" ascending:YES];
+    NSSortDescriptor *sortDescriptor = [[NSSortDescriptor alloc] initWithKey:@"nombreRemedio" ascending:YES];
     
     // Edit the sort key as appropriate.
     //NSSortDescriptor *sortDescriptor = [[NSSortDescriptor alloc] initWithKey:@"numero" ascending:YES];
     NSArray *sortDescriptors = [[NSArray alloc] initWithObjects:sortDescriptor, nil];
     
     [fetchRequest setSortDescriptors:sortDescriptors];
-    NSFetchedResultsController *aFetchedResultsController = [[NSFetchedResultsController alloc] initWithFetchRequest:fetchRequest managedObjectContext:managedObjectContext sectionNameKeyPath:@"titulo" cacheName:@"Root"];
+    NSFetchedResultsController *aFetchedResultsController = [[NSFetchedResultsController alloc] initWithFetchRequest:fetchRequest managedObjectContext:managedObjectContext sectionNameKeyPath:@"Categoria.titulo" cacheName:@"Root"];
     aFetchedResultsController.delegate = self;
     self.fetchedResultsController = aFetchedResultsController;
     
@@ -211,6 +208,7 @@
     
     return fetchedResultsController;
 }
+
 
 
 @end

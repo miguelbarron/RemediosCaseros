@@ -9,7 +9,7 @@
 #import "TestData.h"
 #import "AppDelegate.h"
 #import "Categoria.h"
-#import "Remedio.h"
+#import "Remedios.h"
 #import "Glosario.h"
 
 
@@ -33,6 +33,54 @@
     Categoria *categoria3=[NSEntityDescription insertNewObjectForEntityForName:@"Categoria" inManagedObjectContext:managedObjectContext];
     categoria3.titulo=@"Belleza";
     
+    
+    //se crea remedio
+    Remedios *remedio1=[NSEntityDescription insertNewObjectForEntityForName:@"Remedios" inManagedObjectContext:managedObjectContext];
+    remedio1.nombreRemedio=@"Aceite de coco";
+    remedio1.ingredientes=@"pulpa de coco";
+    remedio1.preparacion=@"Se extrae de la pulpa de coco mediante prensado, y contiene un 90% de ácidos grasos saturados.    El aceite de coco es, también, conocido como mantequilla de coco pues se solidifica por debajo de los 23º C. El aceite de coco es muy resistente ya que puede durar años sin estropearse ";
+    
+    NSSet *agregarremedio=[[[NSSet alloc] initWithObjects:remedio1, nil] autorelease];
+    [categoria3 addRemedio:agregarremedio];
+    
+    
+    
+    
+    Remedios *remedio2=[NSEntityDescription insertNewObjectForEntityForName:@"Remedios" inManagedObjectContext:managedObjectContext];
+    remedio2.nombreRemedio=@"Cómo ahorrar energía en el hogar";
+    remedio2.ingredientes=@"ingredientes de remedios 3";
+    remedio2.preparacion=@"Lavadora:    Usar en lo posible lavados fríos o a menos temperatura. Mejor si se disuelve el detergente en polvo antes de echarlo a la lavadora. Utilizar los programas de lavado económico y centrifugar lo menos posible.Hacer lavados con el electrodoméstico lleno ";
+    
+    Remedios *remedio3=[NSEntityDescription insertNewObjectForEntityForName:@"Remedios" inManagedObjectContext:managedObjectContext];
+    remedio3.nombreRemedio=@"limpiacristales ecológicos";
+    remedio3.ingredientes=@"Un limón grande.Un vaso de vinagre blanco.Un vaso y medio de agua.Una botellita con difusor";
+    remedio3.preparacion=@"Se exprime el limón y se introduce en la botella con difusor, se añade el vaso de vinagre y el de agua. Se agita y ya está listo el limpiacristales ecológico casero. No olvide agitar en cada uso.";   
+   
+    NSSet *agregarremedio2=[[[NSSet alloc] initWithObjects:remedio2,remedio3, nil] autorelease];
+    [categoria2 addRemedio:agregarremedio2];
+    
+    //se crea remedio
+    Remedios *remedio4=[NSEntityDescription insertNewObjectForEntityForName:@"Remedios" inManagedObjectContext:managedObjectContext];
+    remedio4.nombreRemedio=@"remedio categoria salud";
+    remedio4.ingredientes=@"ingredientes de remedios de salud";
+    remedio4.preparacion=@"preparacion de remedios ";
+    
+    NSSet *agregarremedio3=[[[NSSet alloc] initWithObjects:remedio4, nil] autorelease];
+    [categoria1 addRemedio:agregarremedio3];
+    
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    ///salvar contexto
     NSError *error = nil;
     if (![managedObjectContext save:&error]) {
 		/*

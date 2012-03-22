@@ -13,12 +13,17 @@
 @interface RootViewController : UITableViewController<NSFetchedResultsControllerDelegate>{
     NSFetchedResultsController *fetchedResultsController;
 	NSManagedObjectContext *managedObjectContext; 
+  //  NSFetchedResultsController *fetchedResultsControllerRem;
+//    NSString *remedio;
+
     
-    NSArray *arrayConDOEnGrupos;
+  //  NSArray *arrayConDOEnGrupos;
 }
 @property(retain,nonatomic)NSFetchedResultsController *fetchedResultsController;
 @property (nonatomic, retain) NSManagedObjectContext *managedObjectContext;
-@property (nonatomic, retain) NSArray *arrayConDOEnGrupos;
-@property (nonatomic, retain) Remedio *miRemedio;
+//@property(retain,nonatomic)NSFetchedResultsController *fetchedResultsControllerRem;
+//@property (nonatomic, retain) NSString *remedio;
+//@property (nonatomic, retain) NSArray *arrayConDOEnGrupos;
+//@property (nonatomic, retain) Remedio *miRemedio;
 
 @end
