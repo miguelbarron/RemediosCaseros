@@ -7,16 +7,26 @@
     <entity name="Glosario" representedClassName="Glosario" syncable="YES">
         <attribute name="detalleIngrediente" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="nombreIngrediente" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="imagen" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Imagen" inverseName="imagenGlosario" inverseEntity="Imagen" syncable="YES"/>
+    </entity>
+    <entity name="Imagen" representedClassName="Imagen" syncable="YES">
+        <attribute name="nombre" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="url" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="imagenGlosario" optional="YES" minCount="1" maxCount="1" deletionRule="Nullify" destinationEntity="Glosario" inverseName="imagen" inverseEntity="Glosario" syncable="YES"/>
+        <relationship name="imagenRemedio" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Remedios" inverseName="imagen" inverseEntity="Remedios" syncable="YES"/>
     </entity>
     <entity name="Remedios" representedClassName="Remedios" syncable="YES">
         <attribute name="ingredientes" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="nombreRemedio" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="preparacion" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="subtitulo" optional="YES" attributeType="String" syncable="YES"/>
         <relationship name="categoria" optional="YES" minCount="1" maxCount="1" deletionRule="Nullify" destinationEntity="Categoria" inverseName="remedio" inverseEntity="Categoria" syncable="YES"/>
+        <relationship name="imagen" optional="YES" minCount="1" maxCount="1" deletionRule="Nullify" destinationEntity="Imagen" inverseName="imagenRemedio" inverseEntity="Imagen" syncable="YES"/>
     </entity>
     <elements>
         <element name="Categoria" positionX="-164" positionY="-171" width="128" height="75"/>
-        <element name="Glosario" positionX="-63" positionY="9" width="128" height="75"/>
-        <element name="Remedios" positionX="-342" positionY="-9" width="128" height="105"/>
+        <element name="Glosario" positionX="-63" positionY="9" width="128" height="90"/>
+        <element name="Remedios" positionX="-342" positionY="-9" width="128" height="135"/>
+        <element name="Imagen" positionX="-657" positionY="72" width="128" height="105"/>
     </elements>
 </model>

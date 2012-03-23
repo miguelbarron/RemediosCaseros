@@ -12,6 +12,7 @@
 #import "Categoria.h"
 #import "Remedios.h"
 #import "Glosario.h"
+#import "Imagen.h"
 
 
 @implementation RootViewController
@@ -39,7 +40,7 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    
+    self.title=@"Remedios Caseros";
     AppDelegate *appDelegate=(AppDelegate *)[[UIApplication sharedApplication]delegate];
     managedObjectContext=appDelegate.managedObjectContext;
     
@@ -74,7 +75,7 @@
 #pragma mark Table view methods
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    return 70;
+    return 65;
     
 }
 
@@ -120,8 +121,15 @@
     cell.textLabel.numberOfLines=2;
 
     Remedios *rem=[fetchedResultsController objectAtIndexPath:indexPath ];
+    Imagen *imagenRemedio=rem.imagen;
+    //NSData *imageData = [[NSData alloc] initWithContentsOfURL:[NSURL URLWithString:imagenRemedio.url] ];  
+   // UIImage *myimagen = [[UIImage alloc] initWithData:imageData];  
+    NSString *url=imagenRemedio.url;
+    UIImage *myimagen=[UIImage imageNamed:url];
     cell.textLabel.text=rem.nombreRemedio;
-    cell.detailTextLabel.text=rem.preparacion;
+    cell.detailTextLabel.text=rem.subtitulo;
+    cell.imageView.image=myimagen;
+    
     
     
   return cell;

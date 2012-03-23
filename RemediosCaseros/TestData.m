@@ -11,6 +11,7 @@
 #import "Categoria.h"
 #import "Remedios.h"
 #import "Glosario.h"
+#import "Imagen.h"
 
 
 @implementation TestData
@@ -33,12 +34,26 @@
     Categoria *categoria3=[NSEntityDescription insertNewObjectForEntityForName:@"Categoria" inManagedObjectContext:managedObjectContext];
     categoria3.titulo=@"Belleza";
     
+    //crear imagenes
+    Imagen *imagen1=[NSEntityDescription insertNewObjectForEntityForName:@"Imagen" inManagedObjectContext:managedObjectContext];
+    imagen1.url=@"coco.png";
+    imagen1.nombre=@"coco";
     
-    //se crea remedio
+    Imagen *imagen2=[NSEntityDescription insertNewObjectForEntityForName:@"Imagen" inManagedObjectContext:managedObjectContext];
+    imagen2.url=@"foco.jpg";
+    imagen2.nombre=@"foco";
+    
+    Imagen *imagen3=[NSEntityDescription insertNewObjectForEntityForName:@"Imagen" inManagedObjectContext:managedObjectContext];
+    imagen3.url=@"limpia.jpg";
+    imagen3.nombre=@"limpia";
+    
+    //se crea remedios
     Remedios *remedio1=[NSEntityDescription insertNewObjectForEntityForName:@"Remedios" inManagedObjectContext:managedObjectContext];
     remedio1.nombreRemedio=@"Aceite de coco";
+    remedio1.subtitulo=@"Crear un aceite de coco";
     remedio1.ingredientes=@"pulpa de coco";
     remedio1.preparacion=@"Se extrae de la pulpa de coco mediante prensado, y contiene un 90% de ácidos grasos saturados.    El aceite de coco es, también, conocido como mantequilla de coco pues se solidifica por debajo de los 23º C. El aceite de coco es muy resistente ya que puede durar años sin estropearse ";
+    remedio1.imagen=imagen1;
     
     NSSet *agregarremedio=[[[NSSet alloc] initWithObjects:remedio1, nil] autorelease];
     [categoria3 addRemedio:agregarremedio];
@@ -48,20 +63,25 @@
     
     Remedios *remedio2=[NSEntityDescription insertNewObjectForEntityForName:@"Remedios" inManagedObjectContext:managedObjectContext];
     remedio2.nombreRemedio=@"Cómo ahorrar energía en el hogar";
+    remedio2.subtitulo=@"Tips para ahorrar energia";
     remedio2.ingredientes=@"ingredientes de remedios 3";
     remedio2.preparacion=@"Lavadora:    Usar en lo posible lavados fríos o a menos temperatura. Mejor si se disuelve el detergente en polvo antes de echarlo a la lavadora. Utilizar los programas de lavado económico y centrifugar lo menos posible.Hacer lavados con el electrodoméstico lleno ";
+    remedio2.imagen=imagen2;
     
     Remedios *remedio3=[NSEntityDescription insertNewObjectForEntityForName:@"Remedios" inManagedObjectContext:managedObjectContext];
     remedio3.nombreRemedio=@"limpiacristales ecológicos";
+    remedio3.subtitulo=@"Crear un Limpiacristales con un limón";
     remedio3.ingredientes=@"Un limón grande.Un vaso de vinagre blanco.Un vaso y medio de agua.Una botellita con difusor";
     remedio3.preparacion=@"Se exprime el limón y se introduce en la botella con difusor, se añade el vaso de vinagre y el de agua. Se agita y ya está listo el limpiacristales ecológico casero. No olvide agitar en cada uso.";   
+    remedio3.imagen=imagen3;
    
     NSSet *agregarremedio2=[[[NSSet alloc] initWithObjects:remedio2,remedio3, nil] autorelease];
     [categoria2 addRemedio:agregarremedio2];
     
-    //se crea remedio
+
     Remedios *remedio4=[NSEntityDescription insertNewObjectForEntityForName:@"Remedios" inManagedObjectContext:managedObjectContext];
     remedio4.nombreRemedio=@"remedio categoria salud";
+    remedio4.subtitulo=@"subtitulo de remedio";
     remedio4.ingredientes=@"ingredientes de remedios de salud";
     remedio4.preparacion=@"preparacion de remedios ";
     

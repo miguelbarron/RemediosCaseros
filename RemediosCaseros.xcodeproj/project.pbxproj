@@ -39,10 +39,14 @@
 		06624A4914ABA20300FDAFA7 /* RootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 06624A3B14ABA20300FDAFA7 /* RootViewController.m */; };
 		06624A4A14ABA20300FDAFA7 /* RootViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 06624A3C14ABA20300FDAFA7 /* RootViewController.xib */; };
 		06624A4B14ABA20300FDAFA7 /* tweet.png in Resources */ = {isa = PBXBuildFile; fileRef = 06624A3D14ABA20300FDAFA7 /* tweet.png */; };
+		D91A7866151CFCC6008A0292 /* Remedios.m in Sources */ = {isa = PBXBuildFile; fileRef = D91A7865151CFCC6008A0292 /* Remedios.m */; };
+		D91A7869151CFCC7008A0292 /* Glosario.m in Sources */ = {isa = PBXBuildFile; fileRef = D91A7868151CFCC7008A0292 /* Glosario.m */; };
+		D91A786C151CFCC7008A0292 /* Imagen.m in Sources */ = {isa = PBXBuildFile; fileRef = D91A786B151CFCC7008A0292 /* Imagen.m */; };
+		D91A786F151CFCC7008A0292 /* Categoria.m in Sources */ = {isa = PBXBuildFile; fileRef = D91A786E151CFCC7008A0292 /* Categoria.m */; };
+		D91A787E151D0544008A0292 /* coco.png in Resources */ = {isa = PBXBuildFile; fileRef = D91A787B151D0544008A0292 /* coco.png */; };
+		D91A787F151D0544008A0292 /* foco.jpg in Resources */ = {isa = PBXBuildFile; fileRef = D91A787C151D0544008A0292 /* foco.jpg */; };
+		D91A7880151D0544008A0292 /* limpia.jpg in Resources */ = {isa = PBXBuildFile; fileRef = D91A787D151D0544008A0292 /* limpia.jpg */; };
 		D91EA935151A702D00EACB54 /* TestData.m in Sources */ = {isa = PBXBuildFile; fileRef = D91EA934151A702D00EACB54 /* TestData.m */; };
-		D9382EBE151929B900959A9B /* Categoria.m in Sources */ = {isa = PBXBuildFile; fileRef = D9382EBD151929B900959A9B /* Categoria.m */; };
-		D9382EC2151929D500959A9B /* Glosario.m in Sources */ = {isa = PBXBuildFile; fileRef = D9382EC1151929D500959A9B /* Glosario.m */; };
-		D9382EC5151929F700959A9B /* Remedios.m in Sources */ = {isa = PBXBuildFile; fileRef = D9382EC4151929F700959A9B /* Remedios.m */; };
 		D9F89BFF1519268C00DDCBAC /* Model.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = D9F89BFD1519268C00DDCBAC /* Model.xcdatamodeld */; };
 		D9F89C02151927BE00DDCBAC /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D9F89C01151927BE00DDCBAC /* CoreData.framework */; };
 /* End PBXBuildFile section */
@@ -93,15 +97,20 @@
 		06624A3B14ABA20300FDAFA7 /* RootViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RootViewController.m; sourceTree = "<group>"; };
 		06624A3C14ABA20300FDAFA7 /* RootViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RootViewController.xib; sourceTree = "<group>"; };
 		06624A3D14ABA20300FDAFA7 /* tweet.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = tweet.png; sourceTree = "<group>"; };
+		D91A7864151CFCC6008A0292 /* Remedios.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Remedios.h; sourceTree = "<group>"; };
+		D91A7865151CFCC6008A0292 /* Remedios.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Remedios.m; sourceTree = "<group>"; };
+		D91A7867151CFCC7008A0292 /* Glosario.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Glosario.h; sourceTree = "<group>"; };
+		D91A7868151CFCC7008A0292 /* Glosario.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Glosario.m; sourceTree = "<group>"; };
+		D91A786A151CFCC7008A0292 /* Imagen.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Imagen.h; sourceTree = "<group>"; };
+		D91A786B151CFCC7008A0292 /* Imagen.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Imagen.m; sourceTree = "<group>"; };
+		D91A786D151CFCC7008A0292 /* Categoria.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Categoria.h; sourceTree = "<group>"; };
+		D91A786E151CFCC7008A0292 /* Categoria.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Categoria.m; sourceTree = "<group>"; };
+		D91A787B151D0544008A0292 /* coco.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = coco.png; sourceTree = "<group>"; };
+		D91A787C151D0544008A0292 /* foco.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = foco.jpg; sourceTree = "<group>"; };
+		D91A787D151D0544008A0292 /* limpia.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = limpia.jpg; sourceTree = "<group>"; };
 		D91EA933151A702D00EACB54 /* TestData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestData.h; sourceTree = "<group>"; };
 		D91EA934151A702D00EACB54 /* TestData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestData.m; sourceTree = "<group>"; };
 		D91EA937151A78AA00EACB54 /* ConstantRemedios.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ConstantRemedios.h; sourceTree = "<group>"; };
-		D9382EBC151929B900959A9B /* Categoria.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Categoria.h; sourceTree = "<group>"; };
-		D9382EBD151929B900959A9B /* Categoria.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Categoria.m; sourceTree = "<group>"; };
-		D9382EC0151929D500959A9B /* Glosario.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Glosario.h; sourceTree = "<group>"; };
-		D9382EC1151929D500959A9B /* Glosario.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Glosario.m; sourceTree = "<group>"; };
-		D9382EC3151929F700959A9B /* Remedios.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Remedios.h; sourceTree = "<group>"; };
-		D9382EC4151929F700959A9B /* Remedios.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Remedios.m; sourceTree = "<group>"; };
 		D9F89BFE1519268C00DDCBAC /* Model.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Model.xcdatamodel; sourceTree = "<group>"; };
 		D9F89C01151927BE00DDCBAC /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
@@ -197,19 +206,32 @@
 				0662492C14A8F2A900FDAFA7 /* InfoPlist.strings */,
 				0662492F14A8F2A900FDAFA7 /* main.m */,
 				0662493114A8F2A900FDAFA7 /* RemediosCaseros-Prefix.pch */,
-				D9382EBC151929B900959A9B /* Categoria.h */,
-				D9382EBD151929B900959A9B /* Categoria.m */,
-				D9382EC0151929D500959A9B /* Glosario.h */,
-				D9382EC1151929D500959A9B /* Glosario.m */,
-				D9382EC3151929F700959A9B /* Remedios.h */,
-				D9382EC4151929F700959A9B /* Remedios.m */,
+				D91A786D151CFCC7008A0292 /* Categoria.h */,
+				D91A786E151CFCC7008A0292 /* Categoria.m */,
+				D91A786A151CFCC7008A0292 /* Imagen.h */,
+				D91A786B151CFCC7008A0292 /* Imagen.m */,
+				D91A7867151CFCC7008A0292 /* Glosario.h */,
+				D91A7868151CFCC7008A0292 /* Glosario.m */,
+				D91A7864151CFCC6008A0292 /* Remedios.h */,
+				D91A7865151CFCC6008A0292 /* Remedios.m */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		D91A787A151D0544008A0292 /* imagenes remedios */ = {
+			isa = PBXGroup;
+			children = (
+				D91A787B151D0544008A0292 /* coco.png */,
+				D91A787C151D0544008A0292 /* foco.jpg */,
+				D91A787D151D0544008A0292 /* limpia.jpg */,
+			);
+			path = "imagenes remedios";
 			sourceTree = "<group>";
 		};
 		D9FC479D151A5115002F1D4B /* Imagenes */ = {
 			isa = PBXGroup;
 			children = (
+				D91A787A151D0544008A0292 /* imagenes remedios */,
 				06624A3D14ABA20300FDAFA7 /* tweet.png */,
 				0662493F14A8F2A900FDAFA7 /* second.png */,
 				0662494114A8F2A900FDAFA7 /* second@2x.png */,
@@ -300,6 +322,9 @@
 				06624A4714ABA20300FDAFA7 /* receta.png in Resources */,
 				06624A4A14ABA20300FDAFA7 /* RootViewController.xib in Resources */,
 				06624A4B14ABA20300FDAFA7 /* tweet.png in Resources */,
+				D91A787E151D0544008A0292 /* coco.png in Resources */,
+				D91A787F151D0544008A0292 /* foco.jpg in Resources */,
+				D91A7880151D0544008A0292 /* limpia.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -322,10 +347,11 @@
 				06624A4814ABA20300FDAFA7 /* Remedio.m in Sources */,
 				06624A4914ABA20300FDAFA7 /* RootViewController.m in Sources */,
 				D9F89BFF1519268C00DDCBAC /* Model.xcdatamodeld in Sources */,
-				D9382EBE151929B900959A9B /* Categoria.m in Sources */,
-				D9382EC2151929D500959A9B /* Glosario.m in Sources */,
-				D9382EC5151929F700959A9B /* Remedios.m in Sources */,
 				D91EA935151A702D00EACB54 /* TestData.m in Sources */,
+				D91A7866151CFCC6008A0292 /* Remedios.m in Sources */,
+				D91A7869151CFCC7008A0292 /* Glosario.m in Sources */,
+				D91A786C151CFCC7008A0292 /* Imagen.m in Sources */,
+				D91A786F151CFCC7008A0292 /* Categoria.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
