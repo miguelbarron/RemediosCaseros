@@ -2,13 +2,14 @@
 //  Categoria.h
 //  RemediosCaseros
 //
-//  Created by User on 3/20/12.
+//  Created by User on 3/23/12.
 //  Copyright (c) 2012 Somos Software. All rights reserved.
 //
 
 #import <Foundation/Foundation.h>
 #import <CoreData/CoreData.h>
 
+@class Remedios;
 
 @interface Categoria : NSManagedObject
 
@@ -18,8 +19,8 @@
 
 @interface Categoria (CoreDataGeneratedAccessors)
 
-- (void)addRemedioObject:(NSManagedObject *)value;
-- (void)removeRemedioObject:(NSManagedObject *)value;
+- (void)addRemedioObject:(Remedios *)value;
+- (void)removeRemedioObject:(Remedios *)value;
 - (void)addRemedio:(NSSet *)values;
 - (void)removeRemedio:(NSSet *)values;
 
