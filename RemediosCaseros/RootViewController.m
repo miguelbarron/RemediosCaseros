@@ -122,10 +122,9 @@
 
     Remedios *rem=[fetchedResultsController objectAtIndexPath:indexPath ];
     Imagen *imagenRemedio=rem.imagen;
-    //NSData *imageData = [[NSData alloc] initWithContentsOfURL:[NSURL URLWithString:imagenRemedio.url] ];  
-   // UIImage *myimagen = [[UIImage alloc] initWithData:imageData];  
-    NSString *url=imagenRemedio.url;
+    NSString *url=imagenRemedio.url;    
     UIImage *myimagen=[UIImage imageNamed:url];
+    
     cell.textLabel.text=rem.nombreRemedio;
     cell.detailTextLabel.text=rem.subtitulo;
     cell.imageView.image=myimagen;
@@ -139,7 +138,7 @@
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
 	
   
-	//DestinoDetailViewController *ddvController;
+
     DetalleViewController *dvc = [[DetalleViewController alloc] init];
  
 	[self.navigationController pushViewController:dvc animated:YES];
@@ -147,20 +146,7 @@
 	[dvc release];
 	dvc = nil;
     
-       
-    
-     
-    // DetailViewController *detailViewController = [[DetailViewController alloc] initWithNibName:@"Nib name" bundle:nil];
-     
-     // ...
-     
-     // Pass the selected object to the new view controller.
-     
-    // [self.navigationController pushViewController:detailViewController animated:YES];
-     
-    // [detailViewController release];
-     
-     
+
   
 }
 

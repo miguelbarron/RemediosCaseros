@@ -9,5 +9,8 @@
 #import <UIKit/UIKit.h>
 
 @interface FirstViewController : UIViewController
+@property (retain, nonatomic) IBOutlet UILabel *tituloRemedio;
+@property (retain, nonatomic) IBOutlet UITextView *ingredientesRemedios;
+@property (retain, nonatomic) IBOutlet UITextView *preparacionRemedio;
 
 @end

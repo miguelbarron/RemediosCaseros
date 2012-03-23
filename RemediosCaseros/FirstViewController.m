@@ -9,6 +9,9 @@
 #import "FirstViewController.h"
 
 @implementation FirstViewController
+@synthesize tituloRemedio;
+@synthesize ingredientesRemedios;
+@synthesize preparacionRemedio;
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -36,6 +39,9 @@
 
 - (void)viewDidUnload
 {
+    [self setTituloRemedio:nil];
+    [self setIngredientesRemedios:nil];
+    [self setPreparacionRemedio:nil];
     [super viewDidUnload];
     // Release any retained subviews of the main view.
     // e.g. self.myOutlet = nil;
@@ -67,4 +73,10 @@
   return (interfaceOrientation != UIInterfaceOrientationPortraitUpsideDown);
 }
 
+- (void)dealloc {
+    [tituloRemedio release];
+    [ingredientesRemedios release];
+    [preparacionRemedio release];
+    [super dealloc];
+}
 @end
