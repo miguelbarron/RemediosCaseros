@@ -2,7 +2,7 @@
 //  Imagen.m
 //  RemediosCaseros
 //
-//  Created by User on 3/23/12.
+//  Created by User on 3/24/12.
 //  Copyright (c) 2012 Somos Software. All rights reserved.
 //
 
@@ -14,8 +14,9 @@
 @implementation Imagen
 
 @dynamic nombre;
-@dynamic url;
-@dynamic imagenRemedio;
+@dynamic imagenVista;
+@dynamic imagenThumb;
 @dynamic imagenGlosario;
+@dynamic imagenRemedio;
 
 @end

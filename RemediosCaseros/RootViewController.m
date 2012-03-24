@@ -122,7 +122,7 @@
 
     Remedios *rem=[fetchedResultsController objectAtIndexPath:indexPath ];
     Imagen *imagenRemedio=rem.imagen;
-    NSString *url=imagenRemedio.url;    
+    NSString *url=imagenRemedio.imagenThumb;    
     UIImage *myimagen=[UIImage imageNamed:url];
     
     cell.textLabel.text=rem.nombreRemedio;

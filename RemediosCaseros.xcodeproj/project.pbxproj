@@ -41,12 +41,12 @@
 		06624A4B14ABA20300FDAFA7 /* tweet.png in Resources */ = {isa = PBXBuildFile; fileRef = 06624A3D14ABA20300FDAFA7 /* tweet.png */; };
 		D91A7866151CFCC6008A0292 /* Remedios.m in Sources */ = {isa = PBXBuildFile; fileRef = D91A7865151CFCC6008A0292 /* Remedios.m */; };
 		D91A7869151CFCC7008A0292 /* Glosario.m in Sources */ = {isa = PBXBuildFile; fileRef = D91A7868151CFCC7008A0292 /* Glosario.m */; };
-		D91A786C151CFCC7008A0292 /* Imagen.m in Sources */ = {isa = PBXBuildFile; fileRef = D91A786B151CFCC7008A0292 /* Imagen.m */; };
 		D91A786F151CFCC7008A0292 /* Categoria.m in Sources */ = {isa = PBXBuildFile; fileRef = D91A786E151CFCC7008A0292 /* Categoria.m */; };
 		D91A787E151D0544008A0292 /* coco.png in Resources */ = {isa = PBXBuildFile; fileRef = D91A787B151D0544008A0292 /* coco.png */; };
 		D91A787F151D0544008A0292 /* foco.jpg in Resources */ = {isa = PBXBuildFile; fileRef = D91A787C151D0544008A0292 /* foco.jpg */; };
 		D91A7880151D0544008A0292 /* limpia.jpg in Resources */ = {isa = PBXBuildFile; fileRef = D91A787D151D0544008A0292 /* limpia.jpg */; };
 		D91EA935151A702D00EACB54 /* TestData.m in Sources */ = {isa = PBXBuildFile; fileRef = D91EA934151A702D00EACB54 /* TestData.m */; };
+		D9E122DA151E240F000076C8 /* Imagen.m in Sources */ = {isa = PBXBuildFile; fileRef = D9E122D9151E240F000076C8 /* Imagen.m */; };
 		D9F89BFF1519268C00DDCBAC /* Model.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = D9F89BFD1519268C00DDCBAC /* Model.xcdatamodeld */; };
 		D9F89C02151927BE00DDCBAC /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D9F89C01151927BE00DDCBAC /* CoreData.framework */; };
 /* End PBXBuildFile section */
@@ -101,8 +101,6 @@
 		D91A7865151CFCC6008A0292 /* Remedios.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Remedios.m; sourceTree = "<group>"; };
 		D91A7867151CFCC7008A0292 /* Glosario.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Glosario.h; sourceTree = "<group>"; };
 		D91A7868151CFCC7008A0292 /* Glosario.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Glosario.m; sourceTree = "<group>"; };
-		D91A786A151CFCC7008A0292 /* Imagen.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Imagen.h; sourceTree = "<group>"; };
-		D91A786B151CFCC7008A0292 /* Imagen.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Imagen.m; sourceTree = "<group>"; };
 		D91A786D151CFCC7008A0292 /* Categoria.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Categoria.h; sourceTree = "<group>"; };
 		D91A786E151CFCC7008A0292 /* Categoria.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Categoria.m; sourceTree = "<group>"; };
 		D91A787B151D0544008A0292 /* coco.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = coco.png; sourceTree = "<group>"; };
@@ -111,6 +109,8 @@
 		D91EA933151A702D00EACB54 /* TestData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestData.h; sourceTree = "<group>"; };
 		D91EA934151A702D00EACB54 /* TestData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestData.m; sourceTree = "<group>"; };
 		D91EA937151A78AA00EACB54 /* ConstantRemedios.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ConstantRemedios.h; sourceTree = "<group>"; };
+		D9E122D8151E240F000076C8 /* Imagen.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Imagen.h; sourceTree = "<group>"; };
+		D9E122D9151E240F000076C8 /* Imagen.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Imagen.m; sourceTree = "<group>"; };
 		D9F89BFE1519268C00DDCBAC /* Model.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Model.xcdatamodel; sourceTree = "<group>"; };
 		D9F89C01151927BE00DDCBAC /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
@@ -208,12 +208,12 @@
 				0662493114A8F2A900FDAFA7 /* RemediosCaseros-Prefix.pch */,
 				D91A786D151CFCC7008A0292 /* Categoria.h */,
 				D91A786E151CFCC7008A0292 /* Categoria.m */,
-				D91A786A151CFCC7008A0292 /* Imagen.h */,
-				D91A786B151CFCC7008A0292 /* Imagen.m */,
 				D91A7867151CFCC7008A0292 /* Glosario.h */,
 				D91A7868151CFCC7008A0292 /* Glosario.m */,
 				D91A7864151CFCC6008A0292 /* Remedios.h */,
 				D91A7865151CFCC6008A0292 /* Remedios.m */,
+				D9E122D8151E240F000076C8 /* Imagen.h */,
+				D9E122D9151E240F000076C8 /* Imagen.m */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -350,8 +350,8 @@
 				D91EA935151A702D00EACB54 /* TestData.m in Sources */,
 				D91A7866151CFCC6008A0292 /* Remedios.m in Sources */,
 				D91A7869151CFCC7008A0292 /* Glosario.m in Sources */,
-				D91A786C151CFCC7008A0292 /* Imagen.m in Sources */,
 				D91A786F151CFCC7008A0292 /* Categoria.m in Sources */,
+				D9E122DA151E240F000076C8 /* Imagen.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

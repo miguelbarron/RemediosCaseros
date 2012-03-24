@@ -36,15 +36,15 @@
     
     //crear imagenes
     Imagen *imagen1=[NSEntityDescription insertNewObjectForEntityForName:@"Imagen" inManagedObjectContext:managedObjectContext];
-    imagen1.url=@"coco.png";
+    imagen1.imagenThumb=@"coco.png";
     imagen1.nombre=@"coco";
     
     Imagen *imagen2=[NSEntityDescription insertNewObjectForEntityForName:@"Imagen" inManagedObjectContext:managedObjectContext];
-    imagen2.url=@"foco.jpg";
+    imagen2.imagenThumb=@"foco.jpg";
     imagen2.nombre=@"foco";
     
     Imagen *imagen3=[NSEntityDescription insertNewObjectForEntityForName:@"Imagen" inManagedObjectContext:managedObjectContext];
-    imagen3.url=@"limpia.jpg";
+    imagen3.imagenThumb=@"limpia.jpg";
     imagen3.nombre=@"limpia";
     
     //se crea remedios

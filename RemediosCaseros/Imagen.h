@@ -2,7 +2,7 @@
 //  Imagen.h
 //  RemediosCaseros
 //
-//  Created by User on 3/23/12.
+//  Created by User on 3/24/12.
 //  Copyright (c) 2012 Somos Software. All rights reserved.
 //
 
@@ -14,8 +14,9 @@
 @interface Imagen : NSManagedObject
 
 @property (nonatomic, retain) NSString * nombre;
-@property (nonatomic, retain) NSString * url;
-@property (nonatomic, retain) Remedios *imagenRemedio;
+@property (nonatomic, retain) NSString * imagenVista;
+@property (nonatomic, retain) NSString * imagenThumb;
 @property (nonatomic, retain) Glosario *imagenGlosario;
+@property (nonatomic, retain) Remedios *imagenRemedio;
 
 @end
