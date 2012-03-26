@@ -13,29 +13,14 @@
 		0662492E14A8F2A900FDAFA7 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 0662492C14A8F2A900FDAFA7 /* InfoPlist.strings */; };
 		0662493014A8F2A900FDAFA7 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 0662492F14A8F2A900FDAFA7 /* main.m */; };
 		0662493414A8F2A900FDAFA7 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 0662493314A8F2A900FDAFA7 /* AppDelegate.m */; };
-		0662493714A8F2A900FDAFA7 /* FirstViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0662493614A8F2A900FDAFA7 /* FirstViewController.m */; };
 		0662493914A8F2A900FDAFA7 /* first.png in Resources */ = {isa = PBXBuildFile; fileRef = 0662493814A8F2A900FDAFA7 /* first.png */; };
 		0662493B14A8F2A900FDAFA7 /* first@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0662493A14A8F2A900FDAFA7 /* first@2x.png */; };
-		0662493E14A8F2A900FDAFA7 /* SecondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0662493D14A8F2A900FDAFA7 /* SecondViewController.m */; };
 		0662494014A8F2A900FDAFA7 /* second.png in Resources */ = {isa = PBXBuildFile; fileRef = 0662493F14A8F2A900FDAFA7 /* second.png */; };
 		0662494214A8F2A900FDAFA7 /* second@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0662494114A8F2A900FDAFA7 /* second@2x.png */; };
-		0662494514A8F2A900FDAFA7 /* FirstViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0662494314A8F2A900FDAFA7 /* FirstViewController.xib */; };
-		0662494814A8F2A900FDAFA7 /* SecondViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0662494614A8F2A900FDAFA7 /* SecondViewController.xib */; };
 		06624A2514ABA1B100FDAFA7 /* glosario.plist in Resources */ = {isa = PBXBuildFile; fileRef = 06624A2014ABA1B100FDAFA7 /* glosario.plist */; };
-		06624A2614ABA1B100FDAFA7 /* GlosaryDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 06624A2214ABA1B100FDAFA7 /* GlosaryDetailViewController.m */; };
-		06624A2714ABA1B100FDAFA7 /* GlosaryDetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 06624A2314ABA1B100FDAFA7 /* GlosaryDetailViewController.xib */; };
 		06624A2814ABA1B100FDAFA7 /* lasdo.plist in Resources */ = {isa = PBXBuildFile; fileRef = 06624A2414ABA1B100FDAFA7 /* lasdo.plist */; };
-		06624A3E14ABA20300FDAFA7 /* CompartirViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 06624A2B14ABA20300FDAFA7 /* CompartirViewController.m */; };
-		06624A3F14ABA20300FDAFA7 /* CompartirViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 06624A2C14ABA20300FDAFA7 /* CompartirViewController.xib */; };
-		06624A4014ABA20300FDAFA7 /* DetalleRemedioViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 06624A2E14ABA20300FDAFA7 /* DetalleRemedioViewController.m */; };
-		06624A4114ABA20300FDAFA7 /* DetalleRemedioViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 06624A2F14ABA20300FDAFA7 /* DetalleRemedioViewController.xib */; };
-		06624A4214ABA20300FDAFA7 /* DetalleViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 06624A3114ABA20300FDAFA7 /* DetalleViewController.m */; };
-		06624A4314ABA20300FDAFA7 /* DetalleViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 06624A3214ABA20300FDAFA7 /* DetalleViewController.xib */; };
 		06624A4414ABA20300FDAFA7 /* glosario.png in Resources */ = {isa = PBXBuildFile; fileRef = 06624A3314ABA20300FDAFA7 /* glosario.png */; };
-		06624A4514ABA20300FDAFA7 /* GlosarioViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 06624A3514ABA20300FDAFA7 /* GlosarioViewController.m */; };
-		06624A4614ABA20300FDAFA7 /* GlosarioViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 06624A3614ABA20300FDAFA7 /* GlosarioViewController.xib */; };
 		06624A4714ABA20300FDAFA7 /* receta.png in Resources */ = {isa = PBXBuildFile; fileRef = 06624A3714ABA20300FDAFA7 /* receta.png */; };
-		06624A4814ABA20300FDAFA7 /* Remedio.m in Sources */ = {isa = PBXBuildFile; fileRef = 06624A3914ABA20300FDAFA7 /* Remedio.m */; };
 		06624A4914ABA20300FDAFA7 /* RootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 06624A3B14ABA20300FDAFA7 /* RootViewController.m */; };
 		06624A4A14ABA20300FDAFA7 /* RootViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 06624A3C14ABA20300FDAFA7 /* RootViewController.xib */; };
 		06624A4B14ABA20300FDAFA7 /* tweet.png in Resources */ = {isa = PBXBuildFile; fileRef = 06624A3D14ABA20300FDAFA7 /* tweet.png */; };
@@ -62,37 +47,14 @@
 		0662493114A8F2A900FDAFA7 /* RemediosCaseros-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "RemediosCaseros-Prefix.pch"; sourceTree = "<group>"; };
 		0662493214A8F2A900FDAFA7 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		0662493314A8F2A900FDAFA7 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		0662493514A8F2A900FDAFA7 /* FirstViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FirstViewController.h; sourceTree = "<group>"; };
-		0662493614A8F2A900FDAFA7 /* FirstViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FirstViewController.m; sourceTree = "<group>"; };
 		0662493814A8F2A900FDAFA7 /* first.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = first.png; sourceTree = "<group>"; };
 		0662493A14A8F2A900FDAFA7 /* first@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "first@2x.png"; sourceTree = "<group>"; };
-		0662493C14A8F2A900FDAFA7 /* SecondViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SecondViewController.h; sourceTree = "<group>"; };
-		0662493D14A8F2A900FDAFA7 /* SecondViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SecondViewController.m; sourceTree = "<group>"; };
 		0662493F14A8F2A900FDAFA7 /* second.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = second.png; sourceTree = "<group>"; };
 		0662494114A8F2A900FDAFA7 /* second@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "second@2x.png"; sourceTree = "<group>"; };
-		0662494414A8F2A900FDAFA7 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/FirstViewController.xib; sourceTree = "<group>"; };
-		0662494714A8F2A900FDAFA7 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/SecondViewController.xib; sourceTree = "<group>"; };
 		06624A2014ABA1B100FDAFA7 /* glosario.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = glosario.plist; sourceTree = "<group>"; };
-		06624A2114ABA1B100FDAFA7 /* GlosaryDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GlosaryDetailViewController.h; sourceTree = "<group>"; };
-		06624A2214ABA1B100FDAFA7 /* GlosaryDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GlosaryDetailViewController.m; sourceTree = "<group>"; };
-		06624A2314ABA1B100FDAFA7 /* GlosaryDetailViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = GlosaryDetailViewController.xib; sourceTree = "<group>"; };
 		06624A2414ABA1B100FDAFA7 /* lasdo.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = lasdo.plist; sourceTree = "<group>"; };
-		06624A2A14ABA20300FDAFA7 /* CompartirViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CompartirViewController.h; sourceTree = "<group>"; };
-		06624A2B14ABA20300FDAFA7 /* CompartirViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CompartirViewController.m; sourceTree = "<group>"; };
-		06624A2C14ABA20300FDAFA7 /* CompartirViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CompartirViewController.xib; sourceTree = "<group>"; };
-		06624A2D14ABA20300FDAFA7 /* DetalleRemedioViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DetalleRemedioViewController.h; sourceTree = "<group>"; };
-		06624A2E14ABA20300FDAFA7 /* DetalleRemedioViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DetalleRemedioViewController.m; sourceTree = "<group>"; };
-		06624A2F14ABA20300FDAFA7 /* DetalleRemedioViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DetalleRemedioViewController.xib; sourceTree = "<group>"; };
-		06624A3014ABA20300FDAFA7 /* DetalleViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DetalleViewController.h; sourceTree = "<group>"; };
-		06624A3114ABA20300FDAFA7 /* DetalleViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DetalleViewController.m; sourceTree = "<group>"; };
-		06624A3214ABA20300FDAFA7 /* DetalleViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DetalleViewController.xib; sourceTree = "<group>"; };
 		06624A3314ABA20300FDAFA7 /* glosario.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = glosario.png; sourceTree = "<group>"; };
-		06624A3414ABA20300FDAFA7 /* GlosarioViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GlosarioViewController.h; sourceTree = "<group>"; };
-		06624A3514ABA20300FDAFA7 /* GlosarioViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GlosarioViewController.m; sourceTree = "<group>"; };
-		06624A3614ABA20300FDAFA7 /* GlosarioViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = GlosarioViewController.xib; sourceTree = "<group>"; };
 		06624A3714ABA20300FDAFA7 /* receta.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = receta.png; sourceTree = "<group>"; };
-		06624A3814ABA20300FDAFA7 /* Remedio.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Remedio.h; sourceTree = "<group>"; };
-		06624A3914ABA20300FDAFA7 /* Remedio.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Remedio.m; sourceTree = "<group>"; };
 		06624A3A14ABA20300FDAFA7 /* RootViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RootViewController.h; sourceTree = "<group>"; };
 		06624A3B14ABA20300FDAFA7 /* RootViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RootViewController.m; sourceTree = "<group>"; };
 		06624A3C14ABA20300FDAFA7 /* RootViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RootViewController.xib; sourceTree = "<group>"; };
@@ -165,29 +127,6 @@
 				D9FC479D151A5115002F1D4B /* Imagenes */,
 				0662493214A8F2A900FDAFA7 /* AppDelegate.h */,
 				0662493314A8F2A900FDAFA7 /* AppDelegate.m */,
-				06624A2114ABA1B100FDAFA7 /* GlosaryDetailViewController.h */,
-				06624A2214ABA1B100FDAFA7 /* GlosaryDetailViewController.m */,
-				06624A2314ABA1B100FDAFA7 /* GlosaryDetailViewController.xib */,
-				0662493514A8F2A900FDAFA7 /* FirstViewController.h */,
-				0662493614A8F2A900FDAFA7 /* FirstViewController.m */,
-				0662494314A8F2A900FDAFA7 /* FirstViewController.xib */,
-				0662493C14A8F2A900FDAFA7 /* SecondViewController.h */,
-				0662493D14A8F2A900FDAFA7 /* SecondViewController.m */,
-				0662494614A8F2A900FDAFA7 /* SecondViewController.xib */,
-				06624A2A14ABA20300FDAFA7 /* CompartirViewController.h */,
-				06624A2B14ABA20300FDAFA7 /* CompartirViewController.m */,
-				06624A2C14ABA20300FDAFA7 /* CompartirViewController.xib */,
-				06624A2D14ABA20300FDAFA7 /* DetalleRemedioViewController.h */,
-				06624A2E14ABA20300FDAFA7 /* DetalleRemedioViewController.m */,
-				06624A2F14ABA20300FDAFA7 /* DetalleRemedioViewController.xib */,
-				06624A3014ABA20300FDAFA7 /* DetalleViewController.h */,
-				06624A3114ABA20300FDAFA7 /* DetalleViewController.m */,
-				06624A3214ABA20300FDAFA7 /* DetalleViewController.xib */,
-				06624A3414ABA20300FDAFA7 /* GlosarioViewController.h */,
-				06624A3514ABA20300FDAFA7 /* GlosarioViewController.m */,
-				06624A3614ABA20300FDAFA7 /* GlosarioViewController.xib */,
-				06624A3814ABA20300FDAFA7 /* Remedio.h */,
-				06624A3914ABA20300FDAFA7 /* Remedio.m */,
 				06624A3A14ABA20300FDAFA7 /* RootViewController.h */,
 				06624A3B14ABA20300FDAFA7 /* RootViewController.m */,
 				06624A3C14ABA20300FDAFA7 /* RootViewController.xib */,
@@ -309,16 +248,9 @@
 				0662493B14A8F2A900FDAFA7 /* first@2x.png in Resources */,
 				0662494014A8F2A900FDAFA7 /* second.png in Resources */,
 				0662494214A8F2A900FDAFA7 /* second@2x.png in Resources */,
-				0662494514A8F2A900FDAFA7 /* FirstViewController.xib in Resources */,
-				0662494814A8F2A900FDAFA7 /* SecondViewController.xib in Resources */,
 				06624A2514ABA1B100FDAFA7 /* glosario.plist in Resources */,
-				06624A2714ABA1B100FDAFA7 /* GlosaryDetailViewController.xib in Resources */,
 				06624A2814ABA1B100FDAFA7 /* lasdo.plist in Resources */,
-				06624A3F14ABA20300FDAFA7 /* CompartirViewController.xib in Resources */,
-				06624A4114ABA20300FDAFA7 /* DetalleRemedioViewController.xib in Resources */,
-				06624A4314ABA20300FDAFA7 /* DetalleViewController.xib in Resources */,
 				06624A4414ABA20300FDAFA7 /* glosario.png in Resources */,
-				06624A4614ABA20300FDAFA7 /* GlosarioViewController.xib in Resources */,
 				06624A4714ABA20300FDAFA7 /* receta.png in Resources */,
 				06624A4A14ABA20300FDAFA7 /* RootViewController.xib in Resources */,
 				06624A4B14ABA20300FDAFA7 /* tweet.png in Resources */,
@@ -337,14 +269,6 @@
 			files = (
 				0662493014A8F2A900FDAFA7 /* main.m in Sources */,
 				0662493414A8F2A900FDAFA7 /* AppDelegate.m in Sources */,
-				0662493714A8F2A900FDAFA7 /* FirstViewController.m in Sources */,
-				0662493E14A8F2A900FDAFA7 /* SecondViewController.m in Sources */,
-				06624A2614ABA1B100FDAFA7 /* GlosaryDetailViewController.m in Sources */,
-				06624A3E14ABA20300FDAFA7 /* CompartirViewController.m in Sources */,
-				06624A4014ABA20300FDAFA7 /* DetalleRemedioViewController.m in Sources */,
-				06624A4214ABA20300FDAFA7 /* DetalleViewController.m in Sources */,
-				06624A4514ABA20300FDAFA7 /* GlosarioViewController.m in Sources */,
-				06624A4814ABA20300FDAFA7 /* Remedio.m in Sources */,
 				06624A4914ABA20300FDAFA7 /* RootViewController.m in Sources */,
 				D9F89BFF1519268C00DDCBAC /* Model.xcdatamodeld in Sources */,
 				D91EA935151A702D00EACB54 /* TestData.m in Sources */,
@@ -364,22 +288,6 @@
 				0662492D14A8F2A900FDAFA7 /* en */,
 			);
 			name = InfoPlist.strings;
-			sourceTree = "<group>";
-		};
-		0662494314A8F2A900FDAFA7 /* FirstViewController.xib */ = {
-			isa = PBXVariantGroup;
-			children = (
-				0662494414A8F2A900FDAFA7 /* en */,
-			);
-			name = FirstViewController.xib;
-			sourceTree = "<group>";
-		};
-		0662494614A8F2A900FDAFA7 /* SecondViewController.xib */ = {
-			isa = PBXVariantGroup;
-			children = (
-				0662494714A8F2A900FDAFA7 /* en */,
-			);
-			name = SecondViewController.xib;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */

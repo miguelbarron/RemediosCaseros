@@ -7,7 +7,7 @@
 //
 
 #import "RootViewController.h"
-#import "DetalleViewController.h"
+
 #import "AppDelegate.h"
 #import "Categoria.h"
 #import "Remedios.h"
@@ -139,13 +139,13 @@
 	
   
 
-    DetalleViewController *dvc = [[DetalleViewController alloc] init];
- 
-	[self.navigationController pushViewController:dvc animated:YES];
-  
-	[dvc release];
-	dvc = nil;
-    
+//    DetalleViewController *dvc = [[DetalleViewController alloc] init];
+// 
+//	[self.navigationController pushViewController:dvc animated:YES];
+//  
+//	[dvc release];
+//	dvc = nil;
+//    
 
   
 }
