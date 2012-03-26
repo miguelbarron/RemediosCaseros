@@ -13,6 +13,7 @@
 #import "Remedios.h"
 #import "Glosario.h"
 #import "Imagen.h"
+#import "detalleViewController.h"
 
 
 @implementation RootViewController
@@ -137,8 +138,11 @@
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
 	
-  
-
+    detalleViewController *detalle=[[detalleViewController alloc]init];
+    //Remedios.detalleEvento=[fetchedResultsController objectAtIndexPath:indexPath];
+    detalle.remedio=[fetchedResultsController objectAtIndexPath:indexPath];
+    [self.navigationController pushViewController:detalle animated:YES];
+    
 //    DetalleViewController *dvc = [[DetalleViewController alloc] init];
 // 
 //	[self.navigationController pushViewController:dvc animated:YES];

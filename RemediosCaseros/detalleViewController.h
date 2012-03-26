@@ -7,7 +7,15 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "Remedios.h"
 
 @interface detalleViewController : UIViewController
-
+{
+    Remedios *remedio;
+}
+@property (retain, nonatomic) IBOutlet UIImageView *imagenRemedio;
+@property (retain, nonatomic) IBOutlet UITextView *ingredientesRemedios;
+@property (retain, nonatomic) IBOutlet UITextView *preparacionRemedio;
+@property (retain, nonatomic) IBOutlet UIScrollView *svView;
+@property (retain, nonatomic) Remedios *remedio;
 @end

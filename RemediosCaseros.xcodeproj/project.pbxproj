@@ -24,6 +24,8 @@
 		06624A4914ABA20300FDAFA7 /* RootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 06624A3B14ABA20300FDAFA7 /* RootViewController.m */; };
 		06624A4A14ABA20300FDAFA7 /* RootViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 06624A3C14ABA20300FDAFA7 /* RootViewController.xib */; };
 		06624A4B14ABA20300FDAFA7 /* tweet.png in Resources */ = {isa = PBXBuildFile; fileRef = 06624A3D14ABA20300FDAFA7 /* tweet.png */; };
+		D90882E41520D87A00AB7AEB /* detalleViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D90882E21520D87A00AB7AEB /* detalleViewController.m */; };
+		D90882E51520D87A00AB7AEB /* detalleViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D90882E31520D87A00AB7AEB /* detalleViewController.xib */; };
 		D91A7866151CFCC6008A0292 /* Remedios.m in Sources */ = {isa = PBXBuildFile; fileRef = D91A7865151CFCC6008A0292 /* Remedios.m */; };
 		D91A7869151CFCC7008A0292 /* Glosario.m in Sources */ = {isa = PBXBuildFile; fileRef = D91A7868151CFCC7008A0292 /* Glosario.m */; };
 		D91A786F151CFCC7008A0292 /* Categoria.m in Sources */ = {isa = PBXBuildFile; fileRef = D91A786E151CFCC7008A0292 /* Categoria.m */; };
@@ -59,6 +61,9 @@
 		06624A3B14ABA20300FDAFA7 /* RootViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RootViewController.m; sourceTree = "<group>"; };
 		06624A3C14ABA20300FDAFA7 /* RootViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RootViewController.xib; sourceTree = "<group>"; };
 		06624A3D14ABA20300FDAFA7 /* tweet.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = tweet.png; sourceTree = "<group>"; };
+		D90882E11520D87A00AB7AEB /* detalleViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = detalleViewController.h; sourceTree = "<group>"; };
+		D90882E21520D87A00AB7AEB /* detalleViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = detalleViewController.m; sourceTree = "<group>"; };
+		D90882E31520D87A00AB7AEB /* detalleViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = detalleViewController.xib; sourceTree = "<group>"; };
 		D91A7864151CFCC6008A0292 /* Remedios.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Remedios.h; sourceTree = "<group>"; };
 		D91A7865151CFCC6008A0292 /* Remedios.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Remedios.m; sourceTree = "<group>"; };
 		D91A7867151CFCC7008A0292 /* Glosario.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Glosario.h; sourceTree = "<group>"; };
@@ -130,6 +135,9 @@
 				06624A3A14ABA20300FDAFA7 /* RootViewController.h */,
 				06624A3B14ABA20300FDAFA7 /* RootViewController.m */,
 				06624A3C14ABA20300FDAFA7 /* RootViewController.xib */,
+				D90882E11520D87A00AB7AEB /* detalleViewController.h */,
+				D90882E21520D87A00AB7AEB /* detalleViewController.m */,
+				D90882E31520D87A00AB7AEB /* detalleViewController.xib */,
 				06624A2414ABA1B100FDAFA7 /* lasdo.plist */,
 				06624A2014ABA1B100FDAFA7 /* glosario.plist */,
 				0662492A14A8F2A900FDAFA7 /* Supporting Files */,
@@ -257,6 +265,7 @@
 				D91A787E151D0544008A0292 /* coco.png in Resources */,
 				D91A787F151D0544008A0292 /* foco.jpg in Resources */,
 				D91A7880151D0544008A0292 /* limpia.jpg in Resources */,
+				D90882E51520D87A00AB7AEB /* detalleViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -276,6 +285,7 @@
 				D91A7869151CFCC7008A0292 /* Glosario.m in Sources */,
 				D91A786F151CFCC7008A0292 /* Categoria.m in Sources */,
 				D9E122DA151E240F000076C8 /* Imagen.m in Sources */,
+				D90882E41520D87A00AB7AEB /* detalleViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

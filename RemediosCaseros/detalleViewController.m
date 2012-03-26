@@ -7,9 +7,15 @@
 //
 
 #import "detalleViewController.h"
+#import "Remedios.h"
+#import "Imagen.h"
 
 @implementation detalleViewController
-
+@synthesize imagenRemedio;
+@synthesize ingredientesRemedios;
+@synthesize preparacionRemedio;
+@synthesize svView;
+@synthesize remedio;
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
@@ -33,10 +39,25 @@
 {
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
+       //[self.svView setContentSize:CGSizeMake(320,1700)];
+    [self.svView setContentSize:CGSizeMake(100,500)];
+    Imagen *imrem=remedio.imagen;
+    NSString *direccionImagen=imrem.imagenThumb;
+    imagenRemedio.image=[UIImage imageNamed:direccionImagen];   
+    
+    self.title=remedio.nombreRemedio;
+    ingredientesRemedios.text=remedio.ingredientes;
+    preparacionRemedio.text=remedio.preparacion;
+ 
+
 }
 
 - (void)viewDidUnload
 {
+    [self setImagenRemedio:nil];
+    [self setIngredientesRemedios:nil];
+    [self setPreparacionRemedio:nil];
+    [self setSvView:nil];
     [super viewDidUnload];
     // Release any retained subviews of the main view.
     // e.g. self.myOutlet = nil;
@@ -48,4 +69,11 @@
     return (interfaceOrientation == UIInterfaceOrientationPortrait);
 }
 
+- (void)dealloc {
+    [imagenRemedio release];
+    [ingredientesRemedios release];
+    [preparacionRemedio release];
+    [svView release];
+    [super dealloc];
+}
 @end
