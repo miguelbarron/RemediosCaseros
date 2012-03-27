@@ -2,7 +2,7 @@
 //  Glosario.h
 //  RemediosCaseros
 //
-//  Created by User on 3/23/12.
+//  Created by User on 3/27/12.
 //  Copyright (c) 2012 Somos Software. All rights reserved.
 //
 
@@ -15,14 +15,6 @@
 
 @property (nonatomic, retain) NSString * detalleIngrediente;
 @property (nonatomic, retain) NSString * nombreIngrediente;
-@property (nonatomic, retain) NSSet *imagen;
-@end
-
-@interface Glosario (CoreDataGeneratedAccessors)
-
-- (void)addImagenObject:(Imagen *)value;
-- (void)removeImagenObject:(Imagen *)value;
-- (void)addImagen:(NSSet *)values;
-- (void)removeImagen:(NSSet *)values;
+@property (nonatomic, retain) Imagen *imagen;
 
 @end
