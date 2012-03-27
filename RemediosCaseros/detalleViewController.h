@@ -18,4 +18,5 @@
 @property (retain, nonatomic) IBOutlet UITextView *preparacionRemedio;
 @property (retain, nonatomic) IBOutlet UIScrollView *svView;
 @property (retain, nonatomic) Remedios *remedio;
+
 @end

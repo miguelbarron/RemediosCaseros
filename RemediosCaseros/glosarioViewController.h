@@ -7,7 +7,15 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "AppDelegate.h"
 
-@interface glosarioViewController : UIViewController
+@interface glosarioViewController : UIViewController<NSFetchedResultsControllerDelegate>{
+    
+    NSFetchedResultsController *fetchedResultsController;
+	NSManagedObjectContext *managedObjectContext; 
+    
+}
+@property(retain,nonatomic)NSFetchedResultsController *fetchedResultsController;
+@property (nonatomic, retain) NSManagedObjectContext *managedObjectContext;
 
 @end

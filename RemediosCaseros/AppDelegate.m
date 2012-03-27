@@ -11,6 +11,8 @@
 #import "RootViewController.h"
 #import "TestData.h"
 #import "ConstantRemedios.h"
+#import "detalleViewController.h"
+#import "glosarioViewController.h"
 
 
 @implementation AppDelegate
@@ -20,7 +22,7 @@
 @synthesize managedObjectContext = __managedObjectContext;
 @synthesize managedObjectModel = __managedObjectModel;
 @synthesize persistentStoreCoordinator = __persistentStoreCoordinator;
-
+@synthesize tabBarController = _tabBarController;
 
 - (void)dealloc
 {
@@ -34,15 +36,42 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
-  self.window = [[[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]] autorelease];
+  //self.window = [[[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]] autorelease];
   // Override point for customization after application launch.
   //  [self.managedObjectContext ];
+    
+    
+    
   UIViewController *viewController = [[[RootViewController alloc] initWithNibName:@"RootViewController" bundle:nil] autorelease];
-  navigationController = [[UINavigationController alloc]
-                          initWithRootViewController:viewController];
+  navigationController = [[UINavigationController alloc]initWithRootViewController:viewController];
   
+    
+    
+  
+    
+    
+    
+/*    
   [self.window addSubview:navigationController.view];
   [self.window makeKeyAndVisible];
+  */  
+    
+    
+    self.window = [[[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]] autorelease];
+
+    // Override point for customization after application launch.
+    UIViewController *viewController1 = [[[RootViewController alloc] initWithNibName:@"RootViewController" bundle:nil] autorelease];
+    UINavigationController *remediosNavController = [[[UINavigationController alloc] initWithRootViewController:viewController1] autorelease];
+    
+    
+    UIViewController *viewController2 = [[[glosarioViewController alloc] initWithNibName:@"glosarioViewController" bundle:nil] autorelease];
+    UINavigationController *glosarioNavController = [[[UINavigationController alloc] initWithRootViewController:viewController2] autorelease];
+    
+    
+    self.tabBarController = [[[UITabBarController alloc] init] autorelease];
+    self.tabBarController.viewControllers = [NSArray arrayWithObjects:remediosNavController,glosarioNavController, nil];
+    self.window.rootViewController = self.tabBarController;
+    [self.window makeKeyAndVisible];
     
     
 #if DEBUG_CREATE_DATA

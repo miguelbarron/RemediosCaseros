@@ -16,5 +16,5 @@
 }
 @property(retain,nonatomic)NSFetchedResultsController *fetchedResultsController;
 @property (nonatomic, retain) NSManagedObjectContext *managedObjectContext;
-
+@property (strong, nonatomic) UITabBarController *tabBarController;
 @end

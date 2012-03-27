@@ -55,6 +55,7 @@
     remedio1.preparacion=@"Se extrae de la pulpa de coco mediante prensado, y contiene un 90% de ácidos grasos saturados.    El aceite de coco es, también, conocido como mantequilla de coco pues se solidifica por debajo de los 23º C. El aceite de coco es muy resistente ya que puede durar años sin estropearse ";
     remedio1.imagen=imagen1;
     
+    
     NSSet *agregarremedio=[[[NSSet alloc] initWithObjects:remedio1, nil] autorelease];
     [categoria3 addRemedio:agregarremedio];
     
@@ -89,10 +90,34 @@
     [categoria1 addRemedio:agregarremedio3];
     
 
+    //crear imagen Glosario
+    Imagen *imagenRemedio=[NSEntityDescription insertNewObjectForEntityForName:@"Imagen" inManagedObjectContext:managedObjectContext];
+    imagenRemedio.nombre=@"Ficus";
+    imagenRemedio.imagenThumb=@"ficus.jpg";
+    imagenRemedio.imagenVista=@"ficus.jpg";
+    
+    //crear glosario
+    Glosario *glosario1=[NSEntityDescription insertNewObjectForEntityForName:@"Glosario" inManagedObjectContext:managedObjectContext];
+    glosario1.nombreIngrediente=@"nombre Glosario";
+    glosario1.detalleIngrediente=@"detalle del glosario";
+    glosario1.imagen=imagenRemedio;
     
     
     
+    /*
+    Glosario *glosario2=[NSEntityDescription insertNewObjectForEntityForName:@"Glosario" inManagedObjectContext:managedObjectContext];
+    glosario2.nombreIngrediente=@"nombre Glosario 2";
+    glosario2.detalleIngrediente=@"detalle del glosario 2";
     
+    Glosario *glosario3=[NSEntityDescription insertNewObjectForEntityForName:@"Glosario" inManagedObjectContext:managedObjectContext];
+    glosario3.nombreIngrediente=@"nombre Glosario 3";
+    glosario3.detalleIngrediente=@"detalle del glosario 3";
+    
+ */
+    
+    
+    
+
     
     
     

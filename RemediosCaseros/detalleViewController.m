@@ -9,6 +9,7 @@
 #import "detalleViewController.h"
 #import "Remedios.h"
 #import "Imagen.h"
+#import "AppDelegate.h"
 
 @implementation detalleViewController
 @synthesize imagenRemedio;
@@ -16,14 +17,15 @@
 @synthesize preparacionRemedio;
 @synthesize svView;
 @synthesize remedio;
-- (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
-{
-    self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
-    if (self) {
-        // Custom initialization
-    }
-    return self;
-}
+
+//- (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
+//{
+//    self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
+//    if (self) {
+//        // Custom initialization
+//    }
+//    return self;
+//}
 
 - (void)didReceiveMemoryWarning
 {
@@ -40,6 +42,10 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
        //[self.svView setContentSize:CGSizeMake(320,1700)];
+//    detalleViewController *viewController1 = [[[detalleViewController alloc] ;
+      
+        //UIViewController *viewController2 = [[[SecondViewController alloc] initWithNibName:@"SecondViewController" bundle:nil] autorelease];
+       
     [self.svView setContentSize:CGSizeMake(100,500)];
     Imagen *imrem=remedio.imagen;
     NSString *direccionImagen=imrem.imagenThumb;
@@ -48,10 +54,14 @@
     self.title=remedio.nombreRemedio;
     ingredientesRemedios.text=remedio.ingredientes;
     preparacionRemedio.text=remedio.preparacion;
+    
+//    UITabBarController *tabBController = [[UITabBarController alloc] init];
+//    tabBController.view.frame = CGRectMake(0, 0, 320, 460);
+  //  [self addSubview:tabBarController.view];
+   
  
-
+    
 }
-
 - (void)viewDidUnload
 {
     [self setImagenRemedio:nil];

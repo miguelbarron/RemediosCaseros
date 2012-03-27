@@ -7,7 +7,7 @@
     <entity name="Glosario" representedClassName="Glosario" syncable="YES">
         <attribute name="detalleIngrediente" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="nombreIngrediente" optional="YES" attributeType="String" syncable="YES"/>
-        <relationship name="imagen" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Imagen" inverseName="imagenGlosario" inverseEntity="Imagen" syncable="YES"/>
+        <relationship name="imagen" optional="YES" minCount="1" maxCount="1" deletionRule="Nullify" destinationEntity="Imagen" inverseName="imagenGlosario" inverseEntity="Imagen" syncable="YES"/>
     </entity>
     <entity name="Imagen" representedClassName="Imagen" syncable="YES">
         <attribute name="imagenThumb" optional="YES" attributeType="String" syncable="YES"/>
@@ -27,7 +27,7 @@
     <elements>
         <element name="Categoria" positionX="-164" positionY="-171" width="128" height="75"/>
         <element name="Glosario" positionX="-63" positionY="9" width="128" height="90"/>
-        <element name="Imagen" positionX="-657" positionY="72" width="128" height="105"/>
-        <element name="Remedios" positionX="-342" positionY="-9" width="128" height="135"/>
+        <element name="Imagen" positionX="-657" positionY="72" width="128" height="120"/>
+        <element name="Remedios" positionX="-459" positionY="-117" width="128" height="135"/>
     </elements>
 </model>

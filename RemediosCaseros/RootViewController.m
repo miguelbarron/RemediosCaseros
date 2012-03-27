@@ -17,13 +17,14 @@
 
 
 @implementation RootViewController
-@synthesize fetchedResultsController,managedObjectContext;
+@synthesize fetchedResultsController,managedObjectContext,tabBarController;
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
     if (self) {
-        // Custom initialization
+        self.title = NSLocalizedString(@"Remedios", @"Remedio");
+        self.tabBarItem.image = [UIImage imageNamed:@"receta"];
     }
     return self;
 }
@@ -41,7 +42,7 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    self.title=@"Remedios Caseros";
+    //self.title=@"Remedios Caseros";
     AppDelegate *appDelegate=(AppDelegate *)[[UIApplication sharedApplication]delegate];
     managedObjectContext=appDelegate.managedObjectContext;
     
@@ -137,11 +138,15 @@
 
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
-	
+
+
+    
+    
+    
     detalleViewController *detalle=[[detalleViewController alloc]init];
-    //Remedios.detalleEvento=[fetchedResultsController objectAtIndexPath:indexPath];
     detalle.remedio=[fetchedResultsController objectAtIndexPath:indexPath];
     [self.navigationController pushViewController:detalle animated:YES];
+    
     
 //    DetalleViewController *dvc = [[DetalleViewController alloc] init];
 // 
