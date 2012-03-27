@@ -9,6 +9,7 @@
 #import "glosarioViewController.h"
 #import "Glosario.h"
 #import "Imagen.h"
+#import "detalleGlosarioViewController.h"
 
 @implementation glosarioViewController
 @synthesize managedObjectContext,fetchedResultsController;
@@ -74,6 +75,7 @@
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
       return [[fetchedResultsController sections]count]; 
+
     
     
 }
@@ -86,9 +88,10 @@
 }
 
 //- (NSString *)tableView:(UITableView *)tableView titleForHeaderInSection:(NSInteger)section {
-//
-//    return @"Secci0n";
+//  
 //    
+//    return  @"seccion";
+//   
 //}
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
@@ -124,8 +127,15 @@
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
     
+    detalleGlosarioViewController *detalleGlosario=[[detalleGlosarioViewController alloc]init];
+    detalleGlosario.glosario=[fetchedResultsController objectAtIndexPath:indexPath];
+    [self.navigationController pushViewController:detalleGlosario animated:YES];    
+    [tableView deselectRowAtIndexPath:indexPath animated:YES];
     
-    
+//    detalleViewController *detalle=[[detalleViewController alloc]init];
+//    detalle.remedio=[fetchedResultsController objectAtIndexPath:indexPath];
+//    [self.navigationController pushViewController:detalle animated:YES];
+
     
     
 }

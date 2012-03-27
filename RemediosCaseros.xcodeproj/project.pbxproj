@@ -32,6 +32,8 @@
 		D91A787F151D0544008A0292 /* foco.jpg in Resources */ = {isa = PBXBuildFile; fileRef = D91A787C151D0544008A0292 /* foco.jpg */; };
 		D91A7880151D0544008A0292 /* limpia.jpg in Resources */ = {isa = PBXBuildFile; fileRef = D91A787D151D0544008A0292 /* limpia.jpg */; };
 		D91EA935151A702D00EACB54 /* TestData.m in Sources */ = {isa = PBXBuildFile; fileRef = D91EA934151A702D00EACB54 /* TestData.m */; };
+		D9868B371522555B00AEBE4D /* detalleGlosarioViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D9868B351522555B00AEBE4D /* detalleGlosarioViewController.m */; };
+		D9868B381522555B00AEBE4D /* detalleGlosarioViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D9868B361522555B00AEBE4D /* detalleGlosarioViewController.xib */; };
 		D9BD7C12152231CA007162AD /* glosarioViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D9BD7C10152231CA007162AD /* glosarioViewController.m */; };
 		D9BD7C13152231CA007162AD /* glosarioViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D9BD7C11152231CA007162AD /* glosarioViewController.xib */; };
 		D9BD7C3C1522480F007162AD /* ficus.jpg in Resources */ = {isa = PBXBuildFile; fileRef = D9BD7C3B1522480F007162AD /* ficus.jpg */; };
@@ -77,6 +79,9 @@
 		D91EA933151A702D00EACB54 /* TestData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestData.h; sourceTree = "<group>"; };
 		D91EA934151A702D00EACB54 /* TestData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestData.m; sourceTree = "<group>"; };
 		D91EA937151A78AA00EACB54 /* ConstantRemedios.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ConstantRemedios.h; sourceTree = "<group>"; };
+		D9868B341522555B00AEBE4D /* detalleGlosarioViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = detalleGlosarioViewController.h; sourceTree = "<group>"; };
+		D9868B351522555B00AEBE4D /* detalleGlosarioViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = detalleGlosarioViewController.m; sourceTree = "<group>"; };
+		D9868B361522555B00AEBE4D /* detalleGlosarioViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = detalleGlosarioViewController.xib; sourceTree = "<group>"; };
 		D9BD7C0F152231CA007162AD /* glosarioViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = glosarioViewController.h; sourceTree = "<group>"; };
 		D9BD7C10152231CA007162AD /* glosarioViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = glosarioViewController.m; sourceTree = "<group>"; };
 		D9BD7C11152231CA007162AD /* glosarioViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = glosarioViewController.xib; sourceTree = "<group>"; };
@@ -148,6 +153,9 @@
 				D9BD7C0F152231CA007162AD /* glosarioViewController.h */,
 				D9BD7C10152231CA007162AD /* glosarioViewController.m */,
 				D9BD7C11152231CA007162AD /* glosarioViewController.xib */,
+				D9868B341522555B00AEBE4D /* detalleGlosarioViewController.h */,
+				D9868B351522555B00AEBE4D /* detalleGlosarioViewController.m */,
+				D9868B361522555B00AEBE4D /* detalleGlosarioViewController.xib */,
 				06624A2414ABA1B100FDAFA7 /* lasdo.plist */,
 				06624A2014ABA1B100FDAFA7 /* glosario.plist */,
 				0662492A14A8F2A900FDAFA7 /* Supporting Files */,
@@ -279,6 +287,7 @@
 				D90882E51520D87A00AB7AEB /* detalleViewController.xib in Resources */,
 				D9BD7C13152231CA007162AD /* glosarioViewController.xib in Resources */,
 				D9BD7C3C1522480F007162AD /* ficus.jpg in Resources */,
+				D9868B381522555B00AEBE4D /* detalleGlosarioViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -300,6 +309,7 @@
 				D90882E41520D87A00AB7AEB /* detalleViewController.m in Sources */,
 				D9BD7C12152231CA007162AD /* glosarioViewController.m in Sources */,
 				D9BD7C3F15225009007162AD /* Glosario.m in Sources */,
+				D9868B371522555B00AEBE4D /* detalleGlosarioViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

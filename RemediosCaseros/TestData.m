@@ -104,7 +104,7 @@
     
     
     
-    /*
+    
     Glosario *glosario2=[NSEntityDescription insertNewObjectForEntityForName:@"Glosario" inManagedObjectContext:managedObjectContext];
     glosario2.nombreIngrediente=@"nombre Glosario 2";
     glosario2.detalleIngrediente=@"detalle del glosario 2";
@@ -113,7 +113,7 @@
     glosario3.nombreIngrediente=@"nombre Glosario 3";
     glosario3.detalleIngrediente=@"detalle del glosario 3";
     
- */
+ 
     
     
     
