@@ -5,6 +5,7 @@
         <relationship name="remedio" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Remedios" inverseName="categoria" inverseEntity="Remedios" syncable="YES"/>
     </entity>
     <entity name="Glosario" representedClassName="Glosario" syncable="YES">
+        <attribute name="comprarIngrediente" optional="YES" attributeType="Boolean" syncable="YES"/>
         <attribute name="detalleIngrediente" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="nombreIngrediente" optional="YES" attributeType="String" syncable="YES"/>
         <relationship name="imagen" optional="YES" minCount="1" maxCount="1" deletionRule="Nullify" destinationEntity="Imagen" inverseName="imagenGlosario" inverseEntity="Imagen" syncable="YES"/>

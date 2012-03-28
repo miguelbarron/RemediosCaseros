@@ -44,6 +44,16 @@
 {
     [super viewDidLoad];
     //self.title=@"Remedios Caseros";
+    NSString *urlString = [NSString stringWithFormat:@"http://neostar.org/test/remedios.php"];
+    
+    NSURL *url = [NSURL URLWithString:urlString];
+    
+    NSString *data = [NSString stringWithContentsOfURL:url encoding:NSUTF8StringEncoding error:nil];
+    
+    SBJsonParser *parser = [[SBJsonParser alloc] init];
+    
+    NSMutableDictionary *myRemedios =[parser objectWithString:data];
+    
     AppDelegate *appDelegate=(AppDelegate *)[[UIApplication sharedApplication]delegate];
     managedObjectContext=appDelegate.managedObjectContext;
     

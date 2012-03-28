@@ -32,6 +32,7 @@
 		D91A787F151D0544008A0292 /* foco.jpg in Resources */ = {isa = PBXBuildFile; fileRef = D91A787C151D0544008A0292 /* foco.jpg */; };
 		D91A7880151D0544008A0292 /* limpia.jpg in Resources */ = {isa = PBXBuildFile; fileRef = D91A787D151D0544008A0292 /* limpia.jpg */; };
 		D91EA935151A702D00EACB54 /* TestData.m in Sources */ = {isa = PBXBuildFile; fileRef = D91EA934151A702D00EACB54 /* TestData.m */; };
+		D93DDD7C152396B100A2C1CE /* Glosario.m in Sources */ = {isa = PBXBuildFile; fileRef = D93DDD7B152396B100A2C1CE /* Glosario.m */; };
 		D980367115238E79000F8DE6 /* NSObject+SBJson.m in Sources */ = {isa = PBXBuildFile; fileRef = D980365915238E79000F8DE6 /* NSObject+SBJson.m */; };
 		D980367215238E79000F8DE6 /* SBJsonParser.m in Sources */ = {isa = PBXBuildFile; fileRef = D980365C15238E79000F8DE6 /* SBJsonParser.m */; };
 		D980367315238E79000F8DE6 /* SBJsonStreamParser.m in Sources */ = {isa = PBXBuildFile; fileRef = D980365E15238E79000F8DE6 /* SBJsonStreamParser.m */; };
@@ -49,7 +50,6 @@
 		D9BD7C12152231CA007162AD /* glosarioViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D9BD7C10152231CA007162AD /* glosarioViewController.m */; };
 		D9BD7C13152231CA007162AD /* glosarioViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D9BD7C11152231CA007162AD /* glosarioViewController.xib */; };
 		D9BD7C3C1522480F007162AD /* ficus.jpg in Resources */ = {isa = PBXBuildFile; fileRef = D9BD7C3B1522480F007162AD /* ficus.jpg */; };
-		D9BD7C3F15225009007162AD /* Glosario.m in Sources */ = {isa = PBXBuildFile; fileRef = D9BD7C3E15225009007162AD /* Glosario.m */; };
 		D9E122DA151E240F000076C8 /* Imagen.m in Sources */ = {isa = PBXBuildFile; fileRef = D9E122D9151E240F000076C8 /* Imagen.m */; };
 		D9F89BFF1519268C00DDCBAC /* Model.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = D9F89BFD1519268C00DDCBAC /* Model.xcdatamodeld */; };
 		D9F89C02151927BE00DDCBAC /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D9F89C01151927BE00DDCBAC /* CoreData.framework */; };
@@ -91,6 +91,8 @@
 		D91EA933151A702D00EACB54 /* TestData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestData.h; sourceTree = "<group>"; };
 		D91EA934151A702D00EACB54 /* TestData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestData.m; sourceTree = "<group>"; };
 		D91EA937151A78AA00EACB54 /* ConstantRemedios.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ConstantRemedios.h; sourceTree = "<group>"; };
+		D93DDD7A152396B100A2C1CE /* Glosario.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Glosario.h; sourceTree = "<group>"; };
+		D93DDD7B152396B100A2C1CE /* Glosario.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Glosario.m; sourceTree = "<group>"; };
 		D980365815238E79000F8DE6 /* NSObject+SBJson.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+SBJson.h"; sourceTree = "<group>"; };
 		D980365915238E79000F8DE6 /* NSObject+SBJson.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+SBJson.m"; sourceTree = "<group>"; };
 		D980365A15238E79000F8DE6 /* SBJson.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBJson.h; sourceTree = "<group>"; };
@@ -123,8 +125,6 @@
 		D9BD7C10152231CA007162AD /* glosarioViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = glosarioViewController.m; sourceTree = "<group>"; };
 		D9BD7C11152231CA007162AD /* glosarioViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = glosarioViewController.xib; sourceTree = "<group>"; };
 		D9BD7C3B1522480F007162AD /* ficus.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = ficus.jpg; sourceTree = "<group>"; };
-		D9BD7C3D15225009007162AD /* Glosario.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Glosario.h; sourceTree = "<group>"; };
-		D9BD7C3E15225009007162AD /* Glosario.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Glosario.m; sourceTree = "<group>"; };
 		D9E122D8151E240F000076C8 /* Imagen.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Imagen.h; sourceTree = "<group>"; };
 		D9E122D9151E240F000076C8 /* Imagen.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Imagen.m; sourceTree = "<group>"; };
 		D9F89BFE1519268C00DDCBAC /* Model.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Model.xcdatamodel; sourceTree = "<group>"; };
@@ -215,8 +215,8 @@
 				D91A7865151CFCC6008A0292 /* Remedios.m */,
 				D9E122D8151E240F000076C8 /* Imagen.h */,
 				D9E122D9151E240F000076C8 /* Imagen.m */,
-				D9BD7C3D15225009007162AD /* Glosario.h */,
-				D9BD7C3E15225009007162AD /* Glosario.m */,
+				D93DDD7A152396B100A2C1CE /* Glosario.h */,
+				D93DDD7B152396B100A2C1CE /* Glosario.m */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -378,7 +378,6 @@
 				D9E122DA151E240F000076C8 /* Imagen.m in Sources */,
 				D90882E41520D87A00AB7AEB /* detalleViewController.m in Sources */,
 				D9BD7C12152231CA007162AD /* glosarioViewController.m in Sources */,
-				D9BD7C3F15225009007162AD /* Glosario.m in Sources */,
 				D9868B371522555B00AEBE4D /* detalleGlosarioViewController.m in Sources */,
 				D980367115238E79000F8DE6 /* NSObject+SBJson.m in Sources */,
 				D980367215238E79000F8DE6 /* SBJsonParser.m in Sources */,
@@ -392,6 +391,7 @@
 				D980367A15238E79000F8DE6 /* SBJsonTokeniser.m in Sources */,
 				D980367B15238E79000F8DE6 /* SBJsonUTF8Stream.m in Sources */,
 				D980367C15238E79000F8DE6 /* SBJsonWriter.m in Sources */,
+				D93DDD7C152396B100A2C1CE /* Glosario.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
