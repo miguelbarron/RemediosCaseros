@@ -2,7 +2,7 @@
 //  Glosario.h
 //  RemediosCaseros
 //
-//  Created by User on 3/27/12.
+//  Created by User on 3/28/12.
 //  Copyright (c) 2012 Somos Software. All rights reserved.
 //
 
@@ -15,6 +15,7 @@
 
 @property (nonatomic, retain) NSString * detalleIngrediente;
 @property (nonatomic, retain) NSString * nombreIngrediente;
+@property (nonatomic, retain) NSNumber * comprarIngrediente;
 @property (nonatomic, retain) Imagen *imagen;
 
 @end
