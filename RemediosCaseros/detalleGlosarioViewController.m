@@ -35,15 +35,14 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-     [self.svView setContentSize:CGSizeMake(100,1000)];
-    // Do any additional setup after loading the view from its nib.
     
+    [self.svView setContentSize:CGSizeMake(100,1000)];
+    // Do any additional setup after loading the view from its nib.    
     self.title=glosario.nombreIngrediente;
     Imagen *imrem=glosario.imagen;
     NSString *direccionImagen=imrem.imagenThumb;
-    imagenGlosario.image=[UIImage imageNamed:direccionImagen];   
-    
-   // detalleGlosario.text=glosario.detalleIngrediente;
+    imagenGlosario.image=[UIImage imageNamed:direccionImagen];      
+    detalleGlosario.text=glosario.detalleIngrediente;
     
 }
 

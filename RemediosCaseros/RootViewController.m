@@ -18,7 +18,7 @@
 
 
 @implementation RootViewController
-@synthesize fetchedResultsController,managedObjectContext,tabBarController;
+@synthesize fetchedResultsController,managedObjectContext,tabBarController,arrayRemedios;
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -43,28 +43,16 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    //self.title=@"Remedios Caseros";
-    NSString *urlString = [NSString stringWithFormat:@"http://neostar.org/test/remedios.php"];
-    
-    NSURL *url = [NSURL URLWithString:urlString];
-    
-    NSString *data = [NSString stringWithContentsOfURL:url encoding:NSUTF8StringEncoding error:nil];
-    
-    SBJsonParser *parser = [[SBJsonParser alloc] init];
-    
-    NSMutableDictionary *myRemedios =[parser objectWithString:data];
     
     AppDelegate *appDelegate=(AppDelegate *)[[UIApplication sharedApplication]delegate];
     managedObjectContext=appDelegate.managedObjectContext;
-    
+ 
    NSError *error = nil;
-	if (![[self fetchedResultsController] performFetch:&error]) {
-		
-		NSLog(@"Unresolved error %@, %@", error, [error userInfo]);
-		abort();
-	}
-    
-       
+   if (![[self fetchedResultsController] performFetch:&error]) {
+             
+             NSLog(@"Unresolved error %@, %@", error, [error userInfo]);
+             abort();
+   }
     
     // Do any additional setup after loading the view from its nib.
     //NSString *path = [[NSBundle mainBundle] pathForResource:@"lasdo" ofType:@"plist"];
@@ -72,7 +60,7 @@
     //contenido de ese fichero
    // arrayConDOEnGrupos = [[NSArray alloc] initWithContentsOfFile:path];
     
-
+     
 }
 
 - (void)viewDidUnload
@@ -132,7 +120,10 @@
     cell.detailTextLabel.font= [UIFont fontWithName:@"Helvetica" size:11.0];    
     cell.detailTextLabel.numberOfLines=2;
     cell.textLabel.numberOfLines=2;
+    
+        
 
+    
     Remedios *rem=[fetchedResultsController objectAtIndexPath:indexPath ];
     Imagen *imagenRemedio=rem.imagen;
     NSString *url=imagenRemedio.imagenThumb;    

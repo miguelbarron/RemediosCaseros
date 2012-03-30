@@ -12,9 +12,12 @@
 @interface RootViewController : UITableViewController<NSFetchedResultsControllerDelegate>{
     NSFetchedResultsController *fetchedResultsController;
 	NSManagedObjectContext *managedObjectContext; 
+    NSMutableArray *arrayRemedios;
+
 
 }
 @property(retain,nonatomic)NSFetchedResultsController *fetchedResultsController;
 @property (nonatomic, retain) NSManagedObjectContext *managedObjectContext;
 @property (strong, nonatomic) UITabBarController *tabBarController;
+@property (nonatomic, retain) NSMutableArray *arrayRemedios;
 @end

@@ -12,13 +12,15 @@
 #import "Remedios.h"
 #import "Glosario.h"
 #import "Imagen.h"
-
+#import "Classes/SBJson.h"
 
 @implementation TestData
 @synthesize addingManagedObjectContext,managedObjectContext;
 
+
 -(void)createData
 {
+    /*
     //Obtener Contexto
 
     AppDelegate *appDelegate = (AppDelegate *)[[UIApplication sharedApplication] delegate];
@@ -96,33 +98,65 @@
     imagenRemedio.imagenThumb=@"ficus.jpg";
     imagenRemedio.imagenVista=@"ficus.jpg";
     
+    Imagen *imagenRemedio2=[NSEntityDescription insertNewObjectForEntityForName:@"Imagen" inManagedObjectContext:managedObjectContext];
+    imagenRemedio2.nombre=@"Ficus";
+    imagenRemedio2.imagenThumb=@"menta.jpg";
+    imagenRemedio2.imagenVista=@"menta.jpg";
+    
+    Imagen *imagenRemedio3=[NSEntityDescription insertNewObjectForEntityForName:@"Imagen" inManagedObjectContext:managedObjectContext];
+    imagenRemedio3.nombre=@"Ficus";
+    imagenRemedio3.imagenThumb=@"cannabis.jpg";
+    imagenRemedio3.imagenVista=@"cannabis.jpg";
+    
+
+    
     //crear glosario
     Glosario *glosario1=[NSEntityDescription insertNewObjectForEntityForName:@"Glosario" inManagedObjectContext:managedObjectContext];
-    glosario1.nombreIngrediente=@"nombre Glosario";
-    glosario1.detalleIngrediente=@"detalle del glosario";
+    glosario1.nombreIngrediente=@"Ficus Religiosa";
+    glosario1.detalleIngrediente=@"Es un gran árbol de estación seca, caducifolio o semi-siempreverde, de más de 30 m de altura y con un diámetro de tronco de más de 3 m. Las hojas son cordadas con un distintivo zarcillo en la punta; de 10-17 cm de longitud y 8-12 cm de ancho, con pecíolo de 6-10 cm. El fruto es un pequeño higo de 1-1,5 cm de diámetro, verde que madura a púrpura.";
     glosario1.imagen=imagenRemedio;
     
     
     
     
     Glosario *glosario2=[NSEntityDescription insertNewObjectForEntityForName:@"Glosario" inManagedObjectContext:managedObjectContext];
-    glosario2.nombreIngrediente=@"nombre Glosario 2";
-    glosario2.detalleIngrediente=@"detalle del glosario 2";
+    glosario2.nombreIngrediente=@"Mentha aquatica";
+    glosario2.detalleIngrediente=@"Crece alrededor de 90 cm de altura, aunque puede alcanzar 1,5 m cuando es soportada por vegetación más alta, y tiene un característico aroma a menta. Las hojas son ovadas a ovado-lanceoladas, verdes (a veces purpúreas), opuestas, suaves, venadas pueden tener pilosidad o ser glabra. Los tallos son frecuentemente de color púrpura. Las flores son pequeñas, densas, tubulares, de color rosado a lila. Florece de julio a septiembre. Es polinizada por insectos, aunque se puede propagar fácilmente por cortes de raíces, como otras especies de menta.";
+    glosario2.imagen=imagenRemedio2;
     
     Glosario *glosario3=[NSEntityDescription insertNewObjectForEntityForName:@"Glosario" inManagedObjectContext:managedObjectContext];
-    glosario3.nombreIngrediente=@"nombre Glosario 3";
-    glosario3.detalleIngrediente=@"detalle del glosario 3";
+    glosario3.nombreIngrediente=@"Cannabis sativa";
+    glosario3.detalleIngrediente=@"Cannabis sativa (cáñamo o marihuana)1 es una especie herbácea de la familia Cannabaceae, con propiedades psicoactivas. Es una planta anual originaria de las cordilleras del Himalaya, Asia.2 Los seres humanos han cultivado esta planta en el transcurso de la historia como fuente de fibra textil, aceite de semillas y como alimentos, —en el caso de las variedades sin contenido de THC (cáñamo)—. Se ha utilizado durante milenios la planta como una medicina —con registros escritos que datan de 2737 a.C.—,3 como droga, y como una herramienta espiritual. Su fibra tiene usos variados, incluyendo la manufactura de vestidos, cuerdas, ropa, y papel. El aceite de sus semillas se puede usar como combustible.";
+    glosario3.imagen=imagenRemedio3;
     
+ */
+    
+    AppDelegate *appDelegate=(AppDelegate *)[[UIApplication sharedApplication]delegate];
+    managedObjectContext=appDelegate.managedObjectContext;
  
+    //=================== conexion   ============//    
+        NSString *urlString = [NSString stringWithFormat:@"http://neostar.org/test/remedios.php"];    
+        NSURL *url = [NSURL URLWithString:urlString];    
+        NSString *data = [NSString stringWithContentsOfURL:url encoding:NSUTF8StringEncoding error:nil];    
+        SBJsonParser *parser = [[SBJsonParser alloc] init];   
+        NSMutableDictionary *myRemedios =[parser objectWithString:data];    
+        NSMutableArray *arrayRemedios=[myRemedios objectForKey:@"Remedios"];
     
     
-    
-
-    
-    
-    
-    
-    
+    int i=0;
+    NSManagedObject *newData;
+    for (NSDictionary *Recorrerjson in arrayRemedios){
+        //=========== llenando core ============    
+        
+        
+        newData=[NSEntityDescription insertNewObjectForEntityForName:@"Remedios" inManagedObjectContext:managedObjectContext];
+        [newData setValue:[[arrayRemedios objectAtIndex:i] objectForKey:@"remedio"] forKey:@"nombreRemedio"];
+        [newData setValue:[[arrayRemedios objectAtIndex:i] objectForKey:@"Preparacion"] forKey:@"preparacion"];    
+        [newData setValue:[[arrayRemedios objectAtIndex:i] objectForKey:@"ingredientes"] forKey:@"ingredientes"];  
+        
+        
+        i++;   
+    }    
     
     
     ///salvar contexto

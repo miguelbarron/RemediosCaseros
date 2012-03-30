@@ -11,6 +11,5 @@
 @interface TestData : NSObject
 @property (nonatomic, retain) NSManagedObjectContext *managedObjectContext;
 @property (nonatomic, retain) NSManagedObjectContext *addingManagedObjectContext;
-
 -(void)createData;
 @end

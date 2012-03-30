@@ -51,6 +51,8 @@
 		D9BD7C13152231CA007162AD /* glosarioViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D9BD7C11152231CA007162AD /* glosarioViewController.xib */; };
 		D9BD7C3C1522480F007162AD /* ficus.jpg in Resources */ = {isa = PBXBuildFile; fileRef = D9BD7C3B1522480F007162AD /* ficus.jpg */; };
 		D9E122DA151E240F000076C8 /* Imagen.m in Sources */ = {isa = PBXBuildFile; fileRef = D9E122D9151E240F000076C8 /* Imagen.m */; };
+		D9E649AD15239A660033A2A7 /* menta.jpg in Resources */ = {isa = PBXBuildFile; fileRef = D9E649AB15239A660033A2A7 /* menta.jpg */; };
+		D9E649AE15239A660033A2A7 /* cannabis.jpg in Resources */ = {isa = PBXBuildFile; fileRef = D9E649AC15239A660033A2A7 /* cannabis.jpg */; };
 		D9F89BFF1519268C00DDCBAC /* Model.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = D9F89BFD1519268C00DDCBAC /* Model.xcdatamodeld */; };
 		D9F89C02151927BE00DDCBAC /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D9F89C01151927BE00DDCBAC /* CoreData.framework */; };
 /* End PBXBuildFile section */
@@ -127,6 +129,8 @@
 		D9BD7C3B1522480F007162AD /* ficus.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = ficus.jpg; sourceTree = "<group>"; };
 		D9E122D8151E240F000076C8 /* Imagen.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Imagen.h; sourceTree = "<group>"; };
 		D9E122D9151E240F000076C8 /* Imagen.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Imagen.m; sourceTree = "<group>"; };
+		D9E649AB15239A660033A2A7 /* menta.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = menta.jpg; sourceTree = "<group>"; };
+		D9E649AC15239A660033A2A7 /* cannabis.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = cannabis.jpg; sourceTree = "<group>"; };
 		D9F89BFE1519268C00DDCBAC /* Model.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Model.xcdatamodel; sourceTree = "<group>"; };
 		D9F89C01151927BE00DDCBAC /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
@@ -224,6 +228,8 @@
 		D91A787A151D0544008A0292 /* imagenes remedios */ = {
 			isa = PBXGroup;
 			children = (
+				D9E649AB15239A660033A2A7 /* menta.jpg */,
+				D9E649AC15239A660033A2A7 /* cannabis.jpg */,
 				D9BD7C3B1522480F007162AD /* ficus.jpg */,
 				D91A787B151D0544008A0292 /* coco.png */,
 				D91A787C151D0544008A0292 /* foco.jpg */,
@@ -358,6 +364,8 @@
 				D9BD7C13152231CA007162AD /* glosarioViewController.xib in Resources */,
 				D9BD7C3C1522480F007162AD /* ficus.jpg in Resources */,
 				D9868B381522555B00AEBE4D /* detalleGlosarioViewController.xib in Resources */,
+				D9E649AD15239A660033A2A7 /* menta.jpg in Resources */,
+				D9E649AE15239A660033A2A7 /* cannabis.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -414,6 +422,7 @@
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
@@ -438,6 +447,7 @@
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;

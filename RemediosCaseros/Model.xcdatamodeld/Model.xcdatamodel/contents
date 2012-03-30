@@ -27,7 +27,7 @@
     </entity>
     <elements>
         <element name="Categoria" positionX="-164" positionY="-171" width="128" height="75"/>
-        <element name="Glosario" positionX="-63" positionY="9" width="128" height="90"/>
+        <element name="Glosario" positionX="-63" positionY="9" width="128" height="105"/>
         <element name="Imagen" positionX="-657" positionY="72" width="128" height="120"/>
         <element name="Remedios" positionX="-459" positionY="-117" width="128" height="135"/>
     </elements>
