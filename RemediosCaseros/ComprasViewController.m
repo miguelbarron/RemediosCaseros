@@ -7,9 +7,12 @@
 //
 
 #import "ComprasViewController.h"
-
+#import "AppDelegate.h"
+#import "Glosario.h"
 
 @implementation ComprasViewController
+@synthesize myTableView;
+@synthesize fetchedResultsController,managedObjectContext;
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -35,15 +38,27 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    AppDelegate *appDelegate=(AppDelegate *)[[UIApplication sharedApplication]delegate];
+    managedObjectContext=appDelegate.managedObjectContext;
 
     // Do any additional setup after loading the view from its nib.
 }
 
 - (void)viewDidUnload
 {
+    [self setMyTableView:nil];
     [super viewDidUnload];
     // Release any retained subviews of the main view.
     // e.g. self.myOutlet = nil;
+}
+
+- (void)viewWillAppear:(BOOL)animated
+{
+    [self.myTableView reloadData];
+    
+    
+    
+    [super viewWillAppear:animated];
 }
 
 - (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation
@@ -61,7 +76,15 @@
 }
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
-    return 0;
+    //return 0;
+    
+    NSError *error = nil;
+    if (![[self fetchedResultsController] performFetch:&error]) {
+        NSLog(@"Unresolved error %@, %@", error, [error userInfo]);
+        abort();
+    }
+    
+    return [[fetchedResultsController sections] count]; 
     
     
 }
@@ -70,7 +93,9 @@
 // Customize the number of rows in the table view.
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
 
-    return 0;
+   // return 0;
+    id <NSFetchedResultsSectionInfo> sectionInfo = [[fetchedResultsController sections] objectAtIndex:section];
+    return [sectionInfo numberOfObjects];
 }
 
 //- (NSString *)tableView:(UITableView *)tableView titleForHeaderInSection:(NSInteger)section {
@@ -92,16 +117,78 @@
     }
     
     // Configure the cell...
+    Glosario *glosario;
+    glosario = (Glosario *)[fetchedResultsController objectAtIndexPath:indexPath];
+    
+    // Configure the cell...
+    
+    cell.textLabel.font = [UIFont fontWithName:@"Helvetica-Bold"  size:13.0];  
+    
+    
+    cell.detailTextLabel.font          = [UIFont fontWithName:@"Helvetica" size:11.0];    
+    cell.detailTextLabel.numberOfLines = 2;
+    
+    cell.textLabel.text       = glosario.nombreIngrediente;
+//    cell.detailTextLabel.text = glosario.
+    
+    
+    cell.textLabel.lineBreakMode = UILineBreakModeWordWrap;  
+    cell.textLabel.numberOfLines = 2;  
+    
+
+    
         return cell;
 }
 
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
     
-        
+          
+}
+
+#pragma mark - NSFetchedResultsController
+- (NSFetchedResultsController *)fetchedResultsController {
     
+    if (fetchedResultsController != nil) {
+        return fetchedResultsController;
+    }
     
+    NSFetchRequest *fetchRequest = [[NSFetchRequest alloc] init];
+    // Edit the entity name as appropriate.
+    NSEntityDescription *entity = [NSEntityDescription entityForName:@"Glosario" inManagedObjectContext:managedObjectContext];
+    [fetchRequest setEntity:entity];
+    
+    // Set the batch size to a suitable number.
+    [fetchRequest setFetchBatchSize:nil];
+    NSPredicate *predicate =[NSPredicate predicateWithFormat:@"comprarIngrediente == YES"];  
+    [NSFetchedResultsController deleteCacheWithName:nil];
+    
+    [fetchRequest setPredicate:predicate];
+    
+    // Edit the sort key as appropriate.
+    NSSortDescriptor *sortDescriptor = [[NSSortDescriptor alloc] initWithKey:@"nombreIngrediente" ascending:YES];
+    
+    // Edit the sort key as appropriate.
+    //NSSortDescriptor *sortDescriptor = [[NSSortDescriptor alloc] initWithKey:@"numero" ascending:YES];
+    NSArray *sortDescriptors = [[NSArray alloc] initWithObjects:sortDescriptor, nil];
+    
+    [fetchRequest setSortDescriptors:sortDescriptors];
+    NSFetchedResultsController *aFetchedResultsController = [[NSFetchedResultsController alloc] initWithFetchRequest:fetchRequest managedObjectContext:managedObjectContext sectionNameKeyPath:@"comprarIngrediente" cacheName:nil];
+    aFetchedResultsController.delegate = self;
+    self.fetchedResultsController = aFetchedResultsController;
+    
+    [aFetchedResultsController release];
+    [fetchRequest release];
+    [sortDescriptor release];
+    [sortDescriptors release];
+    
+    return fetchedResultsController;
 }
 
 
+
+- (void)dealloc {
+    [myTableView release];
+    [super dealloc];
+}
 @end

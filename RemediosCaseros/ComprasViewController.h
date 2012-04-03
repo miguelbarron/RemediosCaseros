@@ -7,7 +7,15 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "AppDelegate.h"
 
-@interface ComprasViewController : UIViewController
+@interface ComprasViewController : UIViewController<NSFetchedResultsControllerDelegate>
+{
+    NSFetchedResultsController *fetchedResultsController;
+    NSManagedObjectContext *managedObjectContext;
+}
 
+@property(retain,nonatomic)NSFetchedResultsController *fetchedResultsController;
+@property (retain, nonatomic) IBOutlet UITableView *myTableView;
+@property (nonatomic, retain) NSManagedObjectContext *managedObjectContext;
 @end
