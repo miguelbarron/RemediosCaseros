@@ -41,11 +41,13 @@
 {
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
-       //[self.svView setContentSize:CGSizeMake(320,1700)];
-//    detalleViewController *viewController1 = [[[detalleViewController alloc] ;
-      
-        //UIViewController *viewController2 = [[[SecondViewController alloc] initWithNibName:@"SecondViewController" bundle:nil] autorelease];
        
+    //compartirButton = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemAdd target:self action:@selector(favorito:)];
+    UIImage *imagenCompartir=[UIImage imageNamed:@"icono_compartir_detalleremedio.png"];
+    compartirButton = [[UIBarButtonItem alloc] initWithImage:imagenCompartir style:UIBarButtonItemStyleBordered target:self action:@selector(compartir:)];
+    self.navigationItem.rightBarButtonItem = compartirButton;
+    [compartirButton release]; 
+    
     [self.svView setContentSize:CGSizeMake(100,500)];
     Imagen *imrem=remedio.imagen;
     NSString *direccionImagen=imrem.imagenThumb;
@@ -55,9 +57,7 @@
     ingredientesRemedios.text=remedio.ingredientes;
     preparacionRemedio.text=remedio.preparacion;
     
-//    UITabBarController *tabBController = [[UITabBarController alloc] init];
-//    tabBController.view.frame = CGRectMake(0, 0, 320, 460);
-  //  [self addSubview:tabBarController.view];
+
    
  
     
@@ -86,4 +86,10 @@
     [svView release];
     [super dealloc];
 }
+
+-(void)compartir:(id)sender{
+    NSLog(@"compartir Remedio");
+}
+
+
 @end

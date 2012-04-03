@@ -49,6 +49,28 @@
 		D980367C15238E79000F8DE6 /* SBJsonWriter.m in Sources */ = {isa = PBXBuildFile; fileRef = D980367015238E79000F8DE6 /* SBJsonWriter.m */; };
 		D9868B371522555B00AEBE4D /* detalleGlosarioViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D9868B351522555B00AEBE4D /* detalleGlosarioViewController.m */; };
 		D9868B381522555B00AEBE4D /* detalleGlosarioViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D9868B361522555B00AEBE4D /* detalleGlosarioViewController.xib */; };
+		D990C13A152B5F1C004F6B73 /* icono_compras_tab@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D990C137152B5F1C004F6B73 /* icono_compras_tab@2x.png */; };
+		D990C13B152B5F1C004F6B73 /* icono_glosario_tab@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D990C138152B5F1C004F6B73 /* icono_glosario_tab@2x.png */; };
+		D990C13C152B5F1C004F6B73 /* icono_remedios_tab@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D990C139152B5F1C004F6B73 /* icono_remedios_tab@2x.png */; };
+		D990C141152B60C0004F6B73 /* icono_compras_tab.png in Resources */ = {isa = PBXBuildFile; fileRef = D990C13E152B60C0004F6B73 /* icono_compras_tab.png */; };
+		D990C142152B60C0004F6B73 /* icono_glosario_tab.png in Resources */ = {isa = PBXBuildFile; fileRef = D990C13F152B60C0004F6B73 /* icono_glosario_tab.png */; };
+		D990C143152B60C0004F6B73 /* icono_remedios_tab.png in Resources */ = {isa = PBXBuildFile; fileRef = D990C140152B60C0004F6B73 /* icono_remedios_tab.png */; };
+		D990C146152B66D3004F6B73 /* marca_vacia_compras.png in Resources */ = {isa = PBXBuildFile; fileRef = D990C144152B66D3004F6B73 /* marca_vacia_compras.png */; };
+		D990C147152B66D3004F6B73 /* marca_vacia_compras@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D990C145152B66D3004F6B73 /* marca_vacia_compras@2x.png */; };
+		D990C14D152B7641004F6B73 /* icono_compartir_detalleremedio.png in Resources */ = {isa = PBXBuildFile; fileRef = D990C14C152B7641004F6B73 /* icono_compartir_detalleremedio.png */; };
+		D990C14F152B7779004F6B73 /* icono_basura_compras.png in Resources */ = {isa = PBXBuildFile; fileRef = D990C14E152B7779004F6B73 /* icono_basura_compras.png */; };
+		D990C151152B7EE0004F6B73 /* fondo_compras.png in Resources */ = {isa = PBXBuildFile; fileRef = D990C150152B7EE0004F6B73 /* fondo_compras.png */; };
+		D990C157152B8AF3004F6B73 /* fondo_general@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D990C156152B8AF3004F6B73 /* fondo_general@2x.png */; };
+		D990C162152B9116004F6B73 /* foto_celda_glosario.png in Resources */ = {isa = PBXBuildFile; fileRef = D990C158152B9115004F6B73 /* foto_celda_glosario.png */; };
+		D990C163152B9116004F6B73 /* foto_celda_glosario@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D990C159152B9115004F6B73 /* foto_celda_glosario@2x.png */; };
+		D990C164152B9116004F6B73 /* foto_celda_remedios.png in Resources */ = {isa = PBXBuildFile; fileRef = D990C15A152B9115004F6B73 /* foto_celda_remedios.png */; };
+		D990C165152B9116004F6B73 /* foto_celda_remedios@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D990C15B152B9115004F6B73 /* foto_celda_remedios@2x.png */; };
+		D990C166152B9116004F6B73 /* foto_detalleglosario.png in Resources */ = {isa = PBXBuildFile; fileRef = D990C15C152B9116004F6B73 /* foto_detalleglosario.png */; };
+		D990C167152B9116004F6B73 /* foto_detalleglosario@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D990C15D152B9116004F6B73 /* foto_detalleglosario@2x.png */; };
+		D990C168152B9116004F6B73 /* foto_detalleremedio.png in Resources */ = {isa = PBXBuildFile; fileRef = D990C15E152B9116004F6B73 /* foto_detalleremedio.png */; };
+		D990C169152B9116004F6B73 /* foto_detalleremedio@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D990C15F152B9116004F6B73 /* foto_detalleremedio@2x.png */; };
+		D990C16A152B9116004F6B73 /* foto2_celda_remedios.png in Resources */ = {isa = PBXBuildFile; fileRef = D990C160152B9116004F6B73 /* foto2_celda_remedios.png */; };
+		D990C16B152B9116004F6B73 /* foto2_celda_remedios@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D990C161152B9116004F6B73 /* foto2_celda_remedios@2x.png */; };
 		D9BD7C12152231CA007162AD /* glosarioViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D9BD7C10152231CA007162AD /* glosarioViewController.m */; };
 		D9BD7C13152231CA007162AD /* glosarioViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D9BD7C11152231CA007162AD /* glosarioViewController.xib */; };
 		D9BD7C3C1522480F007162AD /* ficus.jpg in Resources */ = {isa = PBXBuildFile; fileRef = D9BD7C3B1522480F007162AD /* ficus.jpg */; };
@@ -128,6 +150,28 @@
 		D9868B341522555B00AEBE4D /* detalleGlosarioViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = detalleGlosarioViewController.h; sourceTree = "<group>"; };
 		D9868B351522555B00AEBE4D /* detalleGlosarioViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = detalleGlosarioViewController.m; sourceTree = "<group>"; };
 		D9868B361522555B00AEBE4D /* detalleGlosarioViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = detalleGlosarioViewController.xib; sourceTree = "<group>"; };
+		D990C137152B5F1C004F6B73 /* icono_compras_tab@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icono_compras_tab@2x.png"; sourceTree = "<group>"; };
+		D990C138152B5F1C004F6B73 /* icono_glosario_tab@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icono_glosario_tab@2x.png"; sourceTree = "<group>"; };
+		D990C139152B5F1C004F6B73 /* icono_remedios_tab@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icono_remedios_tab@2x.png"; sourceTree = "<group>"; };
+		D990C13E152B60C0004F6B73 /* icono_compras_tab.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icono_compras_tab.png; sourceTree = "<group>"; };
+		D990C13F152B60C0004F6B73 /* icono_glosario_tab.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icono_glosario_tab.png; sourceTree = "<group>"; };
+		D990C140152B60C0004F6B73 /* icono_remedios_tab.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icono_remedios_tab.png; sourceTree = "<group>"; };
+		D990C144152B66D3004F6B73 /* marca_vacia_compras.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = marca_vacia_compras.png; sourceTree = "<group>"; };
+		D990C145152B66D3004F6B73 /* marca_vacia_compras@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "marca_vacia_compras@2x.png"; sourceTree = "<group>"; };
+		D990C14C152B7641004F6B73 /* icono_compartir_detalleremedio.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icono_compartir_detalleremedio.png; sourceTree = "<group>"; };
+		D990C14E152B7779004F6B73 /* icono_basura_compras.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icono_basura_compras.png; sourceTree = "<group>"; };
+		D990C150152B7EE0004F6B73 /* fondo_compras.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = fondo_compras.png; sourceTree = "<group>"; };
+		D990C156152B8AF3004F6B73 /* fondo_general@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "fondo_general@2x.png"; sourceTree = "<group>"; };
+		D990C158152B9115004F6B73 /* foto_celda_glosario.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = foto_celda_glosario.png; sourceTree = "<group>"; };
+		D990C159152B9115004F6B73 /* foto_celda_glosario@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "foto_celda_glosario@2x.png"; sourceTree = "<group>"; };
+		D990C15A152B9115004F6B73 /* foto_celda_remedios.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = foto_celda_remedios.png; sourceTree = "<group>"; };
+		D990C15B152B9115004F6B73 /* foto_celda_remedios@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "foto_celda_remedios@2x.png"; sourceTree = "<group>"; };
+		D990C15C152B9116004F6B73 /* foto_detalleglosario.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = foto_detalleglosario.png; sourceTree = "<group>"; };
+		D990C15D152B9116004F6B73 /* foto_detalleglosario@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "foto_detalleglosario@2x.png"; sourceTree = "<group>"; };
+		D990C15E152B9116004F6B73 /* foto_detalleremedio.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = foto_detalleremedio.png; sourceTree = "<group>"; };
+		D990C15F152B9116004F6B73 /* foto_detalleremedio@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "foto_detalleremedio@2x.png"; sourceTree = "<group>"; };
+		D990C160152B9116004F6B73 /* foto2_celda_remedios.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = foto2_celda_remedios.png; sourceTree = "<group>"; };
+		D990C161152B9116004F6B73 /* foto2_celda_remedios@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "foto2_celda_remedios@2x.png"; sourceTree = "<group>"; };
 		D9BD7C0F152231CA007162AD /* glosarioViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = glosarioViewController.h; sourceTree = "<group>"; };
 		D9BD7C10152231CA007162AD /* glosarioViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = glosarioViewController.m; sourceTree = "<group>"; };
 		D9BD7C11152231CA007162AD /* glosarioViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = glosarioViewController.xib; sourceTree = "<group>"; };
@@ -281,6 +325,28 @@
 		D9FC479D151A5115002F1D4B /* Imagenes */ = {
 			isa = PBXGroup;
 			children = (
+				D990C158152B9115004F6B73 /* foto_celda_glosario.png */,
+				D990C159152B9115004F6B73 /* foto_celda_glosario@2x.png */,
+				D990C15A152B9115004F6B73 /* foto_celda_remedios.png */,
+				D990C15B152B9115004F6B73 /* foto_celda_remedios@2x.png */,
+				D990C15C152B9116004F6B73 /* foto_detalleglosario.png */,
+				D990C15D152B9116004F6B73 /* foto_detalleglosario@2x.png */,
+				D990C15E152B9116004F6B73 /* foto_detalleremedio.png */,
+				D990C15F152B9116004F6B73 /* foto_detalleremedio@2x.png */,
+				D990C160152B9116004F6B73 /* foto2_celda_remedios.png */,
+				D990C161152B9116004F6B73 /* foto2_celda_remedios@2x.png */,
+				D990C156152B8AF3004F6B73 /* fondo_general@2x.png */,
+				D990C150152B7EE0004F6B73 /* fondo_compras.png */,
+				D990C14E152B7779004F6B73 /* icono_basura_compras.png */,
+				D990C14C152B7641004F6B73 /* icono_compartir_detalleremedio.png */,
+				D990C144152B66D3004F6B73 /* marca_vacia_compras.png */,
+				D990C145152B66D3004F6B73 /* marca_vacia_compras@2x.png */,
+				D990C13E152B60C0004F6B73 /* icono_compras_tab.png */,
+				D990C13F152B60C0004F6B73 /* icono_glosario_tab.png */,
+				D990C140152B60C0004F6B73 /* icono_remedios_tab.png */,
+				D990C137152B5F1C004F6B73 /* icono_compras_tab@2x.png */,
+				D990C138152B5F1C004F6B73 /* icono_glosario_tab@2x.png */,
+				D990C139152B5F1C004F6B73 /* icono_remedios_tab@2x.png */,
 				D91A787A151D0544008A0292 /* imagenes remedios */,
 				06624A3D14ABA20300FDAFA7 /* tweet.png */,
 				0662493F14A8F2A900FDAFA7 /* second.png */,
@@ -375,6 +441,28 @@
 				D9E649AD15239A660033A2A7 /* menta.jpg in Resources */,
 				D9E649AE15239A660033A2A7 /* cannabis.jpg in Resources */,
 				D93A59FB152A1B5E0012B9F8 /* ComprasViewController.xib in Resources */,
+				D990C13A152B5F1C004F6B73 /* icono_compras_tab@2x.png in Resources */,
+				D990C13B152B5F1C004F6B73 /* icono_glosario_tab@2x.png in Resources */,
+				D990C13C152B5F1C004F6B73 /* icono_remedios_tab@2x.png in Resources */,
+				D990C141152B60C0004F6B73 /* icono_compras_tab.png in Resources */,
+				D990C142152B60C0004F6B73 /* icono_glosario_tab.png in Resources */,
+				D990C143152B60C0004F6B73 /* icono_remedios_tab.png in Resources */,
+				D990C146152B66D3004F6B73 /* marca_vacia_compras.png in Resources */,
+				D990C147152B66D3004F6B73 /* marca_vacia_compras@2x.png in Resources */,
+				D990C14D152B7641004F6B73 /* icono_compartir_detalleremedio.png in Resources */,
+				D990C14F152B7779004F6B73 /* icono_basura_compras.png in Resources */,
+				D990C151152B7EE0004F6B73 /* fondo_compras.png in Resources */,
+				D990C157152B8AF3004F6B73 /* fondo_general@2x.png in Resources */,
+				D990C162152B9116004F6B73 /* foto_celda_glosario.png in Resources */,
+				D990C163152B9116004F6B73 /* foto_celda_glosario@2x.png in Resources */,
+				D990C164152B9116004F6B73 /* foto_celda_remedios.png in Resources */,
+				D990C165152B9116004F6B73 /* foto_celda_remedios@2x.png in Resources */,
+				D990C166152B9116004F6B73 /* foto_detalleglosario.png in Resources */,
+				D990C167152B9116004F6B73 /* foto_detalleglosario@2x.png in Resources */,
+				D990C168152B9116004F6B73 /* foto_detalleremedio.png in Resources */,
+				D990C169152B9116004F6B73 /* foto_detalleremedio@2x.png in Resources */,
+				D990C16A152B9116004F6B73 /* foto2_celda_remedios.png in Resources */,
+				D990C16B152B9116004F6B73 /* foto2_celda_remedios@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

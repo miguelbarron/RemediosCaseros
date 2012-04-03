@@ -25,7 +25,7 @@
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
     if (self) {
         self.title = NSLocalizedString(@"Remedios", @"Remedio");
-        self.tabBarItem.image = [UIImage imageNamed:@"receta"];
+        self.tabBarItem.image = [UIImage imageNamed:@"icono_remedios_tab.png"];
     }
     return self;
 }
@@ -47,6 +47,11 @@
     AppDelegate *appDelegate=(AppDelegate *)[[UIApplication sharedApplication]delegate];
     managedObjectContext=appDelegate.managedObjectContext;
  
+    
+    
+   self.navigationController.view.backgroundColor = [UIColor colorWithPatternImage:[UIImage imageNamed:@"fondo_general@2x.png"]]; 
+   self.tableView.backgroundColor = [UIColor clearColor];  
+    
    NSError *error = nil;
    if (![[self fetchedResultsController] performFetch:&error]) {
              

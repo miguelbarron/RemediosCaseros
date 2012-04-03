@@ -13,9 +13,11 @@
 {
     NSFetchedResultsController *fetchedResultsController;
     NSManagedObjectContext *managedObjectContext;
+    UIBarButtonItem *eliminarButton;
 }
 
 @property(retain,nonatomic)NSFetchedResultsController *fetchedResultsController;
 @property (retain, nonatomic) IBOutlet UITableView *myTableView;
 @property (nonatomic, retain) NSManagedObjectContext *managedObjectContext;
+-(void)eliminarCompra:(id)sender;
 @end

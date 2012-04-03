@@ -42,13 +42,14 @@
     
     [self.svView setContentSize:CGSizeMake(100,1000)];
     // Do any additional setup after loading the view from its nib.  
-    favoritoButton = [[UIBarButtonItem alloc]initWithTitle:@"Add" style:UIBarButtonItemStyleBordered target:self action:@selector(favorito:)]; 
+    
+    favoritoButton = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemAdd target:self action:@selector(favorito:)];
     self.navigationItem.rightBarButtonItem = favoritoButton;
     [favoritoButton release];
     
     self.title=glosario.nombreIngrediente;
     Imagen *imrem=glosario.imagen;
-    NSString *direccionImagen=imrem.imagenThumb;
+    NSString *direccionImagen=imrem.imagenVista;
     imagenGlosario.image=[UIImage imageNamed:direccionImagen];      
     detalleGlosario.text=glosario.detalleIngrediente;
 
@@ -81,7 +82,7 @@
 -(void)favorito:(id)sender
 {
 
-    NSLog(@"agregar a favorito");
+    NSLog(@"agregado a favorito");
     if (!glosario.comprarIngrediente) {
         
         NSError *saveError;

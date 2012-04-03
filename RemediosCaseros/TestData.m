@@ -38,11 +38,11 @@
     
     //crear imagenes
     Imagen *imagen1=[NSEntityDescription insertNewObjectForEntityForName:@"Imagen" inManagedObjectContext:managedObjectContext];
-    imagen1.imagenThumb=@"coco.png";
+    imagen1.imagenThumb=@"foto_detalleremedio.png";
     imagen1.nombre=@"coco";
     
     Imagen *imagen2=[NSEntityDescription insertNewObjectForEntityForName:@"Imagen" inManagedObjectContext:managedObjectContext];
-    imagen2.imagenThumb=@"foco.jpg";
+    imagen2.imagenThumb=@"foto2_celda_remedios.png";
     imagen2.nombre=@"foco";
     
     Imagen *imagen3=[NSEntityDescription insertNewObjectForEntityForName:@"Imagen" inManagedObjectContext:managedObjectContext];
@@ -74,7 +74,7 @@
     Remedios *remedio3=[NSEntityDescription insertNewObjectForEntityForName:@"Remedios" inManagedObjectContext:managedObjectContext];
     remedio3.nombreRemedio=@"limpiacristales ecológicos";
     remedio3.subtitulo=@"Crear un Limpiacristales con un limón";
-    remedio3.ingredientes=@"Un limón grande.Un vaso de vinagre blanco.Un vaso y medio de agua.Una botellita con difusor";
+    remedio3.ingredientes=@"Un limón grande. Un vaso de vinagre blanco.Un vaso y medio de agua.Una botellita con difusor";
     remedio3.preparacion=@"Se exprime el limón y se introduce en la botella con difusor, se añade el vaso de vinagre y el de agua. Se agita y ya está listo el limpiacristales ecológico casero. No olvide agitar en cada uso.";   
     remedio3.imagen=imagen3;
    

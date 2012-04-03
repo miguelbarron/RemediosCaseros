@@ -20,7 +20,7 @@
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
     if (self) {
         self.title = NSLocalizedString(@"Glosario", @"Glosario");
-        self.tabBarItem.image = [UIImage imageNamed:@"glosario"];
+        self.tabBarItem.image = [UIImage imageNamed:@"icono_glosario_tab.png"];
     }
     return self;
 }

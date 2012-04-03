@@ -20,7 +20,7 @@
     if (self) {
         // Custom initialization
         self.title = NSLocalizedString(@"Compras", @"Compras");
-        self.tabBarItem.image = [UIImage imageNamed:@"first.png"];
+        self.tabBarItem.image = [UIImage imageNamed:@"icono_compras_tab.png"];
     }
     return self;
 }
@@ -40,6 +40,13 @@
     [super viewDidLoad];
     AppDelegate *appDelegate=(AppDelegate *)[[UIApplication sharedApplication]delegate];
     managedObjectContext=appDelegate.managedObjectContext;
+    
+    
+    
+    UIImage *imagenEliminar=[UIImage imageNamed:@"icono_basura_compras.png"];
+    eliminarButton = [[UIBarButtonItem alloc] initWithImage:imagenEliminar style:UIBarButtonItemStyleBordered target:self action:@selector(eliminarCompra:)];
+    self.navigationItem.rightBarButtonItem = eliminarButton;
+    [eliminarButton release]; 
 
     // Do any additional setup after loading the view from its nib.
 }
@@ -71,7 +78,7 @@
 #pragma mark Table view methods
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    return 65;
+    return 60;
     
 }
 
@@ -120,31 +127,27 @@
     Glosario *glosario;
     glosario = (Glosario *)[fetchedResultsController objectAtIndexPath:indexPath];
     
-    // Configure the cell...
-    
-    cell.textLabel.font = [UIFont fontWithName:@"Helvetica-Bold"  size:13.0];  
-    
-    
-    cell.detailTextLabel.font          = [UIFont fontWithName:@"Helvetica" size:11.0];    
-    cell.detailTextLabel.numberOfLines = 2;
-    
-    cell.textLabel.text       = glosario.nombreIngrediente;
-//    cell.detailTextLabel.text = glosario.
-    
-    
+
     cell.textLabel.lineBreakMode = UILineBreakModeWordWrap;  
     cell.textLabel.numberOfLines = 2;  
-    
+    cell.textLabel.font = [UIFont fontWithName:@"Helvetica"  size:20.0];      
+    cell.detailTextLabel.font          = [UIFont fontWithName:@"Helvetica" size:15.0];    
+    cell.detailTextLabel.numberOfLines = 2;    
 
+    cell.textLabel.text=glosario.nombreIngrediente;
     
-        return cell;
+    UIImage *imagen=[UIImage imageNamed:@"marca_vacia_compras.png"];
+    cell.imageView.image=imagen;
+    return cell;
 }
 
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
+    NSLog(@"cambiar imagen");
     
-          
+    [myTableView reloadData];
 }
+
 
 #pragma mark - NSFetchedResultsController
 - (NSFetchedResultsController *)fetchedResultsController {
@@ -154,7 +157,7 @@
     }
     
     NSFetchRequest *fetchRequest = [[NSFetchRequest alloc] init];
-    // Edit the entity name as appropriate.
+    
     NSEntityDescription *entity = [NSEntityDescription entityForName:@"Glosario" inManagedObjectContext:managedObjectContext];
     [fetchRequest setEntity:entity];
     
@@ -191,4 +194,9 @@
     [myTableView release];
     [super dealloc];
 }
+
+-(void)eliminarCompra:(id)sender{
+    NSLog(@"eliminar glosarios");
+}
+
 @end
