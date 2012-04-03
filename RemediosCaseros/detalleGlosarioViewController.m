@@ -8,10 +8,12 @@
 
 #import "detalleGlosarioViewController.h"
 #import "Imagen.h"
+#import "detalleViewController.h"
+#import "AppDelegate.h"
 @implementation detalleGlosarioViewController
 @synthesize detalleGlosario;
 @synthesize imagenGlosario;
-@synthesize glosario,svView;
+@synthesize glosario,svView,managedObjectContext;
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -35,14 +37,21 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    AppDelegate *appDelegate=(AppDelegate *)[[UIApplication sharedApplication]delegate];
+    managedObjectContext=appDelegate.managedObjectContext;
     
     [self.svView setContentSize:CGSizeMake(100,1000)];
-    // Do any additional setup after loading the view from its nib.    
+    // Do any additional setup after loading the view from its nib.  
+    favoritoButton = [[UIBarButtonItem alloc]initWithTitle:@"Add" style:UIBarButtonItemStyleBordered target:self action:@selector(favorito:)]; 
+    self.navigationItem.rightBarButtonItem = favoritoButton;
+    [favoritoButton release];
+    
     self.title=glosario.nombreIngrediente;
     Imagen *imrem=glosario.imagen;
     NSString *direccionImagen=imrem.imagenThumb;
     imagenGlosario.image=[UIImage imageNamed:direccionImagen];      
     detalleGlosario.text=glosario.detalleIngrediente;
+
     
 }
 
@@ -67,5 +76,35 @@
     [detalleGlosario release];
     [svView release];
     [super dealloc];
+}
+
+-(void)favorito:(id)sender
+{
+
+    NSLog(@"agregar a favorito");
+    if (!glosario.comprarIngrediente) {
+        
+        NSError *saveError;
+        [glosario setComprarIngrediente:[NSNumber numberWithBool:YES]];
+        if (![managedObjectContext save:&saveError]) {
+            NSLog(@"Guardar a compras Fallo: %@", saveError);
+        } else {
+            
+            UIAlertView * errorAlert = [[UIAlertView alloc] initWithTitle:@"Registro agregado" message:@"Registro agregado a Compras" delegate:self cancelButtonTitle:@"Aceptar" otherButtonTitles:nil];
+            [errorAlert show];
+            [errorAlert release];
+            return;
+            
+            // The changes to bookTwo have been persisted.
+        }
+        
+    }  else{
+        UIAlertView * errorAlert = [[UIAlertView alloc] initWithTitle:@"Registro ya existe" message:@"Registro ya se encuentra en Compras" delegate:self cancelButtonTitle:@"Aceptar" otherButtonTitles:nil];
+        [errorAlert show];
+        [errorAlert release];
+        return;
+        
+    }
+
 }
 @end

@@ -13,6 +13,7 @@
 #import "ConstantRemedios.h"
 #import "detalleViewController.h"
 #import "glosarioViewController.h"
+#import "ComprasViewController.h"
 
 
 @implementation AppDelegate
@@ -66,10 +67,15 @@
     
     UIViewController *viewController2 = [[[glosarioViewController alloc] initWithNibName:@"glosarioViewController" bundle:nil] autorelease];
     UINavigationController *glosarioNavController = [[[UINavigationController alloc] initWithRootViewController:viewController2] autorelease];
+   
+
+    UIViewController *viewController3 = [[[ComprasViewController alloc] initWithNibName:@"ComprasViewController" bundle:nil] autorelease];
+    UINavigationController *comprasNavController = [[[UINavigationController alloc] initWithRootViewController:viewController3] autorelease];
+       
     
     
     self.tabBarController = [[[UITabBarController alloc] init] autorelease];
-    self.tabBarController.viewControllers = [NSArray arrayWithObjects:remediosNavController,glosarioNavController, nil];
+    self.tabBarController.viewControllers = [NSArray arrayWithObjects:remediosNavController,glosarioNavController,comprasNavController, nil];
     self.window.rootViewController = self.tabBarController;
     [self.window makeKeyAndVisible];
     

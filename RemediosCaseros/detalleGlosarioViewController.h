@@ -11,9 +11,13 @@
 @interface detalleGlosarioViewController : UIViewController
 {
     Glosario *glosario;
+    UIBarButtonItem *favoritoButton;
+    NSManagedObjectContext *managedObjectContext;
 }
 @property (retain, nonatomic) Glosario *glosario;
 @property (retain, nonatomic) IBOutlet UITextView *detalleGlosario;
 @property (retain, nonatomic) IBOutlet UIImageView *imagenGlosario;
 @property (retain, nonatomic) IBOutlet UIScrollView *svView;
+@property (nonatomic, retain) NSManagedObjectContext *managedObjectContext;
+-(void)favorito:(id)sender ;
 @end

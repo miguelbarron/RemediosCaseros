@@ -32,6 +32,8 @@
 		D91A787F151D0544008A0292 /* foco.jpg in Resources */ = {isa = PBXBuildFile; fileRef = D91A787C151D0544008A0292 /* foco.jpg */; };
 		D91A7880151D0544008A0292 /* limpia.jpg in Resources */ = {isa = PBXBuildFile; fileRef = D91A787D151D0544008A0292 /* limpia.jpg */; };
 		D91EA935151A702D00EACB54 /* TestData.m in Sources */ = {isa = PBXBuildFile; fileRef = D91EA934151A702D00EACB54 /* TestData.m */; };
+		D93A59FA152A1B5E0012B9F8 /* ComprasViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D93A59F8152A1B5D0012B9F8 /* ComprasViewController.m */; };
+		D93A59FB152A1B5E0012B9F8 /* ComprasViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D93A59F9152A1B5E0012B9F8 /* ComprasViewController.xib */; };
 		D93DDD7C152396B100A2C1CE /* Glosario.m in Sources */ = {isa = PBXBuildFile; fileRef = D93DDD7B152396B100A2C1CE /* Glosario.m */; };
 		D980367115238E79000F8DE6 /* NSObject+SBJson.m in Sources */ = {isa = PBXBuildFile; fileRef = D980365915238E79000F8DE6 /* NSObject+SBJson.m */; };
 		D980367215238E79000F8DE6 /* SBJsonParser.m in Sources */ = {isa = PBXBuildFile; fileRef = D980365C15238E79000F8DE6 /* SBJsonParser.m */; };
@@ -93,6 +95,9 @@
 		D91EA933151A702D00EACB54 /* TestData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestData.h; sourceTree = "<group>"; };
 		D91EA934151A702D00EACB54 /* TestData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestData.m; sourceTree = "<group>"; };
 		D91EA937151A78AA00EACB54 /* ConstantRemedios.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ConstantRemedios.h; sourceTree = "<group>"; };
+		D93A59F7152A1B5D0012B9F8 /* ComprasViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ComprasViewController.h; sourceTree = "<group>"; };
+		D93A59F8152A1B5D0012B9F8 /* ComprasViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ComprasViewController.m; sourceTree = "<group>"; };
+		D93A59F9152A1B5E0012B9F8 /* ComprasViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ComprasViewController.xib; sourceTree = "<group>"; };
 		D93DDD7A152396B100A2C1CE /* Glosario.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Glosario.h; sourceTree = "<group>"; };
 		D93DDD7B152396B100A2C1CE /* Glosario.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Glosario.m; sourceTree = "<group>"; };
 		D980365815238E79000F8DE6 /* NSObject+SBJson.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+SBJson.h"; sourceTree = "<group>"; };
@@ -198,6 +203,9 @@
 				D9868B341522555B00AEBE4D /* detalleGlosarioViewController.h */,
 				D9868B351522555B00AEBE4D /* detalleGlosarioViewController.m */,
 				D9868B361522555B00AEBE4D /* detalleGlosarioViewController.xib */,
+				D93A59F7152A1B5D0012B9F8 /* ComprasViewController.h */,
+				D93A59F8152A1B5D0012B9F8 /* ComprasViewController.m */,
+				D93A59F9152A1B5E0012B9F8 /* ComprasViewController.xib */,
 				06624A2414ABA1B100FDAFA7 /* lasdo.plist */,
 				06624A2014ABA1B100FDAFA7 /* glosario.plist */,
 				0662492A14A8F2A900FDAFA7 /* Supporting Files */,
@@ -366,6 +374,7 @@
 				D9868B381522555B00AEBE4D /* detalleGlosarioViewController.xib in Resources */,
 				D9E649AD15239A660033A2A7 /* menta.jpg in Resources */,
 				D9E649AE15239A660033A2A7 /* cannabis.jpg in Resources */,
+				D93A59FB152A1B5E0012B9F8 /* ComprasViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -400,6 +409,7 @@
 				D980367B15238E79000F8DE6 /* SBJsonUTF8Stream.m in Sources */,
 				D980367C15238E79000F8DE6 /* SBJsonWriter.m in Sources */,
 				D93DDD7C152396B100A2C1CE /* Glosario.m in Sources */,
+				D93A59FA152A1B5E0012B9F8 /* ComprasViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

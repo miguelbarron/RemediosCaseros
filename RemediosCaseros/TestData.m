@@ -20,7 +20,7 @@
 
 -(void)createData
 {
-    /*
+    
     //Obtener Contexto
 
     AppDelegate *appDelegate = (AppDelegate *)[[UIApplication sharedApplication] delegate];
@@ -129,34 +129,119 @@
     glosario3.detalleIngrediente=@"Cannabis sativa (cáñamo o marihuana)1 es una especie herbácea de la familia Cannabaceae, con propiedades psicoactivas. Es una planta anual originaria de las cordilleras del Himalaya, Asia.2 Los seres humanos han cultivado esta planta en el transcurso de la historia como fuente de fibra textil, aceite de semillas y como alimentos, —en el caso de las variedades sin contenido de THC (cáñamo)—. Se ha utilizado durante milenios la planta como una medicina —con registros escritos que datan de 2737 a.C.—,3 como droga, y como una herramienta espiritual. Su fibra tiene usos variados, incluyendo la manufactura de vestidos, cuerdas, ropa, y papel. El aceite de sus semillas se puede usar como combustible.";
     glosario3.imagen=imagenRemedio3;
     
- */
+ /*
     
     AppDelegate *appDelegate=(AppDelegate *)[[UIApplication sharedApplication]delegate];
     managedObjectContext=appDelegate.managedObjectContext;
- 
-    //=================== conexion   ============//    
-        NSString *urlString = [NSString stringWithFormat:@"http://neostar.org/test/remedios.php"];    
-        NSURL *url = [NSURL URLWithString:urlString];    
-        NSString *data = [NSString stringWithContentsOfURL:url encoding:NSUTF8StringEncoding error:nil];    
-        SBJsonParser *parser = [[SBJsonParser alloc] init];   
-        NSMutableDictionary *myRemedios =[parser objectWithString:data];    
-        NSMutableArray *arrayRemedios=[myRemedios objectForKey:@"Remedios"];
-    
-    
-    int i=0;
     NSManagedObject *newData;
+    
+    
+    //==========Conexion Categoria
+    NSString *urlStringCategoria = [NSString stringWithFormat:@"http://neostar.org/test/Remedios_JSON/Categoria.json"];         
+    NSURL *urlCategoria = [NSURL URLWithString:urlStringCategoria];    
+    NSString *dataCategoria = [NSString stringWithContentsOfURL:urlCategoria encoding:NSUTF8StringEncoding error:nil];    
+    SBJsonParser *parserCategoria = [[SBJsonParser alloc] init];   
+    NSMutableDictionary *myCategoria =[parserCategoria objectWithString:dataCategoria];    
+    NSMutableArray *arrayCategoria=[myCategoria objectForKey:@"Categoria"];    
+    int categoriaIndex=0;
+    //NSManagedObject *newData;
+    for (NSDictionary *RecorrerjsonCategoria in arrayCategoria){
+        //=========== llenando Categoria core ============    
+        
+        
+        newData=[NSEntityDescription insertNewObjectForEntityForName:@"Categoria" inManagedObjectContext:managedObjectContext];
+        [newData setValue:[[arrayCategoria objectAtIndex:categoriaIndex] objectForKey:@"titulo"] forKey:@"titulo"];
+        
+
+        
+        
+        categoriaIndex++;   
+    }    
+    
+ 
+    //=================== conexion  Remedios ============//    
+    NSString *urlString = [NSString stringWithFormat:@"http://neostar.org/test/Remedios_JSON/Remedios.json"];         
+    NSURL *url = [NSURL URLWithString:urlString];    
+    NSString *dataRemedios = [NSString stringWithContentsOfURL:url encoding:NSUTF8StringEncoding error:nil];    
+    SBJsonParser *parser = [[SBJsonParser alloc] init];   
+    NSMutableDictionary *myRemedios =[parser objectWithString:dataRemedios];    
+    NSMutableArray *arrayRemedios=[myRemedios objectForKey:@"Remedios"];
+
+    
+    
+    
+    int remedioIndex=0;
+    
+    
     for (NSDictionary *Recorrerjson in arrayRemedios){
-        //=========== llenando core ============    
+        //=========== llenando Remedios core ============    
         
         
         newData=[NSEntityDescription insertNewObjectForEntityForName:@"Remedios" inManagedObjectContext:managedObjectContext];
-        [newData setValue:[[arrayRemedios objectAtIndex:i] objectForKey:@"remedio"] forKey:@"nombreRemedio"];
-        [newData setValue:[[arrayRemedios objectAtIndex:i] objectForKey:@"Preparacion"] forKey:@"preparacion"];    
-        [newData setValue:[[arrayRemedios objectAtIndex:i] objectForKey:@"ingredientes"] forKey:@"ingredientes"];  
+        [newData setValue:[[arrayRemedios objectAtIndex:remedioIndex] objectForKey:@"nombreRemedio"] forKey:@"nombreRemedio"];
+        [newData setValue:[[arrayRemedios objectAtIndex:remedioIndex] objectForKey:@"preparacion"] forKey:@"preparacion"];    
+        [newData setValue:[[arrayRemedios objectAtIndex:remedioIndex] objectForKey:@"ingredientes"] forKey:@"ingredientes"];  
+        [newData setValue:[[arrayRemedios objectAtIndex:remedioIndex] objectForKey:@"subtitulo"] forKey:@"subtitulo"];
+
+
+
+                
         
         
-        i++;   
+        remedioIndex++;   
     }    
+    //==========Conexion Glosario
+    NSString *urlStringGlosario = [NSString stringWithFormat:@"http://neostar.org/test/Remedios_JSON/Glosario.json"];         
+    NSURL *urlGlosario = [NSURL URLWithString:urlStringGlosario];    
+    NSString *dataGlosario = [NSString stringWithContentsOfURL:urlGlosario encoding:NSUTF8StringEncoding error:nil];    
+    SBJsonParser *parserGlosario = [[SBJsonParser alloc] init];   
+    NSMutableDictionary *myGlosario =[parserGlosario objectWithString:dataGlosario];    
+    NSMutableArray *arrayGlosario=[myGlosario objectForKey:@"Glosario"];    
+    int GlosarioIndex=0;
+    
+    for (NSDictionary *RecorrerjsonGlosario in arrayGlosario){
+        //=========== llenando Glosario core ============    
+        
+        
+        newData=[NSEntityDescription insertNewObjectForEntityForName:@"Glosario" inManagedObjectContext:managedObjectContext];
+        [newData setValue:[[arrayGlosario objectAtIndex:GlosarioIndex] objectForKey:@"comprarIngrediente"] forKey:@"comprarIngrediente"];
+        [newData setValue:[[arrayGlosario objectAtIndex:GlosarioIndex] objectForKey:@"detalleIngredientes"] forKey:@"detalleIngrediente"];
+        [newData setValue:[[arrayGlosario objectAtIndex:GlosarioIndex] objectForKey:@"nombreIngrediente"] forKey:@"nombreIngrediente"];
+
+        
+        
+        
+        GlosarioIndex++;   
+    }
+
+
+    //==========Conexion Imagen
+    NSString *urlStringImagen = [NSString stringWithFormat:@"http://neostar.org/test/Remedios_JSON/Imagen.json"];         
+    NSURL *urlImagen = [NSURL URLWithString:urlStringImagen];    
+    NSString *dataImagen = [NSString stringWithContentsOfURL:urlImagen encoding:NSUTF8StringEncoding error:nil];    
+    SBJsonParser *parserImagen = [[SBJsonParser alloc] init];   
+    NSMutableDictionary *myImagen =[parserImagen objectWithString:dataImagen];    
+    NSMutableArray *arrayImagen=[myImagen objectForKey:@"Imagen"];    
+    int imagenIndex=0;
+    
+    for (NSDictionary *RecorrerjsonImagen in arrayImagen){
+        //=========== llenando Imagen core ============    
+        
+        
+        newData=[NSEntityDescription insertNewObjectForEntityForName:@"Imagen" inManagedObjectContext:managedObjectContext];
+        [newData setValue:[[arrayImagen objectAtIndex:imagenIndex] objectForKey:@"imagenThumb"] forKey:@"imagenThumb"];
+        [newData setValue:[[arrayImagen objectAtIndex:imagenIndex] objectForKey:@"imagenVista"] forKey:@"imagenVista"];
+        [newData setValue:[[arrayImagen objectAtIndex:imagenIndex] objectForKey:@"nombre"] forKey:@"nombre"];
+
+        
+        
+        
+        imagenIndex++;   
+    }    
+    
+    
+    
+    */
     
     
     ///salvar contexto

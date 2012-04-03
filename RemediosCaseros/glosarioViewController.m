@@ -104,7 +104,7 @@
     }
     
     // Configure the cell...
-    cell.accessoryType=UITableViewCellAccessoryDetailDisclosureButton;
+    cell.accessoryType=UITableViewCellAccessoryDisclosureIndicator;
     cell.textLabel.font = [UIFont fontWithName:@"Helvetica-Bold"  size:13.0];     
     cell.detailTextLabel.font= [UIFont fontWithName:@"Helvetica" size:11.0];    
     cell.detailTextLabel.numberOfLines=2;
