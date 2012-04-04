@@ -21,5 +21,4 @@
 @property (nonatomic, retain) NSManagedObjectContext *managedObjectContext;
 -(void)eliminarCompra:(id)sender;
 
-
 @end
