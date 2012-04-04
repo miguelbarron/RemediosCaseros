@@ -19,7 +19,8 @@
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
     if (self) {
         // Custom initialization
-        self.title = NSLocalizedString(@"Compras", @"Compras");
+        
+        self.title = NSLocalizedString(@"Compras", @"Compras");        
         self.tabBarItem.image = [UIImage imageNamed:@"icono_compras_tab.png"];
     }
     return self;
@@ -134,10 +135,13 @@
     cell.detailTextLabel.font          = [UIFont fontWithName:@"Helvetica" size:15.0];    
     cell.detailTextLabel.numberOfLines = 2;    
 
+    
+    
     cell.textLabel.text=glosario.nombreIngrediente;
     
     UIImage *marcaVacia=[UIImage imageNamed:@"marca_vacia_compras.png"];
-     UIImage *marcaLlena=[UIImage imageNamed:@"marca_llena_compras.png"];
+    UIImage *marcaLlena=[UIImage imageNamed:@"marca_llena_compras.png"];
+    
     if ([glosario.seleccionCompra intValue] > 0) {
         
         cell.imageView.image=marcaLlena;
@@ -173,6 +177,38 @@
     
     [myTableView reloadData];
 }
+
+
+
+// Override to support conditional editing of the table view.
+- (BOOL)tableView:(UITableView *)tableView canEditRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    // Return NO if you do not want the specified item to be editable.
+    return YES;
+}
+
+
+
+// Override to support editing the table view.
+- (void)tableView:(UITableView *)tableView commitEditingStyle:(UITableViewCellEditingStyle)editingStyle forRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    if (editingStyle == UITableViewCellEditingStyleDelete) {
+        // Delete the row from the data source
+        Glosario *glosario;
+        NSError *saveError;
+        glosario = (Glosario *)[fetchedResultsController objectAtIndexPath:indexPath]; 
+        [glosario setSeleccionCompra:NO];
+        [glosario setComprarIngrediente:NO];
+        [managedObjectContext save:&saveError];
+        [self.myTableView reloadData];
+        
+        //    [tableView deleteRowsAtIndexPaths:[NSArray arrayWithObject:indexPath] withRowAnimation:UITableViewRowAnimationFade];
+    }   
+    //    else if (editingStyle == UITableViewCellEditingStyleInsert) {
+    // Create a new instance of the appropriate class, insert it into the array, and add a new row to the table view
+    //  }   
+}
+
 
 
 #pragma mark - NSFetchedResultsController
@@ -215,14 +251,19 @@
 }
 
 
-
 - (void)dealloc {
     [myTableView release];
     [super dealloc];
 }
 
--(void)eliminarCompra:(id)sender{
-    NSLog(@"eliminar glosarios");
-}
+-(void)eliminarCompra:(id)sender
+{
+    NSLog(@"eliminar elementos del glosario selecionado");
 
+    
+}
 @end
+
+
+
+

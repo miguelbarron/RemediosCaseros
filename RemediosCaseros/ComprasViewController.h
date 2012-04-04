@@ -20,4 +20,6 @@
 @property (retain, nonatomic) IBOutlet UITableView *myTableView;
 @property (nonatomic, retain) NSManagedObjectContext *managedObjectContext;
 -(void)eliminarCompra:(id)sender;
+
+
 @end
