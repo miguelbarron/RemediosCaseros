@@ -136,14 +136,40 @@
 
     cell.textLabel.text=glosario.nombreIngrediente;
     
-    UIImage *imagen=[UIImage imageNamed:@"marca_vacia_compras.png"];
-    cell.imageView.image=imagen;
+    UIImage *marcaVacia=[UIImage imageNamed:@"marca_vacia_compras.png"];
+     UIImage *marcaLlena=[UIImage imageNamed:@"marca_llena_compras.png"];
+    if ([glosario.seleccionCompra intValue] > 0) {
+        
+        cell.imageView.image=marcaLlena;
+    }
+    else
+    {
+    cell.imageView.image=marcaVacia;
+    }
+    
     return cell;
 }
 
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
     NSLog(@"cambiar imagen");
+    Glosario *glosario;
+    glosario = (Glosario *)[fetchedResultsController objectAtIndexPath:indexPath];
+    if ([glosario.seleccionCompra intValue]<1 ) 
+    {
+        [glosario setSeleccionCompra:[NSNumber numberWithBool:YES]];
+        
+    }
+    else
+    {
+    
+        [glosario setSeleccionCompra:[NSNumber numberWithBool:NO]];
+    }
+    
+    NSError *saveError;
+    [managedObjectContext save:&saveError];
+    
+    
     
     [myTableView reloadData];
 }
