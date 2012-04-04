@@ -24,6 +24,10 @@
 		06624A4914ABA20300FDAFA7 /* RootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 06624A3B14ABA20300FDAFA7 /* RootViewController.m */; };
 		06624A4A14ABA20300FDAFA7 /* RootViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 06624A3C14ABA20300FDAFA7 /* RootViewController.xib */; };
 		06624A4B14ABA20300FDAFA7 /* tweet.png in Resources */ = {isa = PBXBuildFile; fileRef = 06624A3D14ABA20300FDAFA7 /* tweet.png */; };
+		06E99CAB152CCE960024BBD6 /* remedios_57x57.png in Resources */ = {isa = PBXBuildFile; fileRef = 06E99CA9152CCE960024BBD6 /* remedios_57x57.png */; };
+		06E99CAC152CCE960024BBD6 /* remedios_114x114.png in Resources */ = {isa = PBXBuildFile; fileRef = 06E99CAA152CCE960024BBD6 /* remedios_114x114.png */; };
+		06E99CAF152CCED40024BBD6 /* remedios_57x57.png in Resources */ = {isa = PBXBuildFile; fileRef = 06E99CAE152CCED40024BBD6 /* remedios_57x57.png */; };
+		06E99CB1152CCED90024BBD6 /* remedios_114x114.png in Resources */ = {isa = PBXBuildFile; fileRef = 06E99CB0152CCED90024BBD6 /* remedios_114x114.png */; };
 		D90882E41520D87A00AB7AEB /* detalleViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D90882E21520D87A00AB7AEB /* detalleViewController.m */; };
 		D90882E51520D87A00AB7AEB /* detalleViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D90882E31520D87A00AB7AEB /* detalleViewController.xib */; };
 		D91A7866151CFCC6008A0292 /* Remedios.m in Sources */ = {isa = PBXBuildFile; fileRef = D91A7865151CFCC6008A0292 /* Remedios.m */; };
@@ -105,6 +109,10 @@
 		06624A3B14ABA20300FDAFA7 /* RootViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RootViewController.m; sourceTree = "<group>"; };
 		06624A3C14ABA20300FDAFA7 /* RootViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RootViewController.xib; sourceTree = "<group>"; };
 		06624A3D14ABA20300FDAFA7 /* tweet.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = tweet.png; sourceTree = "<group>"; };
+		06E99CA9152CCE960024BBD6 /* remedios_57x57.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = remedios_57x57.png; sourceTree = "<group>"; };
+		06E99CAA152CCE960024BBD6 /* remedios_114x114.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = remedios_114x114.png; sourceTree = "<group>"; };
+		06E99CAE152CCED40024BBD6 /* remedios_57x57.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = remedios_57x57.png; sourceTree = "<group>"; };
+		06E99CB0152CCED90024BBD6 /* remedios_114x114.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = remedios_114x114.png; sourceTree = "<group>"; };
 		D90882E11520D87A00AB7AEB /* detalleViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = detalleViewController.h; sourceTree = "<group>"; };
 		D90882E21520D87A00AB7AEB /* detalleViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = detalleViewController.m; sourceTree = "<group>"; };
 		D90882E31520D87A00AB7AEB /* detalleViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = detalleViewController.xib; sourceTree = "<group>"; };
@@ -204,6 +212,8 @@
 		0662491414A8F2A800FDAFA7 = {
 			isa = PBXGroup;
 			children = (
+				06E99CB0152CCED90024BBD6 /* remedios_114x114.png */,
+				06E99CAE152CCED40024BBD6 /* remedios_57x57.png */,
 				0662492914A8F2A900FDAFA7 /* RemediosCaseros */,
 				0662492214A8F2A800FDAFA7 /* Frameworks */,
 				0662492014A8F2A800FDAFA7 /* Products */,
@@ -327,6 +337,8 @@
 		D9FC479D151A5115002F1D4B /* Imagenes */ = {
 			isa = PBXGroup;
 			children = (
+				06E99CA9152CCE960024BBD6 /* remedios_57x57.png */,
+				06E99CAA152CCE960024BBD6 /* remedios_114x114.png */,
 				D95B22F4152C9DFB0026C40E /* marca_llena_compras.png */,
 				D990C158152B9115004F6B73 /* foto_celda_glosario.png */,
 				D990C159152B9115004F6B73 /* foto_celda_glosario@2x.png */,
@@ -467,6 +479,10 @@
 				D990C16A152B9116004F6B73 /* foto2_celda_remedios.png in Resources */,
 				D990C16B152B9116004F6B73 /* foto2_celda_remedios@2x.png in Resources */,
 				D95B22F5152C9DFB0026C40E /* marca_llena_compras.png in Resources */,
+				06E99CAB152CCE960024BBD6 /* remedios_57x57.png in Resources */,
+				06E99CAC152CCE960024BBD6 /* remedios_114x114.png in Resources */,
+				06E99CAF152CCED40024BBD6 /* remedios_57x57.png in Resources */,
+				06E99CB1152CCED90024BBD6 /* remedios_114x114.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
