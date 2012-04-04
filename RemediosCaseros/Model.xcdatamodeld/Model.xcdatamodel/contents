@@ -8,6 +8,7 @@
         <attribute name="comprarIngrediente" optional="YES" attributeType="Boolean" syncable="YES"/>
         <attribute name="detalleIngrediente" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="nombreIngrediente" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="seleccionCompra" optional="YES" attributeType="Boolean" syncable="YES"/>
         <relationship name="imagen" optional="YES" minCount="1" maxCount="1" deletionRule="Nullify" destinationEntity="Imagen" inverseName="imagenGlosario" inverseEntity="Imagen" syncable="YES"/>
     </entity>
     <entity name="Imagen" representedClassName="Imagen" syncable="YES">

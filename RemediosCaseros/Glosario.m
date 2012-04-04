@@ -2,7 +2,7 @@
 //  Glosario.m
 //  RemediosCaseros
 //
-//  Created by User on 3/28/12.
+//  Created by User on 4/4/12.
 //  Copyright (c) 2012 Somos Software. All rights reserved.
 //
 
@@ -12,9 +12,10 @@
 
 @implementation Glosario
 
+@dynamic comprarIngrediente;
 @dynamic detalleIngrediente;
 @dynamic nombreIngrediente;
-@dynamic comprarIngrediente;
+@dynamic seleccionCompra;
 @dynamic imagen;
 
 @end
