@@ -8,7 +8,7 @@
 
 #import "detalleViewController.h"
 #import "Remedios.h"
-#import "Imagen.h"
+//#import "Imagen.h"
 #import "AppDelegate.h"
 
 @implementation detalleViewController
@@ -49,8 +49,9 @@
     [compartirButton release]; 
     
     [self.svView setContentSize:CGSizeMake(100,500)];
-    Imagen *imrem=remedio.imagen;
-    NSString *direccionImagen=imrem.imagenThumb;
+//    Imagen *imrem=remedio.imagen;
+//    NSString *direccionImagen=imrem.imagenThumb;
+    NSString *direccionImagen=remedio.imagenThumb;
     imagenRemedio.image=[UIImage imageNamed:direccionImagen];   
     
     self.title=remedio.nombreRemedio;

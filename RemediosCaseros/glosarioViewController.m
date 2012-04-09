@@ -8,7 +8,7 @@
 
 #import "glosarioViewController.h"
 #import "Glosario.h"
-#import "Imagen.h"
+//#import "Imagen.h"
 #import "detalleGlosarioViewController.h"
 
 @implementation glosarioViewController
@@ -111,8 +111,9 @@
     cell.textLabel.numberOfLines=2;
     
     Glosario *glo=[fetchedResultsController objectAtIndexPath:indexPath ];
-    Imagen *imagenRemedio=glo.imagen;
-    NSString *url=imagenRemedio.imagenThumb;    
+    //Imagen *imagenRemedio=glo.imagen;
+    //NSString *url=imagenRemedio.imagenThumb;    
+    NSString *url=glo.imagenThumb;    
     UIImage *myimagen=[UIImage imageNamed:url];
     
     cell.textLabel.text=glo.nombreIngrediente;
@@ -172,7 +173,7 @@
     NSArray *sortDescriptors = [[NSArray alloc] initWithObjects:sortDescriptor, nil];
     
     [fetchRequest setSortDescriptors:sortDescriptors];
-    NSFetchedResultsController *aFetchedResultsController = [[NSFetchedResultsController alloc] initWithFetchRequest:fetchRequest managedObjectContext:managedObjectContext sectionNameKeyPath:@"imagen.imagenGlosario" cacheName:@"Root"];
+    NSFetchedResultsController *aFetchedResultsController = [[NSFetchedResultsController alloc] initWithFetchRequest:fetchRequest managedObjectContext:managedObjectContext sectionNameKeyPath:@"imagenVista" cacheName:@"Root"];
     aFetchedResultsController.delegate = self;
     self.fetchedResultsController = aFetchedResultsController;
     

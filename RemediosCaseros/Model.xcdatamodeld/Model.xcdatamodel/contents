@@ -1,35 +1,24 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <model name="" userDefinedModelVersionIdentifier="" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="878" systemVersion="11D50d" minimumToolsVersion="Automatic" macOSVersion="Automatic" iOSVersion="Automatic">
-    <entity name="Categoria" representedClassName="Categoria" syncable="YES">
-        <attribute name="titulo" optional="YES" attributeType="String" syncable="YES"/>
-        <relationship name="remedio" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Remedios" inverseName="categoria" inverseEntity="Remedios" syncable="YES"/>
-    </entity>
     <entity name="Glosario" representedClassName="Glosario" syncable="YES">
         <attribute name="comprarIngrediente" optional="YES" attributeType="Boolean" syncable="YES"/>
         <attribute name="detalleIngrediente" optional="YES" attributeType="String" syncable="YES"/>
-        <attribute name="nombreIngrediente" optional="YES" attributeType="String" syncable="YES"/>
-        <attribute name="seleccionCompra" optional="YES" attributeType="Boolean" syncable="YES"/>
-        <relationship name="imagen" optional="YES" minCount="1" maxCount="1" deletionRule="Nullify" destinationEntity="Imagen" inverseName="imagenGlosario" inverseEntity="Imagen" syncable="YES"/>
-    </entity>
-    <entity name="Imagen" representedClassName="Imagen" syncable="YES">
         <attribute name="imagenThumb" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="imagenVista" optional="YES" attributeType="String" syncable="YES"/>
-        <attribute name="nombre" optional="YES" attributeType="String" syncable="YES"/>
-        <relationship name="imagenGlosario" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Glosario" inverseName="imagen" inverseEntity="Glosario" syncable="YES"/>
-        <relationship name="imagenRemedio" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Remedios" inverseName="imagen" inverseEntity="Remedios" syncable="YES"/>
+        <attribute name="nombreIngrediente" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="seleccionCompra" optional="YES" attributeType="Boolean" syncable="YES"/>
     </entity>
     <entity name="Remedios" representedClassName="Remedios" syncable="YES">
+        <attribute name="categoriaRemedio" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="imagenThumb" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="imagenVista" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="ingredientes" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="nombreRemedio" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="preparacion" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="subtitulo" optional="YES" attributeType="String" syncable="YES"/>
-        <relationship name="categoria" optional="YES" minCount="1" maxCount="1" deletionRule="Nullify" destinationEntity="Categoria" inverseName="remedio" inverseEntity="Categoria" syncable="YES"/>
-        <relationship name="imagen" optional="YES" minCount="1" maxCount="1" deletionRule="Nullify" destinationEntity="Imagen" inverseName="imagenRemedio" inverseEntity="Imagen" syncable="YES"/>
     </entity>
     <elements>
-        <element name="Categoria" positionX="-164" positionY="-171" width="128" height="75"/>
-        <element name="Glosario" positionX="-63" positionY="9" width="128" height="105"/>
-        <element name="Imagen" positionX="-657" positionY="72" width="128" height="120"/>
-        <element name="Remedios" positionX="-459" positionY="-117" width="128" height="135"/>
+        <element name="Glosario" positionX="-623" positionY="-105" width="128" height="105"/>
+        <element name="Remedios" positionX="-810" positionY="-117" width="128" height="135"/>
     </elements>
 </model>

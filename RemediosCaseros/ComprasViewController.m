@@ -13,7 +13,7 @@
 @implementation ComprasViewController
 @synthesize myTableView;
 @synthesize fetchedResultsController,managedObjectContext;
-
+//int eliminarOpcion=0;
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
@@ -127,7 +127,7 @@
     // Configure the cell...
     Glosario *glosario;
     glosario = (Glosario *)[fetchedResultsController objectAtIndexPath:indexPath];
-    
+        
 
     cell.textLabel.lineBreakMode = UILineBreakModeWordWrap;  
     cell.textLabel.numberOfLines = 2;  
@@ -135,8 +135,8 @@
     cell.detailTextLabel.font          = [UIFont fontWithName:@"Helvetica" size:15.0];    
     cell.detailTextLabel.numberOfLines = 2;    
 
-    
-    
+ 
+        
     cell.textLabel.text=glosario.nombreIngrediente;
     
     UIImage *marcaVacia=[UIImage imageNamed:@"marca_vacia_compras.png"];
@@ -149,7 +149,10 @@
     else
     {
     cell.imageView.image=marcaVacia;
-    }
+    }   
+    
+ 
+    
     
     return cell;
 }
@@ -224,7 +227,7 @@
     [fetchRequest setEntity:entity];
     
     // Set the batch size to a suitable number.
-    [fetchRequest setFetchBatchSize:nil];
+    //[fetchRequest setFetchBatchSize:nil];
     NSPredicate *predicate =[NSPredicate predicateWithFormat:@"comprarIngrediente == YES"];  
     [NSFetchedResultsController deleteCacheWithName:nil];
     
@@ -256,9 +259,12 @@
     [super dealloc];
 }
 
+
+#pragma mark - Eliminar
 -(void)eliminarCompra:(id)sender
 {
     NSLog(@"eliminar elementos del glosario selecionado");
+
 
     
 }

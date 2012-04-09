@@ -7,7 +7,7 @@
 //
 
 #import "detalleGlosarioViewController.h"
-#import "Imagen.h"
+//#import "Imagen.h"
 #import "detalleViewController.h"
 #import "AppDelegate.h"
 @implementation detalleGlosarioViewController
@@ -48,8 +48,9 @@
     [favoritoButton release];
     
     self.title=glosario.nombreIngrediente;
-    Imagen *imrem=glosario.imagen;
-    NSString *direccionImagen=imrem.imagenVista;
+//    Imagen *imrem=glosario.imagen;
+//    NSString *direccionImagen=imrem.imagenVista;
+    NSString *direccionImagen=glosario.imagenVista;
     imagenGlosario.image=[UIImage imageNamed:direccionImagen];      
     detalleGlosario.text=glosario.detalleIngrediente;
 

@@ -10,10 +10,10 @@
 
 #import "AppDelegate.h"
 #import "Classes/SBJson.h"
-#import "Categoria.h"
+//#import "Categoria.h"
 #import "Remedios.h"
 #import "Glosario.h"
-#import "Imagen.h"
+//#import "Imagen.h"
 #import "detalleViewController.h"
 
 
@@ -130,8 +130,9 @@
 
     
     Remedios *rem=[fetchedResultsController objectAtIndexPath:indexPath ];
-    Imagen *imagenRemedio=rem.imagen;
-    NSString *url=imagenRemedio.imagenThumb;    
+//    Imagen *imagenRemedio=rem.imagen;
+//    NSString *url=imagenRemedio.imagenThumb;    
+    NSString *url=rem.imagenThumb;
     UIImage *myimagen=[UIImage imageNamed:url];
     
     cell.textLabel.text=rem.nombreRemedio;
@@ -207,7 +208,7 @@
     NSArray *sortDescriptors = [[NSArray alloc] initWithObjects:sortDescriptor, nil];
     
     [fetchRequest setSortDescriptors:sortDescriptors];
-    NSFetchedResultsController *aFetchedResultsController = [[NSFetchedResultsController alloc] initWithFetchRequest:fetchRequest managedObjectContext:managedObjectContext sectionNameKeyPath:@"Categoria.titulo" cacheName:@"Root"];
+    NSFetchedResultsController *aFetchedResultsController = [[NSFetchedResultsController alloc] initWithFetchRequest:fetchRequest managedObjectContext:managedObjectContext sectionNameKeyPath:@"categoriaRemedio" cacheName:@"Root"];
     aFetchedResultsController.delegate = self;
     self.fetchedResultsController = aFetchedResultsController;
     
