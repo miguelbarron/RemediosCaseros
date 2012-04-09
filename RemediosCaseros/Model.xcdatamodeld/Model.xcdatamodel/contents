@@ -18,7 +18,7 @@
         <attribute name="subtitulo" optional="YES" attributeType="String" syncable="YES"/>
     </entity>
     <elements>
-        <element name="Glosario" positionX="-623" positionY="-105" width="128" height="105"/>
-        <element name="Remedios" positionX="-810" positionY="-117" width="128" height="135"/>
+        <element name="Glosario" positionX="-623" positionY="-105" width="128" height="135"/>
+        <element name="Remedios" positionX="-810" positionY="-117" width="128" height="150"/>
     </elements>
 </model>

@@ -21,33 +21,11 @@
 -(void)createData
 {
     
-    //Obtener Contexto
+    /*/Obtener Contexto
 
     AppDelegate *appDelegate = (AppDelegate *)[[UIApplication sharedApplication] delegate];
     managedObjectContext = appDelegate.managedObjectContext;
-    
-    // crear categoria
-    /*Categoria *categoria1=[NSEntityDescription insertNewObjectForEntityForName:@"Categoria" inManagedObjectContext:managedObjectContext];
-    categoria1.titulo=@"Salud";
-    
-    Categoria *categoria2=[NSEntityDescription insertNewObjectForEntityForName:@"Categoria" inManagedObjectContext:managedObjectContext];
-    categoria2.titulo=@"Hogar";
-    
-    Categoria *categoria3=[NSEntityDescription insertNewObjectForEntityForName:@"Categoria" inManagedObjectContext:managedObjectContext];
-    categoria3.titulo=@"Belleza";
-    
-    //crear imagenes
-    Imagen *imagen1=[NSEntityDescription insertNewObjectForEntityForName:@"Imagen" inManagedObjectContext:managedObjectContext];
-    imagen1.imagenThumb=@"foto_detalleremedio.png";
-    imagen1.nombre=@"coco";
-    
-    Imagen *imagen2=[NSEntityDescription insertNewObjectForEntityForName:@"Imagen" inManagedObjectContext:managedObjectContext];
-    imagen2.imagenThumb=@"foto2_celda_remedios.png";
-    imagen2.nombre=@"foco";
-    
-    Imagen *imagen3=[NSEntityDescription insertNewObjectForEntityForName:@"Imagen" inManagedObjectContext:managedObjectContext];
-    imagen3.imagenThumb=@"limpia.jpg";
-    imagen3.nombre=@"limpia";*/
+
     
     //se crea remedios
     Remedios *remedio1=[NSEntityDescription insertNewObjectForEntityForName:@"Remedios" inManagedObjectContext:managedObjectContext];
@@ -60,12 +38,7 @@
     remedio1.imagenVista=@"foto_detalleremedio.png";
     
     
-    
-    
-//    NSSet *agregarremedio=[[[NSSet alloc] initWithObjects:remedio1, nil] autorelease];
-//    [categoria3 addRemedio:agregarremedio];
-    
-    
+     
     
     
     Remedios *remedio2=[NSEntityDescription insertNewObjectForEntityForName:@"Remedios" inManagedObjectContext:managedObjectContext];
@@ -85,9 +58,7 @@
     remedio3.categoriaRemedio=@"Hogar";
     remedio3.imagenThumb=@"limpia.jpg";
     remedio3.imagenVista=@"limpia.jpg";
-   
-   // NSSet *agregarremedio2=[[[NSSet alloc] initWithObjects:remedio2,remedio3, nil] autorelease];
-   // [categoria2 addRemedio:agregarremedio2];
+
     
 
     Remedios *remedio4=[NSEntityDescription insertNewObjectForEntityForName:@"Remedios" inManagedObjectContext:managedObjectContext];
@@ -99,25 +70,7 @@
     remedio4.imagenThumb=@"second.png";
     remedio4.imagenVista=@"second.png";
     
-//    NSSet *agregarremedio3=[[[NSSet alloc] initWithObjects:remedio4, nil] autorelease];
-//    [categoria1 addRemedio:agregarremedio3];
-    
 
-    //crear imagen Glosario
-   /* Imagen *imagenRemedio=[NSEntityDescription insertNewObjectForEntityForName:@"Imagen" inManagedObjectContext:managedObjectContext];
-    imagenRemedio.nombre=@"Ficus";
-    imagenRemedio.imagenThumb=@"ficus.jpg";
-    imagenRemedio.imagenVista=@"ficus.jpg";
-    
-    Imagen *imagenRemedio2=[NSEntityDescription insertNewObjectForEntityForName:@"Imagen" inManagedObjectContext:managedObjectContext];
-    imagenRemedio2.nombre=@"Ficus";
-    imagenRemedio2.imagenThumb=@"menta.jpg";
-    imagenRemedio2.imagenVista=@"menta.jpg";
-    
-    Imagen *imagenRemedio3=[NSEntityDescription insertNewObjectForEntityForName:@"Imagen" inManagedObjectContext:managedObjectContext];
-    imagenRemedio3.nombre=@"Ficus";
-    imagenRemedio3.imagenThumb=@"cannabis.jpg";
-    imagenRemedio3.imagenVista=@"cannabis.jpg";*/
     
 
     
@@ -143,36 +96,14 @@
     glosario3.imagenThumb=@"cannabis.jpg";
     glosario3.imagenVista=@"cannabis.jpg";
     
- /*
+ */
     
     AppDelegate *appDelegate=(AppDelegate *)[[UIApplication sharedApplication]delegate];
     managedObjectContext=appDelegate.managedObjectContext;
     NSManagedObject *newData;
     
     
-    //==========Conexion Categoria
-    NSString *urlStringCategoria = [NSString stringWithFormat:@"http://neostar.org/test/Remedios_JSON/Categoria.json"];         
-    NSURL *urlCategoria = [NSURL URLWithString:urlStringCategoria];    
-    NSString *dataCategoria = [NSString stringWithContentsOfURL:urlCategoria encoding:NSUTF8StringEncoding error:nil];    
-    SBJsonParser *parserCategoria = [[SBJsonParser alloc] init];   
-    NSMutableDictionary *myCategoria =[parserCategoria objectWithString:dataCategoria];    
-    NSMutableArray *arrayCategoria=[myCategoria objectForKey:@"Categoria"];    
-    int categoriaIndex=0;
-    //NSManagedObject *newData;
-    for (NSDictionary *RecorrerjsonCategoria in arrayCategoria){
-        //=========== llenando Categoria core ============    
-        
-        
-        newData=[NSEntityDescription insertNewObjectForEntityForName:@"Categoria" inManagedObjectContext:managedObjectContext];
-        [newData setValue:[[arrayCategoria objectAtIndex:categoriaIndex] objectForKey:@"titulo"] forKey:@"titulo"];
-        
-
-        
-        
-        categoriaIndex++;   
-    }    
-    
- 
+     
     //=================== conexion  Remedios ============//    
     NSString *urlString = [NSString stringWithFormat:@"http://neostar.org/test/Remedios_JSON/Remedios.json"];         
     NSURL *url = [NSURL URLWithString:urlString];    
@@ -180,30 +111,25 @@
     SBJsonParser *parser = [[SBJsonParser alloc] init];   
     NSMutableDictionary *myRemedios =[parser objectWithString:dataRemedios];    
     NSMutableArray *arrayRemedios=[myRemedios objectForKey:@"Remedios"];
-
     
     
     
-    int remedioIndex=0;
-    
-    
+    //=========== llenando Remedios Core Data ============  
+    int remedioIndex=0;        
     for (NSDictionary *Recorrerjson in arrayRemedios){
-        //=========== llenando Remedios core ============    
-        
-        
+          
         newData=[NSEntityDescription insertNewObjectForEntityForName:@"Remedios" inManagedObjectContext:managedObjectContext];
+        
         [newData setValue:[[arrayRemedios objectAtIndex:remedioIndex] objectForKey:@"nombreRemedio"] forKey:@"nombreRemedio"];
         [newData setValue:[[arrayRemedios objectAtIndex:remedioIndex] objectForKey:@"preparacion"] forKey:@"preparacion"];    
         [newData setValue:[[arrayRemedios objectAtIndex:remedioIndex] objectForKey:@"ingredientes"] forKey:@"ingredientes"];  
         [newData setValue:[[arrayRemedios objectAtIndex:remedioIndex] objectForKey:@"subtitulo"] forKey:@"subtitulo"];
-
-
-
-                
-        
-        
+        [newData setValue:[[arrayRemedios objectAtIndex:remedioIndex] objectForKey:@"categoriaRemedio"] forKey:@"categoriaRemedio"];
+        [newData setValue:[[arrayRemedios objectAtIndex:remedioIndex] objectForKey:@"imagenThumb"] forKey:@"imagenThumb"];
+        [newData setValue:[[arrayRemedios objectAtIndex:remedioIndex] objectForKey:@"imagenVista"] forKey:@"imagenVista"];    
         remedioIndex++;   
-    }    
+    }
+    
     //==========Conexion Glosario
     NSString *urlStringGlosario = [NSString stringWithFormat:@"http://neostar.org/test/Remedios_JSON/Glosario.json"];         
     NSURL *urlGlosario = [NSURL URLWithString:urlStringGlosario];    
@@ -211,53 +137,23 @@
     SBJsonParser *parserGlosario = [[SBJsonParser alloc] init];   
     NSMutableDictionary *myGlosario =[parserGlosario objectWithString:dataGlosario];    
     NSMutableArray *arrayGlosario=[myGlosario objectForKey:@"Glosario"];    
-    int GlosarioIndex=0;
     
+    
+    //=========== llenando Glosario Core Data ============    
+    int GlosarioIndex=0;    
     for (NSDictionary *RecorrerjsonGlosario in arrayGlosario){
-        //=========== llenando Glosario core ============    
+        
         
         
         newData=[NSEntityDescription insertNewObjectForEntityForName:@"Glosario" inManagedObjectContext:managedObjectContext];
-        [newData setValue:[[arrayGlosario objectAtIndex:GlosarioIndex] objectForKey:@"comprarIngrediente"] forKey:@"comprarIngrediente"];
+ 
         [newData setValue:[[arrayGlosario objectAtIndex:GlosarioIndex] objectForKey:@"detalleIngredientes"] forKey:@"detalleIngrediente"];
         [newData setValue:[[arrayGlosario objectAtIndex:GlosarioIndex] objectForKey:@"nombreIngrediente"] forKey:@"nombreIngrediente"];
-
-        
-        
-        
-        GlosarioIndex++;   
+        [newData setValue:[[arrayGlosario objectAtIndex:GlosarioIndex] objectForKey:@"imagenThumb"] forKey:@"imagenThumb"];
+        [newData setValue:[[arrayGlosario objectAtIndex:GlosarioIndex] objectForKey:@"imagenVista"] forKey:@"imagenVista"];
+         GlosarioIndex++;   
     }
 
-
-    //==========Conexion Imagen
-    NSString *urlStringImagen = [NSString stringWithFormat:@"http://neostar.org/test/Remedios_JSON/Imagen.json"];         
-    NSURL *urlImagen = [NSURL URLWithString:urlStringImagen];    
-    NSString *dataImagen = [NSString stringWithContentsOfURL:urlImagen encoding:NSUTF8StringEncoding error:nil];    
-    SBJsonParser *parserImagen = [[SBJsonParser alloc] init];   
-    NSMutableDictionary *myImagen =[parserImagen objectWithString:dataImagen];    
-    NSMutableArray *arrayImagen=[myImagen objectForKey:@"Imagen"];    
-    int imagenIndex=0;
-    
-    for (NSDictionary *RecorrerjsonImagen in arrayImagen){
-        //=========== llenando Imagen core ============    
-        
-        
-        newData=[NSEntityDescription insertNewObjectForEntityForName:@"Imagen" inManagedObjectContext:managedObjectContext];
-        [newData setValue:[[arrayImagen objectAtIndex:imagenIndex] objectForKey:@"imagenThumb"] forKey:@"imagenThumb"];
-        [newData setValue:[[arrayImagen objectAtIndex:imagenIndex] objectForKey:@"imagenVista"] forKey:@"imagenVista"];
-        [newData setValue:[[arrayImagen objectAtIndex:imagenIndex] objectForKey:@"nombre"] forKey:@"nombre"];
-
-        
-        
-        
-        imagenIndex++;   
-    }    
-    
-    
-    
-    */
-    
-    
     ///salvar contexto
     NSError *error = nil;
     if (![managedObjectContext save:&error]) {
