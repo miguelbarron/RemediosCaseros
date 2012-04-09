@@ -11,8 +11,8 @@
 //#import "Categoria.h"
 #import "Remedios.h"
 #import "Glosario.h"
-//#import "Imagen.h"
-#import "Classes/SBJson.h"
+#import "Imagen.h"
+#import "SBJson.h"
 
 @implementation TestData
 @synthesize addingManagedObjectContext,managedObjectContext;

@@ -9,8 +9,8 @@
 #import "RootViewController.h"
 
 #import "AppDelegate.h"
-#import "Classes/SBJson.h"
-//#import "Categoria.h"
+#import "SBJson.h"
+#import "Categoria.h"
 #import "Remedios.h"
 #import "Glosario.h"
 //#import "Imagen.h"
