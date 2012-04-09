@@ -11,7 +11,7 @@
 //#import "Categoria.h"
 #import "Remedios.h"
 #import "Glosario.h"
-#import "Imagen.h"
+//#import "Imagen.h"
 #import "SBJson.h"
 
 @implementation TestData
