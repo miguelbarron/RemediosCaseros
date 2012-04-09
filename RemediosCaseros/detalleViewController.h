@@ -8,10 +8,13 @@
 
 #import <UIKit/UIKit.h>
 #import "Remedios.h"
+#import "FacebookMethods.h"
+#import <MessageUI/MessageUI.h>
 
 @interface detalleViewController : UIViewController
 {
     Remedios *remedio;
+    FacebookMethods *FBM;
     UIBarButtonItem *compartirButton;
 }
 @property (retain, nonatomic) IBOutlet UIImageView *imagenRemedio;
