@@ -1,0 +1,710 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0662492414A8F2A800FDAFA7 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0662492314A8F2A800FDAFA7 /* UIKit.framework */; };
+		0662492614A8F2A800FDAFA7 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0662492514A8F2A800FDAFA7 /* Foundation.framework */; };
+		0662492814A8F2A800FDAFA7 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0662492714A8F2A800FDAFA7 /* CoreGraphics.framework */; };
+		0662492E14A8F2A900FDAFA7 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 0662492C14A8F2A900FDAFA7 /* InfoPlist.strings */; };
+		0662493014A8F2A900FDAFA7 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 0662492F14A8F2A900FDAFA7 /* main.m */; };
+		0662493414A8F2A900FDAFA7 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 0662493314A8F2A900FDAFA7 /* AppDelegate.m */; };
+		0662493914A8F2A900FDAFA7 /* first.png in Resources */ = {isa = PBXBuildFile; fileRef = 0662493814A8F2A900FDAFA7 /* first.png */; };
+		0662493B14A8F2A900FDAFA7 /* first@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0662493A14A8F2A900FDAFA7 /* first@2x.png */; };
+		0662494014A8F2A900FDAFA7 /* second.png in Resources */ = {isa = PBXBuildFile; fileRef = 0662493F14A8F2A900FDAFA7 /* second.png */; };
+		0662494214A8F2A900FDAFA7 /* second@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0662494114A8F2A900FDAFA7 /* second@2x.png */; };
+		06624A2514ABA1B100FDAFA7 /* glosario.plist in Resources */ = {isa = PBXBuildFile; fileRef = 06624A2014ABA1B100FDAFA7 /* glosario.plist */; };
+		06624A2814ABA1B100FDAFA7 /* lasdo.plist in Resources */ = {isa = PBXBuildFile; fileRef = 06624A2414ABA1B100FDAFA7 /* lasdo.plist */; };
+		06624A4414ABA20300FDAFA7 /* glosario.png in Resources */ = {isa = PBXBuildFile; fileRef = 06624A3314ABA20300FDAFA7 /* glosario.png */; };
+		06624A4714ABA20300FDAFA7 /* receta.png in Resources */ = {isa = PBXBuildFile; fileRef = 06624A3714ABA20300FDAFA7 /* receta.png */; };
+		06624A4914ABA20300FDAFA7 /* RootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 06624A3B14ABA20300FDAFA7 /* RootViewController.m */; };
+		06624A4A14ABA20300FDAFA7 /* RootViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 06624A3C14ABA20300FDAFA7 /* RootViewController.xib */; };
+		06624A4B14ABA20300FDAFA7 /* tweet.png in Resources */ = {isa = PBXBuildFile; fileRef = 06624A3D14ABA20300FDAFA7 /* tweet.png */; };
+		06E99CAB152CCE960024BBD6 /* remedios_57x57.png in Resources */ = {isa = PBXBuildFile; fileRef = 06E99CA9152CCE960024BBD6 /* remedios_57x57.png */; };
+		06E99CAC152CCE960024BBD6 /* remedios_114x114.png in Resources */ = {isa = PBXBuildFile; fileRef = 06E99CAA152CCE960024BBD6 /* remedios_114x114.png */; };
+		06E99CAF152CCED40024BBD6 /* remedios_57x57.png in Resources */ = {isa = PBXBuildFile; fileRef = 06E99CAE152CCED40024BBD6 /* remedios_57x57.png */; };
+		06E99CB1152CCED90024BBD6 /* remedios_114x114.png in Resources */ = {isa = PBXBuildFile; fileRef = 06E99CB0152CCED90024BBD6 /* remedios_114x114.png */; };
+		9AE8D0D515334E68008FEDBB /* Twitter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9AE8D0D415334E68008FEDBB /* Twitter.framework */; };
+		9AE8D0D815334E73008FEDBB /* MessageUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9AE8D0D715334E73008FEDBB /* MessageUI.framework */; };
+		9AEA5F6A1533504600A9E703 /* FacebookMethods.m in Sources */ = {isa = PBXBuildFile; fileRef = 9AEA5F691533504600A9E703 /* FacebookMethods.m */; };
+		9AEA5F911533505300A9E703 /* Facebook.m in Sources */ = {isa = PBXBuildFile; fileRef = 9AEA5F741533505300A9E703 /* Facebook.m */; };
+		9AEA5F921533505300A9E703 /* FBDialog.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 9AEA5F771533505300A9E703 /* FBDialog.bundle */; };
+		9AEA5F931533505300A9E703 /* FBDialog.m in Sources */ = {isa = PBXBuildFile; fileRef = 9AEA5F791533505300A9E703 /* FBDialog.m */; };
+		9AEA5F941533505300A9E703 /* FBFrictionlessRequestSettings.m in Sources */ = {isa = PBXBuildFile; fileRef = 9AEA5F7B1533505300A9E703 /* FBFrictionlessRequestSettings.m */; };
+		9AEA5F951533505300A9E703 /* FBLoginDialog.m in Sources */ = {isa = PBXBuildFile; fileRef = 9AEA5F7D1533505300A9E703 /* FBLoginDialog.m */; };
+		9AEA5F961533505300A9E703 /* FBRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 9AEA5F7F1533505300A9E703 /* FBRequest.m */; };
+		9AEA5F971533505300A9E703 /* NSObject+SBJSON.m in Sources */ = {isa = PBXBuildFile; fileRef = 9AEA5F831533505300A9E703 /* NSObject+SBJSON.m */; };
+		9AEA5F981533505300A9E703 /* NSString+SBJSON.m in Sources */ = {isa = PBXBuildFile; fileRef = 9AEA5F851533505300A9E703 /* NSString+SBJSON.m */; };
+		9AEA5F991533505300A9E703 /* SBJSON.m in Sources */ = {isa = PBXBuildFile; fileRef = 9AEA5F871533505300A9E703 /* SBJSON.m */; };
+		9AEA5F9A1533505300A9E703 /* SBJsonBase.m in Sources */ = {isa = PBXBuildFile; fileRef = 9AEA5F891533505300A9E703 /* SBJsonBase.m */; };
+		9AEA5F9B1533505300A9E703 /* SBJsonParser.m in Sources */ = {isa = PBXBuildFile; fileRef = 9AEA5F8B1533505300A9E703 /* SBJsonParser.m */; };
+		9AEA5F9C1533505300A9E703 /* SBJsonWriter.m in Sources */ = {isa = PBXBuildFile; fileRef = 9AEA5F8D1533505300A9E703 /* SBJsonWriter.m */; };
+		D90882E41520D87A00AB7AEB /* detalleViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D90882E21520D87A00AB7AEB /* detalleViewController.m */; };
+		D90882E51520D87A00AB7AEB /* detalleViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D90882E31520D87A00AB7AEB /* detalleViewController.xib */; };
+		D91A787E151D0544008A0292 /* coco.png in Resources */ = {isa = PBXBuildFile; fileRef = D91A787B151D0544008A0292 /* coco.png */; };
+		D91A787F151D0544008A0292 /* foco.jpg in Resources */ = {isa = PBXBuildFile; fileRef = D91A787C151D0544008A0292 /* foco.jpg */; };
+		D91A7880151D0544008A0292 /* limpia.jpg in Resources */ = {isa = PBXBuildFile; fileRef = D91A787D151D0544008A0292 /* limpia.jpg */; };
+		D91EA935151A702D00EACB54 /* TestData.m in Sources */ = {isa = PBXBuildFile; fileRef = D91EA934151A702D00EACB54 /* TestData.m */; };
+		D92B75B9153342EA00C1F3B9 /* Glosario.m in Sources */ = {isa = PBXBuildFile; fileRef = D92B75B8153342EA00C1F3B9 /* Glosario.m */; };
+		D92B75BC153342FF00C1F3B9 /* Remedios.m in Sources */ = {isa = PBXBuildFile; fileRef = D92B75BB153342FF00C1F3B9 /* Remedios.m */; };
+		D93A59FA152A1B5E0012B9F8 /* ComprasViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D93A59F8152A1B5D0012B9F8 /* ComprasViewController.m */; };
+		D93A59FB152A1B5E0012B9F8 /* ComprasViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D93A59F9152A1B5E0012B9F8 /* ComprasViewController.xib */; };
+		D95B22F5152C9DFB0026C40E /* marca_llena_compras.png in Resources */ = {isa = PBXBuildFile; fileRef = D95B22F4152C9DFB0026C40E /* marca_llena_compras.png */; };
+		D964C3B1152CEB7C00860E0E /* fondo_compras@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D964C3B0152CEB7C00860E0E /* fondo_compras@2x.png */; };
+		D9868B371522555B00AEBE4D /* detalleGlosarioViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D9868B351522555B00AEBE4D /* detalleGlosarioViewController.m */; };
+		D9868B381522555B00AEBE4D /* detalleGlosarioViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D9868B361522555B00AEBE4D /* detalleGlosarioViewController.xib */; };
+		D990C13A152B5F1C004F6B73 /* icono_compras_tab@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D990C137152B5F1C004F6B73 /* icono_compras_tab@2x.png */; };
+		D990C13B152B5F1C004F6B73 /* icono_glosario_tab@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D990C138152B5F1C004F6B73 /* icono_glosario_tab@2x.png */; };
+		D990C13C152B5F1C004F6B73 /* icono_remedios_tab@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D990C139152B5F1C004F6B73 /* icono_remedios_tab@2x.png */; };
+		D990C141152B60C0004F6B73 /* icono_compras_tab.png in Resources */ = {isa = PBXBuildFile; fileRef = D990C13E152B60C0004F6B73 /* icono_compras_tab.png */; };
+		D990C142152B60C0004F6B73 /* icono_glosario_tab.png in Resources */ = {isa = PBXBuildFile; fileRef = D990C13F152B60C0004F6B73 /* icono_glosario_tab.png */; };
+		D990C143152B60C0004F6B73 /* icono_remedios_tab.png in Resources */ = {isa = PBXBuildFile; fileRef = D990C140152B60C0004F6B73 /* icono_remedios_tab.png */; };
+		D990C146152B66D3004F6B73 /* marca_vacia_compras.png in Resources */ = {isa = PBXBuildFile; fileRef = D990C144152B66D3004F6B73 /* marca_vacia_compras.png */; };
+		D990C147152B66D3004F6B73 /* marca_vacia_compras@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D990C145152B66D3004F6B73 /* marca_vacia_compras@2x.png */; };
+		D990C14D152B7641004F6B73 /* icono_compartir_detalleremedio.png in Resources */ = {isa = PBXBuildFile; fileRef = D990C14C152B7641004F6B73 /* icono_compartir_detalleremedio.png */; };
+		D990C14F152B7779004F6B73 /* icono_basura_compras.png in Resources */ = {isa = PBXBuildFile; fileRef = D990C14E152B7779004F6B73 /* icono_basura_compras.png */; };
+		D990C151152B7EE0004F6B73 /* fondo_compras.png in Resources */ = {isa = PBXBuildFile; fileRef = D990C150152B7EE0004F6B73 /* fondo_compras.png */; };
+		D990C157152B8AF3004F6B73 /* fondo_general@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D990C156152B8AF3004F6B73 /* fondo_general@2x.png */; };
+		D990C162152B9116004F6B73 /* foto_celda_glosario.png in Resources */ = {isa = PBXBuildFile; fileRef = D990C158152B9115004F6B73 /* foto_celda_glosario.png */; };
+		D990C163152B9116004F6B73 /* foto_celda_glosario@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D990C159152B9115004F6B73 /* foto_celda_glosario@2x.png */; };
+		D990C164152B9116004F6B73 /* foto_celda_remedios.png in Resources */ = {isa = PBXBuildFile; fileRef = D990C15A152B9115004F6B73 /* foto_celda_remedios.png */; };
+		D990C165152B9116004F6B73 /* foto_celda_remedios@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D990C15B152B9115004F6B73 /* foto_celda_remedios@2x.png */; };
+		D990C166152B9116004F6B73 /* foto_detalleglosario.png in Resources */ = {isa = PBXBuildFile; fileRef = D990C15C152B9116004F6B73 /* foto_detalleglosario.png */; };
+		D990C167152B9116004F6B73 /* foto_detalleglosario@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D990C15D152B9116004F6B73 /* foto_detalleglosario@2x.png */; };
+		D990C168152B9116004F6B73 /* foto_detalleremedio.png in Resources */ = {isa = PBXBuildFile; fileRef = D990C15E152B9116004F6B73 /* foto_detalleremedio.png */; };
+		D990C169152B9116004F6B73 /* foto_detalleremedio@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D990C15F152B9116004F6B73 /* foto_detalleremedio@2x.png */; };
+		D990C16A152B9116004F6B73 /* foto2_celda_remedios.png in Resources */ = {isa = PBXBuildFile; fileRef = D990C160152B9116004F6B73 /* foto2_celda_remedios.png */; };
+		D990C16B152B9116004F6B73 /* foto2_celda_remedios@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D990C161152B9116004F6B73 /* foto2_celda_remedios@2x.png */; };
+		D9BD7C12152231CA007162AD /* glosarioViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D9BD7C10152231CA007162AD /* glosarioViewController.m */; };
+		D9BD7C13152231CA007162AD /* glosarioViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D9BD7C11152231CA007162AD /* glosarioViewController.xib */; };
+		D9BD7C3C1522480F007162AD /* ficus.jpg in Resources */ = {isa = PBXBuildFile; fileRef = D9BD7C3B1522480F007162AD /* ficus.jpg */; };
+		D9C4F52A152CEBC300533412 /* fondo_general.png in Resources */ = {isa = PBXBuildFile; fileRef = D9C4F529152CEBC300533412 /* fondo_general.png */; };
+		D9E649AD15239A660033A2A7 /* menta.jpg in Resources */ = {isa = PBXBuildFile; fileRef = D9E649AB15239A660033A2A7 /* menta.jpg */; };
+		D9E649AE15239A660033A2A7 /* cannabis.jpg in Resources */ = {isa = PBXBuildFile; fileRef = D9E649AC15239A660033A2A7 /* cannabis.jpg */; };
+		D9E87F77152CEA79004E2081 /* icono_basura_compras@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D9E87F76152CEA79004E2081 /* icono_basura_compras@2x.png */; };
+		D9E87F7A152CEA87004E2081 /* icono_compartir_detalleremedio@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D9E87F79152CEA87004E2081 /* icono_compartir_detalleremedio@2x.png */; };
+		D9E87F80152CEAD7004E2081 /* marca_llena_compras@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D9E87F7F152CEAD7004E2081 /* marca_llena_compras@2x.png */; };
+		D9F89BFF1519268C00DDCBAC /* Model.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = D9F89BFD1519268C00DDCBAC /* Model.xcdatamodeld */; };
+		D9F89C02151927BE00DDCBAC /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D9F89C01151927BE00DDCBAC /* CoreData.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		0662491F14A8F2A800FDAFA7 /* RemediosCaseros.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RemediosCaseros.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		0662492314A8F2A800FDAFA7 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		0662492514A8F2A800FDAFA7 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		0662492714A8F2A800FDAFA7 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		0662492B14A8F2A900FDAFA7 /* RemediosCaseros-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "RemediosCaseros-Info.plist"; sourceTree = "<group>"; };
+		0662492D14A8F2A900FDAFA7 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		0662492F14A8F2A900FDAFA7 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		0662493114A8F2A900FDAFA7 /* RemediosCaseros-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "RemediosCaseros-Prefix.pch"; sourceTree = "<group>"; };
+		0662493214A8F2A900FDAFA7 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		0662493314A8F2A900FDAFA7 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		0662493814A8F2A900FDAFA7 /* first.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = first.png; sourceTree = "<group>"; };
+		0662493A14A8F2A900FDAFA7 /* first@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "first@2x.png"; sourceTree = "<group>"; };
+		0662493F14A8F2A900FDAFA7 /* second.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = second.png; sourceTree = "<group>"; };
+		0662494114A8F2A900FDAFA7 /* second@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "second@2x.png"; sourceTree = "<group>"; };
+		06624A2014ABA1B100FDAFA7 /* glosario.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = glosario.plist; sourceTree = "<group>"; };
+		06624A2414ABA1B100FDAFA7 /* lasdo.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = lasdo.plist; sourceTree = "<group>"; };
+		06624A3314ABA20300FDAFA7 /* glosario.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = glosario.png; sourceTree = "<group>"; };
+		06624A3714ABA20300FDAFA7 /* receta.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = receta.png; sourceTree = "<group>"; };
+		06624A3A14ABA20300FDAFA7 /* RootViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RootViewController.h; sourceTree = "<group>"; };
+		06624A3B14ABA20300FDAFA7 /* RootViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RootViewController.m; sourceTree = "<group>"; };
+		06624A3C14ABA20300FDAFA7 /* RootViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RootViewController.xib; sourceTree = "<group>"; };
+		06624A3D14ABA20300FDAFA7 /* tweet.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = tweet.png; sourceTree = "<group>"; };
+		06E99CA9152CCE960024BBD6 /* remedios_57x57.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = remedios_57x57.png; sourceTree = "<group>"; };
+		06E99CAA152CCE960024BBD6 /* remedios_114x114.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = remedios_114x114.png; sourceTree = "<group>"; };
+		06E99CAE152CCED40024BBD6 /* remedios_57x57.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = remedios_57x57.png; sourceTree = "<group>"; };
+		06E99CB0152CCED90024BBD6 /* remedios_114x114.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = remedios_114x114.png; sourceTree = "<group>"; };
+		9AE8D0D415334E68008FEDBB /* Twitter.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Twitter.framework; path = System/Library/Frameworks/Twitter.framework; sourceTree = SDKROOT; };
+		9AE8D0D715334E73008FEDBB /* MessageUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MessageUI.framework; path = System/Library/Frameworks/MessageUI.framework; sourceTree = SDKROOT; };
+		9AEA5F681533504600A9E703 /* FacebookMethods.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FacebookMethods.h; sourceTree = "<group>"; };
+		9AEA5F691533504600A9E703 /* FacebookMethods.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FacebookMethods.m; sourceTree = "<group>"; };
+		9AEA5F731533505300A9E703 /* Facebook.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Facebook.h; sourceTree = "<group>"; };
+		9AEA5F741533505300A9E703 /* Facebook.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Facebook.m; sourceTree = "<group>"; };
+		9AEA5F751533505300A9E703 /* facebook_ios_sdk_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = facebook_ios_sdk_Prefix.pch; sourceTree = "<group>"; };
+		9AEA5F761533505300A9E703 /* FBConnect.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FBConnect.h; sourceTree = "<group>"; };
+		9AEA5F771533505300A9E703 /* FBDialog.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = FBDialog.bundle; sourceTree = "<group>"; };
+		9AEA5F781533505300A9E703 /* FBDialog.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FBDialog.h; sourceTree = "<group>"; };
+		9AEA5F791533505300A9E703 /* FBDialog.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FBDialog.m; sourceTree = "<group>"; };
+		9AEA5F7A1533505300A9E703 /* FBFrictionlessRequestSettings.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FBFrictionlessRequestSettings.h; sourceTree = "<group>"; };
+		9AEA5F7B1533505300A9E703 /* FBFrictionlessRequestSettings.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FBFrictionlessRequestSettings.m; sourceTree = "<group>"; };
+		9AEA5F7C1533505300A9E703 /* FBLoginDialog.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FBLoginDialog.h; sourceTree = "<group>"; };
+		9AEA5F7D1533505300A9E703 /* FBLoginDialog.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FBLoginDialog.m; sourceTree = "<group>"; };
+		9AEA5F7E1533505300A9E703 /* FBRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FBRequest.h; sourceTree = "<group>"; };
+		9AEA5F7F1533505300A9E703 /* FBRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FBRequest.m; sourceTree = "<group>"; };
+		9AEA5F811533505300A9E703 /* JSON.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSON.h; sourceTree = "<group>"; };
+		9AEA5F821533505300A9E703 /* NSObject+SBJSON.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+SBJSON.h"; sourceTree = "<group>"; };
+		9AEA5F831533505300A9E703 /* NSObject+SBJSON.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+SBJSON.m"; sourceTree = "<group>"; };
+		9AEA5F841533505300A9E703 /* NSString+SBJSON.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+SBJSON.h"; sourceTree = "<group>"; };
+		9AEA5F851533505300A9E703 /* NSString+SBJSON.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+SBJSON.m"; sourceTree = "<group>"; };
+		9AEA5F861533505300A9E703 /* SBJSON.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBJSON.h; sourceTree = "<group>"; };
+		9AEA5F871533505300A9E703 /* SBJSON.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBJSON.m; sourceTree = "<group>"; };
+		9AEA5F881533505300A9E703 /* SBJsonBase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBJsonBase.h; sourceTree = "<group>"; };
+		9AEA5F891533505300A9E703 /* SBJsonBase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBJsonBase.m; sourceTree = "<group>"; };
+		9AEA5F8A1533505300A9E703 /* SBJsonParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBJsonParser.h; sourceTree = "<group>"; };
+		9AEA5F8B1533505300A9E703 /* SBJsonParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBJsonParser.m; sourceTree = "<group>"; };
+		9AEA5F8C1533505300A9E703 /* SBJsonWriter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBJsonWriter.h; sourceTree = "<group>"; };
+		9AEA5F8D1533505300A9E703 /* SBJsonWriter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBJsonWriter.m; sourceTree = "<group>"; };
+		D90882E11520D87A00AB7AEB /* detalleViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = detalleViewController.h; sourceTree = "<group>"; };
+		D90882E21520D87A00AB7AEB /* detalleViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = detalleViewController.m; sourceTree = "<group>"; };
+		D90882E31520D87A00AB7AEB /* detalleViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = detalleViewController.xib; sourceTree = "<group>"; };
+		D91A787B151D0544008A0292 /* coco.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = coco.png; sourceTree = "<group>"; };
+		D91A787C151D0544008A0292 /* foco.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = foco.jpg; sourceTree = "<group>"; };
+		D91A787D151D0544008A0292 /* limpia.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = limpia.jpg; sourceTree = "<group>"; };
+		D91EA933151A702D00EACB54 /* TestData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestData.h; sourceTree = "<group>"; };
+		D91EA934151A702D00EACB54 /* TestData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestData.m; sourceTree = "<group>"; };
+		D91EA937151A78AA00EACB54 /* ConstantRemedios.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ConstantRemedios.h; sourceTree = "<group>"; };
+		D92B75B7153342EA00C1F3B9 /* Glosario.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Glosario.h; sourceTree = "<group>"; };
+		D92B75B8153342EA00C1F3B9 /* Glosario.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Glosario.m; sourceTree = "<group>"; };
+		D92B75BA153342FF00C1F3B9 /* Remedios.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Remedios.h; sourceTree = "<group>"; };
+		D92B75BB153342FF00C1F3B9 /* Remedios.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Remedios.m; sourceTree = "<group>"; };
+		D93A59F7152A1B5D0012B9F8 /* ComprasViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ComprasViewController.h; sourceTree = "<group>"; };
+		D93A59F8152A1B5D0012B9F8 /* ComprasViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ComprasViewController.m; sourceTree = "<group>"; };
+		D93A59F9152A1B5E0012B9F8 /* ComprasViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ComprasViewController.xib; sourceTree = "<group>"; };
+		D95B22F4152C9DFB0026C40E /* marca_llena_compras.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = marca_llena_compras.png; sourceTree = "<group>"; };
+		D964C3B0152CEB7C00860E0E /* fondo_compras@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "fondo_compras@2x.png"; sourceTree = "<group>"; };
+		D9868B341522555B00AEBE4D /* detalleGlosarioViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = detalleGlosarioViewController.h; sourceTree = "<group>"; };
+		D9868B351522555B00AEBE4D /* detalleGlosarioViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = detalleGlosarioViewController.m; sourceTree = "<group>"; };
+		D9868B361522555B00AEBE4D /* detalleGlosarioViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = detalleGlosarioViewController.xib; sourceTree = "<group>"; };
+		D990C137152B5F1C004F6B73 /* icono_compras_tab@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icono_compras_tab@2x.png"; sourceTree = "<group>"; };
+		D990C138152B5F1C004F6B73 /* icono_glosario_tab@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icono_glosario_tab@2x.png"; sourceTree = "<group>"; };
+		D990C139152B5F1C004F6B73 /* icono_remedios_tab@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icono_remedios_tab@2x.png"; sourceTree = "<group>"; };
+		D990C13E152B60C0004F6B73 /* icono_compras_tab.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icono_compras_tab.png; sourceTree = "<group>"; };
+		D990C13F152B60C0004F6B73 /* icono_glosario_tab.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icono_glosario_tab.png; sourceTree = "<group>"; };
+		D990C140152B60C0004F6B73 /* icono_remedios_tab.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icono_remedios_tab.png; sourceTree = "<group>"; };
+		D990C144152B66D3004F6B73 /* marca_vacia_compras.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = marca_vacia_compras.png; sourceTree = "<group>"; };
+		D990C145152B66D3004F6B73 /* marca_vacia_compras@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "marca_vacia_compras@2x.png"; sourceTree = "<group>"; };
+		D990C14C152B7641004F6B73 /* icono_compartir_detalleremedio.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icono_compartir_detalleremedio.png; sourceTree = "<group>"; };
+		D990C14E152B7779004F6B73 /* icono_basura_compras.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icono_basura_compras.png; sourceTree = "<group>"; };
+		D990C150152B7EE0004F6B73 /* fondo_compras.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = fondo_compras.png; sourceTree = "<group>"; };
+		D990C156152B8AF3004F6B73 /* fondo_general@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "fondo_general@2x.png"; sourceTree = "<group>"; };
+		D990C158152B9115004F6B73 /* foto_celda_glosario.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = foto_celda_glosario.png; sourceTree = "<group>"; };
+		D990C159152B9115004F6B73 /* foto_celda_glosario@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "foto_celda_glosario@2x.png"; sourceTree = "<group>"; };
+		D990C15A152B9115004F6B73 /* foto_celda_remedios.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = foto_celda_remedios.png; sourceTree = "<group>"; };
+		D990C15B152B9115004F6B73 /* foto_celda_remedios@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "foto_celda_remedios@2x.png"; sourceTree = "<group>"; };
+		D990C15C152B9116004F6B73 /* foto_detalleglosario.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = foto_detalleglosario.png; sourceTree = "<group>"; };
+		D990C15D152B9116004F6B73 /* foto_detalleglosario@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "foto_detalleglosario@2x.png"; sourceTree = "<group>"; };
+		D990C15E152B9116004F6B73 /* foto_detalleremedio.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = foto_detalleremedio.png; sourceTree = "<group>"; };
+		D990C15F152B9116004F6B73 /* foto_detalleremedio@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "foto_detalleremedio@2x.png"; sourceTree = "<group>"; };
+		D990C160152B9116004F6B73 /* foto2_celda_remedios.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = foto2_celda_remedios.png; sourceTree = "<group>"; };
+		D990C161152B9116004F6B73 /* foto2_celda_remedios@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "foto2_celda_remedios@2x.png"; sourceTree = "<group>"; };
+		D9BD7C0F152231CA007162AD /* glosarioViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = glosarioViewController.h; sourceTree = "<group>"; };
+		D9BD7C10152231CA007162AD /* glosarioViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = glosarioViewController.m; sourceTree = "<group>"; };
+		D9BD7C11152231CA007162AD /* glosarioViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = glosarioViewController.xib; sourceTree = "<group>"; };
+		D9BD7C3B1522480F007162AD /* ficus.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = ficus.jpg; sourceTree = "<group>"; };
+		D9C4F529152CEBC300533412 /* fondo_general.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = fondo_general.png; sourceTree = "<group>"; };
+		D9E649AB15239A660033A2A7 /* menta.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = menta.jpg; sourceTree = "<group>"; };
+		D9E649AC15239A660033A2A7 /* cannabis.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = cannabis.jpg; sourceTree = "<group>"; };
+		D9E87F76152CEA79004E2081 /* icono_basura_compras@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icono_basura_compras@2x.png"; sourceTree = "<group>"; };
+		D9E87F79152CEA87004E2081 /* icono_compartir_detalleremedio@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icono_compartir_detalleremedio@2x.png"; sourceTree = "<group>"; };
+		D9E87F7F152CEAD7004E2081 /* marca_llena_compras@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "marca_llena_compras@2x.png"; sourceTree = "<group>"; };
+		D9F89BFE1519268C00DDCBAC /* Model.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Model.xcdatamodel; sourceTree = "<group>"; };
+		D9F89C01151927BE00DDCBAC /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		0662491C14A8F2A800FDAFA7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9AE8D0D815334E73008FEDBB /* MessageUI.framework in Frameworks */,
+				9AE8D0D515334E68008FEDBB /* Twitter.framework in Frameworks */,
+				D9F89C02151927BE00DDCBAC /* CoreData.framework in Frameworks */,
+				0662492414A8F2A800FDAFA7 /* UIKit.framework in Frameworks */,
+				0662492614A8F2A800FDAFA7 /* Foundation.framework in Frameworks */,
+				0662492814A8F2A800FDAFA7 /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0662491414A8F2A800FDAFA7 = {
+			isa = PBXGroup;
+			children = (
+				9AEA5F6C1533505300A9E703 /* facebook-ios-sdk */,
+				9AE8D0D915334E86008FEDBB /* Compartir */,
+				9AE8D0D715334E73008FEDBB /* MessageUI.framework */,
+				9AE8D0D415334E68008FEDBB /* Twitter.framework */,
+				06E99CB0152CCED90024BBD6 /* remedios_114x114.png */,
+				06E99CAE152CCED40024BBD6 /* remedios_57x57.png */,
+				0662492914A8F2A900FDAFA7 /* RemediosCaseros */,
+				0662492214A8F2A800FDAFA7 /* Frameworks */,
+				0662492014A8F2A800FDAFA7 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		0662492014A8F2A800FDAFA7 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				0662491F14A8F2A800FDAFA7 /* RemediosCaseros.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		0662492214A8F2A800FDAFA7 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D9F89C01151927BE00DDCBAC /* CoreData.framework */,
+				0662492314A8F2A800FDAFA7 /* UIKit.framework */,
+				0662492514A8F2A800FDAFA7 /* Foundation.framework */,
+				0662492714A8F2A800FDAFA7 /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		0662492914A8F2A900FDAFA7 /* RemediosCaseros */ = {
+			isa = PBXGroup;
+			children = (
+				D980365715238E79000F8DE6 /* Classes */,
+				D9FC47F6151A6CFE002F1D4B /* Test */,
+				D9FC479D151A5115002F1D4B /* Imagenes */,
+				0662493214A8F2A900FDAFA7 /* AppDelegate.h */,
+				0662493314A8F2A900FDAFA7 /* AppDelegate.m */,
+				06624A3A14ABA20300FDAFA7 /* RootViewController.h */,
+				06624A3B14ABA20300FDAFA7 /* RootViewController.m */,
+				06624A3C14ABA20300FDAFA7 /* RootViewController.xib */,
+				D90882E11520D87A00AB7AEB /* detalleViewController.h */,
+				D90882E21520D87A00AB7AEB /* detalleViewController.m */,
+				D90882E31520D87A00AB7AEB /* detalleViewController.xib */,
+				D9BD7C0F152231CA007162AD /* glosarioViewController.h */,
+				D9BD7C10152231CA007162AD /* glosarioViewController.m */,
+				D9BD7C11152231CA007162AD /* glosarioViewController.xib */,
+				D9868B341522555B00AEBE4D /* detalleGlosarioViewController.h */,
+				D9868B351522555B00AEBE4D /* detalleGlosarioViewController.m */,
+				D9868B361522555B00AEBE4D /* detalleGlosarioViewController.xib */,
+				D93A59F7152A1B5D0012B9F8 /* ComprasViewController.h */,
+				D93A59F8152A1B5D0012B9F8 /* ComprasViewController.m */,
+				D93A59F9152A1B5E0012B9F8 /* ComprasViewController.xib */,
+				06624A2414ABA1B100FDAFA7 /* lasdo.plist */,
+				06624A2014ABA1B100FDAFA7 /* glosario.plist */,
+				0662492A14A8F2A900FDAFA7 /* Supporting Files */,
+				D9F89BFD1519268C00DDCBAC /* Model.xcdatamodeld */,
+			);
+			path = RemediosCaseros;
+			sourceTree = "<group>";
+		};
+		0662492A14A8F2A900FDAFA7 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				0662492B14A8F2A900FDAFA7 /* RemediosCaseros-Info.plist */,
+				0662492C14A8F2A900FDAFA7 /* InfoPlist.strings */,
+				0662492F14A8F2A900FDAFA7 /* main.m */,
+				0662493114A8F2A900FDAFA7 /* RemediosCaseros-Prefix.pch */,
+				D92B75B7153342EA00C1F3B9 /* Glosario.h */,
+				D92B75B8153342EA00C1F3B9 /* Glosario.m */,
+				D92B75BA153342FF00C1F3B9 /* Remedios.h */,
+				D92B75BB153342FF00C1F3B9 /* Remedios.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		9AE8D0D915334E86008FEDBB /* Compartir */ = {
+			isa = PBXGroup;
+			children = (
+				9AE8D0DA15334E91008FEDBB /* Facebook */,
+			);
+			name = Compartir;
+			sourceTree = "<group>";
+		};
+		9AE8D0DA15334E91008FEDBB /* Facebook */ = {
+			isa = PBXGroup;
+			children = (
+				9AEA5F681533504600A9E703 /* FacebookMethods.h */,
+				9AEA5F691533504600A9E703 /* FacebookMethods.m */,
+			);
+			name = Facebook;
+			sourceTree = "<group>";
+		};
+		9AEA5F6C1533505300A9E703 /* facebook-ios-sdk */ = {
+			isa = PBXGroup;
+			children = (
+				9AEA5F721533505300A9E703 /* src */,
+			);
+			path = "facebook-ios-sdk";
+			sourceTree = "<group>";
+		};
+		9AEA5F721533505300A9E703 /* src */ = {
+			isa = PBXGroup;
+			children = (
+				9AEA5F731533505300A9E703 /* Facebook.h */,
+				9AEA5F741533505300A9E703 /* Facebook.m */,
+				9AEA5F751533505300A9E703 /* facebook_ios_sdk_Prefix.pch */,
+				9AEA5F761533505300A9E703 /* FBConnect.h */,
+				9AEA5F771533505300A9E703 /* FBDialog.bundle */,
+				9AEA5F781533505300A9E703 /* FBDialog.h */,
+				9AEA5F791533505300A9E703 /* FBDialog.m */,
+				9AEA5F7A1533505300A9E703 /* FBFrictionlessRequestSettings.h */,
+				9AEA5F7B1533505300A9E703 /* FBFrictionlessRequestSettings.m */,
+				9AEA5F7C1533505300A9E703 /* FBLoginDialog.h */,
+				9AEA5F7D1533505300A9E703 /* FBLoginDialog.m */,
+				9AEA5F7E1533505300A9E703 /* FBRequest.h */,
+				9AEA5F7F1533505300A9E703 /* FBRequest.m */,
+				9AEA5F801533505300A9E703 /* JSON */,
+			);
+			path = src;
+			sourceTree = "<group>";
+		};
+		9AEA5F801533505300A9E703 /* JSON */ = {
+			isa = PBXGroup;
+			children = (
+				9AEA5F811533505300A9E703 /* JSON.h */,
+				9AEA5F821533505300A9E703 /* NSObject+SBJSON.h */,
+				9AEA5F831533505300A9E703 /* NSObject+SBJSON.m */,
+				9AEA5F841533505300A9E703 /* NSString+SBJSON.h */,
+				9AEA5F851533505300A9E703 /* NSString+SBJSON.m */,
+				9AEA5F861533505300A9E703 /* SBJSON.h */,
+				9AEA5F871533505300A9E703 /* SBJSON.m */,
+				9AEA5F881533505300A9E703 /* SBJsonBase.h */,
+				9AEA5F891533505300A9E703 /* SBJsonBase.m */,
+				9AEA5F8A1533505300A9E703 /* SBJsonParser.h */,
+				9AEA5F8B1533505300A9E703 /* SBJsonParser.m */,
+				9AEA5F8C1533505300A9E703 /* SBJsonWriter.h */,
+				9AEA5F8D1533505300A9E703 /* SBJsonWriter.m */,
+			);
+			path = JSON;
+			sourceTree = "<group>";
+		};
+		D91A787A151D0544008A0292 /* imagenes remedios */ = {
+			isa = PBXGroup;
+			children = (
+				D9E649AB15239A660033A2A7 /* menta.jpg */,
+				D9E649AC15239A660033A2A7 /* cannabis.jpg */,
+				D9BD7C3B1522480F007162AD /* ficus.jpg */,
+				D91A787B151D0544008A0292 /* coco.png */,
+				D91A787C151D0544008A0292 /* foco.jpg */,
+				D91A787D151D0544008A0292 /* limpia.jpg */,
+			);
+			path = "imagenes remedios";
+			sourceTree = "<group>";
+		};
+		D980365715238E79000F8DE6 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		D9FC479D151A5115002F1D4B /* Imagenes */ = {
+			isa = PBXGroup;
+			children = (
+				D9C4F529152CEBC300533412 /* fondo_general.png */,
+				D964C3B0152CEB7C00860E0E /* fondo_compras@2x.png */,
+				D9E87F7F152CEAD7004E2081 /* marca_llena_compras@2x.png */,
+				D9E87F79152CEA87004E2081 /* icono_compartir_detalleremedio@2x.png */,
+				D9E87F76152CEA79004E2081 /* icono_basura_compras@2x.png */,
+				06E99CA9152CCE960024BBD6 /* remedios_57x57.png */,
+				06E99CAA152CCE960024BBD6 /* remedios_114x114.png */,
+				D95B22F4152C9DFB0026C40E /* marca_llena_compras.png */,
+				D990C158152B9115004F6B73 /* foto_celda_glosario.png */,
+				D990C159152B9115004F6B73 /* foto_celda_glosario@2x.png */,
+				D990C15A152B9115004F6B73 /* foto_celda_remedios.png */,
+				D990C15B152B9115004F6B73 /* foto_celda_remedios@2x.png */,
+				D990C15C152B9116004F6B73 /* foto_detalleglosario.png */,
+				D990C15D152B9116004F6B73 /* foto_detalleglosario@2x.png */,
+				D990C15E152B9116004F6B73 /* foto_detalleremedio.png */,
+				D990C15F152B9116004F6B73 /* foto_detalleremedio@2x.png */,
+				D990C160152B9116004F6B73 /* foto2_celda_remedios.png */,
+				D990C161152B9116004F6B73 /* foto2_celda_remedios@2x.png */,
+				D990C156152B8AF3004F6B73 /* fondo_general@2x.png */,
+				D990C150152B7EE0004F6B73 /* fondo_compras.png */,
+				D990C14E152B7779004F6B73 /* icono_basura_compras.png */,
+				D990C14C152B7641004F6B73 /* icono_compartir_detalleremedio.png */,
+				D990C144152B66D3004F6B73 /* marca_vacia_compras.png */,
+				D990C145152B66D3004F6B73 /* marca_vacia_compras@2x.png */,
+				D990C13E152B60C0004F6B73 /* icono_compras_tab.png */,
+				D990C13F152B60C0004F6B73 /* icono_glosario_tab.png */,
+				D990C140152B60C0004F6B73 /* icono_remedios_tab.png */,
+				D990C137152B5F1C004F6B73 /* icono_compras_tab@2x.png */,
+				D990C138152B5F1C004F6B73 /* icono_glosario_tab@2x.png */,
+				D990C139152B5F1C004F6B73 /* icono_remedios_tab@2x.png */,
+				D91A787A151D0544008A0292 /* imagenes remedios */,
+				06624A3D14ABA20300FDAFA7 /* tweet.png */,
+				0662493F14A8F2A900FDAFA7 /* second.png */,
+				0662494114A8F2A900FDAFA7 /* second@2x.png */,
+				06624A3714ABA20300FDAFA7 /* receta.png */,
+				06624A3314ABA20300FDAFA7 /* glosario.png */,
+				0662493814A8F2A900FDAFA7 /* first.png */,
+				0662493A14A8F2A900FDAFA7 /* first@2x.png */,
+			);
+			name = Imagenes;
+			sourceTree = "<group>";
+		};
+		D9FC47F6151A6CFE002F1D4B /* Test */ = {
+			isa = PBXGroup;
+			children = (
+				D91EA933151A702D00EACB54 /* TestData.h */,
+				D91EA934151A702D00EACB54 /* TestData.m */,
+				D91EA937151A78AA00EACB54 /* ConstantRemedios.h */,
+			);
+			name = Test;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		0662491E14A8F2A800FDAFA7 /* RemediosCaseros */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0662494B14A8F2A900FDAFA7 /* Build configuration list for PBXNativeTarget "RemediosCaseros" */;
+			buildPhases = (
+				0662491B14A8F2A800FDAFA7 /* Sources */,
+				0662491C14A8F2A800FDAFA7 /* Frameworks */,
+				0662491D14A8F2A800FDAFA7 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = RemediosCaseros;
+			productName = RemediosCaseros;
+			productReference = 0662491F14A8F2A800FDAFA7 /* RemediosCaseros.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		0662491614A8F2A800FDAFA7 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0420;
+				ORGANIZATIONNAME = "Somos Software";
+			};
+			buildConfigurationList = 0662491914A8F2A800FDAFA7 /* Build configuration list for PBXProject "RemediosCaseros" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 0662491414A8F2A800FDAFA7;
+			productRefGroup = 0662492014A8F2A800FDAFA7 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				0662491E14A8F2A800FDAFA7 /* RemediosCaseros */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		0662491D14A8F2A800FDAFA7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0662492E14A8F2A900FDAFA7 /* InfoPlist.strings in Resources */,
+				0662493914A8F2A900FDAFA7 /* first.png in Resources */,
+				0662493B14A8F2A900FDAFA7 /* first@2x.png in Resources */,
+				0662494014A8F2A900FDAFA7 /* second.png in Resources */,
+				0662494214A8F2A900FDAFA7 /* second@2x.png in Resources */,
+				06624A2514ABA1B100FDAFA7 /* glosario.plist in Resources */,
+				06624A2814ABA1B100FDAFA7 /* lasdo.plist in Resources */,
+				06624A4414ABA20300FDAFA7 /* glosario.png in Resources */,
+				06624A4714ABA20300FDAFA7 /* receta.png in Resources */,
+				06624A4A14ABA20300FDAFA7 /* RootViewController.xib in Resources */,
+				06624A4B14ABA20300FDAFA7 /* tweet.png in Resources */,
+				D91A787E151D0544008A0292 /* coco.png in Resources */,
+				D91A787F151D0544008A0292 /* foco.jpg in Resources */,
+				D91A7880151D0544008A0292 /* limpia.jpg in Resources */,
+				D90882E51520D87A00AB7AEB /* detalleViewController.xib in Resources */,
+				D9BD7C13152231CA007162AD /* glosarioViewController.xib in Resources */,
+				D9BD7C3C1522480F007162AD /* ficus.jpg in Resources */,
+				D9868B381522555B00AEBE4D /* detalleGlosarioViewController.xib in Resources */,
+				D9E649AD15239A660033A2A7 /* menta.jpg in Resources */,
+				D9E649AE15239A660033A2A7 /* cannabis.jpg in Resources */,
+				D93A59FB152A1B5E0012B9F8 /* ComprasViewController.xib in Resources */,
+				D990C13A152B5F1C004F6B73 /* icono_compras_tab@2x.png in Resources */,
+				D990C13B152B5F1C004F6B73 /* icono_glosario_tab@2x.png in Resources */,
+				D990C13C152B5F1C004F6B73 /* icono_remedios_tab@2x.png in Resources */,
+				D990C141152B60C0004F6B73 /* icono_compras_tab.png in Resources */,
+				D990C142152B60C0004F6B73 /* icono_glosario_tab.png in Resources */,
+				D990C143152B60C0004F6B73 /* icono_remedios_tab.png in Resources */,
+				D990C146152B66D3004F6B73 /* marca_vacia_compras.png in Resources */,
+				D990C147152B66D3004F6B73 /* marca_vacia_compras@2x.png in Resources */,
+				D990C14D152B7641004F6B73 /* icono_compartir_detalleremedio.png in Resources */,
+				D990C14F152B7779004F6B73 /* icono_basura_compras.png in Resources */,
+				D990C151152B7EE0004F6B73 /* fondo_compras.png in Resources */,
+				D990C157152B8AF3004F6B73 /* fondo_general@2x.png in Resources */,
+				D990C162152B9116004F6B73 /* foto_celda_glosario.png in Resources */,
+				D990C163152B9116004F6B73 /* foto_celda_glosario@2x.png in Resources */,
+				D990C164152B9116004F6B73 /* foto_celda_remedios.png in Resources */,
+				D990C165152B9116004F6B73 /* foto_celda_remedios@2x.png in Resources */,
+				D990C166152B9116004F6B73 /* foto_detalleglosario.png in Resources */,
+				D990C167152B9116004F6B73 /* foto_detalleglosario@2x.png in Resources */,
+				D990C168152B9116004F6B73 /* foto_detalleremedio.png in Resources */,
+				D990C169152B9116004F6B73 /* foto_detalleremedio@2x.png in Resources */,
+				D990C16A152B9116004F6B73 /* foto2_celda_remedios.png in Resources */,
+				D990C16B152B9116004F6B73 /* foto2_celda_remedios@2x.png in Resources */,
+				D95B22F5152C9DFB0026C40E /* marca_llena_compras.png in Resources */,
+				06E99CAB152CCE960024BBD6 /* remedios_57x57.png in Resources */,
+				06E99CAC152CCE960024BBD6 /* remedios_114x114.png in Resources */,
+				06E99CAF152CCED40024BBD6 /* remedios_57x57.png in Resources */,
+				06E99CB1152CCED90024BBD6 /* remedios_114x114.png in Resources */,
+				D9E87F77152CEA79004E2081 /* icono_basura_compras@2x.png in Resources */,
+				D9E87F7A152CEA87004E2081 /* icono_compartir_detalleremedio@2x.png in Resources */,
+				D9E87F80152CEAD7004E2081 /* marca_llena_compras@2x.png in Resources */,
+				D964C3B1152CEB7C00860E0E /* fondo_compras@2x.png in Resources */,
+				D9C4F52A152CEBC300533412 /* fondo_general.png in Resources */,
+				9AEA5F921533505300A9E703 /* FBDialog.bundle in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		0662491B14A8F2A800FDAFA7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0662493014A8F2A900FDAFA7 /* main.m in Sources */,
+				0662493414A8F2A900FDAFA7 /* AppDelegate.m in Sources */,
+				06624A4914ABA20300FDAFA7 /* RootViewController.m in Sources */,
+				D9F89BFF1519268C00DDCBAC /* Model.xcdatamodeld in Sources */,
+				D91EA935151A702D00EACB54 /* TestData.m in Sources */,
+				D90882E41520D87A00AB7AEB /* detalleViewController.m in Sources */,
+				D9BD7C12152231CA007162AD /* glosarioViewController.m in Sources */,
+				D9868B371522555B00AEBE4D /* detalleGlosarioViewController.m in Sources */,
+				D93A59FA152A1B5E0012B9F8 /* ComprasViewController.m in Sources */,
+<<<<<<< HEAD
+				D92B75B9153342EA00C1F3B9 /* Glosario.m in Sources */,
+				D92B75BC153342FF00C1F3B9 /* Remedios.m in Sources */,
+=======
+				D9BC6F11152C9B9900A2557E /* Glosario.m in Sources */,
+				9AEA5F6A1533504600A9E703 /* FacebookMethods.m in Sources */,
+				9AEA5F911533505300A9E703 /* Facebook.m in Sources */,
+				9AEA5F931533505300A9E703 /* FBDialog.m in Sources */,
+				9AEA5F941533505300A9E703 /* FBFrictionlessRequestSettings.m in Sources */,
+				9AEA5F951533505300A9E703 /* FBLoginDialog.m in Sources */,
+				9AEA5F961533505300A9E703 /* FBRequest.m in Sources */,
+				9AEA5F971533505300A9E703 /* NSObject+SBJSON.m in Sources */,
+				9AEA5F981533505300A9E703 /* NSString+SBJSON.m in Sources */,
+				9AEA5F991533505300A9E703 /* SBJSON.m in Sources */,
+				9AEA5F9A1533505300A9E703 /* SBJsonBase.m in Sources */,
+				9AEA5F9B1533505300A9E703 /* SBJsonParser.m in Sources */,
+				9AEA5F9C1533505300A9E703 /* SBJsonWriter.m in Sources */,
+>>>>>>> social
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		0662492C14A8F2A900FDAFA7 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				0662492D14A8F2A900FDAFA7 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		0662494914A8F2A900FDAFA7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		0662494A14A8F2A900FDAFA7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		0662494C14A8F2A900FDAFA7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "RemediosCaseros/RemediosCaseros-Prefix.pch";
+				INFOPLIST_FILE = "RemediosCaseros/RemediosCaseros-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		0662494D14A8F2A900FDAFA7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "RemediosCaseros/RemediosCaseros-Prefix.pch";
+				INFOPLIST_FILE = "RemediosCaseros/RemediosCaseros-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		0662491914A8F2A800FDAFA7 /* Build configuration list for PBXProject "RemediosCaseros" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0662494914A8F2A900FDAFA7 /* Debug */,
+				0662494A14A8F2A900FDAFA7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		0662494B14A8F2A900FDAFA7 /* Build configuration list for PBXNativeTarget "RemediosCaseros" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0662494C14A8F2A900FDAFA7 /* Debug */,
+				0662494D14A8F2A900FDAFA7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		D9F89BFD1519268C00DDCBAC /* Model.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				D9F89BFE1519268C00DDCBAC /* Model.xcdatamodel */,
+			);
+			currentVersion = D9F89BFE1519268C00DDCBAC /* Model.xcdatamodel */;
+			path = Model.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 0662491614A8F2A800FDAFA7 /* Project object */;
+}

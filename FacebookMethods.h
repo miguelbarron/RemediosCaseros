@@ -12,7 +12,7 @@
 @interface FacebookMethods : NSObject<FBSessionDelegate, FBRequestDelegate, FBDialogDelegate>
 {
     Facebook *facebook_;
-    BOOL *flag;
+    BOOL flag;
  
 }
 

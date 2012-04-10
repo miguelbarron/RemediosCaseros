@@ -7,10 +7,10 @@
 //
 
 #import "FacebookMethods.h"
+
 FacebookMethods *sharedFacebook_;
 
-@implementation FacebookMethods
-
+@implementation FacebookMethods;
 @synthesize facebook = facebook_;
 
 
@@ -42,21 +42,11 @@ FacebookMethods *sharedFacebook_;
     }
 }
 
--(BOOL)logged
-{
-    if ([facebook_ isSessionValid]) {
-        NSLog(@"SIIII!");
-        return YES;
-    }
-    else
-    {
-        NSLog(@"Nooo");
-        return NO;
-    }
 
-}
+
 -(void)newFeed:(NSMutableDictionary *)Dic
 {
+    
     NSLog(@"FBDiccionario %@",[Dic description]);
     
     NSMutableDictionary *Cont = [[NSMutableDictionary alloc]init];
@@ -78,7 +68,7 @@ FacebookMethods *sharedFacebook_;
     [Cont setObject:[Dic objectForKey:@"title"] forKey:@"name"];
     [Cont setObject:[Dic objectForKey:@"message"] forKey:@"message"];
     //[Cont setObject: @"http://miRestaurante.com" forKey: @"href"];
-    [Cont setObject:@"Reference" forKey:@"caption"];
+    [Cont setObject:@"" forKey:@"caption"];
     
     
     
@@ -86,7 +76,7 @@ FacebookMethods *sharedFacebook_;
     
     
     
-    
+    flag =YES;
     
     [facebook_ dialog:@"feed"
             andParams:Cont
@@ -97,13 +87,23 @@ FacebookMethods *sharedFacebook_;
     [Cont release];
 }
 
-
+-(BOOL)logged{
+    if (flag) {
+        return YES;
+        NSLog(@"si");
+    }
+    else{
+        return NO;
+        NSLog(@"no");
+    }
+}
 
 -(void)logOut
 {
+    flag = NO;
     [facebook_ logout];
     [self fbDidLogout];
-    flag = NO;
+
 }
 
 - (void) fbDidLogout {
