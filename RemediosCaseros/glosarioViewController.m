@@ -19,6 +19,17 @@
 {
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
     if (self) {
+        
+        UILabel *label = [[[UILabel alloc] initWithFrame:CGRectZero] autorelease];
+        label.backgroundColor = [UIColor clearColor];
+        label.font=[UIFont fontWithName:@"Cochin-BoldItalic" size:27];
+        label.shadowColor = [UIColor colorWithWhite:0.0 alpha:0.5];
+        label.textAlignment = UITextAlignmentCenter;
+        label.textColor = [UIColor whiteColor]; // change this color
+        self.navigationItem.titleView = label;
+        label.text = NSLocalizedString(@"Glosario", @"");
+        [label sizeToFit];
+        
         self.title = NSLocalizedString(@"Glosario", @"Glosario");
         self.tabBarItem.image = [UIImage imageNamed:@"icono_glosario_tab.png"];
     }
@@ -42,6 +53,7 @@
     AppDelegate *appDelegate=(AppDelegate *)[[UIApplication sharedApplication]delegate];
     managedObjectContext=appDelegate.managedObjectContext;
     
+    self.navigationController.navigationBar.tintColor = [UIColor colorWithRed:0.192 green:0.255 blue:0.349 alpha:1.0];
     NSError *error = nil;
 	if (![[self fetchedResultsController] performFetch:&error]) {
 		
@@ -105,8 +117,9 @@
     
     // Configure the cell...
     cell.accessoryType=UITableViewCellAccessoryDisclosureIndicator;
-    cell.textLabel.font = [UIFont fontWithName:@"Helvetica-Bold"  size:13.0];     
-    cell.detailTextLabel.font= [UIFont fontWithName:@"Helvetica" size:11.0];    
+    cell.textLabel.font = [UIFont fontWithName:@"Helvetica-Bold"  size:15.0]; 
+    cell.textLabel.textColor=[UIColor colorWithRed:0.192 green:0.255 blue:0.349 alpha:1.0];
+    cell.detailTextLabel.font= [UIFont fontWithName:@"Helvetica" size:12.0];    
     cell.detailTextLabel.numberOfLines=2;
     cell.textLabel.numberOfLines=2;
     

@@ -29,7 +29,7 @@
 //{
 //    self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
 //    if (self) {
-//        // Custom initialization
+//        // Custom initializatio
 //    }
 //    return self;
 //}
@@ -49,15 +49,15 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
        
-    //compartirButton = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemAdd target:self action:@selector(favorito:)];
+
+    self.navigationController.navigationBar.tintColor = [UIColor colorWithRed:0.192 green:0.255 blue:0.349 alpha:1.0];
     UIImage *imagenCompartir=[UIImage imageNamed:@"icono_compartir_detalleremedio.png"];
     compartirButton = [[UIBarButtonItem alloc] initWithImage:imagenCompartir style:UIBarButtonItemStyleBordered target:self action:@selector(compartir:)];
     self.navigationItem.rightBarButtonItem = compartirButton;
     [compartirButton release]; 
     
     [self.svView setContentSize:CGSizeMake(100,500)];
-//    Imagen *imrem=remedio.imagen;
-//    NSString *direccionImagen=imrem.imagenThumb;
+
     NSString *direccionImagen=remedio.imagenThumb;
     imagenRemedio.image=[UIImage imageNamed:direccionImagen];   
     

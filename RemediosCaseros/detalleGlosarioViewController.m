@@ -40,6 +40,7 @@
     AppDelegate *appDelegate=(AppDelegate *)[[UIApplication sharedApplication]delegate];
     managedObjectContext=appDelegate.managedObjectContext;
     
+    self.navigationController.navigationBar.tintColor = [UIColor colorWithRed:0.192 green:0.255 blue:0.349 alpha:1.0];
     [self.svView setContentSize:CGSizeMake(100,1000)];
     // Do any additional setup after loading the view from its nib.  
     
@@ -83,24 +84,31 @@
 -(void)favorito:(id)sender
 {
 
-    NSLog(@"agregado a favorito");
-    if (!glosario.comprarIngrediente) {
+    NSLog(@"agregado a Compras");
+    if ([glosario.comprarIngrediente intValue]<1) 
+        
+    {
         
         NSError *saveError;
         [glosario setComprarIngrediente:[NSNumber numberWithBool:YES]];
-        if (![managedObjectContext save:&saveError]) {
+        if (![managedObjectContext save:&saveError]) 
+        {
             NSLog(@"Guardar a compras Fallo: %@", saveError);
-        } else {
+        } 
+        else 
+        {
             
             UIAlertView * errorAlert = [[UIAlertView alloc] initWithTitle:@"Registro agregado" message:@"Registro agregado a Compras" delegate:self cancelButtonTitle:@"Aceptar" otherButtonTitles:nil];
             [errorAlert show];
             [errorAlert release];
-            return;
-            
-            // The changes to bookTwo have been persisted.
+            return;            
+
         }
         
-    }  else{
+    }  
+    
+    else
+    {
         UIAlertView * errorAlert = [[UIAlertView alloc] initWithTitle:@"Registro ya existe" message:@"Registro ya se encuentra en Compras" delegate:self cancelButtonTitle:@"Aceptar" otherButtonTitles:nil];
         [errorAlert show];
         [errorAlert release];
