@@ -365,11 +365,11 @@
     
     NSMutableDictionary *param = [[NSMutableDictionary alloc]init];
     
-    [param setObject:@"http://neostar.org/test/lavilla_fb.png" forKey:@"picture"];
+    [param setObject:@"http://neostar.org/test/remedios_fb.png" forKey:@"picture"];
     
     
     
-    [param setObject:@"www.remedioscaseros.com.mx" forKey:@"link"];
+    [param setObject:@"www.somossoftware.com" forKey:@"link"];
     
     
     //[param setObject:@"http://cache2.allpostersimages.com/p/LRG/10/1058/HVWL000Z/posters/morrow-anthony-cafe-capuchino.jpg" forKey:@"picture"];
