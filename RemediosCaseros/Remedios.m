@@ -2,7 +2,7 @@
 //  Remedios.m
 //  RemediosCaseros
 //
-//  Created by User on 4/9/12.
+//  Created by User on 4/11/12.
 //  Copyright (c) 2012 Somos Software. All rights reserved.
 //
 
@@ -13,7 +13,6 @@
 
 @dynamic categoriaRemedio;
 @dynamic imagenThumb;
-@dynamic imagenVista;
 @dynamic ingredientes;
 @dynamic nombreRemedio;
 @dynamic preparacion;

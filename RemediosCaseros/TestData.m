@@ -33,7 +33,7 @@
     remedio1.preparacion=@"Se extrae de la pulpa de coco mediante prensado, y contiene un 90% de ácidos grasos saturados.    El aceite de coco es, también, conocido como mantequilla de coco pues se solidifica por debajo de los 23º C. El aceite de coco es muy resistente ya que puede durar años sin estropearse ";
     remedio1.categoriaRemedio=@"Salud";
     remedio1.imagenThumb=@"foto_celda_remedios.png";
-    remedio1.imagenVista=@"foto_detalleremedio.png";
+    
     
     
      
@@ -44,8 +44,7 @@
     remedio2.subtitulo=@"Tips para ahorrar energia";
     remedio2.ingredientes=@"ingredientes de remedios 3";
     remedio2.preparacion=@"Lavadora:    Usar en lo posible lavados fríos o a menos temperatura. Mejor si se disuelve el detergente en polvo antes de echarlo a la lavadora. Utilizar los programas de lavado económico y centrifugar lo menos posible.Hacer lavados con el electrodoméstico lleno ";
-    remedio2.imagenThumb=@"foto2_celda_remedios.png";
-        remedio2.imagenVista=@"foto2_celda_remedios.png";
+    remedio2.imagenThumb=@"foto2_celda_remedios.png";        
     remedio2.categoriaRemedio=@"Hogar";
     
     Remedios *remedio3=[NSEntityDescription insertNewObjectForEntityForName:@"Remedios" inManagedObjectContext:managedObjectContext];
@@ -55,7 +54,7 @@
     remedio3.preparacion=@"Se exprime el limón y se introduce en la botella con difusor, se añade el vaso de vinagre y el de agua. Se agita y ya está listo el limpiacristales ecológico casero. No olvide agitar en cada uso.";   
     remedio3.categoriaRemedio=@"Hogar";
     remedio3.imagenThumb=@"limpia.jpg";
-    remedio3.imagenVista=@"limpia.jpg";
+    
 
     
 
@@ -66,7 +65,7 @@
     remedio4.preparacion=@"preparacion de remedios ";
     remedio4.categoriaRemedio=@"Belleza";
     remedio4.imagenThumb=@"second.png";
-    remedio4.imagenVista=@"second.png";
+    
     
 
     
@@ -77,8 +76,7 @@
     glosario1.nombreIngrediente=@"Ficus Religiosa";
     glosario1.detalleIngrediente=@"Es un gran árbol de estación seca, caducifolio o semi-siempreverde, de más de 30 m de altura y con un diámetro de tronco de más de 3 m. Las hojas son cordadas con un distintivo zarcillo en la punta; de 10-17 cm de longitud y 8-12 cm de ancho, con pecíolo de 6-10 cm. El fruto es un pequeño higo de 1-1,5 cm de diámetro, verde que madura a púrpura.";
     glosario1.imagenThumb=@"ficus.jpg";
-    glosario1.imagenVista=@"ficus.jpg";
-    
+        
     
     
     
@@ -86,13 +84,12 @@
     glosario2.nombreIngrediente=@"Mentha aquatica";
     glosario2.detalleIngrediente=@"Crece alrededor de 90 cm de altura, aunque puede alcanzar 1,5 m cuando es soportada por vegetación más alta, y tiene un característico aroma a menta. Las hojas son ovadas a ovado-lanceoladas, verdes (a veces purpúreas), opuestas, suaves, venadas pueden tener pilosidad o ser glabra. Los tallos son frecuentemente de color púrpura. Las flores son pequeñas, densas, tubulares, de color rosado a lila. Florece de julio a septiembre. Es polinizada por insectos, aunque se puede propagar fácilmente por cortes de raíces, como otras especies de menta.";
     glosario2.imagenThumb=@"menta.jpg";
-    glosario2.imagenVista=@"menta.jpg";
-    
+        
     Glosario *glosario3=[NSEntityDescription insertNewObjectForEntityForName:@"Glosario" inManagedObjectContext:managedObjectContext];
     glosario3.nombreIngrediente=@"Cannabis sativa";
     glosario3.detalleIngrediente=@"Cannabis sativa (cáñamo o marihuana)1 es una especie herbácea de la familia Cannabaceae, con propiedades psicoactivas. Es una planta anual originaria de las cordilleras del Himalaya, Asia.2 Los seres humanos han cultivado esta planta en el transcurso de la historia como fuente de fibra textil, aceite de semillas y como alimentos, —en el caso de las variedades sin contenido de THC (cáñamo)—. Se ha utilizado durante milenios la planta como una medicina —con registros escritos que datan de 2737 a.C.—,3 como droga, y como una herramienta espiritual. Su fibra tiene usos variados, incluyendo la manufactura de vestidos, cuerdas, ropa, y papel. El aceite de sus semillas se puede usar como combustible.";
     glosario3.imagenThumb=@"cannabis.jpg";
-    glosario3.imagenVista=@"cannabis.jpg";
+    
     
  */
     
@@ -124,7 +121,6 @@
         [newData setValue:[[arrayRemedios objectAtIndex:remedioIndex] objectForKey:@"subtitulo"] forKey:@"subtitulo"];
         [newData setValue:[[arrayRemedios objectAtIndex:remedioIndex] objectForKey:@"categoriaRemedio"] forKey:@"categoriaRemedio"];
         [newData setValue:[[arrayRemedios objectAtIndex:remedioIndex] objectForKey:@"imagenThumb"] forKey:@"imagenThumb"];
-        //[newData setValue:[[arrayRemedios objectAtIndex:remedioIndex] objectForKey:@"imagenVista"] forKey:@"imagenVista"];    
         remedioIndex++;   
     }
     
@@ -147,19 +143,14 @@
  
         [newData setValue:[[arrayGlosario objectAtIndex:GlosarioIndex] objectForKey:@"detalleIngredientes"] forKey:@"detalleIngrediente"];
         [newData setValue:[[arrayGlosario objectAtIndex:GlosarioIndex] objectForKey:@"nombreIngrediente"] forKey:@"nombreIngrediente"];
-        [newData setValue:[[arrayGlosario objectAtIndex:GlosarioIndex] objectForKey:@"imagenThumb"] forKey:@"imagenThumb"];
-        //newData setValue:[[arrayGlosario objectAtIndex:GlosarioIndex] objectForKey:@"imagenVista"] forKey:@"imagenVista"];
-         GlosarioIndex++;   
+        [newData setValue:[[arrayGlosario objectAtIndex:GlosarioIndex] objectForKey:@"imagenThumb"] forKey:@"imagenThumb"];        
+        GlosarioIndex++;   
     }
 
     ///salvar contexto
     NSError *error = nil;
     if (![managedObjectContext save:&error]) {
-		/*
-		 Replace this implementation with code to handle the error appropriately.
-		 
-		 abort() causes the application to generate a crash log and terminate. You should not use this function in a shipping application, although it may be useful during development. If it is not possible to recover from the error, display an alert panel that instructs the user to quit the application by pressing the Home button.
-		 */
+		
 		NSLog(@"Unresolved error %@, %@", error, [error userInfo]);
 		abort();
     }

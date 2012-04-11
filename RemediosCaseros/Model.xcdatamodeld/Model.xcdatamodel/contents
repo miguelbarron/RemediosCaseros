@@ -4,14 +4,12 @@
         <attribute name="comprarIngrediente" optional="YES" attributeType="Boolean" syncable="YES"/>
         <attribute name="detalleIngrediente" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="imagenThumb" optional="YES" attributeType="String" syncable="YES"/>
-        <attribute name="imagenVista" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="nombreIngrediente" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="seleccionCompra" optional="YES" attributeType="Boolean" syncable="YES"/>
     </entity>
     <entity name="Remedios" representedClassName="Remedios" syncable="YES">
         <attribute name="categoriaRemedio" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="imagenThumb" optional="YES" attributeType="String" syncable="YES"/>
-        <attribute name="imagenVista" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="ingredientes" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="nombreRemedio" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="preparacion" optional="YES" attributeType="String" syncable="YES"/>
