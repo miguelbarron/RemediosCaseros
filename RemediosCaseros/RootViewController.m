@@ -10,15 +10,13 @@
 
 #import "AppDelegate.h"
 #import "SBJson.h"
-//#import "Categoria.h"
 #import "Remedios.h"
 #import "Glosario.h"
-//#import "Imagen.h"
 #import "detalleViewController.h"
 
 
 @implementation RootViewController
-@synthesize fetchedResultsController,managedObjectContext,tabBarController,arrayRemedios;
+@synthesize fetchedResultsController,managedObjectContext;//tabBarController;//,arrayRemedios;
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -71,11 +69,7 @@
              abort();
    }
     
-    // Do any additional setup after loading the view from its nib.
-    //NSString *path = [[NSBundle mainBundle] pathForResource:@"lasdo" ofType:@"plist"];
-    //inicializamos nuestra propiedad arrayConDOEnGrupos con el
-    //contenido de ese fichero
-   // arrayConDOEnGrupos = [[NSArray alloc] initWithContentsOfFile:path];
+    
     
      
 }
@@ -83,8 +77,7 @@
 - (void)viewDidUnload
 {
     [super viewDidUnload];
-    // Release any retained subviews of the main view.
-    // e.g. self.myOutlet = nil;
+    
 }
 
 
@@ -143,8 +136,7 @@
 
     
     Remedios *rem=[fetchedResultsController objectAtIndexPath:indexPath ];
-//    Imagen *imagenRemedio=rem.imagen;
-//    NSString *url=imagenRemedio.imagenThumb;    
+ 
     NSString *url=rem.imagenThumb;
     UIImage *myimagen=[UIImage imageNamed:url];
     
@@ -160,24 +152,10 @@
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
 
-
-    
-    
-    
     detalleViewController *detalle=[[detalleViewController alloc]init];
     detalle.remedio=[fetchedResultsController objectAtIndexPath:indexPath];
     [self.navigationController pushViewController:detalle animated:YES];
     
-    
-//    DetalleViewController *dvc = [[DetalleViewController alloc] init];
-// 
-//	[self.navigationController pushViewController:dvc animated:YES];
-//  
-//	[dvc release];
-//	dvc = nil;
-//    
-
-  
 }
 
 

@@ -96,7 +96,7 @@
 }
 
 -(void)compartir:(id)sender{
-    NSLog(@"compartir Remedio");
+    
     
     [FBM logged];    
     if (SYSTEM_VERSION_GREATER_THAN_OR_EQUAL_TO(@"5.0")) {
@@ -117,7 +117,7 @@
     [tweetSheet setInitialText:[Dic objectForKey:@"title"]];
     
     //Add an image
-    NSLog(@"imagen %@",[Dic objectForKey:@"picture"]);//
+    //NSLog(@"imagen %@",[Dic objectForKey:@"picture"]);//
     NSURL *url=[NSURL URLWithString:[Dic objectForKey:@"picture"]];
     NSData *data=[NSData dataWithContentsOfURL:url];
     [tweetSheet addImage:[UIImage imageWithData:data]];
@@ -384,7 +384,7 @@
     }
     
     [param setObject:@"Escriba algun Comentario" forKey:@"message"];
-    NSLog(@"Detalle Cartelera : %@", [param description]);
+    //NSLog(@"Detalle Cartelera : %@", [param description]);
     return param;   
 }
 -(void)sendEmail

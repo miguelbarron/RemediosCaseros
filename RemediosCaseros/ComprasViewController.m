@@ -13,7 +13,7 @@
 @implementation ComprasViewController
 @synthesize myTableView;
 @synthesize fetchedResultsController,managedObjectContext;
-@synthesize fetchedResultEliminar;
+
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
@@ -22,7 +22,6 @@
         
         UILabel *label = [[[UILabel alloc] initWithFrame:CGRectZero] autorelease];
         label.backgroundColor = [UIColor clearColor];
-        //label.font = [UIFont boldSystemFontOfSize:20.0];
         label.font=[UIFont fontWithName:@"Cochin-BoldItalic" size:27];
         label.shadowColor = [UIColor colorWithWhite:0.0 alpha:0.5];
         label.textAlignment = UITextAlignmentCenter;
@@ -92,8 +91,7 @@
 }
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
-    //return 0;
-    
+        
     NSError *error = nil;
     if (![[self fetchedResultsController] performFetch:&error]) {
         NSLog(@"Unresolved error %@, %@", error, [error userInfo]);
@@ -172,7 +170,7 @@
 
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
-    NSLog(@"cambiar imagen");
+    
     Glosario *glosario;
     glosario = (Glosario *)[fetchedResultsController objectAtIndexPath:indexPath];
     if ([glosario.seleccionCompra intValue]<1 ) 
@@ -217,8 +215,7 @@
         [glosario setComprarIngrediente:NO];
         [managedObjectContext save:&saveError];
         [self.myTableView reloadData];
-        
-        //    [tableView deleteRowsAtIndexPaths:[NSArray arrayWithObject:indexPath] withRowAnimation:UITableViewRowAnimationFade];
+
     }   
     //    else if (editingStyle == UITableViewCellEditingStyleInsert) {
     // Create a new instance of the appropriate class, insert it into the array, and add a new row to the table view
@@ -266,45 +263,6 @@
     return fetchedResultsController;
 }
 
-//////////////////////
-
-//- (NSFetchedResultsController *)fetchedResultEliminar {
-//    
-//    if (fetchedResultEliminar != nil) {
-//        return fetchedResultEliminar;
-//    }
-//    
-//    NSFetchRequest *fetchRequest = [[NSFetchRequest alloc] init];
-//    
-//    NSEntityDescription *entity = [NSEntityDescription entityForName:@"Glosario" inManagedObjectContext:managedObjectContext];
-//    [fetchRequest setEntity:entity];
-//    
-//    // Set the batch size to a suitable number.
-//    //[fetchRequest setFetchBatchSize:nil];
-//    NSPredicate *predicate =[NSPredicate predicateWithFormat:@"seleccionCompra == YES"];  
-//    [NSFetchedResultsController deleteCacheWithName:nil];
-//    
-//    [fetchRequest setPredicate:predicate];
-//    
-//    // Edit the sort key as appropriate.
-//    NSSortDescriptor *sortDescriptor = [[NSSortDescriptor alloc] initWithKey:@"nombreIngrediente" ascending:YES];
-//    
-//    // Edit the sort key as appropriate.
-//    //NSSortDescriptor *sortDescriptor = [[NSSortDescriptor alloc] initWithKey:@"numero" ascending:YES];
-//    NSArray *sortDescriptors = [[NSArray alloc] initWithObjects:sortDescriptor, nil];
-//    
-//    [fetchRequest setSortDescriptors:sortDescriptors];
-//    NSFetchedResultsController *aFetchedResultsController = [[NSFetchedResultsController alloc] initWithFetchRequest:fetchRequest managedObjectContext:managedObjectContext sectionNameKeyPath:@"comprarIngrediente" cacheName:nil];
-//    aFetchedResultsController.delegate = self;
-//    self.fetchedResultEliminar = aFetchedResultsController;
-//    
-//    [aFetchedResultsController release];
-//    [fetchRequest release];
-//    [sortDescriptor release];
-//    [sortDescriptors release];
-//    
-//    return fetchedResultEliminar;
-//}
 
 - (void)dealloc {
     [myTableView release];
@@ -326,10 +284,10 @@
 - (void)alertView:(UIAlertView *)alertView clickedButtonAtIndex:(NSInteger)buttonIndex
 {
 	if (buttonIndex == 0) {
-        NSLog(@"cancelar");
+        NSLog(@"boton cancelar");
     }
     else if (buttonIndex == 1) {
-        NSLog(@"borrar");
+       
         Glosario *glosario;
         NSError *saveError;   
         
@@ -337,7 +295,7 @@
         int i=0;
         for (NSDictionary *RecorrerGlosarioCompras in arrayGlosarioCompras)
         {
-            NSLog(@"veces %i",i);
+            
             glosario=[arrayGlosarioCompras objectAtIndex:i];
             [glosario setSeleccionCompra:[NSNumber numberWithBool:NO]];
             [glosario setComprarIngrediente:[NSNumber numberWithBool:NO]];        
@@ -355,20 +313,6 @@
         
     }
 }
-
-// FIN DEL METODO ELIMINAR_COMPRA
-
-//        if (![managedObjectContext save:&saveError]) {
-//            NSLog(@"Guardar cambio a Articulos Favoritos Fallo: %@", saveError);
-//        } else {
-//            
-//            UIAlertView * errorAlert = [[UIAlertView alloc] initWithTitle:@"Registro Borrado" message:@"Registro Borrado" delegate:self cancelButtonTitle:@"Aceptar" otherButtonTitles:nil];
-//            [errorAlert show];
-//            [errorAlert release];
-//            return;
-//            
-//            // The changes to bookTwo have been persisted.
-//        }
 
 
 @end

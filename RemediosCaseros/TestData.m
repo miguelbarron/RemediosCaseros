@@ -8,10 +8,8 @@
 
 #import "TestData.h"
 #import "AppDelegate.h"
-//#import "Categoria.h"
 #import "Remedios.h"
 #import "Glosario.h"
-//#import "Imagen.h"
 #import "SBJson.h"
 
 @implementation TestData
@@ -53,7 +51,7 @@
     Remedios *remedio3=[NSEntityDescription insertNewObjectForEntityForName:@"Remedios" inManagedObjectContext:managedObjectContext];
     remedio3.nombreRemedio=@"limpiacristales ecológicos";
     remedio3.subtitulo=@"Crear un Limpiacristales con un limón";
-    remedio3.ingredientes=@"Un limón grande. Un vaso de vinagre blanco.Un vaso y medio de agua.Una botellita con difusor";
+    remedio3.ingredientes=@"*Un limón grande. \n *Un vaso de vinagre blanco. \n *Un vaso y medio de agua. \n *Una botellita con difusor";
     remedio3.preparacion=@"Se exprime el limón y se introduce en la botella con difusor, se añade el vaso de vinagre y el de agua. Se agita y ya está listo el limpiacristales ecológico casero. No olvide agitar en cada uso.";   
     remedio3.categoriaRemedio=@"Hogar";
     remedio3.imagenThumb=@"limpia.jpg";
@@ -126,7 +124,7 @@
         [newData setValue:[[arrayRemedios objectAtIndex:remedioIndex] objectForKey:@"subtitulo"] forKey:@"subtitulo"];
         [newData setValue:[[arrayRemedios objectAtIndex:remedioIndex] objectForKey:@"categoriaRemedio"] forKey:@"categoriaRemedio"];
         [newData setValue:[[arrayRemedios objectAtIndex:remedioIndex] objectForKey:@"imagenThumb"] forKey:@"imagenThumb"];
-        [newData setValue:[[arrayRemedios objectAtIndex:remedioIndex] objectForKey:@"imagenVista"] forKey:@"imagenVista"];    
+        //[newData setValue:[[arrayRemedios objectAtIndex:remedioIndex] objectForKey:@"imagenVista"] forKey:@"imagenVista"];    
         remedioIndex++;   
     }
     
@@ -150,7 +148,7 @@
         [newData setValue:[[arrayGlosario objectAtIndex:GlosarioIndex] objectForKey:@"detalleIngredientes"] forKey:@"detalleIngrediente"];
         [newData setValue:[[arrayGlosario objectAtIndex:GlosarioIndex] objectForKey:@"nombreIngrediente"] forKey:@"nombreIngrediente"];
         [newData setValue:[[arrayGlosario objectAtIndex:GlosarioIndex] objectForKey:@"imagenThumb"] forKey:@"imagenThumb"];
-        [newData setValue:[[arrayGlosario objectAtIndex:GlosarioIndex] objectForKey:@"imagenVista"] forKey:@"imagenVista"];
+        //newData setValue:[[arrayGlosario objectAtIndex:GlosarioIndex] objectForKey:@"imagenVista"] forKey:@"imagenVista"];
          GlosarioIndex++;   
     }
 

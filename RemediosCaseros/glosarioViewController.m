@@ -8,7 +8,6 @@
 
 #import "glosarioViewController.h"
 #import "Glosario.h"
-//#import "Imagen.h"
 #import "detalleGlosarioViewController.h"
 
 @implementation glosarioViewController
@@ -86,10 +85,8 @@
 }
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
-      return [[fetchedResultsController sections]count]; 
-
     
-    
+      return [[fetchedResultsController sections]count];     
 }
 
 
@@ -99,12 +96,7 @@
     return [sectionInfo numberOfObjects];
 }
 
-//- (NSString *)tableView:(UITableView *)tableView titleForHeaderInSection:(NSInteger)section {
-//  
-//    
-//    return  @"seccion";
-//   
-//}
+
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
@@ -118,19 +110,15 @@
     // Configure the cell...
     cell.accessoryType=UITableViewCellAccessoryDisclosureIndicator;
     cell.textLabel.font = [UIFont fontWithName:@"Helvetica-Bold"  size:15.0]; 
-    cell.textLabel.textColor=[UIColor colorWithRed:0.192 green:0.255 blue:0.349 alpha:1.0];
-    cell.detailTextLabel.font= [UIFont fontWithName:@"Helvetica" size:12.0];    
-    cell.detailTextLabel.numberOfLines=2;
+    cell.textLabel.textColor=[UIColor colorWithRed:0.192 green:0.255 blue:0.349 alpha:1.0];    
     cell.textLabel.numberOfLines=2;
     
     Glosario *glo=[fetchedResultsController objectAtIndexPath:indexPath ];
-    //Imagen *imagenRemedio=glo.imagen;
-    //NSString *url=imagenRemedio.imagenThumb;    
+    
     NSString *url=glo.imagenThumb;    
     UIImage *myimagen=[UIImage imageNamed:url];
     
-    cell.textLabel.text=glo.nombreIngrediente;
-    cell.detailTextLabel.text=glo.detalleIngrediente;
+    cell.textLabel.text=glo.nombreIngrediente;   
     cell.imageView.image=myimagen;
 
     
@@ -146,9 +134,6 @@
     [self.navigationController pushViewController:detalleGlosario animated:YES];    
     [tableView deselectRowAtIndexPath:indexPath animated:YES];
     
-//    detalleViewController *detalle=[[detalleViewController alloc]init];
-//    detalle.remedio=[fetchedResultsController objectAtIndexPath:indexPath];
-//    [self.navigationController pushViewController:detalle animated:YES];
 
     
     
@@ -168,7 +153,7 @@
     
     NSFetchRequest *fetchRequest = [[NSFetchRequest alloc] init];
     // Edit the entity name as appropriate.
-    NSEntityDescription *entity = [NSEntityDescription entityForName:/**/@"Glosario" inManagedObjectContext:managedObjectContext];
+    NSEntityDescription *entity = [NSEntityDescription entityForName:@"Glosario" inManagedObjectContext:managedObjectContext];
     [fetchRequest setEntity:entity];
     
     // Set the batch size to a suitable number.
@@ -186,7 +171,7 @@
     NSArray *sortDescriptors = [[NSArray alloc] initWithObjects:sortDescriptor, nil];
     
     [fetchRequest setSortDescriptors:sortDescriptors];
-    NSFetchedResultsController *aFetchedResultsController = [[NSFetchedResultsController alloc] initWithFetchRequest:fetchRequest managedObjectContext:managedObjectContext sectionNameKeyPath:@"imagenVista" cacheName:@"Root"];
+    NSFetchedResultsController *aFetchedResultsController = [[NSFetchedResultsController alloc] initWithFetchRequest:fetchRequest managedObjectContext:managedObjectContext sectionNameKeyPath:@"imagenThumb" cacheName:@"Root"];
     aFetchedResultsController.delegate = self;
     self.fetchedResultsController = aFetchedResultsController;
     

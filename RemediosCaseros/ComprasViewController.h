@@ -20,7 +20,6 @@
 @property(retain,nonatomic)NSFetchedResultsController *fetchedResultsController;
 @property (retain, nonatomic) IBOutlet UITableView *myTableView;
 @property (nonatomic, retain) NSManagedObjectContext *managedObjectContext;
-@property(retain,nonatomic)NSFetchedResultsController *fetchedResultEliminar;
 -(void)eliminarCompra:(id)sender ;
 
 @end
