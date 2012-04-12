@@ -16,7 +16,7 @@
 
 
 @implementation RootViewController
-@synthesize fetchedResultsController,managedObjectContext;//tabBarController;//,arrayRemedios;
+@synthesize fetchedResultsController,managedObjectContext;
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -181,7 +181,7 @@
     
     NSFetchRequest *fetchRequest = [[NSFetchRequest alloc] init];
     // Edit the entity name as appropriate.
-    NSEntityDescription *entity = [NSEntityDescription entityForName:/**/@"Remedios" inManagedObjectContext:managedObjectContext];
+    NSEntityDescription *entity = [NSEntityDescription entityForName:@"Remedios" inManagedObjectContext:managedObjectContext];
     [fetchRequest setEntity:entity];
     
     // Set the batch size to a suitable number.

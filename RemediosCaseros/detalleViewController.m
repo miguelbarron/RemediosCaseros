@@ -8,7 +8,6 @@
 
 #import "detalleViewController.h"
 #import "Remedios.h"
-//#import "Imagen.h"
 #import "AppDelegate.h"
 #import "twitter/twitter.h"
 #define SYSTEM_VERSION_EQUAL_TO(v)                  ([[[UIDevice currentDevice] systemVersion] compare:v options:NSNumericSearch] == NSOrderedSame)
@@ -25,14 +24,7 @@
 @synthesize svView;
 @synthesize remedio;
 
-//- (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
-//{
-//    self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
-//    if (self) {
-//        // Custom initializatio
-//    }
-//    return self;
-//}
+
 
 - (void)didReceiveMemoryWarning
 {
@@ -117,7 +109,7 @@
     [tweetSheet setInitialText:[Dic objectForKey:@"title"]];
     
     //Add an image
-    //NSLog(@"imagen %@",[Dic objectForKey:@"picture"]);//
+    
     NSURL *url=[NSURL URLWithString:[Dic objectForKey:@"picture"]];
     NSData *data=[NSData dataWithContentsOfURL:url];
     [tweetSheet addImage:[UIImage imageWithData:data]];
@@ -156,14 +148,7 @@
     [actionSheet addButtonWithTitle:@"Cancel"];
     actionSheet.cancelButtonIndex = actionSheet.numberOfButtons-1;
     
-    /*
-     [actionSheet addButtonWithTitle:@"Facebook"];
-     [actionSheet addButtonWithTitle:@"Twitter"];
-     [actionSheet addButtonWithTitle:@"E-mail"];
-     */ 
-    
-    
-    
+        
     [actionSheet showFromBarButtonItem:compartirButton animated:YES];
     [actionSheet release];
 }
@@ -223,7 +208,7 @@
                 
                 if (buttonIndex == 0) 
                 {
-                    NSLog(@"FBpost");
+                    
                     [self postFB];
                     
                 }
@@ -259,7 +244,7 @@
     else {
         if (buttonIndex == 0) 
         {
-            NSLog(@"fbPOst");
+            
             [self postFB];
             
         }
@@ -279,7 +264,7 @@
 
 -(void)sendEmail2:(NSMutableDictionary *)dic
 {
-    NSLog(@"Dic %@",[dic description]);
+   
     if ([MFMailComposeViewController canSendMail])
     {
         
@@ -369,10 +354,10 @@
     
     
     
-    [param setObject:@"www.somossoftware.com" forKey:@"link"];
     
-    
-    //[param setObject:@"http://cache2.allpostersimages.com/p/LRG/10/1058/HVWL000Z/posters/morrow-anthony-cafe-capuchino.jpg" forKey:@"picture"];
+    [param setObject:@"www.somossoftware.com" forKey:@"link"];   
+   
+   
     
     if (remedio.nombreRemedio) {
         [param setObject:remedio.nombreRemedio forKey:@"title"];
@@ -384,7 +369,7 @@
     }
     
     [param setObject:@"Escriba algun Comentario" forKey:@"message"];
-    //NSLog(@"Detalle Cartelera : %@", [param description]);
+
     return param;   
 }
 -(void)sendEmail

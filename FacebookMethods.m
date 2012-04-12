@@ -47,7 +47,7 @@ FacebookMethods *sharedFacebook_;
 -(void)newFeed:(NSMutableDictionary *)Dic
 {
     
-    NSLog(@"FBDiccionario %@",[Dic description]);
+    //NSLog(@"FBDiccionario %@",[Dic description]);
     
     NSMutableDictionary *Cont = [[NSMutableDictionary alloc]init];
     
@@ -90,11 +90,11 @@ FacebookMethods *sharedFacebook_;
 -(BOOL)logged{
     if (flag) {
         return YES;
-        NSLog(@"si");
+       
     }
     else{
         return NO;
-        NSLog(@"no");
+        
     }
 }
 

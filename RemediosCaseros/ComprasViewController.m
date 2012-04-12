@@ -107,9 +107,9 @@
 // Customize the number of rows in the table view.
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
 
-   // return 0;
     id <NSFetchedResultsSectionInfo> sectionInfo = [[fetchedResultsController sections] objectAtIndex:section];
     return [sectionInfo numberOfObjects];
+
 }
 
 //- (NSString *)tableView:(UITableView *)tableView titleForHeaderInSection:(NSInteger)section {
@@ -139,15 +139,10 @@
         
 
     cell.textLabel.lineBreakMode = UILineBreakModeWordWrap;  
-    cell.textLabel.numberOfLines = 2;  
-    cell.textLabel.font = [UIFont fontWithName:@"Helvetica-Bold"  size:20.0];
+    cell.textLabel.numberOfLines = 3;  
+    cell.textLabel.font = [UIFont fontWithName:@"Helvetica-Bold"  size:15.0];
     cell.textLabel.textColor=[UIColor colorWithRed:0.192 green:0.255 blue:0.349 alpha:1.0];
-    cell.detailTextLabel.font          = [UIFont fontWithName:@"Helvetica" size:15.0];    
-    cell.detailTextLabel.numberOfLines = 2;    
 
-    
- 
-        
     cell.textLabel.text=glosario.nombreIngrediente;
     
     UIImage *marcaVacia=[UIImage imageNamed:@"marca_vacia_compras.png"];
@@ -173,6 +168,7 @@
     
     Glosario *glosario;
     glosario = (Glosario *)[fetchedResultsController objectAtIndexPath:indexPath];
+    
     if ([glosario.seleccionCompra intValue]<1 ) 
     {
         [glosario setSeleccionCompra:[NSNumber numberWithBool:YES]];
@@ -284,7 +280,7 @@
 - (void)alertView:(UIAlertView *)alertView clickedButtonAtIndex:(NSInteger)buttonIndex
 {
 	if (buttonIndex == 0) {
-        NSLog(@"boton cancelar");
+            return;
     }
     else if (buttonIndex == 1) {
        
@@ -299,9 +295,7 @@
             glosario=[arrayGlosarioCompras objectAtIndex:i];
             [glosario setSeleccionCompra:[NSNumber numberWithBool:NO]];
             [glosario setComprarIngrediente:[NSNumber numberWithBool:NO]];        
-            [managedObjectContext save:&saveError];
-            
-            
+            [managedObjectContext save:&saveError];                      
             
             i++;
             
