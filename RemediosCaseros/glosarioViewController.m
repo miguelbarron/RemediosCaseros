@@ -104,14 +104,16 @@
     
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier];
     if (cell == nil) {
-        cell = [[[UITableViewCell alloc] initWithStyle:UITableViewCellStyleSubtitle reuseIdentifier:CellIdentifier] autorelease];
+        cell = [[[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:CellIdentifier] autorelease];
     }
     
     // Configure the cell...
     cell.accessoryType=UITableViewCellAccessoryDisclosureIndicator;
     cell.textLabel.font = [UIFont fontWithName:@"Helvetica-Bold"  size:15.0]; 
     cell.textLabel.textColor=[UIColor colorWithRed:0.192 green:0.255 blue:0.349 alpha:1.0];    
-    cell.textLabel.numberOfLines=2;
+    cell.textLabel.numberOfLines=3;
+    cell.textLabel.lineBreakMode = UILineBreakModeWordWrap;
+    
     
     Glosario *glo=[fetchedResultsController objectAtIndexPath:indexPath ];
     
