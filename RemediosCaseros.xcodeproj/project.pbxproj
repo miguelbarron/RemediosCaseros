@@ -28,6 +28,84 @@
 		06E99CAC152CCE960024BBD6 /* remedios_114x114.png in Resources */ = {isa = PBXBuildFile; fileRef = 06E99CAA152CCE960024BBD6 /* remedios_114x114.png */; };
 		06E99CAF152CCED40024BBD6 /* remedios_57x57.png in Resources */ = {isa = PBXBuildFile; fileRef = 06E99CAE152CCED40024BBD6 /* remedios_57x57.png */; };
 		06E99CB1152CCED90024BBD6 /* remedios_114x114.png in Resources */ = {isa = PBXBuildFile; fileRef = 06E99CB0152CCED90024BBD6 /* remedios_114x114.png */; };
+		8B3E27911537163500E0A378 /* Ajo@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 8B3E27421537163500E0A378 /* Ajo@2x.png */; };
+		8B3E27921537163500E0A378 /* Alcachofa@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 8B3E27431537163500E0A378 /* Alcachofa@2x.png */; };
+		8B3E27931537163500E0A378 /* Alfalfa@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 8B3E27441537163500E0A378 /* Alfalfa@2x.png */; };
+		8B3E27941537163500E0A378 /* Alfombras@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 8B3E27451537163500E0A378 /* Alfombras@2x.png */; };
+		8B3E27951537163500E0A378 /* Aloe@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 8B3E27461537163500E0A378 /* Aloe@2x.png */; };
+		8B3E27961537163500E0A378 /* Arnica@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 8B3E27471537163500E0A378 /* Arnica@2x.png */; };
+		8B3E27971537163500E0A378 /* Artritis@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 8B3E27481537163500E0A378 /* Artritis@2x.png */; };
+		8B3E27981537163500E0A378 /* Avena@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 8B3E27491537163500E0A378 /* Avena@2x.png */; };
+		8B3E27991537163500E0A378 /* Azulejos@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 8B3E274A1537163500E0A378 /* Azulejos@2x.png */; };
+		8B3E279A1537163500E0A378 /* Acne@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 8B3E274C1537163500E0A378 /* Acne@2x.png */; };
+		8B3E279B1537163500E0A378 /* Arrugas@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 8B3E274D1537163500E0A378 /* Arrugas@2x.png */; };
+		8B3E279C1537163500E0A378 /* Graso@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 8B3E274E1537163500E0A378 /* Graso@2x.png */; };
+		8B3E279D1537163500E0A378 /* Mascarilla@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 8B3E274F1537163500E0A378 /* Mascarilla@2x.png */; };
+		8B3E279E1537163500E0A378 /* Acne.png in Resources */ = {isa = PBXBuildFile; fileRef = 8B3E27511537163500E0A378 /* Acne.png */; };
+		8B3E279F1537163500E0A378 /* Arrugas.png in Resources */ = {isa = PBXBuildFile; fileRef = 8B3E27521537163500E0A378 /* Arrugas.png */; };
+		8B3E27A01537163500E0A378 /* Graso.png in Resources */ = {isa = PBXBuildFile; fileRef = 8B3E27531537163500E0A378 /* Graso.png */; };
+		8B3E27A11537163500E0A378 /* Mascarilla.png in Resources */ = {isa = PBXBuildFile; fileRef = 8B3E27541537163500E0A378 /* Mascarilla.png */; };
+		8B3E27A21537163500E0A378 /* Pelo.png in Resources */ = {isa = PBXBuildFile; fileRef = 8B3E27551537163500E0A378 /* Pelo.png */; };
+		8B3E27A31537163500E0A378 /* Piel.png in Resources */ = {isa = PBXBuildFile; fileRef = 8B3E27561537163500E0A378 /* Piel.png */; };
+		8B3E27A41537163500E0A378 /* Rostro.png in Resources */ = {isa = PBXBuildFile; fileRef = 8B3E27571537163500E0A378 /* Rostro.png */; };
+		8B3E27A51537163500E0A378 /* Seco.png in Resources */ = {isa = PBXBuildFile; fileRef = 8B3E27581537163500E0A378 /* Seco.png */; };
+		8B3E27A61537163500E0A378 /* Uñas.png in Resources */ = {isa = PBXBuildFile; fileRef = 8B3E27591537163500E0A378 /* Uñas.png */; };
+		8B3E27A71537163500E0A378 /* Pelo@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 8B3E275A1537163500E0A378 /* Pelo@2x.png */; };
+		8B3E27A81537163500E0A378 /* Piel@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 8B3E275B1537163500E0A378 /* Piel@2x.png */; };
+		8B3E27A91537163500E0A378 /* Rostro@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 8B3E275C1537163500E0A378 /* Rostro@2x.png */; };
+		8B3E27AA1537163500E0A378 /* Seco@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 8B3E275D1537163500E0A378 /* Seco@2x.png */; };
+		8B3E27AB1537163500E0A378 /* Uñas@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 8B3E275E1537163500E0A378 /* Uñas@2x.png */; };
+		8B3E27AC1537163500E0A378 /* Canela@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 8B3E275F1537163500E0A378 /* Canela@2x.png */; };
+		8B3E27AD1537163500E0A378 /* Chia@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 8B3E27601537163500E0A378 /* Chia@2x.png */; };
+		8B3E27AE1537163500E0A378 /* Colesterol@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 8B3E27611537163500E0A378 /* Colesterol@2x.png */; };
+		8B3E27AF1537163500E0A378 /* Colitis@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 8B3E27621537163500E0A378 /* Colitis@2x.png */; };
+		8B3E27B01537163500E0A378 /* Conjuntivitis@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 8B3E27631537163500E0A378 /* Conjuntivitis@2x.png */; };
+		8B3E27B11537163500E0A378 /* Corazon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 8B3E27641537163500E0A378 /* Corazon@2x.png */; };
+		8B3E27B21537163500E0A378 /* Cortina@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 8B3E27651537163500E0A378 /* Cortina@2x.png */; };
+		8B3E27B31537163500E0A378 /* Cristales@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 8B3E27661537163500E0A378 /* Cristales@2x.png */; };
+		8B3E27B41537163500E0A378 /* Cuachalalate@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 8B3E27671537163500E0A378 /* Cuachalalate@2x.png */; };
+		8B3E27B51537163500E0A378 /* Desague@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 8B3E27681537163500E0A378 /* Desague@2x.png */; };
+		8B3E27B61537163500E0A378 /* Escoba@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 8B3E27691537163500E0A378 /* Escoba@2x.png */; };
+		8B3E27B71537163500E0A378 /* Estufa@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 8B3E276A1537163500E0A378 /* Estufa@2x.png */; };
+		8B3E27B81537163500E0A378 /* Gingivitis@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 8B3E276B1537163500E0A378 /* Gingivitis@2x.png */; };
+		8B3E27B91537163500E0A378 /* Hipertension@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 8B3E276C1537163500E0A378 /* Hipertension@2x.png */; };
+		8B3E27BA1537163500E0A378 /* Indigestion@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 8B3E276D1537163500E0A378 /* Indigestion@2x.png */; };
+		8B3E27BB1537163500E0A378 /* Inmunologico@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 8B3E276E1537163500E0A378 /* Inmunologico@2x.png */; };
+		8B3E27BC1537163500E0A378 /* Insomnio@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 8B3E276F1537163500E0A378 /* Insomnio@2x.png */; };
+		8B3E27BD1537163500E0A378 /* Ajo.png in Resources */ = {isa = PBXBuildFile; fileRef = 8B3E27711537163500E0A378 /* Ajo.png */; };
+		8B3E27BE1537163500E0A378 /* Alcachofa.png in Resources */ = {isa = PBXBuildFile; fileRef = 8B3E27721537163500E0A378 /* Alcachofa.png */; };
+		8B3E27BF1537163500E0A378 /* Alfalfa.png in Resources */ = {isa = PBXBuildFile; fileRef = 8B3E27731537163500E0A378 /* Alfalfa.png */; };
+		8B3E27C01537163500E0A378 /* Alfombras.png in Resources */ = {isa = PBXBuildFile; fileRef = 8B3E27741537163500E0A378 /* Alfombras.png */; };
+		8B3E27C11537163500E0A378 /* Aloe.png in Resources */ = {isa = PBXBuildFile; fileRef = 8B3E27751537163500E0A378 /* Aloe.png */; };
+		8B3E27C21537163500E0A378 /* Arnica.png in Resources */ = {isa = PBXBuildFile; fileRef = 8B3E27761537163500E0A378 /* Arnica.png */; };
+		8B3E27C31537163500E0A378 /* Artritis.png in Resources */ = {isa = PBXBuildFile; fileRef = 8B3E27771537163500E0A378 /* Artritis.png */; };
+		8B3E27C41537163500E0A378 /* Avena.png in Resources */ = {isa = PBXBuildFile; fileRef = 8B3E27781537163500E0A378 /* Avena.png */; };
+		8B3E27C51537163500E0A378 /* Azulejos.png in Resources */ = {isa = PBXBuildFile; fileRef = 8B3E27791537163500E0A378 /* Azulejos.png */; };
+		8B3E27C61537163500E0A378 /* Canela.png in Resources */ = {isa = PBXBuildFile; fileRef = 8B3E277A1537163500E0A378 /* Canela.png */; };
+		8B3E27C71537163500E0A378 /* Chia.png in Resources */ = {isa = PBXBuildFile; fileRef = 8B3E277B1537163500E0A378 /* Chia.png */; };
+		8B3E27C81537163500E0A378 /* Colesterol.png in Resources */ = {isa = PBXBuildFile; fileRef = 8B3E277C1537163500E0A378 /* Colesterol.png */; };
+		8B3E27C91537163500E0A378 /* Colitis.png in Resources */ = {isa = PBXBuildFile; fileRef = 8B3E277D1537163500E0A378 /* Colitis.png */; };
+		8B3E27CA1537163500E0A378 /* Conjuntivitis.png in Resources */ = {isa = PBXBuildFile; fileRef = 8B3E277E1537163500E0A378 /* Conjuntivitis.png */; };
+		8B3E27CB1537163500E0A378 /* Corazon.png in Resources */ = {isa = PBXBuildFile; fileRef = 8B3E277F1537163500E0A378 /* Corazon.png */; };
+		8B3E27CC1537163500E0A378 /* Cortina.png in Resources */ = {isa = PBXBuildFile; fileRef = 8B3E27801537163500E0A378 /* Cortina.png */; };
+		8B3E27CD1537163500E0A378 /* Cristales.png in Resources */ = {isa = PBXBuildFile; fileRef = 8B3E27811537163500E0A378 /* Cristales.png */; };
+		8B3E27CE1537163500E0A378 /* Cuachalalate.png in Resources */ = {isa = PBXBuildFile; fileRef = 8B3E27821537163500E0A378 /* Cuachalalate.png */; };
+		8B3E27CF1537163500E0A378 /* Desague.png in Resources */ = {isa = PBXBuildFile; fileRef = 8B3E27831537163500E0A378 /* Desague.png */; };
+		8B3E27D01537163500E0A378 /* Escoba.png in Resources */ = {isa = PBXBuildFile; fileRef = 8B3E27841537163500E0A378 /* Escoba.png */; };
+		8B3E27D11537163500E0A378 /* Estufa.png in Resources */ = {isa = PBXBuildFile; fileRef = 8B3E27851537163500E0A378 /* Estufa.png */; };
+		8B3E27D21537163500E0A378 /* Gingivitis.png in Resources */ = {isa = PBXBuildFile; fileRef = 8B3E27861537163500E0A378 /* Gingivitis.png */; };
+		8B3E27D31537163500E0A378 /* Hipertension.png in Resources */ = {isa = PBXBuildFile; fileRef = 8B3E27871537163500E0A378 /* Hipertension.png */; };
+		8B3E27D41537163500E0A378 /* Indigestion.png in Resources */ = {isa = PBXBuildFile; fileRef = 8B3E27881537163500E0A378 /* Indigestion.png */; };
+		8B3E27D51537163500E0A378 /* Inmunologico.png in Resources */ = {isa = PBXBuildFile; fileRef = 8B3E27891537163500E0A378 /* Inmunologico.png */; };
+		8B3E27D61537163500E0A378 /* Insomnio.png in Resources */ = {isa = PBXBuildFile; fileRef = 8B3E278A1537163500E0A378 /* Insomnio.png */; };
+		8B3E27D71537163500E0A378 /* Olla.png in Resources */ = {isa = PBXBuildFile; fileRef = 8B3E278B1537163500E0A378 /* Olla.png */; };
+		8B3E27D81537163500E0A378 /* Recipientes.png in Resources */ = {isa = PBXBuildFile; fileRef = 8B3E278C1537163500E0A378 /* Recipientes.png */; };
+		8B3E27D91537163500E0A378 /* Termo.png in Resources */ = {isa = PBXBuildFile; fileRef = 8B3E278D1537163500E0A378 /* Termo.png */; };
+		8B3E27DA1537163500E0A378 /* Olla@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 8B3E278E1537163500E0A378 /* Olla@2x.png */; };
+		8B3E27DB1537163500E0A378 /* Recipientes@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 8B3E278F1537163500E0A378 /* Recipientes@2x.png */; };
+		8B3E27DC1537163500E0A378 /* Termo@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 8B3E27901537163500E0A378 /* Termo@2x.png */; };
+		8B3E27DE1537181300E0A378 /* Sonrisa@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 8B3E27DD1537181300E0A378 /* Sonrisa@2x.png */; };
+		8B3E27E01537182700E0A378 /* Sonrisa.png in Resources */ = {isa = PBXBuildFile; fileRef = 8B3E27DF1537182700E0A378 /* Sonrisa.png */; };
 		9AE8D0D515334E68008FEDBB /* Twitter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9AE8D0D415334E68008FEDBB /* Twitter.framework */; };
 		9AE8D0D815334E73008FEDBB /* MessageUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9AE8D0D715334E73008FEDBB /* MessageUI.framework */; };
 		9AEA5F6A1533504600A9E703 /* FacebookMethods.m in Sources */ = {isa = PBXBuildFile; fileRef = 9AEA5F691533504600A9E703 /* FacebookMethods.m */; };
@@ -119,6 +197,84 @@
 		06E99CAA152CCE960024BBD6 /* remedios_114x114.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = remedios_114x114.png; sourceTree = "<group>"; };
 		06E99CAE152CCED40024BBD6 /* remedios_57x57.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = remedios_57x57.png; sourceTree = "<group>"; };
 		06E99CB0152CCED90024BBD6 /* remedios_114x114.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = remedios_114x114.png; sourceTree = "<group>"; };
+		8B3E27421537163500E0A378 /* Ajo@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Ajo@2x.png"; sourceTree = "<group>"; };
+		8B3E27431537163500E0A378 /* Alcachofa@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Alcachofa@2x.png"; sourceTree = "<group>"; };
+		8B3E27441537163500E0A378 /* Alfalfa@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Alfalfa@2x.png"; sourceTree = "<group>"; };
+		8B3E27451537163500E0A378 /* Alfombras@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Alfombras@2x.png"; sourceTree = "<group>"; };
+		8B3E27461537163500E0A378 /* Aloe@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Aloe@2x.png"; sourceTree = "<group>"; };
+		8B3E27471537163500E0A378 /* Arnica@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Arnica@2x.png"; sourceTree = "<group>"; };
+		8B3E27481537163500E0A378 /* Artritis@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Artritis@2x.png"; sourceTree = "<group>"; };
+		8B3E27491537163500E0A378 /* Avena@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Avena@2x.png"; sourceTree = "<group>"; };
+		8B3E274A1537163500E0A378 /* Azulejos@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Azulejos@2x.png"; sourceTree = "<group>"; };
+		8B3E274C1537163500E0A378 /* Acne@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Acne@2x.png"; sourceTree = "<group>"; };
+		8B3E274D1537163500E0A378 /* Arrugas@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Arrugas@2x.png"; sourceTree = "<group>"; };
+		8B3E274E1537163500E0A378 /* Graso@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Graso@2x.png"; sourceTree = "<group>"; };
+		8B3E274F1537163500E0A378 /* Mascarilla@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Mascarilla@2x.png"; sourceTree = "<group>"; };
+		8B3E27511537163500E0A378 /* Acne.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Acne.png; sourceTree = "<group>"; };
+		8B3E27521537163500E0A378 /* Arrugas.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Arrugas.png; sourceTree = "<group>"; };
+		8B3E27531537163500E0A378 /* Graso.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Graso.png; sourceTree = "<group>"; };
+		8B3E27541537163500E0A378 /* Mascarilla.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Mascarilla.png; sourceTree = "<group>"; };
+		8B3E27551537163500E0A378 /* Pelo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Pelo.png; sourceTree = "<group>"; };
+		8B3E27561537163500E0A378 /* Piel.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Piel.png; sourceTree = "<group>"; };
+		8B3E27571537163500E0A378 /* Rostro.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Rostro.png; sourceTree = "<group>"; };
+		8B3E27581537163500E0A378 /* Seco.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Seco.png; sourceTree = "<group>"; };
+		8B3E27591537163500E0A378 /* Uñas.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Uñas.png"; sourceTree = "<group>"; };
+		8B3E275A1537163500E0A378 /* Pelo@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Pelo@2x.png"; sourceTree = "<group>"; };
+		8B3E275B1537163500E0A378 /* Piel@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Piel@2x.png"; sourceTree = "<group>"; };
+		8B3E275C1537163500E0A378 /* Rostro@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Rostro@2x.png"; sourceTree = "<group>"; };
+		8B3E275D1537163500E0A378 /* Seco@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Seco@2x.png"; sourceTree = "<group>"; };
+		8B3E275E1537163500E0A378 /* Uñas@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Uñas@2x.png"; sourceTree = "<group>"; };
+		8B3E275F1537163500E0A378 /* Canela@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Canela@2x.png"; sourceTree = "<group>"; };
+		8B3E27601537163500E0A378 /* Chia@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Chia@2x.png"; sourceTree = "<group>"; };
+		8B3E27611537163500E0A378 /* Colesterol@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Colesterol@2x.png"; sourceTree = "<group>"; };
+		8B3E27621537163500E0A378 /* Colitis@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Colitis@2x.png"; sourceTree = "<group>"; };
+		8B3E27631537163500E0A378 /* Conjuntivitis@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Conjuntivitis@2x.png"; sourceTree = "<group>"; };
+		8B3E27641537163500E0A378 /* Corazon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Corazon@2x.png"; sourceTree = "<group>"; };
+		8B3E27651537163500E0A378 /* Cortina@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Cortina@2x.png"; sourceTree = "<group>"; };
+		8B3E27661537163500E0A378 /* Cristales@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Cristales@2x.png"; sourceTree = "<group>"; };
+		8B3E27671537163500E0A378 /* Cuachalalate@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Cuachalalate@2x.png"; sourceTree = "<group>"; };
+		8B3E27681537163500E0A378 /* Desague@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Desague@2x.png"; sourceTree = "<group>"; };
+		8B3E27691537163500E0A378 /* Escoba@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Escoba@2x.png"; sourceTree = "<group>"; };
+		8B3E276A1537163500E0A378 /* Estufa@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Estufa@2x.png"; sourceTree = "<group>"; };
+		8B3E276B1537163500E0A378 /* Gingivitis@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Gingivitis@2x.png"; sourceTree = "<group>"; };
+		8B3E276C1537163500E0A378 /* Hipertension@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Hipertension@2x.png"; sourceTree = "<group>"; };
+		8B3E276D1537163500E0A378 /* Indigestion@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Indigestion@2x.png"; sourceTree = "<group>"; };
+		8B3E276E1537163500E0A378 /* Inmunologico@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Inmunologico@2x.png"; sourceTree = "<group>"; };
+		8B3E276F1537163500E0A378 /* Insomnio@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Insomnio@2x.png"; sourceTree = "<group>"; };
+		8B3E27711537163500E0A378 /* Ajo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Ajo.png; sourceTree = "<group>"; };
+		8B3E27721537163500E0A378 /* Alcachofa.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Alcachofa.png; sourceTree = "<group>"; };
+		8B3E27731537163500E0A378 /* Alfalfa.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Alfalfa.png; sourceTree = "<group>"; };
+		8B3E27741537163500E0A378 /* Alfombras.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Alfombras.png; sourceTree = "<group>"; };
+		8B3E27751537163500E0A378 /* Aloe.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Aloe.png; sourceTree = "<group>"; };
+		8B3E27761537163500E0A378 /* Arnica.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Arnica.png; sourceTree = "<group>"; };
+		8B3E27771537163500E0A378 /* Artritis.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Artritis.png; sourceTree = "<group>"; };
+		8B3E27781537163500E0A378 /* Avena.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Avena.png; sourceTree = "<group>"; };
+		8B3E27791537163500E0A378 /* Azulejos.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Azulejos.png; sourceTree = "<group>"; };
+		8B3E277A1537163500E0A378 /* Canela.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Canela.png; sourceTree = "<group>"; };
+		8B3E277B1537163500E0A378 /* Chia.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Chia.png; sourceTree = "<group>"; };
+		8B3E277C1537163500E0A378 /* Colesterol.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Colesterol.png; sourceTree = "<group>"; };
+		8B3E277D1537163500E0A378 /* Colitis.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Colitis.png; sourceTree = "<group>"; };
+		8B3E277E1537163500E0A378 /* Conjuntivitis.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Conjuntivitis.png; sourceTree = "<group>"; };
+		8B3E277F1537163500E0A378 /* Corazon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Corazon.png; sourceTree = "<group>"; };
+		8B3E27801537163500E0A378 /* Cortina.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Cortina.png; sourceTree = "<group>"; };
+		8B3E27811537163500E0A378 /* Cristales.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Cristales.png; sourceTree = "<group>"; };
+		8B3E27821537163500E0A378 /* Cuachalalate.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Cuachalalate.png; sourceTree = "<group>"; };
+		8B3E27831537163500E0A378 /* Desague.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Desague.png; sourceTree = "<group>"; };
+		8B3E27841537163500E0A378 /* Escoba.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Escoba.png; sourceTree = "<group>"; };
+		8B3E27851537163500E0A378 /* Estufa.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Estufa.png; sourceTree = "<group>"; };
+		8B3E27861537163500E0A378 /* Gingivitis.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Gingivitis.png; sourceTree = "<group>"; };
+		8B3E27871537163500E0A378 /* Hipertension.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Hipertension.png; sourceTree = "<group>"; };
+		8B3E27881537163500E0A378 /* Indigestion.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Indigestion.png; sourceTree = "<group>"; };
+		8B3E27891537163500E0A378 /* Inmunologico.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Inmunologico.png; sourceTree = "<group>"; };
+		8B3E278A1537163500E0A378 /* Insomnio.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Insomnio.png; sourceTree = "<group>"; };
+		8B3E278B1537163500E0A378 /* Olla.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Olla.png; sourceTree = "<group>"; };
+		8B3E278C1537163500E0A378 /* Recipientes.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Recipientes.png; sourceTree = "<group>"; };
+		8B3E278D1537163500E0A378 /* Termo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Termo.png; sourceTree = "<group>"; };
+		8B3E278E1537163500E0A378 /* Olla@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Olla@2x.png"; sourceTree = "<group>"; };
+		8B3E278F1537163500E0A378 /* Recipientes@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Recipientes@2x.png"; sourceTree = "<group>"; };
+		8B3E27901537163500E0A378 /* Termo@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Termo@2x.png"; sourceTree = "<group>"; };
+		8B3E27DD1537181300E0A378 /* Sonrisa@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Sonrisa@2x.png"; sourceTree = "<group>"; };
+		8B3E27DF1537182700E0A378 /* Sonrisa.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Sonrisa.png; sourceTree = "<group>"; };
 		9AE8D0D415334E68008FEDBB /* Twitter.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Twitter.framework; path = System/Library/Frameworks/Twitter.framework; sourceTree = SDKROOT; };
 		9AE8D0D715334E73008FEDBB /* MessageUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MessageUI.framework; path = System/Library/Frameworks/MessageUI.framework; sourceTree = SDKROOT; };
 		9AEA5F681533504600A9E703 /* FacebookMethods.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FacebookMethods.h; sourceTree = "<group>"; };
@@ -303,6 +459,115 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		8B3E2740153715A100E0A378 /* Remedios y Glosario */ = {
+			isa = PBXGroup;
+			children = (
+				8B3E27421537163500E0A378 /* Ajo@2x.png */,
+				8B3E27431537163500E0A378 /* Alcachofa@2x.png */,
+				8B3E27441537163500E0A378 /* Alfalfa@2x.png */,
+				8B3E27451537163500E0A378 /* Alfombras@2x.png */,
+				8B3E27461537163500E0A378 /* Aloe@2x.png */,
+				8B3E27471537163500E0A378 /* Arnica@2x.png */,
+				8B3E27481537163500E0A378 /* Artritis@2x.png */,
+				8B3E27491537163500E0A378 /* Avena@2x.png */,
+				8B3E274A1537163500E0A378 /* Azulejos@2x.png */,
+				8B3E274B1537163500E0A378 /* Belleza */,
+				8B3E275F1537163500E0A378 /* Canela@2x.png */,
+				8B3E27601537163500E0A378 /* Chia@2x.png */,
+				8B3E27611537163500E0A378 /* Colesterol@2x.png */,
+				8B3E27621537163500E0A378 /* Colitis@2x.png */,
+				8B3E27631537163500E0A378 /* Conjuntivitis@2x.png */,
+				8B3E27641537163500E0A378 /* Corazon@2x.png */,
+				8B3E27651537163500E0A378 /* Cortina@2x.png */,
+				8B3E27661537163500E0A378 /* Cristales@2x.png */,
+				8B3E27671537163500E0A378 /* Cuachalalate@2x.png */,
+				8B3E27681537163500E0A378 /* Desague@2x.png */,
+				8B3E27691537163500E0A378 /* Escoba@2x.png */,
+				8B3E276A1537163500E0A378 /* Estufa@2x.png */,
+				8B3E276B1537163500E0A378 /* Gingivitis@2x.png */,
+				8B3E276C1537163500E0A378 /* Hipertension@2x.png */,
+				8B3E276D1537163500E0A378 /* Indigestion@2x.png */,
+				8B3E276E1537163500E0A378 /* Inmunologico@2x.png */,
+				8B3E276F1537163500E0A378 /* Insomnio@2x.png */,
+				8B3E27701537163500E0A378 /* no-retina */,
+				8B3E278E1537163500E0A378 /* Olla@2x.png */,
+				8B3E278F1537163500E0A378 /* Recipientes@2x.png */,
+				8B3E27901537163500E0A378 /* Termo@2x.png */,
+			);
+			name = "Remedios y Glosario";
+			sourceTree = "<group>";
+		};
+		8B3E274B1537163500E0A378 /* Belleza */ = {
+			isa = PBXGroup;
+			children = (
+				8B3E27DF1537182700E0A378 /* Sonrisa.png */,
+				8B3E274C1537163500E0A378 /* Acne@2x.png */,
+				8B3E274D1537163500E0A378 /* Arrugas@2x.png */,
+				8B3E274E1537163500E0A378 /* Graso@2x.png */,
+				8B3E274F1537163500E0A378 /* Mascarilla@2x.png */,
+				8B3E27501537163500E0A378 /* no-retina */,
+				8B3E275A1537163500E0A378 /* Pelo@2x.png */,
+				8B3E275B1537163500E0A378 /* Piel@2x.png */,
+				8B3E275C1537163500E0A378 /* Rostro@2x.png */,
+				8B3E275D1537163500E0A378 /* Seco@2x.png */,
+				8B3E275E1537163500E0A378 /* Uñas@2x.png */,
+			);
+			path = Belleza;
+			sourceTree = "<group>";
+		};
+		8B3E27501537163500E0A378 /* no-retina */ = {
+			isa = PBXGroup;
+			children = (
+				8B3E27DD1537181300E0A378 /* Sonrisa@2x.png */,
+				8B3E27511537163500E0A378 /* Acne.png */,
+				8B3E27521537163500E0A378 /* Arrugas.png */,
+				8B3E27531537163500E0A378 /* Graso.png */,
+				8B3E27541537163500E0A378 /* Mascarilla.png */,
+				8B3E27551537163500E0A378 /* Pelo.png */,
+				8B3E27561537163500E0A378 /* Piel.png */,
+				8B3E27571537163500E0A378 /* Rostro.png */,
+				8B3E27581537163500E0A378 /* Seco.png */,
+				8B3E27591537163500E0A378 /* Uñas.png */,
+			);
+			path = "no-retina";
+			sourceTree = "<group>";
+		};
+		8B3E27701537163500E0A378 /* no-retina */ = {
+			isa = PBXGroup;
+			children = (
+				8B3E27711537163500E0A378 /* Ajo.png */,
+				8B3E27721537163500E0A378 /* Alcachofa.png */,
+				8B3E27731537163500E0A378 /* Alfalfa.png */,
+				8B3E27741537163500E0A378 /* Alfombras.png */,
+				8B3E27751537163500E0A378 /* Aloe.png */,
+				8B3E27761537163500E0A378 /* Arnica.png */,
+				8B3E27771537163500E0A378 /* Artritis.png */,
+				8B3E27781537163500E0A378 /* Avena.png */,
+				8B3E27791537163500E0A378 /* Azulejos.png */,
+				8B3E277A1537163500E0A378 /* Canela.png */,
+				8B3E277B1537163500E0A378 /* Chia.png */,
+				8B3E277C1537163500E0A378 /* Colesterol.png */,
+				8B3E277D1537163500E0A378 /* Colitis.png */,
+				8B3E277E1537163500E0A378 /* Conjuntivitis.png */,
+				8B3E277F1537163500E0A378 /* Corazon.png */,
+				8B3E27801537163500E0A378 /* Cortina.png */,
+				8B3E27811537163500E0A378 /* Cristales.png */,
+				8B3E27821537163500E0A378 /* Cuachalalate.png */,
+				8B3E27831537163500E0A378 /* Desague.png */,
+				8B3E27841537163500E0A378 /* Escoba.png */,
+				8B3E27851537163500E0A378 /* Estufa.png */,
+				8B3E27861537163500E0A378 /* Gingivitis.png */,
+				8B3E27871537163500E0A378 /* Hipertension.png */,
+				8B3E27881537163500E0A378 /* Indigestion.png */,
+				8B3E27891537163500E0A378 /* Inmunologico.png */,
+				8B3E278A1537163500E0A378 /* Insomnio.png */,
+				8B3E278B1537163500E0A378 /* Olla.png */,
+				8B3E278C1537163500E0A378 /* Recipientes.png */,
+				8B3E278D1537163500E0A378 /* Termo.png */,
+			);
+			path = "no-retina";
+			sourceTree = "<group>";
+		};
 		9AE8D0D915334E86008FEDBB /* Compartir */ = {
 			isa = PBXGroup;
 			children = (
@@ -392,6 +657,7 @@
 		D9FC479D151A5115002F1D4B /* Imagenes */ = {
 			isa = PBXGroup;
 			children = (
+				8B3E2740153715A100E0A378 /* Remedios y Glosario */,
 				D9C4F529152CEBC300533412 /* fondo_general.png */,
 				D964C3B0152CEB7C00860E0E /* fondo_compras@2x.png */,
 				D9E87F7F152CEAD7004E2081 /* marca_llena_compras@2x.png */,
@@ -549,6 +815,84 @@
 				D964C3B1152CEB7C00860E0E /* fondo_compras@2x.png in Resources */,
 				D9C4F52A152CEBC300533412 /* fondo_general.png in Resources */,
 				9AEA5F921533505300A9E703 /* FBDialog.bundle in Resources */,
+				8B3E27911537163500E0A378 /* Ajo@2x.png in Resources */,
+				8B3E27921537163500E0A378 /* Alcachofa@2x.png in Resources */,
+				8B3E27931537163500E0A378 /* Alfalfa@2x.png in Resources */,
+				8B3E27941537163500E0A378 /* Alfombras@2x.png in Resources */,
+				8B3E27951537163500E0A378 /* Aloe@2x.png in Resources */,
+				8B3E27961537163500E0A378 /* Arnica@2x.png in Resources */,
+				8B3E27971537163500E0A378 /* Artritis@2x.png in Resources */,
+				8B3E27981537163500E0A378 /* Avena@2x.png in Resources */,
+				8B3E27991537163500E0A378 /* Azulejos@2x.png in Resources */,
+				8B3E279A1537163500E0A378 /* Acne@2x.png in Resources */,
+				8B3E279B1537163500E0A378 /* Arrugas@2x.png in Resources */,
+				8B3E279C1537163500E0A378 /* Graso@2x.png in Resources */,
+				8B3E279D1537163500E0A378 /* Mascarilla@2x.png in Resources */,
+				8B3E279E1537163500E0A378 /* Acne.png in Resources */,
+				8B3E279F1537163500E0A378 /* Arrugas.png in Resources */,
+				8B3E27A01537163500E0A378 /* Graso.png in Resources */,
+				8B3E27A11537163500E0A378 /* Mascarilla.png in Resources */,
+				8B3E27A21537163500E0A378 /* Pelo.png in Resources */,
+				8B3E27A31537163500E0A378 /* Piel.png in Resources */,
+				8B3E27A41537163500E0A378 /* Rostro.png in Resources */,
+				8B3E27A51537163500E0A378 /* Seco.png in Resources */,
+				8B3E27A61537163500E0A378 /* Uñas.png in Resources */,
+				8B3E27A71537163500E0A378 /* Pelo@2x.png in Resources */,
+				8B3E27A81537163500E0A378 /* Piel@2x.png in Resources */,
+				8B3E27A91537163500E0A378 /* Rostro@2x.png in Resources */,
+				8B3E27AA1537163500E0A378 /* Seco@2x.png in Resources */,
+				8B3E27AB1537163500E0A378 /* Uñas@2x.png in Resources */,
+				8B3E27AC1537163500E0A378 /* Canela@2x.png in Resources */,
+				8B3E27AD1537163500E0A378 /* Chia@2x.png in Resources */,
+				8B3E27AE1537163500E0A378 /* Colesterol@2x.png in Resources */,
+				8B3E27AF1537163500E0A378 /* Colitis@2x.png in Resources */,
+				8B3E27B01537163500E0A378 /* Conjuntivitis@2x.png in Resources */,
+				8B3E27B11537163500E0A378 /* Corazon@2x.png in Resources */,
+				8B3E27B21537163500E0A378 /* Cortina@2x.png in Resources */,
+				8B3E27B31537163500E0A378 /* Cristales@2x.png in Resources */,
+				8B3E27B41537163500E0A378 /* Cuachalalate@2x.png in Resources */,
+				8B3E27B51537163500E0A378 /* Desague@2x.png in Resources */,
+				8B3E27B61537163500E0A378 /* Escoba@2x.png in Resources */,
+				8B3E27B71537163500E0A378 /* Estufa@2x.png in Resources */,
+				8B3E27B81537163500E0A378 /* Gingivitis@2x.png in Resources */,
+				8B3E27B91537163500E0A378 /* Hipertension@2x.png in Resources */,
+				8B3E27BA1537163500E0A378 /* Indigestion@2x.png in Resources */,
+				8B3E27BB1537163500E0A378 /* Inmunologico@2x.png in Resources */,
+				8B3E27BC1537163500E0A378 /* Insomnio@2x.png in Resources */,
+				8B3E27BD1537163500E0A378 /* Ajo.png in Resources */,
+				8B3E27BE1537163500E0A378 /* Alcachofa.png in Resources */,
+				8B3E27BF1537163500E0A378 /* Alfalfa.png in Resources */,
+				8B3E27C01537163500E0A378 /* Alfombras.png in Resources */,
+				8B3E27C11537163500E0A378 /* Aloe.png in Resources */,
+				8B3E27C21537163500E0A378 /* Arnica.png in Resources */,
+				8B3E27C31537163500E0A378 /* Artritis.png in Resources */,
+				8B3E27C41537163500E0A378 /* Avena.png in Resources */,
+				8B3E27C51537163500E0A378 /* Azulejos.png in Resources */,
+				8B3E27C61537163500E0A378 /* Canela.png in Resources */,
+				8B3E27C71537163500E0A378 /* Chia.png in Resources */,
+				8B3E27C81537163500E0A378 /* Colesterol.png in Resources */,
+				8B3E27C91537163500E0A378 /* Colitis.png in Resources */,
+				8B3E27CA1537163500E0A378 /* Conjuntivitis.png in Resources */,
+				8B3E27CB1537163500E0A378 /* Corazon.png in Resources */,
+				8B3E27CC1537163500E0A378 /* Cortina.png in Resources */,
+				8B3E27CD1537163500E0A378 /* Cristales.png in Resources */,
+				8B3E27CE1537163500E0A378 /* Cuachalalate.png in Resources */,
+				8B3E27CF1537163500E0A378 /* Desague.png in Resources */,
+				8B3E27D01537163500E0A378 /* Escoba.png in Resources */,
+				8B3E27D11537163500E0A378 /* Estufa.png in Resources */,
+				8B3E27D21537163500E0A378 /* Gingivitis.png in Resources */,
+				8B3E27D31537163500E0A378 /* Hipertension.png in Resources */,
+				8B3E27D41537163500E0A378 /* Indigestion.png in Resources */,
+				8B3E27D51537163500E0A378 /* Inmunologico.png in Resources */,
+				8B3E27D61537163500E0A378 /* Insomnio.png in Resources */,
+				8B3E27D71537163500E0A378 /* Olla.png in Resources */,
+				8B3E27D81537163500E0A378 /* Recipientes.png in Resources */,
+				8B3E27D91537163500E0A378 /* Termo.png in Resources */,
+				8B3E27DA1537163500E0A378 /* Olla@2x.png in Resources */,
+				8B3E27DB1537163500E0A378 /* Recipientes@2x.png in Resources */,
+				8B3E27DC1537163500E0A378 /* Termo@2x.png in Resources */,
+				8B3E27DE1537181300E0A378 /* Sonrisa@2x.png in Resources */,
+				8B3E27E01537182700E0A378 /* Sonrisa.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
