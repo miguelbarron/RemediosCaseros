@@ -106,6 +106,28 @@
 		8B3E27DC1537163500E0A378 /* Termo@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 8B3E27901537163500E0A378 /* Termo@2x.png */; };
 		8B3E27DE1537181300E0A378 /* Sonrisa@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 8B3E27DD1537181300E0A378 /* Sonrisa@2x.png */; };
 		8B3E27E01537182700E0A378 /* Sonrisa.png in Resources */ = {isa = PBXBuildFile; fileRef = 8B3E27DF1537182700E0A378 /* Sonrisa.png */; };
+		8B3E282A15377DD600E0A378 /* Cardamomo.png in Resources */ = {isa = PBXBuildFile; fileRef = 8B3E281F15377DD600E0A378 /* Cardamomo.png */; };
+		8B3E282B15377DD600E0A378 /* Clavo.png in Resources */ = {isa = PBXBuildFile; fileRef = 8B3E282015377DD600E0A378 /* Clavo.png */; };
+		8B3E282C15377DD600E0A378 /* Diente.png in Resources */ = {isa = PBXBuildFile; fileRef = 8B3E282115377DD600E0A378 /* Diente.png */; };
+		8B3E282D15377DD600E0A378 /* Ginseng.png in Resources */ = {isa = PBXBuildFile; fileRef = 8B3E282215377DD600E0A378 /* Ginseng.png */; };
+		8B3E282E15377DD600E0A378 /* Manzanilla.png in Resources */ = {isa = PBXBuildFile; fileRef = 8B3E282315377DD600E0A378 /* Manzanilla.png */; };
+		8B3E282F15377DD600E0A378 /* Ñame.png in Resources */ = {isa = PBXBuildFile; fileRef = 8B3E282415377DD600E0A378 /* Ñame.png */; };
+		8B3E283015377DD600E0A378 /* Perejil.png in Resources */ = {isa = PBXBuildFile; fileRef = 8B3E282515377DD600E0A378 /* Perejil.png */; };
+		8B3E283115377DD600E0A378 /* Sauce.png in Resources */ = {isa = PBXBuildFile; fileRef = 8B3E282615377DD600E0A378 /* Sauce.png */; };
+		8B3E283215377DD600E0A378 /* Valeriana.png in Resources */ = {isa = PBXBuildFile; fileRef = 8B3E282715377DD600E0A378 /* Valeriana.png */; };
+		8B3E283315377DD600E0A378 /* Verbena.png in Resources */ = {isa = PBXBuildFile; fileRef = 8B3E282815377DD600E0A378 /* Verbena.png */; };
+		8B3E283415377DD600E0A378 /* Violeta.png in Resources */ = {isa = PBXBuildFile; fileRef = 8B3E282915377DD600E0A378 /* Violeta.png */; };
+		8B3E283C15377E2200E0A378 /* Cardamomo@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 8B3E283615377E2200E0A378 /* Cardamomo@2x.png */; };
+		8B3E283D15377E2200E0A378 /* Clavo@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 8B3E283715377E2200E0A378 /* Clavo@2x.png */; };
+		8B3E283E15377E2200E0A378 /* Diente@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 8B3E283815377E2200E0A378 /* Diente@2x.png */; };
+		8B3E283F15377E2200E0A378 /* Ginseng@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 8B3E283915377E2200E0A378 /* Ginseng@2x.png */; };
+		8B3E284015377E2200E0A378 /* Manzanilla@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 8B3E283A15377E2200E0A378 /* Manzanilla@2x.png */; };
+		8B3E284115377E2200E0A378 /* Ñame@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 8B3E283B15377E2200E0A378 /* Ñame@2x.png */; };
+		8B3E284715377E3600E0A378 /* Perejil@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 8B3E284215377E3600E0A378 /* Perejil@2x.png */; };
+		8B3E284815377E3600E0A378 /* Sauce@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 8B3E284315377E3600E0A378 /* Sauce@2x.png */; };
+		8B3E284915377E3600E0A378 /* Valeriana@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 8B3E284415377E3600E0A378 /* Valeriana@2x.png */; };
+		8B3E284A15377E3600E0A378 /* Verbena@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 8B3E284515377E3600E0A378 /* Verbena@2x.png */; };
+		8B3E284B15377E3600E0A378 /* Violeta@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 8B3E284615377E3600E0A378 /* Violeta@2x.png */; };
 		9AE8D0D515334E68008FEDBB /* Twitter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9AE8D0D415334E68008FEDBB /* Twitter.framework */; };
 		9AE8D0D815334E73008FEDBB /* MessageUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9AE8D0D715334E73008FEDBB /* MessageUI.framework */; };
 		9AEA5F6A1533504600A9E703 /* FacebookMethods.m in Sources */ = {isa = PBXBuildFile; fileRef = 9AEA5F691533504600A9E703 /* FacebookMethods.m */; };
@@ -269,6 +291,28 @@
 		8B3E27901537163500E0A378 /* Termo@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Termo@2x.png"; sourceTree = "<group>"; };
 		8B3E27DD1537181300E0A378 /* Sonrisa@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Sonrisa@2x.png"; sourceTree = "<group>"; };
 		8B3E27DF1537182700E0A378 /* Sonrisa.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Sonrisa.png; sourceTree = "<group>"; };
+		8B3E281F15377DD600E0A378 /* Cardamomo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Cardamomo.png; path = ../Cardamomo.png; sourceTree = "<group>"; };
+		8B3E282015377DD600E0A378 /* Clavo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Clavo.png; path = ../Clavo.png; sourceTree = "<group>"; };
+		8B3E282115377DD600E0A378 /* Diente.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Diente.png; path = ../Diente.png; sourceTree = "<group>"; };
+		8B3E282215377DD600E0A378 /* Ginseng.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Ginseng.png; path = ../Ginseng.png; sourceTree = "<group>"; };
+		8B3E282315377DD600E0A378 /* Manzanilla.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Manzanilla.png; path = ../Manzanilla.png; sourceTree = "<group>"; };
+		8B3E282415377DD600E0A378 /* Ñame.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Ñame.png"; path = "../Ñame.png"; sourceTree = "<group>"; };
+		8B3E282515377DD600E0A378 /* Perejil.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Perejil.png; path = ../Perejil.png; sourceTree = "<group>"; };
+		8B3E282615377DD600E0A378 /* Sauce.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Sauce.png; path = ../Sauce.png; sourceTree = "<group>"; };
+		8B3E282715377DD600E0A378 /* Valeriana.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Valeriana.png; path = ../Valeriana.png; sourceTree = "<group>"; };
+		8B3E282815377DD600E0A378 /* Verbena.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Verbena.png; path = ../Verbena.png; sourceTree = "<group>"; };
+		8B3E282915377DD600E0A378 /* Violeta.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Violeta.png; path = ../Violeta.png; sourceTree = "<group>"; };
+		8B3E283615377E2200E0A378 /* Cardamomo@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Cardamomo@2x.png"; sourceTree = "<group>"; };
+		8B3E283715377E2200E0A378 /* Clavo@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Clavo@2x.png"; sourceTree = "<group>"; };
+		8B3E283815377E2200E0A378 /* Diente@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Diente@2x.png"; sourceTree = "<group>"; };
+		8B3E283915377E2200E0A378 /* Ginseng@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Ginseng@2x.png"; sourceTree = "<group>"; };
+		8B3E283A15377E2200E0A378 /* Manzanilla@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Manzanilla@2x.png"; sourceTree = "<group>"; };
+		8B3E283B15377E2200E0A378 /* Ñame@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Ñame@2x.png"; sourceTree = "<group>"; };
+		8B3E284215377E3600E0A378 /* Perejil@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Perejil@2x.png"; sourceTree = "<group>"; };
+		8B3E284315377E3600E0A378 /* Sauce@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Sauce@2x.png"; sourceTree = "<group>"; };
+		8B3E284415377E3600E0A378 /* Valeriana@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Valeriana@2x.png"; sourceTree = "<group>"; };
+		8B3E284515377E3600E0A378 /* Verbena@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Verbena@2x.png"; sourceTree = "<group>"; };
+		8B3E284615377E3600E0A378 /* Violeta@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Violeta@2x.png"; sourceTree = "<group>"; };
 		9AE8D0D415334E68008FEDBB /* Twitter.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Twitter.framework; path = System/Library/Frameworks/Twitter.framework; sourceTree = SDKROOT; };
 		9AE8D0D715334E73008FEDBB /* MessageUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MessageUI.framework; path = System/Library/Frameworks/MessageUI.framework; sourceTree = SDKROOT; };
 		9AEA5F681533504600A9E703 /* FacebookMethods.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FacebookMethods.h; sourceTree = "<group>"; };
@@ -444,6 +488,17 @@
 		8B3E2740153715A100E0A378 /* Remedios y Glosario */ = {
 			isa = PBXGroup;
 			children = (
+				8B3E284215377E3600E0A378 /* Perejil@2x.png */,
+				8B3E284315377E3600E0A378 /* Sauce@2x.png */,
+				8B3E284415377E3600E0A378 /* Valeriana@2x.png */,
+				8B3E284515377E3600E0A378 /* Verbena@2x.png */,
+				8B3E284615377E3600E0A378 /* Violeta@2x.png */,
+				8B3E283615377E2200E0A378 /* Cardamomo@2x.png */,
+				8B3E283715377E2200E0A378 /* Clavo@2x.png */,
+				8B3E283815377E2200E0A378 /* Diente@2x.png */,
+				8B3E283915377E2200E0A378 /* Ginseng@2x.png */,
+				8B3E283A15377E2200E0A378 /* Manzanilla@2x.png */,
+				8B3E283B15377E2200E0A378 /* Ñame@2x.png */,
 				8B3E27421537163500E0A378 /* Ajo@2x.png */,
 				8B3E27431537163500E0A378 /* Alcachofa@2x.png */,
 				8B3E27441537163500E0A378 /* Alfalfa@2x.png */,
@@ -517,6 +572,17 @@
 		8B3E27701537163500E0A378 /* no-retina */ = {
 			isa = PBXGroup;
 			children = (
+				8B3E281F15377DD600E0A378 /* Cardamomo.png */,
+				8B3E282015377DD600E0A378 /* Clavo.png */,
+				8B3E282115377DD600E0A378 /* Diente.png */,
+				8B3E282215377DD600E0A378 /* Ginseng.png */,
+				8B3E282315377DD600E0A378 /* Manzanilla.png */,
+				8B3E282415377DD600E0A378 /* Ñame.png */,
+				8B3E282515377DD600E0A378 /* Perejil.png */,
+				8B3E282615377DD600E0A378 /* Sauce.png */,
+				8B3E282715377DD600E0A378 /* Valeriana.png */,
+				8B3E282815377DD600E0A378 /* Verbena.png */,
+				8B3E282915377DD600E0A378 /* Violeta.png */,
 				8B3E27711537163500E0A378 /* Ajo.png */,
 				8B3E27721537163500E0A378 /* Alcachofa.png */,
 				8B3E27731537163500E0A378 /* Alfalfa.png */,
@@ -870,6 +936,28 @@
 				8B3E27DC1537163500E0A378 /* Termo@2x.png in Resources */,
 				8B3E27DE1537181300E0A378 /* Sonrisa@2x.png in Resources */,
 				8B3E27E01537182700E0A378 /* Sonrisa.png in Resources */,
+				8B3E282A15377DD600E0A378 /* Cardamomo.png in Resources */,
+				8B3E282B15377DD600E0A378 /* Clavo.png in Resources */,
+				8B3E282C15377DD600E0A378 /* Diente.png in Resources */,
+				8B3E282D15377DD600E0A378 /* Ginseng.png in Resources */,
+				8B3E282E15377DD600E0A378 /* Manzanilla.png in Resources */,
+				8B3E282F15377DD600E0A378 /* Ñame.png in Resources */,
+				8B3E283015377DD600E0A378 /* Perejil.png in Resources */,
+				8B3E283115377DD600E0A378 /* Sauce.png in Resources */,
+				8B3E283215377DD600E0A378 /* Valeriana.png in Resources */,
+				8B3E283315377DD600E0A378 /* Verbena.png in Resources */,
+				8B3E283415377DD600E0A378 /* Violeta.png in Resources */,
+				8B3E283C15377E2200E0A378 /* Cardamomo@2x.png in Resources */,
+				8B3E283D15377E2200E0A378 /* Clavo@2x.png in Resources */,
+				8B3E283E15377E2200E0A378 /* Diente@2x.png in Resources */,
+				8B3E283F15377E2200E0A378 /* Ginseng@2x.png in Resources */,
+				8B3E284015377E2200E0A378 /* Manzanilla@2x.png in Resources */,
+				8B3E284115377E2200E0A378 /* Ñame@2x.png in Resources */,
+				8B3E284715377E3600E0A378 /* Perejil@2x.png in Resources */,
+				8B3E284815377E3600E0A378 /* Sauce@2x.png in Resources */,
+				8B3E284915377E3600E0A378 /* Valeriana@2x.png in Resources */,
+				8B3E284A15377E3600E0A378 /* Verbena@2x.png in Resources */,
+				8B3E284B15377E3600E0A378 /* Violeta@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
