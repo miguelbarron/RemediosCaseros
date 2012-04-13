@@ -356,7 +356,7 @@
     
     
     
-    [param setObject:@"www.cornerview.com.mx" forKey:@"link"];   
+    [param setObject:@"www.cornerview.com.mx/remedioscaseros" forKey:@"link"];   
    
    
     
