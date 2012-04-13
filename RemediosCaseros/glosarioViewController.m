@@ -12,6 +12,7 @@
 
 @implementation glosarioViewController
 @synthesize managedObjectContext,fetchedResultsController;
+@synthesize savedScopeButtonIndex,savedSearchTerm,searchBar,searchWasActive,filteredListContent;
 
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
@@ -53,6 +54,20 @@
     managedObjectContext=appDelegate.managedObjectContext;
     
     self.navigationController.navigationBar.tintColor = [UIColor colorWithRed:0.192 green:0.255 blue:0.349 alpha:1.0];
+    
+    // create a filtered list that will contain products for the search results table.
+	self.filteredListContent = [NSMutableArray arrayWithCapacity:[[fetchedResultsController sections] count]];	
+    
+    if (self.savedSearchTerm)
+	{
+        [self.searchDisplayController setActive:self.searchWasActive];
+        [self.searchDisplayController.searchBar setSelectedScopeButtonIndex:self.savedScopeButtonIndex];
+        [self.searchDisplayController.searchBar setText:savedSearchTerm];
+        
+        self.savedSearchTerm = nil;
+    }
+
+    
     NSError *error = nil;
 	if (![[self fetchedResultsController] performFetch:&error]) {
 		
@@ -66,6 +81,7 @@
 - (void)viewDidUnload
 {
     [super viewDidUnload];
+    [self setSearchBar:nil];
     // Release any retained subviews of the main view.
     // e.g. self.myOutlet = nil;
 }
@@ -86,17 +102,50 @@
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
     
-      return [[fetchedResultsController sections]count];     
+    //  return [[fetchedResultsController sections]count];     
+    if (tableView==self.searchDisplayController.searchResultsTableView) 
+    {
+        return 1;
+    }
+    
+    else        
+        return [[fetchedResultsController sections]count]; 
+    
+    
+    
 }
 
 
 // Customize the number of rows in the table view.
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-    id <NSFetchedResultsSectionInfo> sectionInfo = [[fetchedResultsController sections] objectAtIndex:section];    
-    return [sectionInfo numberOfObjects];
+    
+
+    if (tableView == self.searchDisplayController.searchResultsTableView)
+	{
+        return [self.filteredListContent count];
+    }
+	else
+	{
+            id <NSFetchedResultsSectionInfo> sectionInfo = [[fetchedResultsController sections] objectAtIndex:section];    
+            return [sectionInfo numberOfObjects];
+    }
+    
 }
 
 
+- (NSString *)tableView:(UITableView *)tableView titleForHeaderInSection:(NSInteger)section {
+    
+    if (tableView == self.searchDisplayController.searchResultsTableView) 
+    {
+        return @"Resultado de busqueda";
+    }
+    
+    else
+    {
+
+        return @"";
+    }
+}
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
@@ -115,7 +164,20 @@
     cell.textLabel.lineBreakMode = UILineBreakModeWordWrap;
     
     
-    Glosario *glo=[fetchedResultsController objectAtIndexPath:indexPath ];
+   
+    
+    Glosario *glo=nil;
+    
+    if (tableView == self.searchDisplayController.searchResultsTableView)
+	{
+        glo = [self.filteredListContent objectAtIndex:indexPath.row];
+    }
+	else
+	{
+        glo = [fetchedResultsController objectAtIndexPath:indexPath];
+    }
+    
+    
     
     NSString *url=glo.imagenThumb;    
     UIImage *myimagen=[UIImage imageNamed:url];
@@ -130,14 +192,24 @@
 
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
-    
-    detalleGlosarioViewController *detalleGlosario=[[detalleGlosarioViewController alloc]init];
-    detalleGlosario.glosario=[fetchedResultsController objectAtIndexPath:indexPath];
-    [self.navigationController pushViewController:detalleGlosario animated:YES];    
-    [tableView deselectRowAtIndexPath:indexPath animated:YES];
-    
 
+    detalleGlosarioViewController *detalleGlosario=[[detalleGlosarioViewController alloc]init];
     
+   
+    
+    
+    if (tableView == self.searchDisplayController.searchResultsTableView)
+	{
+        
+        detalleGlosario.glosario = [self.filteredListContent objectAtIndex:indexPath.row];
+    }
+    else
+    {
+        detalleGlosario.glosario =  [fetchedResultsController objectAtIndexPath:indexPath];
+    }
+    
+        [self.navigationController pushViewController:detalleGlosario animated:YES];    
+        [tableView deselectRowAtIndexPath:indexPath animated:YES];
     
 }
 
@@ -186,6 +258,44 @@
 }
 
 
+#pragma mark -
+#pragma mark Content Filtering
+
+- (void)filterContentForSearchText:(NSString*)searchText scope:(NSString*)scope
+{
+    if (searchText && searchText.length > 0) {
+        NSPredicate *sPredicate = [NSPredicate predicateWithFormat:@"nombreIngrediente CONTAINS[cd] %@", searchText];
+        self.filteredListContent = [self.fetchedResultsController.fetchedObjects filteredArrayUsingPredicate:sPredicate];
+    }
+    
+   	
+}
+
+
+
+#pragma mark -
+#pragma mark UISearchDisplayController Delegate Methods
+
+- (BOOL)searchDisplayController:(UISearchDisplayController *)controller shouldReloadTableForSearchString:(NSString *)searchString
+{
+    
+	
+    [self filterContentForSearchText:searchString scope:
+	 [[self.searchDisplayController.searchBar scopeButtonTitles] objectAtIndex:[self.searchDisplayController.searchBar selectedScopeButtonIndex]]];
+    
+    // Return YES to cause the search result table view to be reloaded.
+    return YES;
+}
+
+
+- (BOOL)searchDisplayController:(UISearchDisplayController *)controller shouldReloadTableForSearchScope:(NSInteger)searchOption
+{
+    [self filterContentForSearchText:[self.searchDisplayController.searchBar text] scope:
+	 [[self.searchDisplayController.searchBar scopeButtonTitles] objectAtIndex:searchOption]];
+    
+    // Return YES to cause the search result table view to be reloaded.
+    return YES;
+}
 
 
 

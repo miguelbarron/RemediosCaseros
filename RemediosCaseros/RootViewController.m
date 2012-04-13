@@ -16,6 +16,8 @@
 
 
 @implementation RootViewController
+@synthesize searchBar;
+@synthesize filteredListContent,savedSearchTerm,searchWasActive,savedScopeButtonIndex;
 @synthesize fetchedResultsController,managedObjectContext;
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
@@ -62,6 +64,19 @@
    self.navigationController.view.backgroundColor = [UIColor colorWithPatternImage:[UIImage imageNamed:@"fondo_general@2x.png"]]; 
    self.tableView.backgroundColor = [UIColor clearColor];  
     
+    // create a filtered list that will contain products for the search results table.
+	self.filteredListContent = [NSMutableArray arrayWithCapacity:[[fetchedResultsController sections] count]];	
+    
+    if (self.savedSearchTerm)
+	{
+        [self.searchDisplayController setActive:self.searchWasActive];
+        [self.searchDisplayController.searchBar setSelectedScopeButtonIndex:self.savedScopeButtonIndex];
+        [self.searchDisplayController.searchBar setText:savedSearchTerm];
+        
+        self.savedSearchTerm = nil;
+    }
+
+    
    NSError *error = nil;
    if (![[self fetchedResultsController] performFetch:&error]) {
              
@@ -76,6 +91,7 @@
 
 - (void)viewDidUnload
 {
+    [self setSearchBar:nil];
     [super viewDidUnload];
     
 }
@@ -91,6 +107,13 @@
 }
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
+    
+    if (tableView==self.searchDisplayController.searchResultsTableView) 
+    {
+        return 1;
+    }
+    
+    else        
     return [[fetchedResultsController sections]count];   
     
 
@@ -99,17 +122,38 @@
 
 // Customize the number of rows in the table view.
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-    id <NSFetchedResultsSectionInfo> sectionInfo = [[fetchedResultsController sections] objectAtIndex:section];    
-    return [sectionInfo numberOfObjects];
+    
+  
+    
+    
+    
+    
+    if (tableView == self.searchDisplayController.searchResultsTableView)
+	{
+        return [self.filteredListContent count];
     }
+	else
+	{
+		id <NSFetchedResultsSectionInfo> sectionInfo = [[fetchedResultsController sections] objectAtIndex:section];    
+        return [sectionInfo numberOfObjects];
+    }
+    
+    
+}
 
 - (NSString *)tableView:(UITableView *)tableView titleForHeaderInSection:(NSInteger)section {
     
-    id <NSFetchedResultsSectionInfo> sectionInfo = [[fetchedResultsController sections] objectAtIndex:section];   
+    if (tableView == self.searchDisplayController.searchResultsTableView) 
+    {
+        return @"Resultado de busqueda";
+    }
     
-    NSString *clasificacion = [sectionInfo name];
-    
-    return clasificacion;
+    else
+    {
+        id <NSFetchedResultsSectionInfo> sectionInfo = [[fetchedResultsController sections] objectAtIndex:section];    
+        NSString *clasificacion = [sectionInfo name];
+        return clasificacion;
+}
     
     
 }
@@ -132,11 +176,19 @@
     cell.detailTextLabel.numberOfLines=2;
     cell.textLabel.numberOfLines=2;
     
-        
+       
+    Remedios *rem=nil;
 
+    if (tableView == self.searchDisplayController.searchResultsTableView)
+	{
+        rem = [self.filteredListContent objectAtIndex:indexPath.row];
+    }
+	else
+	{
+        rem = [fetchedResultsController objectAtIndexPath:indexPath];
+    }
     
-    Remedios *rem=[fetchedResultsController objectAtIndexPath:indexPath ];
- 
+     
     NSString *url=rem.imagenThumb;
     UIImage *myimagen=[UIImage imageNamed:url];
     
@@ -152,9 +204,21 @@
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
 
-    detalleViewController *detalle=[[detalleViewController alloc]init];
-    detalle.remedio=[fetchedResultsController objectAtIndexPath:indexPath];
+    detalleViewController *detalle=[[detalleViewController alloc]initWithNibName:@"detalleViewController" bundle:nil];
+   
+    
+    if (tableView == self.searchDisplayController.searchResultsTableView)
+	{
+        
+        detalle.remedio = [self.filteredListContent objectAtIndex:indexPath.row];
+    }
+    else
+    {
+        detalle.remedio =  [fetchedResultsController objectAtIndexPath:indexPath];
+    }
+    
     [self.navigationController pushViewController:detalle animated:YES];
+    
     
 }
 
@@ -168,6 +232,7 @@
 }
 
 - (void)dealloc {
+    [searchBar release];
     [super dealloc];
 }
 
@@ -186,10 +251,10 @@
     
     // Set the batch size to a suitable number.
     [fetchRequest setFetchBatchSize:20];
-   //  NSPredicate *predicate =[NSPredicate predicateWithFormat:@"Categoria.titulo = %@" , self.remedio];  
-    //[NSFetchedResultsController deleteCacheWithName:nil];
+//     NSPredicate *predicate =[NSPredicate predicateWithFormat:@"nombreRemedio = %@" , self.remedio];  
+//    [NSFetchedResultsController deleteCacheWithName:nil];
     
-    //[fetchRequest setPredicate:predicate];
+  //  [fetchRequest setPredicate:predicate];
     
     // Edit the sort key as appropriate.
     NSSortDescriptor *sortDescriptor = [[NSSortDescriptor alloc] initWithKey:@"categoriaRemedio" ascending:YES];
@@ -211,6 +276,49 @@
     
     return fetchedResultsController;
 }
+
+
+#pragma mark -
+#pragma mark Content Filtering
+
+- (void)filterContentForSearchText:(NSString*)searchText scope:(NSString*)scope
+{
+    if (searchText && searchText.length > 0) {
+        NSPredicate *sPredicate = [NSPredicate predicateWithFormat:@"nombreRemedio CONTAINS[cd] %@ or subtitulo CONTAINS[cd] %@", searchText, searchText];
+        self.filteredListContent = [self.fetchedResultsController.fetchedObjects filteredArrayUsingPredicate:sPredicate];
+    }
+    
+   	
+}
+
+
+
+#pragma mark -
+#pragma mark UISearchDisplayController Delegate Methods
+
+- (BOOL)searchDisplayController:(UISearchDisplayController *)controller shouldReloadTableForSearchString:(NSString *)searchString
+{
+
+	
+    [self filterContentForSearchText:searchString scope:
+	 [[self.searchDisplayController.searchBar scopeButtonTitles] objectAtIndex:[self.searchDisplayController.searchBar selectedScopeButtonIndex]]];
+    
+    // Return YES to cause the search result table view to be reloaded.
+    return YES;
+}
+
+
+- (BOOL)searchDisplayController:(UISearchDisplayController *)controller shouldReloadTableForSearchScope:(NSInteger)searchOption
+{
+    [self filterContentForSearchText:[self.searchDisplayController.searchBar text] scope:
+	 [[self.searchDisplayController.searchBar scopeButtonTitles] objectAtIndex:searchOption]];
+    
+    // Return YES to cause the search result table view to be reloaded.
+    return YES;
+}
+
+
+
 
 
 

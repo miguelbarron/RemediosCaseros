@@ -48,7 +48,8 @@
     self.navigationItem.rightBarButtonItem = compartirButton;
     [compartirButton release]; 
     
-    [self.svView setContentSize:CGSizeMake(100,500)];
+//    [self.svView setContentSize:CGSizeMake(100,500)];
+        [self.svView setContentSize:CGSizeMake(100,980)];
 
     NSString *direccionImagen=remedio.imagenThumb;
     imagenRemedio.image=[UIImage imageNamed:direccionImagen];   
