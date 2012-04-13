@@ -23,7 +23,7 @@ FacebookMethods *sharedFacebook_;
 
 -(void)fbSetId
 {
- facebook_ = [[Facebook alloc]initWithAppId:@"123176197710962" andDelegate:self];
+ facebook_ = [[Facebook alloc]initWithAppId:@"347930175265856" andDelegate:self];
 
 }
 

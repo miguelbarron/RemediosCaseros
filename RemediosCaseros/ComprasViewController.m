@@ -113,12 +113,9 @@
 }
 
 //- (NSString *)tableView:(UITableView *)tableView titleForHeaderInSection:(NSInteger)section {
-//    
-//
-//    
+   
 //    return ;
-//    
-//    
+    
 //}
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
@@ -218,7 +215,9 @@
     //  }   
 }
 
-
+-(NSString *)tableView:(UITableView *)tableView titleForDeleteConfirmationButtonForRowAtIndexPath:(NSIndexPath *)indexPath {
+    return @"Eliminar";
+}
 
 #pragma mark - NSFetchedResultsController
 - (NSFetchedResultsController *)fetchedResultsController {
@@ -266,9 +265,7 @@
 }
 
 
--(NSString *)tableView:(UITableView *)tableView titleForDeleteConfirmationButtonForRowAtIndexPath:(NSIndexPath *)indexPath {
-    return @"Eliminar";
-}
+
 
 #pragma mark - Eliminar
 -(void)eliminarCompra:(id)sender

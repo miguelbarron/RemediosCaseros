@@ -356,7 +356,7 @@
     
     
     
-    [param setObject:@"www.somossoftware.com" forKey:@"link"];   
+    [param setObject:@"www.cornerview.com.mx" forKey:@"link"];   
    
    
     
