@@ -266,6 +266,10 @@
 }
 
 
+-(NSString *)tableView:(UITableView *)tableView titleForDeleteConfirmationButtonForRowAtIndexPath:(NSIndexPath *)indexPath {
+    return @"Eliminar";
+}
+
 #pragma mark - Eliminar
 -(void)eliminarCompra:(id)sender
 {
