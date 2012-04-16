@@ -93,68 +93,94 @@
     
  */
     
+    // Obtiene el número de remedios para saber si hay actualizaciones
+    
+    NSString *urlConfigString = [NSString stringWithFormat:@"http://neostar.org/test/Remedios_JSON/Remedios.json"];         
+    NSURL *urlConfig = [NSURL URLWithString:urlConfigString];    
+    NSString *dataConfig = [NSString stringWithContentsOfURL:urlConfig encoding:NSUTF8StringEncoding error:nil];    
+    SBJsonParser *parser = [[SBJsonParser alloc] init];   
+    NSMutableDictionary *myConfig =[parser objectWithString:dataConfig];    
+    NSMutableArray *arrayRemedios=[myConfig objectForKey:@"Remedios"];
+    
+    int numTotalRemedios = 0;
+
+    
+    
+    
     AppDelegate *appDelegate=(AppDelegate *)[[UIApplication sharedApplication]delegate];
     managedObjectContext=appDelegate.managedObjectContext;
     NSManagedObject *newData;
     
+    // Revisa si la Base de datos está vacía o hay nuevos remedios que descargar
+    NSFetchRequest *fetchRequest = [[NSFetchRequest alloc] init];
+    // Edit the entity name as appropriate.
+    NSEntityDescription *entity = [NSEntityDescription entityForName:@"Remedios" inManagedObjectContext:managedObjectContext];
+    [fetchRequest setEntity:entity];
     
-     
-    //=================== conexion  Remedios ============//    
-    NSString *urlString = [NSString stringWithFormat:@"http://neostar.org/test/Remedios_JSON/Remedios.json"];         
-    NSURL *url = [NSURL URLWithString:urlString];    
-    NSString *dataRemedios = [NSString stringWithContentsOfURL:url encoding:NSUTF8StringEncoding error:nil];    
-    SBJsonParser *parser = [[SBJsonParser alloc] init];   
-    NSMutableDictionary *myRemedios =[parser objectWithString:dataRemedios];    
-    NSMutableArray *arrayRemedios=[myRemedios objectForKey:@"Remedios"];
-    
-    
-    
-    //=========== llenando Remedios Core Data ============  
-    int remedioIndex=0;        
-    for (NSDictionary *Recorrerjson in arrayRemedios){
-          
-        newData=[NSEntityDescription insertNewObjectForEntityForName:@"Remedios" inManagedObjectContext:managedObjectContext];
-        
-        [newData setValue:[[arrayRemedios objectAtIndex:remedioIndex] objectForKey:@"nombreRemedio"] forKey:@"nombreRemedio"];
-        [newData setValue:[[arrayRemedios objectAtIndex:remedioIndex] objectForKey:@"preparacion"] forKey:@"preparacion"];    
-        [newData setValue:[[arrayRemedios objectAtIndex:remedioIndex] objectForKey:@"ingredientes"] forKey:@"ingredientes"];  
-        [newData setValue:[[arrayRemedios objectAtIndex:remedioIndex] objectForKey:@"subtitulo"] forKey:@"subtitulo"];
-        [newData setValue:[[arrayRemedios objectAtIndex:remedioIndex] objectForKey:@"categoriaRemedio"] forKey:@"categoriaRemedio"];
-        [newData setValue:[[arrayRemedios objectAtIndex:remedioIndex] objectForKey:@"imagenThumb"] forKey:@"imagenThumb"];
-        remedioIndex++;   
-    }
-    
-    //==========Conexion Glosario
-    NSString *urlStringGlosario = [NSString stringWithFormat:@"http://neostar.org/test/Remedios_JSON/Glosario.json"];         
-    NSURL *urlGlosario = [NSURL URLWithString:urlStringGlosario];    
-    NSString *dataGlosario = [NSString stringWithContentsOfURL:urlGlosario encoding:NSUTF8StringEncoding error:nil];    
-    SBJsonParser *parserGlosario = [[SBJsonParser alloc] init];   
-    NSMutableDictionary *myGlosario =[parserGlosario objectWithString:dataGlosario];    
-    NSMutableArray *arrayGlosario=[myGlosario objectForKey:@"Glosario"];    
-    
-    
-    //=========== llenando Glosario Core Data ============    
-    int GlosarioIndex=0;    
-    for (NSDictionary *RecorrerjsonGlosario in arrayGlosario){
-        
-        
-        
-        newData=[NSEntityDescription insertNewObjectForEntityForName:@"Glosario" inManagedObjectContext:managedObjectContext];
- 
-        [newData setValue:[[arrayGlosario objectAtIndex:GlosarioIndex] objectForKey:@"detalleIngredientes"] forKey:@"detalleIngrediente"];
-        [newData setValue:[[arrayGlosario objectAtIndex:GlosarioIndex] objectForKey:@"nombreIngrediente"] forKey:@"nombreIngrediente"];
-        [newData setValue:[[arrayGlosario objectAtIndex:GlosarioIndex] objectForKey:@"imagenThumb"] forKey:@"imagenThumb"];        
-        GlosarioIndex++;   
-    }
-
-    ///salvar contexto
     NSError *error = nil;
-    if (![managedObjectContext save:&error]) {
-		
-		NSLog(@"Unresolved error %@, %@", error, [error userInfo]);
-		abort();
+    NSArray *array = [managedObjectContext executeFetchRequest:fetchRequest error:&error];
+    if (array == nil)
+    {
+        // Deal with error...
     }
+    else if (([array count] <= 0) || (([array count] != numTotalRemedios)) ) {
+        
+        //=================== conexion  Remedios ============//    
+        NSString *urlString = [NSString stringWithFormat:@"http://neostar.org/test/Remedios_JSON/Remedios.json"];         
+        NSURL *url = [NSURL URLWithString:urlString];    
+        NSString *dataRemedios = [NSString stringWithContentsOfURL:url encoding:NSUTF8StringEncoding error:nil];    
+        SBJsonParser *parser = [[SBJsonParser alloc] init];   
+        NSMutableDictionary *myRemedios =[parser objectWithString:dataRemedios];    
+        NSMutableArray *arrayRemedios=[myRemedios objectForKey:@"Remedios"];
+        
+        
+        
+        //=========== llenando Remedios Core Data ============  
+        int remedioIndex=0;        
+        for (NSDictionary *Recorrerjson in arrayRemedios){
+            
+            newData=[NSEntityDescription insertNewObjectForEntityForName:@"Remedios" inManagedObjectContext:managedObjectContext];
+            
+            [newData setValue:[[arrayRemedios objectAtIndex:remedioIndex] objectForKey:@"nombreRemedio"] forKey:@"nombreRemedio"];
+            [newData setValue:[[arrayRemedios objectAtIndex:remedioIndex] objectForKey:@"preparacion"] forKey:@"preparacion"];    
+            [newData setValue:[[arrayRemedios objectAtIndex:remedioIndex] objectForKey:@"ingredientes"] forKey:@"ingredientes"];  
+            [newData setValue:[[arrayRemedios objectAtIndex:remedioIndex] objectForKey:@"subtitulo"] forKey:@"subtitulo"];
+            [newData setValue:[[arrayRemedios objectAtIndex:remedioIndex] objectForKey:@"categoriaRemedio"] forKey:@"categoriaRemedio"];
+            [newData setValue:[[arrayRemedios objectAtIndex:remedioIndex] objectForKey:@"imagenThumb"] forKey:@"imagenThumb"];
+            remedioIndex++;   
+        }
+        
+        //==========Conexion Glosario
+        NSString *urlStringGlosario = [NSString stringWithFormat:@"http://neostar.org/test/Remedios_JSON/Glosario.json"];         
+        NSURL *urlGlosario = [NSURL URLWithString:urlStringGlosario];    
+        NSString *dataGlosario = [NSString stringWithContentsOfURL:urlGlosario encoding:NSUTF8StringEncoding error:nil];    
+        SBJsonParser *parserGlosario = [[SBJsonParser alloc] init];   
+        NSMutableDictionary *myGlosario =[parserGlosario objectWithString:dataGlosario];    
+        NSMutableArray *arrayGlosario=[myGlosario objectForKey:@"Glosario"];    
+        
+        
+        //=========== llenando Glosario Core Data ============    
+        int GlosarioIndex=0;    
+        for (NSDictionary *RecorrerjsonGlosario in arrayGlosario){
+            
+            
+            
+            newData=[NSEntityDescription insertNewObjectForEntityForName:@"Glosario" inManagedObjectContext:managedObjectContext];
+            
+            [newData setValue:[[arrayGlosario objectAtIndex:GlosarioIndex] objectForKey:@"detalleIngredientes"] forKey:@"detalleIngrediente"];
+            [newData setValue:[[arrayGlosario objectAtIndex:GlosarioIndex] objectForKey:@"nombreIngrediente"] forKey:@"nombreIngrediente"];
+            [newData setValue:[[arrayGlosario objectAtIndex:GlosarioIndex] objectForKey:@"imagenThumb"] forKey:@"imagenThumb"];        
+            GlosarioIndex++;   
+        }
+        
+        ///salvar contexto
+        if (![managedObjectContext save:&error]) {
+            
+            NSLog(@"Unresolved error %@, %@", error, [error userInfo]);
+            abort();
+        }
 
+    }
     
     
 }

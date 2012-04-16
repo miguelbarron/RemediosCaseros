@@ -37,25 +37,12 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
-  //self.window = [[[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]] autorelease];
-  // Override point for customization after application launch.
-  //  [self.managedObjectContext ];
-    
     
     
   UIViewController *viewController = [[[RootViewController alloc] initWithNibName:@"RootViewController" bundle:nil] autorelease];
   navigationController = [[UINavigationController alloc]initWithRootViewController:viewController];
   
     
-    
-  
-    
-    
-    
-/*    
-  [self.window addSubview:navigationController.view];
-  [self.window makeKeyAndVisible];
-  */  
     
     
     self.window = [[[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]] autorelease];
