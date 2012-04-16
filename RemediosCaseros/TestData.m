@@ -95,15 +95,21 @@
     
     // Obtiene el número de remedios para saber si hay actualizaciones
     
-    NSString *urlConfigString = [NSString stringWithFormat:@"http://neostar.org/test/Remedios_JSON/Remedios.json"];         
+    NSString *urlConfigString = [NSString stringWithFormat:@"http://neostar.org/test/Remedios_JSON/Configuracion.json"];         
     NSURL *urlConfig = [NSURL URLWithString:urlConfigString];    
     NSString *dataConfig = [NSString stringWithContentsOfURL:urlConfig encoding:NSUTF8StringEncoding error:nil];    
     SBJsonParser *parser = [[SBJsonParser alloc] init];   
     NSMutableDictionary *myConfig =[parser objectWithString:dataConfig];    
-    NSMutableArray *arrayRemedios=[myConfig objectForKey:@"Remedios"];
+ 
+    NSMutableArray *arrayRemedios=[myConfig objectForKey:@"Configuracion"];
+   
+    int i = 0;
     
     int numTotalRemedios = 0;
-
+    //NSString *registros = [[arrayRemedios objectAtIndex:i] objectForKey:@"Registros"];
+    numTotalRemedios = [[[arrayRemedios objectAtIndex:i] objectForKey:@"Registros"] intValue]; 
+                             
+                         
     
     
     
