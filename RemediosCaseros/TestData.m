@@ -106,9 +106,10 @@
     int i = 0;
     
     int numTotalRemedios = 0;
+    int numTotalGlosario = 0;
     //NSString *registros = [[arrayRemedios objectAtIndex:i] objectForKey:@"Registros"];
     numTotalRemedios = [[[arrayRemedios objectAtIndex:i] objectForKey:@"Registros"] intValue]; 
-                             
+    numTotalGlosario = [[[arrayRemedios objectAtIndex:i] objectForKey:@"Glosario"]  intValue];                          
                          
     
     
@@ -117,7 +118,7 @@
     managedObjectContext=appDelegate.managedObjectContext;
     NSManagedObject *newData;
     
-    // Revisa si la Base de datos está vacía o hay nuevos remedios que descargar
+    // Revisa si la Entidad Remedios está vacía o hay nuevos remedios que descargar
     NSFetchRequest *fetchRequest = [[NSFetchRequest alloc] init];
     // Edit the entity name as appropriate.
     NSEntityDescription *entity = [NSEntityDescription entityForName:@"Remedios" inManagedObjectContext:managedObjectContext];
@@ -157,28 +158,51 @@
             remedioIndex++;   
         }
         
-        //==========Conexion Glosario
-        NSString *urlStringGlosario = [NSString stringWithFormat:@"http://neostar.org/test/Remedios_JSON/Glosario.json"];         
-        NSURL *urlGlosario = [NSURL URLWithString:urlStringGlosario];    
-        NSString *dataGlosario = [NSString stringWithContentsOfURL:urlGlosario encoding:NSUTF8StringEncoding error:nil];    
-        SBJsonParser *parserGlosario = [[SBJsonParser alloc] init];   
-        NSMutableDictionary *myGlosario =[parserGlosario objectWithString:dataGlosario];    
-        NSMutableArray *arrayGlosario=[myGlosario objectForKey:@"Glosario"];    
+    
         
+       //Revisar si  la entidad Glosario esta vacia o hay nuevos elementos por descargar 
+        NSFetchRequest *glosarioRequest = [[NSFetchRequest alloc] init];
+       //Edit entity name as appropiate.
+        NSEntityDescription *entityGlosario = [NSEntityDescription entityForName:@"Glosario" inManagedObjectContext:managedObjectContext];
+        [glosarioRequest setEntity:entityGlosario];
         
-        //=========== llenando Glosario Core Data ============    
-        int GlosarioIndex=0;    
-        for (NSDictionary *RecorrerjsonGlosario in arrayGlosario){
-            
-            
-            
-            newData=[NSEntityDescription insertNewObjectForEntityForName:@"Glosario" inManagedObjectContext:managedObjectContext];
-            
-            [newData setValue:[[arrayGlosario objectAtIndex:GlosarioIndex] objectForKey:@"detalleIngredientes"] forKey:@"detalleIngrediente"];
-            [newData setValue:[[arrayGlosario objectAtIndex:GlosarioIndex] objectForKey:@"nombreIngrediente"] forKey:@"nombreIngrediente"];
-            [newData setValue:[[arrayGlosario objectAtIndex:GlosarioIndex] objectForKey:@"imagenThumb"] forKey:@"imagenThumb"];        
-            GlosarioIndex++;   
+        NSArray *glosarioArray = [managedObjectContext executeFetchRequest:glosarioRequest error:&error];
+        if (glosarioArray == nil) {
+            // Deal with error
         }
+        
+        else if (([glosarioArray count] <= 0) || (([arrayRemedios count] != numTotalGlosario)))
+          {
+            //==========Conexion Glosario
+            NSString *urlStringGlosario = [NSString stringWithFormat:@"http://neostar.org/test/Remedios_JSON/Glosario.json"];         
+            NSURL *urlGlosario = [NSURL URLWithString:urlStringGlosario];    
+            NSString *dataGlosario = [NSString stringWithContentsOfURL:urlGlosario encoding:NSUTF8StringEncoding error:nil];    
+            SBJsonParser *parserGlosario = [[SBJsonParser alloc] init];   
+            NSMutableDictionary *myGlosario =[parserGlosario objectWithString:dataGlosario];    
+            NSMutableArray *arrayGlosario=[myGlosario objectForKey:@"Glosario"];    
+            
+            
+            //=========== llenando Glosario Core Data ============    
+            int GlosarioIndex=0;    
+            for (NSDictionary *RecorrerjsonGlosario in arrayGlosario)
+              {
+                
+                
+                
+                newData=[NSEntityDescription insertNewObjectForEntityForName:@"Glosario" inManagedObjectContext:managedObjectContext];
+                
+                [newData setValue:[[arrayGlosario objectAtIndex:GlosarioIndex] objectForKey:@"detalleIngredientes"] forKey:@"detalleIngrediente"];
+                [newData setValue:[[arrayGlosario objectAtIndex:GlosarioIndex] objectForKey:@"nombreIngrediente"] forKey:@"nombreIngrediente"];
+                [newData setValue:[[arrayGlosario objectAtIndex:GlosarioIndex] objectForKey:@"imagenThumb"] forKey:@"imagenThumb"];        
+                GlosarioIndex++;   
+              }
+        
+            
+                     
+        
+        
+       
+          }
         
         ///salvar contexto
         if (![managedObjectContext save:&error]) {
