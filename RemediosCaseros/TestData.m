@@ -143,20 +143,40 @@
         
         
         
-        //=========== llenando Remedios Core Data ============  
-        int remedioIndex=0;        
-        for (NSDictionary *Recorrerjson in arrayRemedios){
+        //=========== llenando Remedios Core Data ============ 
+        
+        //============ Actualizacion ===================
+        if ([array count] != numTotalRemedios) {
+            int remedioIndex=[array count] +1;        
+            for (NSDictionary *Recorrerjson in arrayRemedios){
+                
+                newData=[NSEntityDescription insertNewObjectForEntityForName:@"Remedios" inManagedObjectContext:managedObjectContext];
+                
+                [newData setValue:[[arrayRemedios objectAtIndex:remedioIndex] objectForKey:@"nombreRemedio"] forKey:@"nombreRemedio"];
+                [newData setValue:[[arrayRemedios objectAtIndex:remedioIndex] objectForKey:@"preparacion"] forKey:@"preparacion"];    
+                [newData setValue:[[arrayRemedios objectAtIndex:remedioIndex] objectForKey:@"ingredientes"] forKey:@"ingredientes"];  
+                [newData setValue:[[arrayRemedios objectAtIndex:remedioIndex] objectForKey:@"subtitulo"] forKey:@"subtitulo"];
+                [newData setValue:[[arrayRemedios objectAtIndex:remedioIndex] objectForKey:@"categoriaRemedio"] forKey:@"categoriaRemedio"];
+                [newData setValue:[[arrayRemedios objectAtIndex:remedioIndex] objectForKey:@"imagenThumb"] forKey:@"imagenThumb"];
+                remedioIndex++;   
+            }  
+       // ================ Inicializacion ================
             
-            newData=[NSEntityDescription insertNewObjectForEntityForName:@"Remedios" inManagedObjectContext:managedObjectContext];
-            
-            [newData setValue:[[arrayRemedios objectAtIndex:remedioIndex] objectForKey:@"nombreRemedio"] forKey:@"nombreRemedio"];
-            [newData setValue:[[arrayRemedios objectAtIndex:remedioIndex] objectForKey:@"preparacion"] forKey:@"preparacion"];    
-            [newData setValue:[[arrayRemedios objectAtIndex:remedioIndex] objectForKey:@"ingredientes"] forKey:@"ingredientes"];  
-            [newData setValue:[[arrayRemedios objectAtIndex:remedioIndex] objectForKey:@"subtitulo"] forKey:@"subtitulo"];
-            [newData setValue:[[arrayRemedios objectAtIndex:remedioIndex] objectForKey:@"categoriaRemedio"] forKey:@"categoriaRemedio"];
-            [newData setValue:[[arrayRemedios objectAtIndex:remedioIndex] objectForKey:@"imagenThumb"] forKey:@"imagenThumb"];
-            remedioIndex++;   
-        }
+        }else {
+                 int remedioIndex=0;        
+                 for (NSDictionary *Recorrerjson in arrayRemedios){
+                
+                    newData=[NSEntityDescription insertNewObjectForEntityForName:@"Remedios" inManagedObjectContext:managedObjectContext];
+                
+                   [newData setValue:[[arrayRemedios objectAtIndex:remedioIndex] objectForKey:@"nombreRemedio"] forKey:@"nombreRemedio"];
+                   [newData setValue:[[arrayRemedios objectAtIndex:remedioIndex] objectForKey:@"preparacion"] forKey:@"preparacion"];    
+                   [newData setValue:[[arrayRemedios objectAtIndex:remedioIndex] objectForKey:@"ingredientes"] forKey:@"ingredientes"];  
+                   [newData setValue:[[arrayRemedios objectAtIndex:remedioIndex] objectForKey:@"subtitulo"] forKey:@"subtitulo"];
+                   [newData setValue:[[arrayRemedios objectAtIndex:remedioIndex] objectForKey:@"categoriaRemedio"] forKey:@"categoriaRemedio"];
+                   [newData setValue:[[arrayRemedios objectAtIndex:remedioIndex] objectForKey:@"imagenThumb"] forKey:@"imagenThumb"];
+                   remedioIndex++;   
+               }               
+             }   
         
             
     }    
@@ -173,7 +193,7 @@
             // Deal with error
         }
         
-        else if (([glosarioArray count] <= 0) || (([arrayRemedios count] != numTotalGlosario)))
+        else if (([glosarioArray count] <= 0) || (([glosarioArray count] != numTotalGlosario)))
           {
             //==========Conexion Glosario
             NSString *urlStringGlosario = [NSString stringWithFormat:@"http://neostar.org/test/Remedios_JSON/Glosario.json"];         
@@ -183,27 +203,45 @@
             NSMutableDictionary *myGlosario =[parserGlosario objectWithString:dataGlosario];    
             NSMutableArray *arrayGlosario=[myGlosario objectForKey:@"Glosario"];    
             
-            
+          
+              
+              
             //=========== llenando Glosario Core Data ============    
-            int GlosarioIndex=0;    
-            for (NSDictionary *RecorrerjsonGlosario in arrayGlosario)
-              {
-                
-                
-                
-                newData=[NSEntityDescription insertNewObjectForEntityForName:@"Glosario" inManagedObjectContext:managedObjectContext];
-                
-                [newData setValue:[[arrayGlosario objectAtIndex:GlosarioIndex] objectForKey:@"detalleIngredientes"] forKey:@"detalleIngrediente"];
-                [newData setValue:[[arrayGlosario objectAtIndex:GlosarioIndex] objectForKey:@"nombreIngrediente"] forKey:@"nombreIngrediente"];
-                [newData setValue:[[arrayGlosario objectAtIndex:GlosarioIndex] objectForKey:@"imagenThumb"] forKey:@"imagenThumb"];        
-                GlosarioIndex++;   
-              }
-        
-            
+          
+              if ([glosarioArray count] != numTotalGlosario) {
+                  int GlosarioIndex= [glosarioArray count] + 1;    
+                  for (NSDictionary *RecorrerjsonGlosario in arrayGlosario)
+                  {
+                      
+                      
+                      
+                      newData=[NSEntityDescription insertNewObjectForEntityForName:@"Glosario" inManagedObjectContext:managedObjectContext];
+                      
+                      [newData setValue:[[arrayGlosario objectAtIndex:GlosarioIndex] objectForKey:@"detalleIngredientes"] forKey:@"detalleIngrediente"];
+                      [newData setValue:[[arrayGlosario objectAtIndex:GlosarioIndex] objectForKey:@"nombreIngrediente"] forKey:@"nombreIngrediente"];
+                      [newData setValue:[[arrayGlosario objectAtIndex:GlosarioIndex] objectForKey:@"imagenThumb"] forKey:@"imagenThumb"];        
+                      GlosarioIndex++;   
+                  }
+
+              }else 
+             //============ Inicializar Glosario ============= 
+                  
+                   {
+                     int GlosarioIndex=0;    
+                     for (NSDictionary *RecorrerjsonGlosario in arrayGlosario)
+                      {
+                                        
+                        newData=[NSEntityDescription insertNewObjectForEntityForName:@"Glosario" inManagedObjectContext:managedObjectContext];
+                      
+                        [newData setValue:[[arrayGlosario objectAtIndex:GlosarioIndex] objectForKey:@"detalleIngredientes"] forKey:@"detalleIngrediente"];
+                        [newData setValue:[[arrayGlosario objectAtIndex:GlosarioIndex] objectForKey:@"nombreIngrediente"] forKey:@"nombreIngrediente"];
+                        [newData setValue:[[arrayGlosario objectAtIndex:GlosarioIndex] objectForKey:@"imagenThumb"] forKey:@"imagenThumb"];        
+                        GlosarioIndex++;   
+                      }
+
+                   }   
                      
         
-        
-       
           }
      
         ///salvar contexto
