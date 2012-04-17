@@ -103,7 +103,7 @@
     if ([self connectedToNetwork]) {
         
      
-    NSString *urlConfigString = [NSString stringWithFormat:@"http://neostar.org/test/Remedios_JSON/Configuracion.json"];         
+    NSString *urlConfigString = [NSString stringWithFormat:@"http://cornerview.com.mx/app/RC/Configuracion.json"];         
     NSURL *urlConfig = [NSURL URLWithString:urlConfigString];    
     NSString *dataConfig = [NSString stringWithContentsOfURL:urlConfig encoding:NSUTF8StringEncoding error:nil];    
     SBJsonParser *parser = [[SBJsonParser alloc] init];   
@@ -142,7 +142,7 @@
     else if (([array count] <= 0) || (([array count] != numTotalRemedios)) ) {
         
         //=================== conexion  Remedios ============//    
-        NSString *urlString = [NSString stringWithFormat:@"http://neostar.org/test/Remedios_JSON/Remedios.json"];         
+        NSString *urlString = [NSString stringWithFormat:@"http:cornerview.com.mx/app/RC/Remedios.json"];         
         NSURL *url = [NSURL URLWithString:urlString];    
         NSString *dataRemedios = [NSString stringWithContentsOfURL:url encoding:NSUTF8StringEncoding error:nil];    
         SBJsonParser *parser = [[SBJsonParser alloc] init];   
@@ -207,7 +207,7 @@
         else if (([glosarioArray count] <= 0) || (([glosarioArray count] != numTotalGlosario)))
           {
             //==========Conexion Glosario
-            NSString *urlStringGlosario = [NSString stringWithFormat:@"http://neostar.org/test/Remedios_JSON/Glosario.json"];         
+            NSString *urlStringGlosario = [NSString stringWithFormat:@"http://cornerview.com.mx/app/RC/Glosario.json"];         
             NSURL *urlGlosario = [NSURL URLWithString:urlStringGlosario];    
             NSString *dataGlosario = [NSString stringWithContentsOfURL:urlGlosario encoding:NSUTF8StringEncoding error:nil];    
             SBJsonParser *parserGlosario = [[SBJsonParser alloc] init];   

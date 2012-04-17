@@ -351,7 +351,7 @@
     
     NSMutableDictionary *param = [[NSMutableDictionary alloc]init];
     
-    [param setObject:@"http://neostar.org/test/remedios_fb.png" forKey:@"picture"];
+    [param setObject:@"http://cornerview.com.mx/app/RC/remedios_fb.png" forKey:@"picture"];
     
     
     
