@@ -158,7 +158,10 @@
                 [newData setValue:[[arrayRemedios objectAtIndex:remedioIndex] objectForKey:@"subtitulo"] forKey:@"subtitulo"];
                 [newData setValue:[[arrayRemedios objectAtIndex:remedioIndex] objectForKey:@"categoriaRemedio"] forKey:@"categoriaRemedio"];
                 [newData setValue:[[arrayRemedios objectAtIndex:remedioIndex] objectForKey:@"imagenThumb"] forKey:@"imagenThumb"];
-                remedioIndex++;   
+                remedioIndex++;
+                if (remedioIndex >= numTotalRemedios) {
+                    break;
+                }
             }  
        // ================ Inicializacion ================
             
@@ -209,7 +212,8 @@
             //=========== llenando Glosario Core Data ============    
           
               if ([glosarioArray count] != numTotalGlosario) {
-                  int GlosarioIndex= [glosarioArray count];    
+                  int GlosarioIndex= [glosarioArray count]; 
+                  NSLog(@"Glosario %i", [glosarioArray count] );
                   for (NSDictionary *RecorrerjsonGlosario in arrayGlosario)
                   {
                       
@@ -220,7 +224,10 @@
                       [newData setValue:[[arrayGlosario objectAtIndex:GlosarioIndex] objectForKey:@"detalleIngredientes"] forKey:@"detalleIngrediente"];
                       [newData setValue:[[arrayGlosario objectAtIndex:GlosarioIndex] objectForKey:@"nombreIngrediente"] forKey:@"nombreIngrediente"];
                       [newData setValue:[[arrayGlosario objectAtIndex:GlosarioIndex] objectForKey:@"imagenThumb"] forKey:@"imagenThumb"];        
-                      GlosarioIndex++;   
+                      GlosarioIndex++;  
+                      if (GlosarioIndex >= numTotalGlosario) {
+                          break;
+                      }
                   }
 
               }else 
