@@ -30,6 +30,10 @@
 		06E99CB1152CCED90024BBD6 /* remedios_114x114.png in Resources */ = {isa = PBXBuildFile; fileRef = 06E99CB0152CCED90024BBD6 /* remedios_114x114.png */; };
 		8B335C78153DE41F0041D1C4 /* RemediosCaseros.sqlite in Resources */ = {isa = PBXBuildFile; fileRef = 8B335C77153DE41F0041D1C4 /* RemediosCaseros.sqlite */; };
 		8B335C97153DF9910041D1C4 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8B335C96153DF9910041D1C4 /* SystemConfiguration.framework */; };
+		8B335CA4153E0D9A0041D1C4 /* generico_glosario.png in Resources */ = {isa = PBXBuildFile; fileRef = 8B335CA0153E0D9A0041D1C4 /* generico_glosario.png */; };
+		8B335CA5153E0D9A0041D1C4 /* generico_glosario@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 8B335CA1153E0D9A0041D1C4 /* generico_glosario@2x.png */; };
+		8B335CA6153E0D9A0041D1C4 /* generico_remedio.png in Resources */ = {isa = PBXBuildFile; fileRef = 8B335CA2153E0D9A0041D1C4 /* generico_remedio.png */; };
+		8B335CA7153E0D9A0041D1C4 /* generico_remedio@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 8B335CA3153E0D9A0041D1C4 /* generico_remedio@2x.png */; };
 		8B3E27911537163500E0A378 /* Ajo@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 8B3E27421537163500E0A378 /* Ajo@2x.png */; };
 		8B3E27921537163500E0A378 /* Alcachofa@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 8B3E27431537163500E0A378 /* Alcachofa@2x.png */; };
 		8B3E27931537163500E0A378 /* Alfalfa@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 8B3E27441537163500E0A378 /* Alfalfa@2x.png */; };
@@ -217,6 +221,10 @@
 		06E99CB0152CCED90024BBD6 /* remedios_114x114.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = remedios_114x114.png; sourceTree = "<group>"; };
 		8B335C77153DE41F0041D1C4 /* RemediosCaseros.sqlite */ = {isa = PBXFileReference; lastKnownFileType = file; path = RemediosCaseros.sqlite; sourceTree = "<group>"; };
 		8B335C96153DF9910041D1C4 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		8B335CA0153E0D9A0041D1C4 /* generico_glosario.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = generico_glosario.png; sourceTree = "<group>"; };
+		8B335CA1153E0D9A0041D1C4 /* generico_glosario@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "generico_glosario@2x.png"; sourceTree = "<group>"; };
+		8B335CA2153E0D9A0041D1C4 /* generico_remedio.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = generico_remedio.png; sourceTree = "<group>"; };
+		8B335CA3153E0D9A0041D1C4 /* generico_remedio@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "generico_remedio@2x.png"; sourceTree = "<group>"; };
 		8B3E27421537163500E0A378 /* Ajo@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Ajo@2x.png"; sourceTree = "<group>"; };
 		8B3E27431537163500E0A378 /* Alcachofa@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Alcachofa@2x.png"; sourceTree = "<group>"; };
 		8B3E27441537163500E0A378 /* Alfalfa@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Alfalfa@2x.png"; sourceTree = "<group>"; };
@@ -494,6 +502,10 @@
 		8B3E2740153715A100E0A378 /* Remedios y Glosario */ = {
 			isa = PBXGroup;
 			children = (
+				8B335CA0153E0D9A0041D1C4 /* generico_glosario.png */,
+				8B335CA1153E0D9A0041D1C4 /* generico_glosario@2x.png */,
+				8B335CA2153E0D9A0041D1C4 /* generico_remedio.png */,
+				8B335CA3153E0D9A0041D1C4 /* generico_remedio@2x.png */,
 				8B3E284215377E3600E0A378 /* Perejil@2x.png */,
 				8B3E284315377E3600E0A378 /* Sauce@2x.png */,
 				8B3E284415377E3600E0A378 /* Valeriana@2x.png */,
@@ -966,6 +978,10 @@
 				8B3E284A15377E3600E0A378 /* Verbena@2x.png in Resources */,
 				8B3E284B15377E3600E0A378 /* Violeta@2x.png in Resources */,
 				8B335C78153DE41F0041D1C4 /* RemediosCaseros.sqlite in Resources */,
+				8B335CA4153E0D9A0041D1C4 /* generico_glosario.png in Resources */,
+				8B335CA5153E0D9A0041D1C4 /* generico_glosario@2x.png in Resources */,
+				8B335CA6153E0D9A0041D1C4 /* generico_remedio.png in Resources */,
+				8B335CA7153E0D9A0041D1C4 /* generico_remedio@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
