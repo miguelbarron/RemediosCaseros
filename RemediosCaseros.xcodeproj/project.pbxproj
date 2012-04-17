@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		06443EAA153CF5E7008A2064 /* RemediosCaseros.sqlite in Resources */ = {isa = PBXBuildFile; fileRef = 06443EA9153CF5E7008A2064 /* RemediosCaseros.sqlite */; };
 		0662492414A8F2A800FDAFA7 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0662492314A8F2A800FDAFA7 /* UIKit.framework */; };
 		0662492614A8F2A800FDAFA7 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0662492514A8F2A800FDAFA7 /* Foundation.framework */; };
 		0662492814A8F2A800FDAFA7 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0662492714A8F2A800FDAFA7 /* CoreGraphics.framework */; };
@@ -187,6 +188,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		06443EA9153CF5E7008A2064 /* RemediosCaseros.sqlite */ = {isa = PBXFileReference; lastKnownFileType = file; path = RemediosCaseros.sqlite; sourceTree = "<group>"; };
 		0662491F14A8F2A800FDAFA7 /* RemediosCaseros.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RemediosCaseros.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0662492314A8F2A800FDAFA7 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		0662492514A8F2A800FDAFA7 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -697,6 +699,7 @@
 		D9DC36BA153734EC0024AED0 /* Modelo De Datos */ = {
 			isa = PBXGroup;
 			children = (
+				06443EA9153CF5E7008A2064 /* RemediosCaseros.sqlite */,
 				D9FC47F6151A6CFE002F1D4B /* Test */,
 				D980365715238E79000F8DE6 /* Clases */,
 				D9F89BFD1519268C00DDCBAC /* Model.xcdatamodeld */,
@@ -958,6 +961,7 @@
 				8B3E284915377E3600E0A378 /* Valeriana@2x.png in Resources */,
 				8B3E284A15377E3600E0A378 /* Verbena@2x.png in Resources */,
 				8B3E284B15377E3600E0A378 /* Violeta@2x.png in Resources */,
+				06443EAA153CF5E7008A2064 /* RemediosCaseros.sqlite in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

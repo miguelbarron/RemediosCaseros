@@ -10,5 +10,5 @@
 
 // Cuando esta seteado a 1, crea información a través de código y a insterta en la base de datos
 #ifndef DEBUG_CREATE_DATA
-#define DEBUG_CREATE_DATA 0
+#define DEBUG_CREATE_DATA 1
 #endif

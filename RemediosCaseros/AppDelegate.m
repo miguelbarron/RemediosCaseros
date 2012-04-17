@@ -41,9 +41,6 @@
     
   UIViewController *viewController = [[[RootViewController alloc] initWithNibName:@"RootViewController" bundle:nil] autorelease];
   navigationController = [[UINavigationController alloc]initWithRootViewController:viewController];
-  
-    
-    
     
     self.window = [[[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]] autorelease];
 
@@ -64,13 +61,15 @@
     self.tabBarController = [[[UITabBarController alloc] init] autorelease];
     self.tabBarController.viewControllers = [NSArray arrayWithObjects:remediosNavController,glosarioNavController,comprasNavController, nil];
     self.window.rootViewController = self.tabBarController;
-    [self.window makeKeyAndVisible];
     
+    
+    [self createEditableCopyOfDatabaseIfNeeded];
     
 #if DEBUG_CREATE_DATA
     TestData *newTestData = [[TestData alloc] init];
     [newTestData createData];
 #endif 
+    [self.window makeKeyAndVisible];
     return YES;
     
 }
@@ -162,6 +161,27 @@
             NSLog(@"Unresolved error %@, %@", error, [error userInfo]);
             abort();
         } 
+    }
+}
+
+
+// Creates a writable copy of the bundled default database in the application Documents directory.
+- (void)createEditableCopyOfDatabaseIfNeeded {
+    // First, test for existence.
+    BOOL success;
+    NSFileManager *fileManager = [NSFileManager defaultManager];
+    NSError *error;
+    NSArray *paths = NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES);
+    NSString *documentsDirectory = [paths objectAtIndex:0];
+    NSString *writableDBPath = [documentsDirectory stringByAppendingPathComponent:@"RemediosCaseros.sqlite"];
+    success = [fileManager fileExistsAtPath:writableDBPath];
+    if (success)
+        return;
+    // The writable database does not exist, so copy the default to the appropriate location.
+    NSString *defaultDBPath = [[[NSBundle mainBundle] resourcePath] stringByAppendingPathComponent:@"RemediosCaseros.sqlite"];
+    success = [fileManager copyItemAtPath:defaultDBPath toPath:writableDBPath error:&error];
+    if (!success) {
+        NSAssert1(0, @"Failed to create writable database file with message '%@'.", [error localizedDescription]);
     }
 }
 

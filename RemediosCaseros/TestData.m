@@ -129,6 +129,7 @@
     {
         // Deal with error...
     }
+    
     else if (([array count] <= 0) || (([array count] != numTotalRemedios)) ) {
         
         //=================== conexion  Remedios ============//    
