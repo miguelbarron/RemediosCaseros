@@ -158,6 +158,8 @@
             remedioIndex++;   
         }
         
+            
+    }    
     
         
        //Revisar si  la entidad Glosario esta vacia o hay nuevos elementos por descargar 
@@ -203,15 +205,14 @@
         
        
           }
-        
+     
         ///salvar contexto
         if (![managedObjectContext save:&error]) {
             
             NSLog(@"Unresolved error %@, %@", error, [error userInfo]);
             abort();
         }
-
-    }
+   
     
     
 }
