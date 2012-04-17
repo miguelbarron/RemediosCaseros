@@ -147,7 +147,7 @@
         
         //============ Actualizacion ===================
         if ([array count] != numTotalRemedios) {
-            int remedioIndex=[array count] +1;        
+            int remedioIndex=[array count];        
             for (NSDictionary *Recorrerjson in arrayRemedios){
                 
                 newData=[NSEntityDescription insertNewObjectForEntityForName:@"Remedios" inManagedObjectContext:managedObjectContext];
@@ -209,7 +209,7 @@
             //=========== llenando Glosario Core Data ============    
           
               if ([glosarioArray count] != numTotalGlosario) {
-                  int GlosarioIndex= [glosarioArray count] + 1;    
+                  int GlosarioIndex= [glosarioArray count];    
                   for (NSDictionary *RecorrerjsonGlosario in arrayGlosario)
                   {
                       
