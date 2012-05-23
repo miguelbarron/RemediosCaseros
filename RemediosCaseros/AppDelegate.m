@@ -14,7 +14,10 @@
 #import "detalleViewController.h"
 #import "glosarioViewController.h"
 #import "ComprasViewController.h"
+#import "GANTracker.h"
 
+static const NSInteger kGANDispatchPeriodSec = 10;
+static NSString *const kGANDAccountId= @"UA-30984548-6";
 
 @implementation AppDelegate
 
@@ -39,11 +42,33 @@
 {
     
     
+    [[GANTracker sharedTracker] startTrackerWithAccountID:@"UA-30984548-6" dispatchPeriod:kGANDispatchPeriodSec delegate:nil];
+    [[GANTracker sharedTracker] setAnonymizeIp:YES];
+    
+    
+    
+    NSError *error;
+    
+    if (![[GANTracker sharedTracker] trackEvent:@"Application Launched"
+                                         action:@"Launch app"
+                                          label:@"Launch app"
+                                          value:99
+                                      withError:&error]) {
+        NSLog(@"error in trackEvent");
+    }
+    
+    if (![[GANTracker sharedTracker] trackPageview:@"Application Launched"
+                                         withError:&error]) {
+        NSLog(@"error in trackPageview");
+    }
+    
+    
   UIViewController *viewController = [[[RootViewController alloc] initWithNibName:@"RootViewController" bundle:nil] autorelease];
   navigationController = [[UINavigationController alloc]initWithRootViewController:viewController];
     
     self.window = [[[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]] autorelease];
 
+    
     // Override point for customization after application launch.
     UIViewController *viewController1 = [[[RootViewController alloc] initWithNibName:@"RootViewController" bundle:nil] autorelease];
     UINavigationController *remediosNavController = [[[UINavigationController alloc] initWithRootViewController:viewController1] autorelease];

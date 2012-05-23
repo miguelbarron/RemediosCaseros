@@ -28,6 +28,11 @@
 		06E99CAC152CCE960024BBD6 /* remedios_114x114.png in Resources */ = {isa = PBXBuildFile; fileRef = 06E99CAA152CCE960024BBD6 /* remedios_114x114.png */; };
 		06E99CAF152CCED40024BBD6 /* remedios_57x57.png in Resources */ = {isa = PBXBuildFile; fileRef = 06E99CAE152CCED40024BBD6 /* remedios_57x57.png */; };
 		06E99CB1152CCED90024BBD6 /* remedios_114x114.png in Resources */ = {isa = PBXBuildFile; fileRef = 06E99CB0152CCED90024BBD6 /* remedios_114x114.png */; };
+		122C8E3C156D545300EB3A17 /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 122C8E3B156D545300EB3A17 /* CFNetwork.framework */; };
+		122C8E3F156D545C00EB3A17 /* libsqlite3.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 122C8E3E156D545C00EB3A17 /* libsqlite3.0.dylib */; };
+		122C8E46156D551F00EB3A17 /* Analytics.m in Sources */ = {isa = PBXBuildFile; fileRef = 122C8E42156D551F00EB3A17 /* Analytics.m */; };
+		122C8E47156D551F00EB3A17 /* libGoogleAnalytics.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 122C8E44156D551F00EB3A17 /* libGoogleAnalytics.a */; };
+		122C8E48156D551F00EB3A17 /* libGoogleAnalytics_NoThumb.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 122C8E45156D551F00EB3A17 /* libGoogleAnalytics_NoThumb.a */; };
 		8B335C78153DE41F0041D1C4 /* RemediosCaseros.sqlite in Resources */ = {isa = PBXBuildFile; fileRef = 8B335C77153DE41F0041D1C4 /* RemediosCaseros.sqlite */; };
 		8B335C97153DF9910041D1C4 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8B335C96153DF9910041D1C4 /* SystemConfiguration.framework */; };
 		8B335CA4153E0D9A0041D1C4 /* generico_glosario.png in Resources */ = {isa = PBXBuildFile; fileRef = 8B335CA0153E0D9A0041D1C4 /* generico_glosario.png */; };
@@ -219,6 +224,13 @@
 		06E99CAA152CCE960024BBD6 /* remedios_114x114.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = remedios_114x114.png; sourceTree = "<group>"; };
 		06E99CAE152CCED40024BBD6 /* remedios_57x57.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = remedios_57x57.png; sourceTree = "<group>"; };
 		06E99CB0152CCED90024BBD6 /* remedios_114x114.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = remedios_114x114.png; sourceTree = "<group>"; };
+		122C8E3B156D545300EB3A17 /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
+		122C8E3E156D545C00EB3A17 /* libsqlite3.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.0.dylib; path = usr/lib/libsqlite3.0.dylib; sourceTree = SDKROOT; };
+		122C8E41156D551F00EB3A17 /* Analytics.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Analytics.h; sourceTree = "<group>"; };
+		122C8E42156D551F00EB3A17 /* Analytics.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Analytics.m; sourceTree = "<group>"; };
+		122C8E43156D551F00EB3A17 /* GANTracker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GANTracker.h; sourceTree = "<group>"; };
+		122C8E44156D551F00EB3A17 /* libGoogleAnalytics.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libGoogleAnalytics.a; sourceTree = "<group>"; };
+		122C8E45156D551F00EB3A17 /* libGoogleAnalytics_NoThumb.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libGoogleAnalytics_NoThumb.a; sourceTree = "<group>"; };
 		8B335C77153DE41F0041D1C4 /* RemediosCaseros.sqlite */ = {isa = PBXFileReference; lastKnownFileType = file; path = RemediosCaseros.sqlite; sourceTree = "<group>"; };
 		8B335C96153DF9910041D1C4 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
 		8B335CA0153E0D9A0041D1C4 /* generico_glosario.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = generico_glosario.png; sourceTree = "<group>"; };
@@ -411,6 +423,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				122C8E3F156D545C00EB3A17 /* libsqlite3.0.dylib in Frameworks */,
+				122C8E3C156D545300EB3A17 /* CFNetwork.framework in Frameworks */,
 				8B335C97153DF9910041D1C4 /* SystemConfiguration.framework in Frameworks */,
 				9AE8D0D815334E73008FEDBB /* MessageUI.framework in Frameworks */,
 				9AE8D0D515334E68008FEDBB /* Twitter.framework in Frameworks */,
@@ -418,6 +432,8 @@
 				0662492414A8F2A800FDAFA7 /* UIKit.framework in Frameworks */,
 				0662492614A8F2A800FDAFA7 /* Foundation.framework in Frameworks */,
 				0662492814A8F2A800FDAFA7 /* CoreGraphics.framework in Frameworks */,
+				122C8E47156D551F00EB3A17 /* libGoogleAnalytics.a in Frameworks */,
+				122C8E48156D551F00EB3A17 /* libGoogleAnalytics_NoThumb.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -427,6 +443,7 @@
 		0662491414A8F2A800FDAFA7 = {
 			isa = PBXGroup;
 			children = (
+				122C8E40156D551F00EB3A17 /* GoogleAnalytics */,
 				9AEA5F6C1533505300A9E703 /* facebook-ios-sdk */,
 				9AE8D0D915334E86008FEDBB /* Compartir */,
 				06E99CB0152CCED90024BBD6 /* remedios_114x114.png */,
@@ -448,6 +465,8 @@
 		0662492214A8F2A800FDAFA7 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				122C8E3E156D545C00EB3A17 /* libsqlite3.0.dylib */,
+				122C8E3B156D545300EB3A17 /* CFNetwork.framework */,
 				8B335C96153DF9910041D1C4 /* SystemConfiguration.framework */,
 				9AE8D0D715334E73008FEDBB /* MessageUI.framework */,
 				9AE8D0D415334E68008FEDBB /* Twitter.framework */,
@@ -497,6 +516,19 @@
 				0662493114A8F2A900FDAFA7 /* RemediosCaseros-Prefix.pch */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		122C8E40156D551F00EB3A17 /* GoogleAnalytics */ = {
+			isa = PBXGroup;
+			children = (
+				122C8E41156D551F00EB3A17 /* Analytics.h */,
+				122C8E42156D551F00EB3A17 /* Analytics.m */,
+				122C8E43156D551F00EB3A17 /* GANTracker.h */,
+				122C8E44156D551F00EB3A17 /* libGoogleAnalytics.a */,
+				122C8E45156D551F00EB3A17 /* libGoogleAnalytics_NoThumb.a */,
+			);
+			name = GoogleAnalytics;
+			path = RemediosCaseros/GoogleAnalytics;
 			sourceTree = "<group>";
 		};
 		8B3E2740153715A100E0A378 /* Remedios y Glosario */ = {
@@ -1015,6 +1047,7 @@
 				9AEA5F9C1533505300A9E703 /* SBJsonWriter.m in Sources */,
 				D9DC36BE1537358B0024AED0 /* Remedios.m in Sources */,
 				D9DC36C1153735970024AED0 /* Glosario.m in Sources */,
+				122C8E46156D551F00EB3A17 /* Analytics.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1083,6 +1116,10 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "RemediosCaseros/RemediosCaseros-Prefix.pch";
 				INFOPLIST_FILE = "RemediosCaseros/RemediosCaseros-Info.plist";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/RemediosCaseros/GoogleAnalytics\"",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -1094,6 +1131,10 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "RemediosCaseros/RemediosCaseros-Prefix.pch";
 				INFOPLIST_FILE = "RemediosCaseros/RemediosCaseros-Info.plist";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/RemediosCaseros/GoogleAnalytics\"",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
