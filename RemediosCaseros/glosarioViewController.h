@@ -8,12 +8,13 @@
 
 #import <UIKit/UIKit.h>
 #import "AppDelegate.h"
+#import "Analytics.h"
 
 @interface glosarioViewController : UIViewController<NSFetchedResultsControllerDelegate>{
     
     NSFetchedResultsController *fetchedResultsController;
 	NSManagedObjectContext *managedObjectContext; 
-    
+    Analytics *Tracker;
 }
 @property(retain,nonatomic)NSFetchedResultsController *fetchedResultsController;
 @property (nonatomic, retain) NSManagedObjectContext *managedObjectContext;

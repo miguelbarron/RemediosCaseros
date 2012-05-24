@@ -15,9 +15,12 @@
 #import "glosarioViewController.h"
 #import "ComprasViewController.h"
 #import "GANTracker.h"
+#import "Analytics.h"
+
 
 static const NSInteger kGANDispatchPeriodSec = 10;
 static NSString *const kGANDAccountId= @"UA-30984548-6";
+
 
 @implementation AppDelegate
 
@@ -41,26 +44,15 @@ static NSString *const kGANDAccountId= @"UA-30984548-6";
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
     
-    
     [[GANTracker sharedTracker] startTrackerWithAccountID:@"UA-30984548-6" dispatchPeriod:kGANDispatchPeriodSec delegate:nil];
     [[GANTracker sharedTracker] setAnonymizeIp:YES];
     
     
+    Analytics * Traker = [Analytics sharedInstance];
+
+    [Traker track:@"Application Launched 24/may shared"];
     
-    NSError *error;
     
-    if (![[GANTracker sharedTracker] trackEvent:@"Application Launched"
-                                         action:@"Launch app"
-                                          label:@"Launch app"
-                                          value:99
-                                      withError:&error]) {
-        NSLog(@"error in trackEvent");
-    }
-    
-    if (![[GANTracker sharedTracker] trackPageview:@"Application Launched"
-                                         withError:&error]) {
-        NSLog(@"error in trackPageview");
-    }
     
     
   UIViewController *viewController = [[[RootViewController alloc] initWithNibName:@"RootViewController" bundle:nil] autorelease];

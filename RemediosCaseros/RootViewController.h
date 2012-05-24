@@ -8,12 +8,13 @@
 
 #import <UIKit/UIKit.h>
 #import "AppDelegate.h"
+#import "Analytics.h"
 
 @interface RootViewController : UITableViewController<NSFetchedResultsControllerDelegate>{
     NSFetchedResultsController *fetchedResultsController;
 	NSManagedObjectContext *managedObjectContext; 
     
-    
+    Analytics *Tracker;    
 
 
 }

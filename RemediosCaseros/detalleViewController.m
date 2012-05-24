@@ -10,6 +10,8 @@
 #import "Remedios.h"
 #import "AppDelegate.h"
 #import "twitter/twitter.h"
+#import "Analytics.h"
+
 #define SYSTEM_VERSION_EQUAL_TO(v)                  ([[[UIDevice currentDevice] systemVersion] compare:v options:NSNumericSearch] == NSOrderedSame)
 #define SYSTEM_VERSION_GREATER_THAN(v)              ([[[UIDevice currentDevice] systemVersion] compare:v options:NSNumericSearch] == NSOrderedDescending)
 #define SYSTEM_VERSION_GREATER_THAN_OR_EQUAL_TO(v)  ([[[UIDevice currentDevice] systemVersion] compare:v options:NSNumericSearch] != NSOrderedAscending)
@@ -90,6 +92,9 @@
 
 -(void)compartir:(id)sender{
     
+    Analytics *Tracker = [Analytics sharedInstance];
+    
+    [Tracker track:@"Compartir"];
     
     [FBM logged];    
     if (SYSTEM_VERSION_GREATER_THAN_OR_EQUAL_TO(@"5.0")) {

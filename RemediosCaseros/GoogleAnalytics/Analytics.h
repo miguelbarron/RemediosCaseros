@@ -13,4 +13,6 @@
 
 -(void)track:(NSString *)ViewName;
 -(void)trackEv:(NSInteger)value;
+
++ (Analytics *)sharedInstance ;
 @end

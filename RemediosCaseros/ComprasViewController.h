@@ -9,12 +9,14 @@
 #import <UIKit/UIKit.h>
 #import "AppDelegate.h"
 #import "Glosario.h"
+#import "Analytics.h"
+
 @interface ComprasViewController : UIViewController<NSFetchedResultsControllerDelegate>
 {
     NSFetchedResultsController *fetchedResultsController;
     NSManagedObjectContext *managedObjectContext;
     UIBarButtonItem *eliminarButton;
-
+    Analytics *Tracker;
 }
 
 @property(retain,nonatomic)NSFetchedResultsController *fetchedResultsController;

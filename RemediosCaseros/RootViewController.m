@@ -13,7 +13,7 @@
 #import "Remedios.h"
 #import "Glosario.h"
 #import "detalleViewController.h"
-
+#import "Analytics.h"
 
 @implementation RootViewController
 @synthesize searchBar;
@@ -55,7 +55,6 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    
     AppDelegate *appDelegate=(AppDelegate *)[[UIApplication sharedApplication]delegate];
     managedObjectContext=appDelegate.managedObjectContext;
  
@@ -96,6 +95,13 @@
     
 }
 
+
+- (void)viewWillAppear:(BOOL)animated {
+
+    Tracker = [Analytics sharedInstance];
+    [Tracker track:self.title];
+
+}
 
 
 

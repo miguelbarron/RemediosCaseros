@@ -9,6 +9,7 @@
 #import "ComprasViewController.h"
 #import "AppDelegate.h"
 #import "Glosario.h"
+#import "Analytics.h"
 
 @implementation ComprasViewController
 @synthesize myTableView;
@@ -49,6 +50,8 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    Tracker = [Analytics sharedInstance];
+    
     AppDelegate *appDelegate=(AppDelegate *)[[UIApplication sharedApplication]delegate];
     managedObjectContext=appDelegate.managedObjectContext;
     
@@ -70,8 +73,10 @@
     // e.g. self.myOutlet = nil;
 }
 
+
 - (void)viewWillAppear:(BOOL)animated
 {
+    [Tracker track:self.title];
     [self.myTableView reloadData];    
     [super viewWillAppear:animated];
 }

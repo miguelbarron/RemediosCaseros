@@ -9,8 +9,21 @@
 #import "Analytics.h"
 #import "GANTracker.h"
 
+
+Analytics *sharedAnalytics_;
+
+
 @implementation Analytics
 
+
+
++ (Analytics *)sharedInstance {
+    if (!sharedAnalytics_ ) {
+        sharedAnalytics_ = [[Analytics alloc] init];
+        
+    }
+    return sharedAnalytics_;
+}
 -(void)track:(NSString *)ViewName{
 
     NSLog(@"Traking :%@",ViewName);
