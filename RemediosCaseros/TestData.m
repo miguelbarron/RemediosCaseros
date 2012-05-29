@@ -221,7 +221,7 @@
           
               if ([glosarioArray count] != numTotalGlosario) {
                   int GlosarioIndex= [glosarioArray count]; 
-                  NSLog(@"Glosario %i", [glosarioArray count] );
+                 // NSLog(@"Glosario %i", [glosarioArray count] );
                   for (NSDictionary *RecorrerjsonGlosario in arrayGlosario)
                   {
                       

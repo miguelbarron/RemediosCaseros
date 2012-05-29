@@ -50,7 +50,7 @@ static NSString *const kGANDAccountId= @"UA-30984548-6";
     
     Analytics * Traker = [Analytics sharedInstance];
 
-    [Traker track:@"Application Launched 24/may shared"];
+    [Traker track:@"Application Launched"];
     
     
     

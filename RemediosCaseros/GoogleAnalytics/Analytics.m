@@ -26,7 +26,6 @@ Analytics *sharedAnalytics_;
 }
 -(void)track:(NSString *)ViewName{
 
-    NSLog(@"Traking :%@",ViewName);
     NSError *error;
    
     
@@ -39,7 +38,7 @@ Analytics *sharedAnalytics_;
 
 -(void)trackEv:(NSInteger)value
 {
-    NSLog(@"traking Event");
+
     NSError *error;
     
     if (![[GANTracker sharedTracker] trackEvent:@"TrackEvent" action:@"Evento" label:@"Evento" value:value withError:&error])
