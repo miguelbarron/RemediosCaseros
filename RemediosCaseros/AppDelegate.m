@@ -16,6 +16,7 @@
 #import "ComprasViewController.h"
 #import "GANTracker.h"
 #import "Analytics.h"
+#import "videosViewController.h"
 
 
 static const NSInteger kGANDispatchPeriodSec = 10;
@@ -73,10 +74,11 @@ static NSString *const kGANDAccountId= @"UA-30984548-6";
     UIViewController *viewController3 = [[[ComprasViewController alloc] initWithNibName:@"ComprasViewController" bundle:nil] autorelease];
     UINavigationController *comprasNavController = [[[UINavigationController alloc] initWithRootViewController:viewController3] autorelease];
        
-    
+    UIViewController *viewController4 = [[[videosViewController alloc] initWithNibName:@"videosViewController" bundle:nil] autorelease];
+    UINavigationController *videosNavController = [[[UINavigationController alloc] initWithRootViewController:viewController4] autorelease];
     
     self.tabBarController = [[[UITabBarController alloc] init] autorelease];
-    self.tabBarController.viewControllers = [NSArray arrayWithObjects:remediosNavController,glosarioNavController,comprasNavController, nil];
+    self.tabBarController.viewControllers = [NSArray arrayWithObjects:remediosNavController,glosarioNavController,comprasNavController,videosNavController, nil];
     self.window.rootViewController = self.tabBarController;
     
     
