@@ -9,6 +9,8 @@
 #import "videosViewController.h"
 
 @implementation videosViewController
+@synthesize btnLogout;
+
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -50,12 +52,24 @@
     [super viewDidLoad];
     self.navigationController.navigationBar.tintColor = [UIColor colorWithRed:0.192 green:0.255 blue:0.349 alpha:1.0];
     
+    btnLogout.tintColor=[UIColor colorWithRed:0.192 green:0.255 blue:0.349 alpha:1.0];
+    ObjFB = [FacebookMethods sharedInstance];
+    if([ObjFB logged])
+    {
+        btnLogout.enabled=YES;
+    }
+    else
+    {
+        btnLogout.enabled=NO;
+    }
     
     // Do any additional setup after loading the view from its nib.
 }
 
 - (void)viewDidUnload
 {
+ 
+    [self setBtnLogout:nil];
     [super viewDidUnload];
     // Release any retained subviews of the main view.
     // e.g. self.myOutlet = nil;
@@ -68,7 +82,18 @@
 }
 
 
-
+-(void)viewWillAppear:(BOOL)animated
+{
+    ObjFB = [FacebookMethods sharedInstance];
+    if([ObjFB logged])
+    {
+        btnLogout.enabled=YES;
+    }
+    else
+    {
+        btnLogout.enabled=NO;
+    }
+}
 #pragma mark - TableView
 //- (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
 //{
@@ -128,4 +153,14 @@
 
 
 
+- (void)dealloc {
+    
+    [btnLogout release];
+    [super dealloc];
+}
+- (IBAction)LogOutFacebook:(id)sender {
+    
+    [ObjFB logOut];
+    btnLogout.enabled=NO;
+}
 @end

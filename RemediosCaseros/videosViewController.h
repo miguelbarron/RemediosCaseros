@@ -7,7 +7,15 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "FacebookMethods.h"
 
 @interface videosViewController : UIViewController
+{
+    FacebookMethods *ObjFB;
+    BOOL *flag_;
+}
+
+- (IBAction)LogOutFacebook:(id)sender;
+@property (retain, nonatomic) IBOutlet UIButton *btnLogout;
 
 @end
