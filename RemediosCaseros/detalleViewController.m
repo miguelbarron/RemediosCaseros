@@ -112,11 +112,14 @@
     
     //Customize the tweet sheet here
     //Add a tweet message
-    [tweetSheet setInitialText:[Dic objectForKey:@"title"]];
+    
+    NSString *contenido=[NSString stringWithFormat:@"%@, Lo vi en #RemediosCaseros para iPhone ",[Dic objectForKey:@"title"]];
+    [tweetSheet setInitialText:contenido];
+//    [tweetSheet setInitialText:[Dic objectForKey:@"title"]];
     
     //Add an image
     
-    NSURL *url=[NSURL URLWithString:[Dic objectForKey:@"picture"]];
+  /*  NSURL *url=[NSURL URLWithString:[Dic objectForKey:@"picture"]];
     NSData *data=[NSData dataWithContentsOfURL:url];
     [tweetSheet addImage:[UIImage imageWithData:data]];
     
@@ -127,8 +130,9 @@
         //Don't worry, Twitter will handle turning this into a t.co link
         [tweetSheet addURL:[NSURL URLWithString:url]];
         
-    }
-    
+    }*/
+    NSURL *url=[NSURL URLWithString:@"http://itun.es/isr2KS"];
+    [tweetSheet addURL:url]; 
     
     //Set a blocking handler for the tweet sheet
     tweetSheet.completionHandler = ^(TWTweetComposeViewControllerResult result){
@@ -280,6 +284,12 @@
         
         [mailer setSubject:[dic objectForKey:@"title"]];
         
+        
+        
+        NSMutableString* strMessage = [[NSMutableString alloc] init];	
+        [strMessage appendString:[NSString stringWithFormat:@"<font face=\"helvetica\"><center><b>%@</b></center></font><font face=\"helvetica\"><br>%@<p><br>Descarga la app para iPhone <a href=url>http://itun.es/isr2KS</a>",[dic objectForKey:@"title"],[dic objectForKey:@"description"]]];
+        
+        NSString *emailBody =  strMessage;
         if ([dic objectForKey:@"picture"]) {
             
             id path = [dic objectForKey:@"picture"];
@@ -290,12 +300,8 @@
             NSData *imageData = UIImagePNGRepresentation(img);
             [mailer addAttachmentData:imageData mimeType:@"image/png" fileName:@"Image"];	
             
+            
         }
-        
-        NSMutableString* strMessage = [[NSMutableString alloc] init];	
-        [strMessage appendString:[NSString stringWithFormat:@"<font face=\"helvetica\"><center><b>%@</b></center></font><font face=\"helvetica\"><br>%@",[dic objectForKey:@"title"],[dic objectForKey:@"description"]]];
-        
-        NSString *emailBody =  strMessage;
         [mailer setMessageBody:emailBody isHTML:YES];
         
         // only for iPad
