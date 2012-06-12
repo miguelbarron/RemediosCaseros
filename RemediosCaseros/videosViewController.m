@@ -23,12 +23,12 @@
         label.shadowColor = [UIColor colorWithWhite:0.0 alpha:0.5];
         label.textAlignment = UITextAlignmentCenter;
         label.textColor = [UIColor whiteColor];        
-        label.text =@"Videos"; 
+        label.text =@"Extra"; 
         self.navigationItem.titleView = label;
         [label sizeToFit];
         
         //info tab bar
-        self.title =@"Videos";
+        self.title =@"Extra";
         self.tabBarItem.image = [UIImage imageNamed:@"icono_remedios_tab.png"];
         
     }
