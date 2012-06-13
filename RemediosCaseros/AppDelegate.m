@@ -42,28 +42,11 @@ static NSString *const kGANDAccountId= @"UA-30984548-6";
   [super dealloc];
 }
 
-- (void)applicationDidFinishLaunching:(UIApplication *)application
-{
-    BOOL hasRunBefore = [[NSUserDefaults standardUserDefaults] boolForKey:@"FirstRun"];
-    if (!hasRunBefore) {
-        
-        UIAlertView *firstRun = [[UIAlertView alloc] initWithTitle:@"Update" message:@"Hello World!!" delegate:nil cancelButtonTitle:@"Aceptar" otherButtonTitles:nil];
-        [firstRun show];
-        [firstRun release];
-        
-        
-        [[NSUserDefaults standardUserDefaults] setBool:YES forKey:@"FirstRun"];
-    }
-    else if (hasRunBefore) {
-        
-        //can do some else if run before
-        
-    }
-}
+
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
 
-    [self applicationDidFinishLaunching:application];
+
     
     [[GANTracker sharedTracker] startTrackerWithAccountID:@"UA-30984548-6" dispatchPeriod:kGANDispatchPeriodSec delegate:nil];
     [[GANTracker sharedTracker] setAnonymizeIp:YES];
@@ -72,6 +55,25 @@ static NSString *const kGANDAccountId= @"UA-30984548-6";
     Analytics * Traker = [Analytics sharedInstance];
 
     [Traker track:@"Application Launched"];
+    
+    //Manda llamar el alrview para cuando se actualiza la aplicacion
+    //para actualizar solo cambiar el valor de hasRunBefore.
+    BOOL hasRunBefore = [[NSUserDefaults standardUserDefaults] boolForKey:@"1.2"];
+    if (!hasRunBefore) {
+        
+        UIAlertView *firstRun = [[UIAlertView alloc] initWithTitle:@"Actualización" message:@"-Nueva categoria de remedios.\n\r-Nueva sección: Extras, con más contenido.\n\r-Cerrar sesión de Facebook.\n\r-¡Videos de remedios desbloqueables!\n\rCon tus calificaciones positivas seguimos agregando más remedios" delegate:nil cancelButtonTitle:@"Aceptar" otherButtonTitles:nil];
+        [firstRun show];
+        [firstRun release];
+        
+        
+        [[NSUserDefaults standardUserDefaults] setBool:YES forKey:@"1.2"];
+    }
+    else if (hasRunBefore) {
+        
+        //can do some else if run before
+        
+    }
+
     
     
     
