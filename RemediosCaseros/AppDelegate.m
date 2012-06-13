@@ -42,8 +42,28 @@ static NSString *const kGANDAccountId= @"UA-30984548-6";
   [super dealloc];
 }
 
+- (void)applicationDidFinishLaunching:(UIApplication *)application
+{
+    BOOL hasRunBefore = [[NSUserDefaults standardUserDefaults] boolForKey:@"FirstRun"];
+    if (!hasRunBefore) {
+        
+        UIAlertView *firstRun = [[UIAlertView alloc] initWithTitle:@"Update" message:@"Hello World!!" delegate:nil cancelButtonTitle:@"Aceptar" otherButtonTitles:nil];
+        [firstRun show];
+        [firstRun release];
+        
+        
+        [[NSUserDefaults standardUserDefaults] setBool:YES forKey:@"FirstRun"];
+    }
+    else if (hasRunBefore) {
+        
+        //can do some else if run before
+        
+    }
+}
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
+
+    [self applicationDidFinishLaunching:application];
     
     [[GANTracker sharedTracker] startTrackerWithAccountID:@"UA-30984548-6" dispatchPeriod:kGANDispatchPeriodSec delegate:nil];
     [[GANTracker sharedTracker] setAnonymizeIp:YES];
