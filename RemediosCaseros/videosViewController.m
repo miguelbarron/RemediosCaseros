@@ -131,6 +131,12 @@
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier];
     if (cell == nil) {
         cell = [[[UITableViewCell alloc] initWithStyle:UITableViewCellStyleSubtitle reuseIdentifier:CellIdentifier] autorelease];
+        
+        //============Se Cambia el color al momento de selecionar una celda=========//
+        UIView *vistaCellVideos = [[[UIView alloc] init] autorelease];
+        vistaCellVideos.backgroundColor = [UIColor colorWithRed:0.192 green:0.255 blue:0.349 alpha:1.0];
+        cell.selectedBackgroundView = vistaCellVideos;
+        //=====================//        
     }
     
     // Configure the cell...

@@ -100,6 +100,7 @@
 
     Tracker = [Analytics sharedInstance];
     [Tracker track:self.title];
+    
 
 }
 
@@ -171,6 +172,12 @@
   UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier];
   if (cell == nil) {
     cell = [[[UITableViewCell alloc] initWithStyle:UITableViewCellStyleSubtitle reuseIdentifier:CellIdentifier] autorelease];
+      
+     //============Se Cambia el color al momento de selecionar una celda=========//
+      UIView *vistaCellRemedios = [[[UIView alloc] init] autorelease];
+      vistaCellRemedios.backgroundColor = [UIColor colorWithRed:0.192 green:0.255 blue:0.349 alpha:1.0];
+      cell.selectedBackgroundView = vistaCellRemedios;
+    //=====================//
   }
   
   // Configure the cell...
@@ -224,7 +231,7 @@
     }
     
     [self.navigationController pushViewController:detalle animated:YES];
-    
+    [tableView deselectRowAtIndexPath:indexPath animated:YES];
     
 }
 
