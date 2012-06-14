@@ -33,6 +33,8 @@
 		122C8E46156D551F00EB3A17 /* Analytics.m in Sources */ = {isa = PBXBuildFile; fileRef = 122C8E42156D551F00EB3A17 /* Analytics.m */; };
 		122C8E47156D551F00EB3A17 /* libGoogleAnalytics.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 122C8E44156D551F00EB3A17 /* libGoogleAnalytics.a */; };
 		122C8E48156D551F00EB3A17 /* libGoogleAnalytics_NoThumb.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 122C8E45156D551F00EB3A17 /* libGoogleAnalytics_NoThumb.a */; };
+		1279A27E158A7D1900351027 /* TBXML.m in Sources */ = {isa = PBXBuildFile; fileRef = 1279A27D158A7D1900351027 /* TBXML.m */; };
+		1279A285158A7D7500351027 /* ParseXML.m in Sources */ = {isa = PBXBuildFile; fileRef = 1279A284158A7D7500351027 /* ParseXML.m */; };
 		8B335C78153DE41F0041D1C4 /* RemediosCaseros.sqlite in Resources */ = {isa = PBXBuildFile; fileRef = 8B335C77153DE41F0041D1C4 /* RemediosCaseros.sqlite */; };
 		8B335C97153DF9910041D1C4 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8B335C96153DF9910041D1C4 /* SystemConfiguration.framework */; };
 		8B335CA4153E0D9A0041D1C4 /* generico_glosario.png in Resources */ = {isa = PBXBuildFile; fileRef = 8B335CA0153E0D9A0041D1C4 /* generico_glosario.png */; };
@@ -233,6 +235,10 @@
 		122C8E43156D551F00EB3A17 /* GANTracker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GANTracker.h; sourceTree = "<group>"; };
 		122C8E44156D551F00EB3A17 /* libGoogleAnalytics.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libGoogleAnalytics.a; sourceTree = "<group>"; };
 		122C8E45156D551F00EB3A17 /* libGoogleAnalytics_NoThumb.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libGoogleAnalytics_NoThumb.a; sourceTree = "<group>"; };
+		1279A27D158A7D1900351027 /* TBXML.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TBXML.m; path = "TBXML/TBXML-Code/TBXML.m"; sourceTree = "<group>"; };
+		1279A27F158A7D2500351027 /* TBXML.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TBXML.h; path = "TBXML/TBXML-Headers/TBXML.h"; sourceTree = "<group>"; };
+		1279A283158A7D7500351027 /* ParseXML.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ParseXML.h; path = RemediosCaseros/ParseXML.h; sourceTree = "<group>"; };
+		1279A284158A7D7500351027 /* ParseXML.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ParseXML.m; path = RemediosCaseros/ParseXML.m; sourceTree = "<group>"; };
 		8B335C77153DE41F0041D1C4 /* RemediosCaseros.sqlite */ = {isa = PBXFileReference; lastKnownFileType = file; path = RemediosCaseros.sqlite; sourceTree = "<group>"; };
 		8B335C96153DF9910041D1C4 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
 		8B335CA0153E0D9A0041D1C4 /* generico_glosario.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = generico_glosario.png; sourceTree = "<group>"; };
@@ -448,6 +454,8 @@
 		0662491414A8F2A800FDAFA7 = {
 			isa = PBXGroup;
 			children = (
+				1279A280158A7D2E00351027 /* Parseo */,
+				1279A27B158A7D0C00351027 /* TBXML */,
 				122C8E40156D551F00EB3A17 /* GoogleAnalytics */,
 				9AEA5F6C1533505300A9E703 /* facebook-ios-sdk */,
 				9AE8D0D915334E86008FEDBB /* Compartir */,
@@ -537,6 +545,24 @@
 			);
 			name = GoogleAnalytics;
 			path = RemediosCaseros/GoogleAnalytics;
+			sourceTree = "<group>";
+		};
+		1279A27B158A7D0C00351027 /* TBXML */ = {
+			isa = PBXGroup;
+			children = (
+				1279A27D158A7D1900351027 /* TBXML.m */,
+				1279A27F158A7D2500351027 /* TBXML.h */,
+			);
+			name = TBXML;
+			sourceTree = "<group>";
+		};
+		1279A280158A7D2E00351027 /* Parseo */ = {
+			isa = PBXGroup;
+			children = (
+				1279A283158A7D7500351027 /* ParseXML.h */,
+				1279A284158A7D7500351027 /* ParseXML.m */,
+			);
+			name = Parseo;
 			sourceTree = "<group>";
 		};
 		8B3E2740153715A100E0A378 /* Remedios y Glosario */ = {
@@ -1058,6 +1084,8 @@
 				D9DC36C1153735970024AED0 /* Glosario.m in Sources */,
 				122C8E46156D551F00EB3A17 /* Analytics.m in Sources */,
 				D91FBB2415866A05004AF4DF /* videosViewController.m in Sources */,
+				1279A27E158A7D1900351027 /* TBXML.m in Sources */,
+				1279A285158A7D7500351027 /* ParseXML.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
