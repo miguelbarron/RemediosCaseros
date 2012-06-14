@@ -182,21 +182,67 @@
 		D990C14F152B7779004F6B73 /* icono_basura_compras.png in Resources */ = {isa = PBXBuildFile; fileRef = D990C14E152B7779004F6B73 /* icono_basura_compras.png */; };
 		D990C151152B7EE0004F6B73 /* fondo_compras.png in Resources */ = {isa = PBXBuildFile; fileRef = D990C150152B7EE0004F6B73 /* fondo_compras.png */; };
 		D990C157152B8AF3004F6B73 /* fondo_general@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D990C156152B8AF3004F6B73 /* fondo_general@2x.png */; };
-		D990C162152B9116004F6B73 /* foto_celda_glosario.png in Resources */ = {isa = PBXBuildFile; fileRef = D990C158152B9115004F6B73 /* foto_celda_glosario.png */; };
-		D990C163152B9116004F6B73 /* foto_celda_glosario@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D990C159152B9115004F6B73 /* foto_celda_glosario@2x.png */; };
-		D990C164152B9116004F6B73 /* foto_celda_remedios.png in Resources */ = {isa = PBXBuildFile; fileRef = D990C15A152B9115004F6B73 /* foto_celda_remedios.png */; };
-		D990C165152B9116004F6B73 /* foto_celda_remedios@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D990C15B152B9115004F6B73 /* foto_celda_remedios@2x.png */; };
-		D990C166152B9116004F6B73 /* foto_detalleglosario.png in Resources */ = {isa = PBXBuildFile; fileRef = D990C15C152B9116004F6B73 /* foto_detalleglosario.png */; };
-		D990C167152B9116004F6B73 /* foto_detalleglosario@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D990C15D152B9116004F6B73 /* foto_detalleglosario@2x.png */; };
-		D990C168152B9116004F6B73 /* foto_detalleremedio.png in Resources */ = {isa = PBXBuildFile; fileRef = D990C15E152B9116004F6B73 /* foto_detalleremedio.png */; };
-		D990C169152B9116004F6B73 /* foto_detalleremedio@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D990C15F152B9116004F6B73 /* foto_detalleremedio@2x.png */; };
-		D990C16A152B9116004F6B73 /* foto2_celda_remedios.png in Resources */ = {isa = PBXBuildFile; fileRef = D990C160152B9116004F6B73 /* foto2_celda_remedios.png */; };
-		D990C16B152B9116004F6B73 /* foto2_celda_remedios@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D990C161152B9116004F6B73 /* foto2_celda_remedios@2x.png */; };
 		D9BD7C12152231CA007162AD /* glosarioViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D9BD7C10152231CA007162AD /* glosarioViewController.m */; };
 		D9BD7C13152231CA007162AD /* glosarioViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D9BD7C11152231CA007162AD /* glosarioViewController.xib */; };
 		D9C4F52A152CEBC300533412 /* fondo_general.png in Resources */ = {isa = PBXBuildFile; fileRef = D9C4F529152CEBC300533412 /* fondo_general.png */; };
 		D9DC36BE1537358B0024AED0 /* Remedios.m in Sources */ = {isa = PBXBuildFile; fileRef = D9DC36BD1537358B0024AED0 /* Remedios.m */; };
 		D9DC36C1153735970024AED0 /* Glosario.m in Sources */ = {isa = PBXBuildFile; fileRef = D9DC36C0153735970024AED0 /* Glosario.m */; };
+		D9E50B67158A5D6A00F5D32B /* BEcabellobrillante.png in Resources */ = {isa = PBXBuildFile; fileRef = D9E50B51158A5D6A00F5D32B /* BEcabellobrillante.png */; };
+		D9E50B68158A5D6A00F5D32B /* BEcabellobrillante@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D9E50B52158A5D6A00F5D32B /* BEcabellobrillante@2x.png */; };
+		D9E50B69158A5D6A00F5D32B /* BEcaraexfoliada.png in Resources */ = {isa = PBXBuildFile; fileRef = D9E50B53158A5D6A00F5D32B /* BEcaraexfoliada.png */; };
+		D9E50B6A158A5D6A00F5D32B /* BEcaraexfoliada@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D9E50B54158A5D6A00F5D32B /* BEcaraexfoliada@2x.png */; };
+		D9E50B6B158A5D6A00F5D32B /* BEcremapepinos.png in Resources */ = {isa = PBXBuildFile; fileRef = D9E50B55158A5D6A00F5D32B /* BEcremapepinos.png */; };
+		D9E50B6C158A5D6A00F5D32B /* BEcremapepinos@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D9E50B56158A5D6A00F5D32B /* BEcremapepinos@2x.png */; };
+		D9E50B6D158A5D6A00F5D32B /* BEcuidadounias.png in Resources */ = {isa = PBXBuildFile; fileRef = D9E50B57158A5D6A00F5D32B /* BEcuidadounias.png */; };
+		D9E50B6E158A5D6A00F5D32B /* BEcuidadounias@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D9E50B58158A5D6A00F5D32B /* BEcuidadounias@2x.png */; };
+		D9E50B6F158A5D6A00F5D32B /* BEdisminuirojos.png in Resources */ = {isa = PBXBuildFile; fileRef = D9E50B59158A5D6A00F5D32B /* BEdisminuirojos.png */; };
+		D9E50B70158A5D6A00F5D32B /* BEdisminuirojos@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D9E50B5A158A5D6A00F5D32B /* BEdisminuirojos@2x.png */; };
+		D9E50B71158A5D6A00F5D32B /* Befrutabelleza.png in Resources */ = {isa = PBXBuildFile; fileRef = D9E50B5B158A5D6A00F5D32B /* Befrutabelleza.png */; };
+		D9E50B72158A5D6A00F5D32B /* Befrutabelleza@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D9E50B5C158A5D6A00F5D32B /* Befrutabelleza@2x.png */; };
+		D9E50B73158A5D6A00F5D32B /* BEmanchasdientes.png in Resources */ = {isa = PBXBuildFile; fileRef = D9E50B5D158A5D6A00F5D32B /* BEmanchasdientes.png */; };
+		D9E50B74158A5D6A00F5D32B /* BEmanchasdientes@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D9E50B5E158A5D6A00F5D32B /* BEmanchasdientes@2x.png */; };
+		D9E50B75158A5D6A00F5D32B /* BEmanchaspielsol.png in Resources */ = {isa = PBXBuildFile; fileRef = D9E50B5F158A5D6A00F5D32B /* BEmanchaspielsol.png */; };
+		D9E50B76158A5D6A00F5D32B /* BEmanchaspielsol@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D9E50B60158A5D6A00F5D32B /* BEmanchaspielsol@2x.png */; };
+		D9E50B77158A5D6A00F5D32B /* BEpestanasfuertes.png in Resources */ = {isa = PBXBuildFile; fileRef = D9E50B61158A5D6A00F5D32B /* BEpestanasfuertes.png */; };
+		D9E50B78158A5D6A00F5D32B /* BEpestanasfuertes@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D9E50B62158A5D6A00F5D32B /* BEpestanasfuertes@2x.png */; };
+		D9E50B79158A5D6A00F5D32B /* BErecuperarhidratacion.png in Resources */ = {isa = PBXBuildFile; fileRef = D9E50B63158A5D6A00F5D32B /* BErecuperarhidratacion.png */; };
+		D9E50B7A158A5D6A00F5D32B /* BErecuperarhidratacion@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D9E50B64158A5D6A00F5D32B /* BErecuperarhidratacion@2x.png */; };
+		D9E50B7B158A5D6A00F5D32B /* BEsuavizaconchocolate.png in Resources */ = {isa = PBXBuildFile; fileRef = D9E50B65158A5D6A00F5D32B /* BEsuavizaconchocolate.png */; };
+		D9E50B7C158A5D6A00F5D32B /* BEsuavizaconchocolate@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D9E50B66158A5D6A00F5D32B /* BEsuavizaconchocolate@2x.png */; };
+		D9E50B8E158A5D9B00F5D32B /* SAaloevera.png in Resources */ = {isa = PBXBuildFile; fileRef = D9E50B7E158A5D9B00F5D32B /* SAaloevera.png */; };
+		D9E50B8F158A5D9B00F5D32B /* SAaloevera@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D9E50B7F158A5D9B00F5D32B /* SAaloevera@2x.png */; };
+		D9E50B90158A5D9B00F5D32B /* SAarnicatorceduras.png in Resources */ = {isa = PBXBuildFile; fileRef = D9E50B80158A5D9B00F5D32B /* SAarnicatorceduras.png */; };
+		D9E50B91158A5D9B00F5D32B /* SAarnicatorceduras@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D9E50B81158A5D9B00F5D32B /* SAarnicatorceduras@2x.png */; };
+		D9E50B92158A5D9B00F5D32B /* SAcatarro.png in Resources */ = {isa = PBXBuildFile; fileRef = D9E50B82158A5D9B00F5D32B /* SAcatarro.png */; };
+		D9E50B93158A5D9B00F5D32B /* SAcatarro@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D9E50B83158A5D9B00F5D32B /* SAcatarro@2x.png */; };
+		D9E50B94158A5D9B00F5D32B /* SAenciassangrantes.png in Resources */ = {isa = PBXBuildFile; fileRef = D9E50B84158A5D9B00F5D32B /* SAenciassangrantes.png */; };
+		D9E50B95158A5D9B00F5D32B /* SAenciassangrantes@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D9E50B85158A5D9B00F5D32B /* SAenciassangrantes@2x.png */; };
+		D9E50B96158A5D9B00F5D32B /* SAhipo.png in Resources */ = {isa = PBXBuildFile; fileRef = D9E50B86158A5D9B00F5D32B /* SAhipo.png */; };
+		D9E50B97158A5D9B00F5D32B /* SAhipo@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D9E50B87158A5D9B00F5D32B /* SAhipo@2x.png */; };
+		D9E50B98158A5D9B00F5D32B /* SAparasitosintestinales.png in Resources */ = {isa = PBXBuildFile; fileRef = D9E50B88158A5D9B00F5D32B /* SAparasitosintestinales.png */; };
+		D9E50B99158A5D9B00F5D32B /* SAparasitosintestinales@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D9E50B89158A5D9B00F5D32B /* SAparasitosintestinales@2x.png */; };
+		D9E50B9A158A5D9B00F5D32B /* SArudaronquido.png in Resources */ = {isa = PBXBuildFile; fileRef = D9E50B8A158A5D9B00F5D32B /* SArudaronquido.png */; };
+		D9E50B9B158A5D9B00F5D32B /* SArudaronquido@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D9E50B8B158A5D9B00F5D32B /* SArudaronquido@2x.png */; };
+		D9E50B9C158A5D9B00F5D32B /* SAzumoulceras.png in Resources */ = {isa = PBXBuildFile; fileRef = D9E50B8C158A5D9B00F5D32B /* SAzumoulceras.png */; };
+		D9E50B9D158A5D9B00F5D32B /* SAzumoulceras@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D9E50B8D158A5D9B00F5D32B /* SAzumoulceras@2x.png */; };
+		D9E50BB1158A5DCB00F5D32B /* HObaniosinolor.png in Resources */ = {isa = PBXBuildFile; fileRef = D9E50B9F158A5DCB00F5D32B /* HObaniosinolor.png */; };
+		D9E50BB2158A5DCB00F5D32B /* HObaniosinolor@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D9E50BA0158A5DCB00F5D32B /* HObaniosinolor@2x.png */; };
+		D9E50BB3158A5DCB00F5D32B /* HOcafetera.png in Resources */ = {isa = PBXBuildFile; fileRef = D9E50BA1158A5DCB00F5D32B /* HOcafetera.png */; };
+		D9E50BB4158A5DCB00F5D32B /* HOcafetera@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D9E50BA2158A5DCB00F5D32B /* HOcafetera@2x.png */; };
+		D9E50BB5158A5DCB00F5D32B /* HOherramientasnuevas.png in Resources */ = {isa = PBXBuildFile; fileRef = D9E50BA3158A5DCB00F5D32B /* HOherramientasnuevas.png */; };
+		D9E50BB6158A5DCB00F5D32B /* HOherramientasnuevas@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D9E50BA4158A5DCB00F5D32B /* HOherramientasnuevas@2x.png */; };
+		D9E50BB7158A5DCB00F5D32B /* HOlibrosinpolvo.png in Resources */ = {isa = PBXBuildFile; fileRef = D9E50BA5158A5DCB00F5D32B /* HOlibrosinpolvo.png */; };
+		D9E50BB8158A5DCB00F5D32B /* HOlibrosinpolvo@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D9E50BA6158A5DCB00F5D32B /* HOlibrosinpolvo@2x.png */; };
+		D9E50BB9158A5DCB00F5D32B /* HOlipiezacaliente.png in Resources */ = {isa = PBXBuildFile; fileRef = D9E50BA7158A5DCB00F5D32B /* HOlipiezacaliente.png */; };
+		D9E50BBA158A5DCB00F5D32B /* HOlipiezacaliente@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D9E50BA8158A5DCB00F5D32B /* HOlipiezacaliente@2x.png */; };
+		D9E50BBB158A5DCB00F5D32B /* HOmaquillajeropa.png in Resources */ = {isa = PBXBuildFile; fileRef = D9E50BA9158A5DCB00F5D32B /* HOmaquillajeropa.png */; };
+		D9E50BBC158A5DCB00F5D32B /* HOmaquillajeropa@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D9E50BAA158A5DCB00F5D32B /* HOmaquillajeropa@2x.png */; };
+		D9E50BBD158A5DCB00F5D32B /* HOpastadientefresh.png in Resources */ = {isa = PBXBuildFile; fileRef = D9E50BAB158A5DCB00F5D32B /* HOpastadientefresh.png */; };
+		D9E50BBE158A5DCB00F5D32B /* HOpastadientefresh@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D9E50BAC158A5DCB00F5D32B /* HOpastadientefresh@2x.png */; };
+		D9E50BBF158A5DCB00F5D32B /* HOplantaabono.png in Resources */ = {isa = PBXBuildFile; fileRef = D9E50BAD158A5DCB00F5D32B /* HOplantaabono.png */; };
+		D9E50BC0158A5DCB00F5D32B /* HOplantaabono@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D9E50BAE158A5DCB00F5D32B /* HOplantaabono@2x.png */; };
+		D9E50BC1158A5DCB00F5D32B /* HOrefrimalolor.png in Resources */ = {isa = PBXBuildFile; fileRef = D9E50BAF158A5DCB00F5D32B /* HOrefrimalolor.png */; };
+		D9E50BC2158A5DCB00F5D32B /* HOrefrimalolor@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D9E50BB0158A5DCB00F5D32B /* HOrefrimalolor@2x.png */; };
 		D9E87F77152CEA79004E2081 /* icono_basura_compras@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D9E87F76152CEA79004E2081 /* icono_basura_compras@2x.png */; };
 		D9E87F7A152CEA87004E2081 /* icono_compartir_detalleremedio@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D9E87F79152CEA87004E2081 /* icono_compartir_detalleremedio@2x.png */; };
 		D9E87F80152CEAD7004E2081 /* marca_llena_compras@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D9E87F7F152CEAD7004E2081 /* marca_llena_compras@2x.png */; };
@@ -412,16 +458,6 @@
 		D990C14E152B7779004F6B73 /* icono_basura_compras.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icono_basura_compras.png; sourceTree = "<group>"; };
 		D990C150152B7EE0004F6B73 /* fondo_compras.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = fondo_compras.png; sourceTree = "<group>"; };
 		D990C156152B8AF3004F6B73 /* fondo_general@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "fondo_general@2x.png"; sourceTree = "<group>"; };
-		D990C158152B9115004F6B73 /* foto_celda_glosario.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = foto_celda_glosario.png; sourceTree = "<group>"; };
-		D990C159152B9115004F6B73 /* foto_celda_glosario@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "foto_celda_glosario@2x.png"; sourceTree = "<group>"; };
-		D990C15A152B9115004F6B73 /* foto_celda_remedios.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = foto_celda_remedios.png; sourceTree = "<group>"; };
-		D990C15B152B9115004F6B73 /* foto_celda_remedios@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "foto_celda_remedios@2x.png"; sourceTree = "<group>"; };
-		D990C15C152B9116004F6B73 /* foto_detalleglosario.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = foto_detalleglosario.png; sourceTree = "<group>"; };
-		D990C15D152B9116004F6B73 /* foto_detalleglosario@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "foto_detalleglosario@2x.png"; sourceTree = "<group>"; };
-		D990C15E152B9116004F6B73 /* foto_detalleremedio.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = foto_detalleremedio.png; sourceTree = "<group>"; };
-		D990C15F152B9116004F6B73 /* foto_detalleremedio@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "foto_detalleremedio@2x.png"; sourceTree = "<group>"; };
-		D990C160152B9116004F6B73 /* foto2_celda_remedios.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = foto2_celda_remedios.png; sourceTree = "<group>"; };
-		D990C161152B9116004F6B73 /* foto2_celda_remedios@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "foto2_celda_remedios@2x.png"; sourceTree = "<group>"; };
 		D9BD7C0F152231CA007162AD /* glosarioViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = glosarioViewController.h; sourceTree = "<group>"; };
 		D9BD7C10152231CA007162AD /* glosarioViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = glosarioViewController.m; sourceTree = "<group>"; };
 		D9BD7C11152231CA007162AD /* glosarioViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = glosarioViewController.xib; sourceTree = "<group>"; };
@@ -430,6 +466,62 @@
 		D9DC36BD1537358B0024AED0 /* Remedios.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Remedios.m; sourceTree = SOURCE_ROOT; };
 		D9DC36BF153735970024AED0 /* Glosario.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Glosario.h; sourceTree = SOURCE_ROOT; };
 		D9DC36C0153735970024AED0 /* Glosario.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Glosario.m; sourceTree = SOURCE_ROOT; };
+		D9E50B51158A5D6A00F5D32B /* BEcabellobrillante.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = BEcabellobrillante.png; sourceTree = "<group>"; };
+		D9E50B52158A5D6A00F5D32B /* BEcabellobrillante@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "BEcabellobrillante@2x.png"; sourceTree = "<group>"; };
+		D9E50B53158A5D6A00F5D32B /* BEcaraexfoliada.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = BEcaraexfoliada.png; sourceTree = "<group>"; };
+		D9E50B54158A5D6A00F5D32B /* BEcaraexfoliada@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "BEcaraexfoliada@2x.png"; sourceTree = "<group>"; };
+		D9E50B55158A5D6A00F5D32B /* BEcremapepinos.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = BEcremapepinos.png; sourceTree = "<group>"; };
+		D9E50B56158A5D6A00F5D32B /* BEcremapepinos@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "BEcremapepinos@2x.png"; sourceTree = "<group>"; };
+		D9E50B57158A5D6A00F5D32B /* BEcuidadounias.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = BEcuidadounias.png; sourceTree = "<group>"; };
+		D9E50B58158A5D6A00F5D32B /* BEcuidadounias@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "BEcuidadounias@2x.png"; sourceTree = "<group>"; };
+		D9E50B59158A5D6A00F5D32B /* BEdisminuirojos.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = BEdisminuirojos.png; sourceTree = "<group>"; };
+		D9E50B5A158A5D6A00F5D32B /* BEdisminuirojos@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "BEdisminuirojos@2x.png"; sourceTree = "<group>"; };
+		D9E50B5B158A5D6A00F5D32B /* Befrutabelleza.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Befrutabelleza.png; sourceTree = "<group>"; };
+		D9E50B5C158A5D6A00F5D32B /* Befrutabelleza@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Befrutabelleza@2x.png"; sourceTree = "<group>"; };
+		D9E50B5D158A5D6A00F5D32B /* BEmanchasdientes.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = BEmanchasdientes.png; sourceTree = "<group>"; };
+		D9E50B5E158A5D6A00F5D32B /* BEmanchasdientes@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "BEmanchasdientes@2x.png"; sourceTree = "<group>"; };
+		D9E50B5F158A5D6A00F5D32B /* BEmanchaspielsol.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = BEmanchaspielsol.png; sourceTree = "<group>"; };
+		D9E50B60158A5D6A00F5D32B /* BEmanchaspielsol@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "BEmanchaspielsol@2x.png"; sourceTree = "<group>"; };
+		D9E50B61158A5D6A00F5D32B /* BEpestanasfuertes.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = BEpestanasfuertes.png; sourceTree = "<group>"; };
+		D9E50B62158A5D6A00F5D32B /* BEpestanasfuertes@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "BEpestanasfuertes@2x.png"; sourceTree = "<group>"; };
+		D9E50B63158A5D6A00F5D32B /* BErecuperarhidratacion.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = BErecuperarhidratacion.png; sourceTree = "<group>"; };
+		D9E50B64158A5D6A00F5D32B /* BErecuperarhidratacion@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "BErecuperarhidratacion@2x.png"; sourceTree = "<group>"; };
+		D9E50B65158A5D6A00F5D32B /* BEsuavizaconchocolate.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = BEsuavizaconchocolate.png; sourceTree = "<group>"; };
+		D9E50B66158A5D6A00F5D32B /* BEsuavizaconchocolate@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "BEsuavizaconchocolate@2x.png"; sourceTree = "<group>"; };
+		D9E50B7E158A5D9B00F5D32B /* SAaloevera.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = SAaloevera.png; sourceTree = "<group>"; };
+		D9E50B7F158A5D9B00F5D32B /* SAaloevera@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "SAaloevera@2x.png"; sourceTree = "<group>"; };
+		D9E50B80158A5D9B00F5D32B /* SAarnicatorceduras.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = SAarnicatorceduras.png; sourceTree = "<group>"; };
+		D9E50B81158A5D9B00F5D32B /* SAarnicatorceduras@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "SAarnicatorceduras@2x.png"; sourceTree = "<group>"; };
+		D9E50B82158A5D9B00F5D32B /* SAcatarro.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = SAcatarro.png; sourceTree = "<group>"; };
+		D9E50B83158A5D9B00F5D32B /* SAcatarro@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "SAcatarro@2x.png"; sourceTree = "<group>"; };
+		D9E50B84158A5D9B00F5D32B /* SAenciassangrantes.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = SAenciassangrantes.png; sourceTree = "<group>"; };
+		D9E50B85158A5D9B00F5D32B /* SAenciassangrantes@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "SAenciassangrantes@2x.png"; sourceTree = "<group>"; };
+		D9E50B86158A5D9B00F5D32B /* SAhipo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = SAhipo.png; sourceTree = "<group>"; };
+		D9E50B87158A5D9B00F5D32B /* SAhipo@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "SAhipo@2x.png"; sourceTree = "<group>"; };
+		D9E50B88158A5D9B00F5D32B /* SAparasitosintestinales.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = SAparasitosintestinales.png; sourceTree = "<group>"; };
+		D9E50B89158A5D9B00F5D32B /* SAparasitosintestinales@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "SAparasitosintestinales@2x.png"; sourceTree = "<group>"; };
+		D9E50B8A158A5D9B00F5D32B /* SArudaronquido.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = SArudaronquido.png; sourceTree = "<group>"; };
+		D9E50B8B158A5D9B00F5D32B /* SArudaronquido@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "SArudaronquido@2x.png"; sourceTree = "<group>"; };
+		D9E50B8C158A5D9B00F5D32B /* SAzumoulceras.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = SAzumoulceras.png; sourceTree = "<group>"; };
+		D9E50B8D158A5D9B00F5D32B /* SAzumoulceras@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "SAzumoulceras@2x.png"; sourceTree = "<group>"; };
+		D9E50B9F158A5DCB00F5D32B /* HObaniosinolor.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = HObaniosinolor.png; sourceTree = "<group>"; };
+		D9E50BA0158A5DCB00F5D32B /* HObaniosinolor@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "HObaniosinolor@2x.png"; sourceTree = "<group>"; };
+		D9E50BA1158A5DCB00F5D32B /* HOcafetera.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = HOcafetera.png; sourceTree = "<group>"; };
+		D9E50BA2158A5DCB00F5D32B /* HOcafetera@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "HOcafetera@2x.png"; sourceTree = "<group>"; };
+		D9E50BA3158A5DCB00F5D32B /* HOherramientasnuevas.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = HOherramientasnuevas.png; sourceTree = "<group>"; };
+		D9E50BA4158A5DCB00F5D32B /* HOherramientasnuevas@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "HOherramientasnuevas@2x.png"; sourceTree = "<group>"; };
+		D9E50BA5158A5DCB00F5D32B /* HOlibrosinpolvo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = HOlibrosinpolvo.png; sourceTree = "<group>"; };
+		D9E50BA6158A5DCB00F5D32B /* HOlibrosinpolvo@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "HOlibrosinpolvo@2x.png"; sourceTree = "<group>"; };
+		D9E50BA7158A5DCB00F5D32B /* HOlipiezacaliente.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = HOlipiezacaliente.png; sourceTree = "<group>"; };
+		D9E50BA8158A5DCB00F5D32B /* HOlipiezacaliente@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "HOlipiezacaliente@2x.png"; sourceTree = "<group>"; };
+		D9E50BA9158A5DCB00F5D32B /* HOmaquillajeropa.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = HOmaquillajeropa.png; sourceTree = "<group>"; };
+		D9E50BAA158A5DCB00F5D32B /* HOmaquillajeropa@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "HOmaquillajeropa@2x.png"; sourceTree = "<group>"; };
+		D9E50BAB158A5DCB00F5D32B /* HOpastadientefresh.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = HOpastadientefresh.png; sourceTree = "<group>"; };
+		D9E50BAC158A5DCB00F5D32B /* HOpastadientefresh@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "HOpastadientefresh@2x.png"; sourceTree = "<group>"; };
+		D9E50BAD158A5DCB00F5D32B /* HOplantaabono.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = HOplantaabono.png; sourceTree = "<group>"; };
+		D9E50BAE158A5DCB00F5D32B /* HOplantaabono@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "HOplantaabono@2x.png"; sourceTree = "<group>"; };
+		D9E50BAF158A5DCB00F5D32B /* HOrefrimalolor.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = HOrefrimalolor.png; sourceTree = "<group>"; };
+		D9E50BB0158A5DCB00F5D32B /* HOrefrimalolor@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "HOrefrimalolor@2x.png"; sourceTree = "<group>"; };
 		D9E87F76152CEA79004E2081 /* icono_basura_compras@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icono_basura_compras@2x.png"; sourceTree = "<group>"; };
 		D9E87F79152CEA87004E2081 /* icono_compartir_detalleremedio@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icono_compartir_detalleremedio@2x.png"; sourceTree = "<group>"; };
 		D9E87F7F152CEAD7004E2081 /* marca_llena_compras@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "marca_llena_compras@2x.png"; sourceTree = "<group>"; };
@@ -580,6 +672,7 @@
 		8B3E2740153715A100E0A378 /* Remedios y Glosario */ = {
 			isa = PBXGroup;
 			children = (
+				D9E50B4F158A5C8D00F5D32B /* Img_Update_2.1 */,
 				8B335CA0153E0D9A0041D1C4 /* generico_glosario.png */,
 				8B335CA1153E0D9A0041D1C4 /* generico_glosario@2x.png */,
 				8B335CA2153E0D9A0041D1C4 /* generico_remedio.png */,
@@ -801,10 +894,9 @@
 			name = "Modelo De Datos";
 			sourceTree = "<group>";
 		};
-		D9FC479D151A5115002F1D4B /* Imagenes */ = {
+		D9E50B4E158A5B3800F5D32B /* Imagenes de la App */ = {
 			isa = PBXGroup;
 			children = (
-				8B3E2740153715A100E0A378 /* Remedios y Glosario */,
 				D9C4F529152CEBC300533412 /* fondo_general.png */,
 				D964C3B0152CEB7C00860E0E /* fondo_compras@2x.png */,
 				D9E87F7F152CEAD7004E2081 /* marca_llena_compras@2x.png */,
@@ -813,16 +905,6 @@
 				06E99CA9152CCE960024BBD6 /* remedios_57x57.png */,
 				06E99CAA152CCE960024BBD6 /* remedios_114x114.png */,
 				D95B22F4152C9DFB0026C40E /* marca_llena_compras.png */,
-				D990C158152B9115004F6B73 /* foto_celda_glosario.png */,
-				D990C159152B9115004F6B73 /* foto_celda_glosario@2x.png */,
-				D990C15A152B9115004F6B73 /* foto_celda_remedios.png */,
-				D990C15B152B9115004F6B73 /* foto_celda_remedios@2x.png */,
-				D990C15C152B9116004F6B73 /* foto_detalleglosario.png */,
-				D990C15D152B9116004F6B73 /* foto_detalleglosario@2x.png */,
-				D990C15E152B9116004F6B73 /* foto_detalleremedio.png */,
-				D990C15F152B9116004F6B73 /* foto_detalleremedio@2x.png */,
-				D990C160152B9116004F6B73 /* foto2_celda_remedios.png */,
-				D990C161152B9116004F6B73 /* foto2_celda_remedios@2x.png */,
 				D990C156152B8AF3004F6B73 /* fondo_general@2x.png */,
 				D990C150152B7EE0004F6B73 /* fondo_compras.png */,
 				D990C14E152B7779004F6B73 /* icono_basura_compras.png */,
@@ -842,6 +924,102 @@
 				06624A3314ABA20300FDAFA7 /* glosario.png */,
 				0662493814A8F2A900FDAFA7 /* first.png */,
 				0662493A14A8F2A900FDAFA7 /* first@2x.png */,
+			);
+			name = "Imagenes de la App";
+			sourceTree = "<group>";
+		};
+		D9E50B4F158A5C8D00F5D32B /* Img_Update_2.1 */ = {
+			isa = PBXGroup;
+			children = (
+				D9E50B9E158A5DB700F5D32B /* Hogar1 */,
+				D9E50B7D158A5D7700F5D32B /* Salud1 */,
+				D9E50B50158A5D4800F5D32B /* Belleza1 */,
+			);
+			name = Img_Update_2.1;
+			sourceTree = "<group>";
+		};
+		D9E50B50158A5D4800F5D32B /* Belleza1 */ = {
+			isa = PBXGroup;
+			children = (
+				D9E50B51158A5D6A00F5D32B /* BEcabellobrillante.png */,
+				D9E50B52158A5D6A00F5D32B /* BEcabellobrillante@2x.png */,
+				D9E50B53158A5D6A00F5D32B /* BEcaraexfoliada.png */,
+				D9E50B54158A5D6A00F5D32B /* BEcaraexfoliada@2x.png */,
+				D9E50B55158A5D6A00F5D32B /* BEcremapepinos.png */,
+				D9E50B56158A5D6A00F5D32B /* BEcremapepinos@2x.png */,
+				D9E50B57158A5D6A00F5D32B /* BEcuidadounias.png */,
+				D9E50B58158A5D6A00F5D32B /* BEcuidadounias@2x.png */,
+				D9E50B59158A5D6A00F5D32B /* BEdisminuirojos.png */,
+				D9E50B5A158A5D6A00F5D32B /* BEdisminuirojos@2x.png */,
+				D9E50B5B158A5D6A00F5D32B /* Befrutabelleza.png */,
+				D9E50B5C158A5D6A00F5D32B /* Befrutabelleza@2x.png */,
+				D9E50B5D158A5D6A00F5D32B /* BEmanchasdientes.png */,
+				D9E50B5E158A5D6A00F5D32B /* BEmanchasdientes@2x.png */,
+				D9E50B5F158A5D6A00F5D32B /* BEmanchaspielsol.png */,
+				D9E50B60158A5D6A00F5D32B /* BEmanchaspielsol@2x.png */,
+				D9E50B61158A5D6A00F5D32B /* BEpestanasfuertes.png */,
+				D9E50B62158A5D6A00F5D32B /* BEpestanasfuertes@2x.png */,
+				D9E50B63158A5D6A00F5D32B /* BErecuperarhidratacion.png */,
+				D9E50B64158A5D6A00F5D32B /* BErecuperarhidratacion@2x.png */,
+				D9E50B65158A5D6A00F5D32B /* BEsuavizaconchocolate.png */,
+				D9E50B66158A5D6A00F5D32B /* BEsuavizaconchocolate@2x.png */,
+			);
+			name = Belleza1;
+			sourceTree = "<group>";
+		};
+		D9E50B7D158A5D7700F5D32B /* Salud1 */ = {
+			isa = PBXGroup;
+			children = (
+				D9E50B7E158A5D9B00F5D32B /* SAaloevera.png */,
+				D9E50B7F158A5D9B00F5D32B /* SAaloevera@2x.png */,
+				D9E50B80158A5D9B00F5D32B /* SAarnicatorceduras.png */,
+				D9E50B81158A5D9B00F5D32B /* SAarnicatorceduras@2x.png */,
+				D9E50B82158A5D9B00F5D32B /* SAcatarro.png */,
+				D9E50B83158A5D9B00F5D32B /* SAcatarro@2x.png */,
+				D9E50B84158A5D9B00F5D32B /* SAenciassangrantes.png */,
+				D9E50B85158A5D9B00F5D32B /* SAenciassangrantes@2x.png */,
+				D9E50B86158A5D9B00F5D32B /* SAhipo.png */,
+				D9E50B87158A5D9B00F5D32B /* SAhipo@2x.png */,
+				D9E50B88158A5D9B00F5D32B /* SAparasitosintestinales.png */,
+				D9E50B89158A5D9B00F5D32B /* SAparasitosintestinales@2x.png */,
+				D9E50B8A158A5D9B00F5D32B /* SArudaronquido.png */,
+				D9E50B8B158A5D9B00F5D32B /* SArudaronquido@2x.png */,
+				D9E50B8C158A5D9B00F5D32B /* SAzumoulceras.png */,
+				D9E50B8D158A5D9B00F5D32B /* SAzumoulceras@2x.png */,
+			);
+			name = Salud1;
+			sourceTree = "<group>";
+		};
+		D9E50B9E158A5DB700F5D32B /* Hogar1 */ = {
+			isa = PBXGroup;
+			children = (
+				D9E50B9F158A5DCB00F5D32B /* HObaniosinolor.png */,
+				D9E50BA0158A5DCB00F5D32B /* HObaniosinolor@2x.png */,
+				D9E50BA1158A5DCB00F5D32B /* HOcafetera.png */,
+				D9E50BA2158A5DCB00F5D32B /* HOcafetera@2x.png */,
+				D9E50BA3158A5DCB00F5D32B /* HOherramientasnuevas.png */,
+				D9E50BA4158A5DCB00F5D32B /* HOherramientasnuevas@2x.png */,
+				D9E50BA5158A5DCB00F5D32B /* HOlibrosinpolvo.png */,
+				D9E50BA6158A5DCB00F5D32B /* HOlibrosinpolvo@2x.png */,
+				D9E50BA7158A5DCB00F5D32B /* HOlipiezacaliente.png */,
+				D9E50BA8158A5DCB00F5D32B /* HOlipiezacaliente@2x.png */,
+				D9E50BA9158A5DCB00F5D32B /* HOmaquillajeropa.png */,
+				D9E50BAA158A5DCB00F5D32B /* HOmaquillajeropa@2x.png */,
+				D9E50BAB158A5DCB00F5D32B /* HOpastadientefresh.png */,
+				D9E50BAC158A5DCB00F5D32B /* HOpastadientefresh@2x.png */,
+				D9E50BAD158A5DCB00F5D32B /* HOplantaabono.png */,
+				D9E50BAE158A5DCB00F5D32B /* HOplantaabono@2x.png */,
+				D9E50BAF158A5DCB00F5D32B /* HOrefrimalolor.png */,
+				D9E50BB0158A5DCB00F5D32B /* HOrefrimalolor@2x.png */,
+			);
+			name = Hogar1;
+			sourceTree = "<group>";
+		};
+		D9FC479D151A5115002F1D4B /* Imagenes */ = {
+			isa = PBXGroup;
+			children = (
+				D9E50B4E158A5B3800F5D32B /* Imagenes de la App */,
+				8B3E2740153715A100E0A378 /* Remedios y Glosario */,
 			);
 			name = Imagenes;
 			sourceTree = "<group>";
@@ -935,16 +1113,6 @@
 				D990C14F152B7779004F6B73 /* icono_basura_compras.png in Resources */,
 				D990C151152B7EE0004F6B73 /* fondo_compras.png in Resources */,
 				D990C157152B8AF3004F6B73 /* fondo_general@2x.png in Resources */,
-				D990C162152B9116004F6B73 /* foto_celda_glosario.png in Resources */,
-				D990C163152B9116004F6B73 /* foto_celda_glosario@2x.png in Resources */,
-				D990C164152B9116004F6B73 /* foto_celda_remedios.png in Resources */,
-				D990C165152B9116004F6B73 /* foto_celda_remedios@2x.png in Resources */,
-				D990C166152B9116004F6B73 /* foto_detalleglosario.png in Resources */,
-				D990C167152B9116004F6B73 /* foto_detalleglosario@2x.png in Resources */,
-				D990C168152B9116004F6B73 /* foto_detalleremedio.png in Resources */,
-				D990C169152B9116004F6B73 /* foto_detalleremedio@2x.png in Resources */,
-				D990C16A152B9116004F6B73 /* foto2_celda_remedios.png in Resources */,
-				D990C16B152B9116004F6B73 /* foto2_celda_remedios@2x.png in Resources */,
 				D95B22F5152C9DFB0026C40E /* marca_llena_compras.png in Resources */,
 				06E99CAB152CCE960024BBD6 /* remedios_57x57.png in Resources */,
 				06E99CAC152CCE960024BBD6 /* remedios_114x114.png in Resources */,
@@ -1064,6 +1232,62 @@
 				D91FBB2515866A05004AF4DF /* videosViewController.xib in Resources */,
 				1279A28E158A7F6400351027 /* DetalleVideosViewController.xib in Resources */,
 				D92CB73A158A57E4002E94C3 /* Localizable.strings in Resources */,
+				D9E50B67158A5D6A00F5D32B /* BEcabellobrillante.png in Resources */,
+				D9E50B68158A5D6A00F5D32B /* BEcabellobrillante@2x.png in Resources */,
+				D9E50B69158A5D6A00F5D32B /* BEcaraexfoliada.png in Resources */,
+				D9E50B6A158A5D6A00F5D32B /* BEcaraexfoliada@2x.png in Resources */,
+				D9E50B6B158A5D6A00F5D32B /* BEcremapepinos.png in Resources */,
+				D9E50B6C158A5D6A00F5D32B /* BEcremapepinos@2x.png in Resources */,
+				D9E50B6D158A5D6A00F5D32B /* BEcuidadounias.png in Resources */,
+				D9E50B6E158A5D6A00F5D32B /* BEcuidadounias@2x.png in Resources */,
+				D9E50B6F158A5D6A00F5D32B /* BEdisminuirojos.png in Resources */,
+				D9E50B70158A5D6A00F5D32B /* BEdisminuirojos@2x.png in Resources */,
+				D9E50B71158A5D6A00F5D32B /* Befrutabelleza.png in Resources */,
+				D9E50B72158A5D6A00F5D32B /* Befrutabelleza@2x.png in Resources */,
+				D9E50B73158A5D6A00F5D32B /* BEmanchasdientes.png in Resources */,
+				D9E50B74158A5D6A00F5D32B /* BEmanchasdientes@2x.png in Resources */,
+				D9E50B75158A5D6A00F5D32B /* BEmanchaspielsol.png in Resources */,
+				D9E50B76158A5D6A00F5D32B /* BEmanchaspielsol@2x.png in Resources */,
+				D9E50B77158A5D6A00F5D32B /* BEpestanasfuertes.png in Resources */,
+				D9E50B78158A5D6A00F5D32B /* BEpestanasfuertes@2x.png in Resources */,
+				D9E50B79158A5D6A00F5D32B /* BErecuperarhidratacion.png in Resources */,
+				D9E50B7A158A5D6A00F5D32B /* BErecuperarhidratacion@2x.png in Resources */,
+				D9E50B7B158A5D6A00F5D32B /* BEsuavizaconchocolate.png in Resources */,
+				D9E50B7C158A5D6A00F5D32B /* BEsuavizaconchocolate@2x.png in Resources */,
+				D9E50B8E158A5D9B00F5D32B /* SAaloevera.png in Resources */,
+				D9E50B8F158A5D9B00F5D32B /* SAaloevera@2x.png in Resources */,
+				D9E50B90158A5D9B00F5D32B /* SAarnicatorceduras.png in Resources */,
+				D9E50B91158A5D9B00F5D32B /* SAarnicatorceduras@2x.png in Resources */,
+				D9E50B92158A5D9B00F5D32B /* SAcatarro.png in Resources */,
+				D9E50B93158A5D9B00F5D32B /* SAcatarro@2x.png in Resources */,
+				D9E50B94158A5D9B00F5D32B /* SAenciassangrantes.png in Resources */,
+				D9E50B95158A5D9B00F5D32B /* SAenciassangrantes@2x.png in Resources */,
+				D9E50B96158A5D9B00F5D32B /* SAhipo.png in Resources */,
+				D9E50B97158A5D9B00F5D32B /* SAhipo@2x.png in Resources */,
+				D9E50B98158A5D9B00F5D32B /* SAparasitosintestinales.png in Resources */,
+				D9E50B99158A5D9B00F5D32B /* SAparasitosintestinales@2x.png in Resources */,
+				D9E50B9A158A5D9B00F5D32B /* SArudaronquido.png in Resources */,
+				D9E50B9B158A5D9B00F5D32B /* SArudaronquido@2x.png in Resources */,
+				D9E50B9C158A5D9B00F5D32B /* SAzumoulceras.png in Resources */,
+				D9E50B9D158A5D9B00F5D32B /* SAzumoulceras@2x.png in Resources */,
+				D9E50BB1158A5DCB00F5D32B /* HObaniosinolor.png in Resources */,
+				D9E50BB2158A5DCB00F5D32B /* HObaniosinolor@2x.png in Resources */,
+				D9E50BB3158A5DCB00F5D32B /* HOcafetera.png in Resources */,
+				D9E50BB4158A5DCB00F5D32B /* HOcafetera@2x.png in Resources */,
+				D9E50BB5158A5DCB00F5D32B /* HOherramientasnuevas.png in Resources */,
+				D9E50BB6158A5DCB00F5D32B /* HOherramientasnuevas@2x.png in Resources */,
+				D9E50BB7158A5DCB00F5D32B /* HOlibrosinpolvo.png in Resources */,
+				D9E50BB8158A5DCB00F5D32B /* HOlibrosinpolvo@2x.png in Resources */,
+				D9E50BB9158A5DCB00F5D32B /* HOlipiezacaliente.png in Resources */,
+				D9E50BBA158A5DCB00F5D32B /* HOlipiezacaliente@2x.png in Resources */,
+				D9E50BBB158A5DCB00F5D32B /* HOmaquillajeropa.png in Resources */,
+				D9E50BBC158A5DCB00F5D32B /* HOmaquillajeropa@2x.png in Resources */,
+				D9E50BBD158A5DCB00F5D32B /* HOpastadientefresh.png in Resources */,
+				D9E50BBE158A5DCB00F5D32B /* HOpastadientefresh@2x.png in Resources */,
+				D9E50BBF158A5DCB00F5D32B /* HOplantaabono.png in Resources */,
+				D9E50BC0158A5DCB00F5D32B /* HOplantaabono@2x.png in Resources */,
+				D9E50BC1158A5DCB00F5D32B /* HOrefrimalolor.png in Resources */,
+				D9E50BC2158A5DCB00F5D32B /* HOrefrimalolor@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
