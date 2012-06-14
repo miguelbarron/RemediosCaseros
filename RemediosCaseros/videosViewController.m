@@ -7,7 +7,7 @@
 //
 
 #import "videosViewController.h"
-
+#import "DetalleVideosViewController.h"
 @implementation videosViewController
 @synthesize btnLogout;
 
@@ -142,15 +142,23 @@
     // Configure the cell...
     
     
-    
-    
     return cell;
 }
 
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
     
+    NSString *paquete1 = @"http://gdata.youtube.com/feeds/api/playlists/93F0FD865BA8F4BD";
     
+    
+    DetalleVideosViewController *detailViewController = [[    DetalleVideosViewController alloc] initWithNibName:@"DetalleVideosViewController" bundle:nil];
+    // ...      
+    // Pass the selected object to the new view controller.
+
+    detailViewController.url = paquete1;
+    
+    [self.navigationController pushViewController:detailViewController animated:YES];
+    [detailViewController release];
     
     
     

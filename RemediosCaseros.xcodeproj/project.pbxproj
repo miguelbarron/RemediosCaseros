@@ -35,6 +35,8 @@
 		122C8E48156D551F00EB3A17 /* libGoogleAnalytics_NoThumb.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 122C8E45156D551F00EB3A17 /* libGoogleAnalytics_NoThumb.a */; };
 		1279A27E158A7D1900351027 /* TBXML.m in Sources */ = {isa = PBXBuildFile; fileRef = 1279A27D158A7D1900351027 /* TBXML.m */; };
 		1279A285158A7D7500351027 /* ParseXML.m in Sources */ = {isa = PBXBuildFile; fileRef = 1279A284158A7D7500351027 /* ParseXML.m */; };
+		1279A28D158A7F6400351027 /* DetalleVideosViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1279A28B158A7F6400351027 /* DetalleVideosViewController.m */; };
+		1279A28E158A7F6400351027 /* DetalleVideosViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1279A28C158A7F6400351027 /* DetalleVideosViewController.xib */; };
 		8B335C78153DE41F0041D1C4 /* RemediosCaseros.sqlite in Resources */ = {isa = PBXBuildFile; fileRef = 8B335C77153DE41F0041D1C4 /* RemediosCaseros.sqlite */; };
 		8B335C97153DF9910041D1C4 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8B335C96153DF9910041D1C4 /* SystemConfiguration.framework */; };
 		8B335CA4153E0D9A0041D1C4 /* generico_glosario.png in Resources */ = {isa = PBXBuildFile; fileRef = 8B335CA0153E0D9A0041D1C4 /* generico_glosario.png */; };
@@ -239,6 +241,9 @@
 		1279A27F158A7D2500351027 /* TBXML.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TBXML.h; path = "TBXML/TBXML-Headers/TBXML.h"; sourceTree = "<group>"; };
 		1279A283158A7D7500351027 /* ParseXML.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ParseXML.h; path = RemediosCaseros/ParseXML.h; sourceTree = "<group>"; };
 		1279A284158A7D7500351027 /* ParseXML.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ParseXML.m; path = RemediosCaseros/ParseXML.m; sourceTree = "<group>"; };
+		1279A28A158A7F6400351027 /* DetalleVideosViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DetalleVideosViewController.h; sourceTree = "<group>"; };
+		1279A28B158A7F6400351027 /* DetalleVideosViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DetalleVideosViewController.m; sourceTree = "<group>"; };
+		1279A28C158A7F6400351027 /* DetalleVideosViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DetalleVideosViewController.xib; sourceTree = "<group>"; };
 		8B335C77153DE41F0041D1C4 /* RemediosCaseros.sqlite */ = {isa = PBXFileReference; lastKnownFileType = file; path = RemediosCaseros.sqlite; sourceTree = "<group>"; };
 		8B335C96153DF9910041D1C4 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
 		8B335CA0153E0D9A0041D1C4 /* generico_glosario.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = generico_glosario.png; sourceTree = "<group>"; };
@@ -516,6 +521,9 @@
 				D91FBB2115866A05004AF4DF /* videosViewController.h */,
 				D91FBB2215866A05004AF4DF /* videosViewController.m */,
 				D91FBB2315866A05004AF4DF /* videosViewController.xib */,
+				1279A28A158A7F6400351027 /* DetalleVideosViewController.h */,
+				1279A28B158A7F6400351027 /* DetalleVideosViewController.m */,
+				1279A28C158A7F6400351027 /* DetalleVideosViewController.xib */,
 				06624A2414ABA1B100FDAFA7 /* lasdo.plist */,
 				06624A2014ABA1B100FDAFA7 /* glosario.plist */,
 				0662492A14A8F2A900FDAFA7 /* Supporting Files */,
@@ -1049,6 +1057,7 @@
 				8B335CA6153E0D9A0041D1C4 /* generico_remedio.png in Resources */,
 				8B335CA7153E0D9A0041D1C4 /* generico_remedio@2x.png in Resources */,
 				D91FBB2515866A05004AF4DF /* videosViewController.xib in Resources */,
+				1279A28E158A7F6400351027 /* DetalleVideosViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1086,6 +1095,7 @@
 				D91FBB2415866A05004AF4DF /* videosViewController.m in Sources */,
 				1279A27E158A7D1900351027 /* TBXML.m in Sources */,
 				1279A285158A7D7500351027 /* ParseXML.m in Sources */,
+				1279A28D158A7F6400351027 /* DetalleVideosViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
