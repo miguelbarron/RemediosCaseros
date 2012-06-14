@@ -150,7 +150,7 @@
         SBJsonParser *parser = [[SBJsonParser alloc] init];   
         NSMutableDictionary *myRemedios =[parser objectWithString:dataRemedios];    
         NSMutableArray *arrayRemedios=[myRemedios objectForKey:@"Remedios"];
-        NSLog(@"%@",arrayRemedios);
+        
         
         
         //=========== llenando Remedios Core Data ============ 
