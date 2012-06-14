@@ -103,7 +103,8 @@
     if ([self connectedToNetwork]) {
         
      
-    NSString *urlConfigString = [NSString stringWithFormat:@"http://cornerview.com.mx/app/RC/Configuracion.json"];         
+    NSString *urlConfigString = [NSString stringWithFormat:@"http://cornerview.com.mx/app/RC/Configuracion.json"];//Comentar para hacer pruebas
+//    NSString *urlConfigString = [NSString stringWithFormat:@"http://cornerview.com.mx/app/TST/Configuracion.json"];//Descomentar para hacer pruebas
     NSURL *urlConfig = [NSURL URLWithString:urlConfigString];    
     NSString *dataConfig = [NSString stringWithContentsOfURL:urlConfig encoding:NSUTF8StringEncoding error:nil];    
     SBJsonParser *parser = [[SBJsonParser alloc] init];   
@@ -142,13 +143,14 @@
     else if (([array count] <= 0) || (([array count] != numTotalRemedios)) ) {
         
         //=================== conexion  Remedios ============//    
-        NSString *urlString = [NSString stringWithFormat:@"http:cornerview.com.mx/app/RC/Remedios.json"];         
+        NSString *urlString = [NSString stringWithFormat:@"http:cornerview.com.mx/app/RC/Remedios.json"];//Comentar para hacer pruebas
+//        NSString *urlString = [NSString stringWithFormat:@"http:cornerview.com.mx/app/TST/Remedios.json"];//Descomentar para hacer pruebas
         NSURL *url = [NSURL URLWithString:urlString];    
         NSString *dataRemedios = [NSString stringWithContentsOfURL:url encoding:NSUTF8StringEncoding error:nil];    
         SBJsonParser *parser = [[SBJsonParser alloc] init];   
         NSMutableDictionary *myRemedios =[parser objectWithString:dataRemedios];    
         NSMutableArray *arrayRemedios=[myRemedios objectForKey:@"Remedios"];
-        
+        NSLog(@"%@",arrayRemedios);
         
         
         //=========== llenando Remedios Core Data ============ 
@@ -207,7 +209,8 @@
         else if (([glosarioArray count] <= 0) || (([glosarioArray count] != numTotalGlosario)))
           {
             //==========Conexion Glosario
-            NSString *urlStringGlosario = [NSString stringWithFormat:@"http://cornerview.com.mx/app/RC/Glosario.json"];         
+            NSString *urlStringGlosario = [NSString stringWithFormat:@"http://cornerview.com.mx/app/RC/Glosario.json"]; //Comentar para hacer pruebas        
+//            NSString *urlStringGlosario = [NSString stringWithFormat:@"http://cornerview.com.mx/app/TST/Glosario.json"];//Descomentar para hacer pruebas
             NSURL *urlGlosario = [NSURL URLWithString:urlStringGlosario];    
             NSString *dataGlosario = [NSString stringWithContentsOfURL:urlGlosario encoding:NSUTF8StringEncoding error:nil];    
             SBJsonParser *parserGlosario = [[SBJsonParser alloc] init];   

@@ -243,6 +243,8 @@
 		D9E50BC0158A5DCB00F5D32B /* HOplantaabono@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D9E50BAE158A5DCB00F5D32B /* HOplantaabono@2x.png */; };
 		D9E50BC1158A5DCB00F5D32B /* HOrefrimalolor.png in Resources */ = {isa = PBXBuildFile; fileRef = D9E50BAF158A5DCB00F5D32B /* HOrefrimalolor.png */; };
 		D9E50BC2158A5DCB00F5D32B /* HOrefrimalolor@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D9E50BB0158A5DCB00F5D32B /* HOrefrimalolor@2x.png */; };
+		D9E50BC9158A632500F5D32B /* HOtraposcocina.png in Resources */ = {isa = PBXBuildFile; fileRef = D9E50BC7158A632500F5D32B /* HOtraposcocina.png */; };
+		D9E50BCA158A632500F5D32B /* HOtraposcocina@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D9E50BC8158A632500F5D32B /* HOtraposcocina@2x.png */; };
 		D9E87F77152CEA79004E2081 /* icono_basura_compras@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D9E87F76152CEA79004E2081 /* icono_basura_compras@2x.png */; };
 		D9E87F7A152CEA87004E2081 /* icono_compartir_detalleremedio@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D9E87F79152CEA87004E2081 /* icono_compartir_detalleremedio@2x.png */; };
 		D9E87F80152CEAD7004E2081 /* marca_llena_compras@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D9E87F7F152CEAD7004E2081 /* marca_llena_compras@2x.png */; };
@@ -522,6 +524,8 @@
 		D9E50BAE158A5DCB00F5D32B /* HOplantaabono@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "HOplantaabono@2x.png"; sourceTree = "<group>"; };
 		D9E50BAF158A5DCB00F5D32B /* HOrefrimalolor.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = HOrefrimalolor.png; sourceTree = "<group>"; };
 		D9E50BB0158A5DCB00F5D32B /* HOrefrimalolor@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "HOrefrimalolor@2x.png"; sourceTree = "<group>"; };
+		D9E50BC7158A632500F5D32B /* HOtraposcocina.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = HOtraposcocina.png; sourceTree = "<group>"; };
+		D9E50BC8158A632500F5D32B /* HOtraposcocina@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "HOtraposcocina@2x.png"; sourceTree = "<group>"; };
 		D9E87F76152CEA79004E2081 /* icono_basura_compras@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icono_basura_compras@2x.png"; sourceTree = "<group>"; };
 		D9E87F79152CEA87004E2081 /* icono_compartir_detalleremedio@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icono_compartir_detalleremedio@2x.png"; sourceTree = "<group>"; };
 		D9E87F7F152CEAD7004E2081 /* marca_llena_compras@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "marca_llena_compras@2x.png"; sourceTree = "<group>"; };
@@ -993,6 +997,8 @@
 		D9E50B9E158A5DB700F5D32B /* Hogar1 */ = {
 			isa = PBXGroup;
 			children = (
+				D9E50BC7158A632500F5D32B /* HOtraposcocina.png */,
+				D9E50BC8158A632500F5D32B /* HOtraposcocina@2x.png */,
 				D9E50B9F158A5DCB00F5D32B /* HObaniosinolor.png */,
 				D9E50BA0158A5DCB00F5D32B /* HObaniosinolor@2x.png */,
 				D9E50BA1158A5DCB00F5D32B /* HOcafetera.png */,
@@ -1288,6 +1294,8 @@
 				D9E50BC0158A5DCB00F5D32B /* HOplantaabono@2x.png in Resources */,
 				D9E50BC1158A5DCB00F5D32B /* HOrefrimalolor.png in Resources */,
 				D9E50BC2158A5DCB00F5D32B /* HOrefrimalolor@2x.png in Resources */,
+				D9E50BC9158A632500F5D32B /* HOtraposcocina.png in Resources */,
+				D9E50BCA158A632500F5D32B /* HOtraposcocina@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
