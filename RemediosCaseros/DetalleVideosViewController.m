@@ -87,6 +87,14 @@
     cell.textLabel.numberOfLines=2;
     
     
+    
+    NSString* imageURL = [[PX.videos objectAtIndex:indexPath.row]objectForKey:@"thumb"];
+    NSData* imageData = [[NSData alloc]initWithContentsOfURL:[NSURL URLWithString:imageURL]];
+	
+    UIImage* image = [[UIImage alloc] initWithData:imageData];
+
+    cell.imageView.image = image;
+    
     // Configure the cell...
     cell.textLabel.text = [[PX.videos objectAtIndex:indexPath.row]objectForKey:@"Name"];
     
