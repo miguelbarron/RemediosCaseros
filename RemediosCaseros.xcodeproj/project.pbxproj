@@ -163,6 +163,7 @@
 		D91EA935151A702D00EACB54 /* TestData.m in Sources */ = {isa = PBXBuildFile; fileRef = D91EA934151A702D00EACB54 /* TestData.m */; };
 		D91FBB2415866A05004AF4DF /* videosViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D91FBB2215866A05004AF4DF /* videosViewController.m */; };
 		D91FBB2515866A05004AF4DF /* videosViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D91FBB2315866A05004AF4DF /* videosViewController.xib */; };
+		D92CB73A158A57E4002E94C3 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = D92CB73C158A57E4002E94C3 /* Localizable.strings */; };
 		D93A59FA152A1B5E0012B9F8 /* ComprasViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D93A59F8152A1B5D0012B9F8 /* ComprasViewController.m */; };
 		D93A59FB152A1B5E0012B9F8 /* ComprasViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D93A59F9152A1B5E0012B9F8 /* ComprasViewController.xib */; };
 		D95B22F5152C9DFB0026C40E /* marca_llena_compras.png in Resources */ = {isa = PBXBuildFile; fileRef = D95B22F4152C9DFB0026C40E /* marca_llena_compras.png */; };
@@ -389,6 +390,8 @@
 		D91FBB2115866A05004AF4DF /* videosViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = videosViewController.h; sourceTree = "<group>"; };
 		D91FBB2215866A05004AF4DF /* videosViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = videosViewController.m; sourceTree = "<group>"; };
 		D91FBB2315866A05004AF4DF /* videosViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = videosViewController.xib; sourceTree = "<group>"; };
+		D92CB73B158A57E4002E94C3 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		D92CB73D158A57FB002E94C3 /* es */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = es; path = es.lproj/Localizable.strings; sourceTree = "<group>"; };
 		D93A59F7152A1B5D0012B9F8 /* ComprasViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ComprasViewController.h; sourceTree = "<group>"; };
 		D93A59F8152A1B5D0012B9F8 /* ComprasViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ComprasViewController.m; sourceTree = "<group>"; };
 		D93A59F9152A1B5E0012B9F8 /* ComprasViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ComprasViewController.xib; sourceTree = "<group>"; };
@@ -538,6 +541,7 @@
 				0662492C14A8F2A900FDAFA7 /* InfoPlist.strings */,
 				0662492F14A8F2A900FDAFA7 /* main.m */,
 				0662493114A8F2A900FDAFA7 /* RemediosCaseros-Prefix.pch */,
+				D92CB73C158A57E4002E94C3 /* Localizable.strings */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -887,6 +891,7 @@
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
+				es,
 			);
 			mainGroup = 0662491414A8F2A800FDAFA7;
 			productRefGroup = 0662492014A8F2A800FDAFA7 /* Products */;
@@ -1058,6 +1063,7 @@
 				8B335CA7153E0D9A0041D1C4 /* generico_remedio@2x.png in Resources */,
 				D91FBB2515866A05004AF4DF /* videosViewController.xib in Resources */,
 				1279A28E158A7F6400351027 /* DetalleVideosViewController.xib in Resources */,
+				D92CB73A158A57E4002E94C3 /* Localizable.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1108,6 +1114,15 @@
 				0662492D14A8F2A900FDAFA7 /* en */,
 			);
 			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		D92CB73C158A57E4002E94C3 /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D92CB73B158A57E4002E94C3 /* en */,
+				D92CB73D158A57FB002E94C3 /* es */,
+			);
+			name = Localizable.strings;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
