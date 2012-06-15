@@ -8,8 +8,9 @@
 
 #import <UIKit/UIKit.h>
 #import "FacebookMethods.h"
+#import <MessageUI/MessageUI.h>
 
-@interface videosViewController : UIViewController
+@interface videosViewController : UIViewController<MFMailComposeViewControllerDelegate>
 {
     FacebookMethods *ObjFB;
     BOOL *flag_;
@@ -17,5 +18,7 @@
 
 - (IBAction)LogOutFacebook:(id)sender;
 @property (retain, nonatomic) IBOutlet UIButton *btnLogout;
+- (IBAction)btnComprteCorreo:(id)sender;
+@property (retain, nonatomic) IBOutlet UIButton *btnComparte;
 
 @end

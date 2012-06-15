@@ -167,6 +167,10 @@
 		D93A59FA152A1B5E0012B9F8 /* ComprasViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D93A59F8152A1B5D0012B9F8 /* ComprasViewController.m */; };
 		D93A59FB152A1B5E0012B9F8 /* ComprasViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D93A59F9152A1B5E0012B9F8 /* ComprasViewController.xib */; };
 		D95B22F5152C9DFB0026C40E /* marca_llena_compras.png in Resources */ = {isa = PBXBuildFile; fileRef = D95B22F4152C9DFB0026C40E /* marca_llena_compras.png */; };
+		D9621D0A158B8C9A008693A5 /* IconoVideos.png in Resources */ = {isa = PBXBuildFile; fileRef = D9621D06158B8C9A008693A5 /* IconoVideos.png */; };
+		D9621D0B158B8C9A008693A5 /* IconoVideos@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D9621D07158B8C9A008693A5 /* IconoVideos@2x.png */; };
+		D9621D0C158B8C9A008693A5 /* IconoExtras.png in Resources */ = {isa = PBXBuildFile; fileRef = D9621D08158B8C9A008693A5 /* IconoExtras.png */; };
+		D9621D0D158B8C9A008693A5 /* IconoExtras@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D9621D09158B8C9A008693A5 /* IconoExtras@2x.png */; };
 		D964C3B1152CEB7C00860E0E /* fondo_compras@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D964C3B0152CEB7C00860E0E /* fondo_compras@2x.png */; };
 		D9868B371522555B00AEBE4D /* detalleGlosarioViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D9868B351522555B00AEBE4D /* detalleGlosarioViewController.m */; };
 		D9868B381522555B00AEBE4D /* detalleGlosarioViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D9868B361522555B00AEBE4D /* detalleGlosarioViewController.xib */; };
@@ -444,6 +448,10 @@
 		D93A59F8152A1B5D0012B9F8 /* ComprasViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ComprasViewController.m; sourceTree = "<group>"; };
 		D93A59F9152A1B5E0012B9F8 /* ComprasViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ComprasViewController.xib; sourceTree = "<group>"; };
 		D95B22F4152C9DFB0026C40E /* marca_llena_compras.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = marca_llena_compras.png; sourceTree = "<group>"; };
+		D9621D06158B8C9A008693A5 /* IconoVideos.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = IconoVideos.png; sourceTree = "<group>"; };
+		D9621D07158B8C9A008693A5 /* IconoVideos@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "IconoVideos@2x.png"; sourceTree = "<group>"; };
+		D9621D08158B8C9A008693A5 /* IconoExtras.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = IconoExtras.png; sourceTree = "<group>"; };
+		D9621D09158B8C9A008693A5 /* IconoExtras@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "IconoExtras@2x.png"; sourceTree = "<group>"; };
 		D964C3B0152CEB7C00860E0E /* fondo_compras@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "fondo_compras@2x.png"; sourceTree = "<group>"; };
 		D9868B341522555B00AEBE4D /* detalleGlosarioViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = detalleGlosarioViewController.h; sourceTree = "<group>"; };
 		D9868B351522555B00AEBE4D /* detalleGlosarioViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = detalleGlosarioViewController.m; sourceTree = "<group>"; };
@@ -901,6 +909,10 @@
 		D9E50B4E158A5B3800F5D32B /* Imagenes de la App */ = {
 			isa = PBXGroup;
 			children = (
+				D9621D06158B8C9A008693A5 /* IconoVideos.png */,
+				D9621D07158B8C9A008693A5 /* IconoVideos@2x.png */,
+				D9621D08158B8C9A008693A5 /* IconoExtras.png */,
+				D9621D09158B8C9A008693A5 /* IconoExtras@2x.png */,
 				D9C4F529152CEBC300533412 /* fondo_general.png */,
 				D964C3B0152CEB7C00860E0E /* fondo_compras@2x.png */,
 				D9E87F7F152CEAD7004E2081 /* marca_llena_compras@2x.png */,
@@ -1296,6 +1308,10 @@
 				D9E50BC2158A5DCB00F5D32B /* HOrefrimalolor@2x.png in Resources */,
 				D9E50BC9158A632500F5D32B /* HOtraposcocina.png in Resources */,
 				D9E50BCA158A632500F5D32B /* HOtraposcocina@2x.png in Resources */,
+				D9621D0A158B8C9A008693A5 /* IconoVideos.png in Resources */,
+				D9621D0B158B8C9A008693A5 /* IconoVideos@2x.png in Resources */,
+				D9621D0C158B8C9A008693A5 /* IconoExtras.png in Resources */,
+				D9621D0D158B8C9A008693A5 /* IconoExtras@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

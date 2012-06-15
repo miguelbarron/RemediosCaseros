@@ -9,6 +9,7 @@
 #import "videosViewController.h"
 #import "DetalleVideosViewController.h"
 @implementation videosViewController
+@synthesize btnComparte;
 @synthesize btnLogout;
 
 
@@ -31,7 +32,7 @@
         
         //info tab bar
         self.title =@"Extra";
-        self.tabBarItem.image = [UIImage imageNamed:@"icono_remedios_tab.png"];
+        self.tabBarItem.image = [UIImage imageNamed:@"IconoExtras.png"];
         
     }
     return self;
@@ -53,6 +54,7 @@
     self.navigationController.navigationBar.tintColor = [UIColor colorWithRed:0.192 green:0.255 blue:0.349 alpha:1.0];
     
     btnLogout.tintColor=[UIColor colorWithRed:0.192 green:0.255 blue:0.349 alpha:1.0];
+    btnComparte.tintColor=[UIColor colorWithRed:0.192 green:0.255 blue:0.349 alpha:1.0];
     ObjFB = [FacebookMethods sharedInstance];
     if([ObjFB logged])
     {
@@ -70,6 +72,7 @@
 {
  
     [self setBtnLogout:nil];
+    [self setBtnComparte:nil];
     [super viewDidUnload];
     // Release any retained subviews of the main view.
     // e.g. self.myOutlet = nil;
@@ -170,11 +173,72 @@
 - (void)dealloc {
     
     [btnLogout release];
+    [btnComparte release];
     [super dealloc];
 }
+
+#pragma mark - Logout FaceBook
 - (IBAction)LogOutFacebook:(id)sender {
     
     [ObjFB logOut];
     btnLogout.enabled=NO;
 }
+
+#pragma mark - Comparte correo
+- (IBAction)btnComprteCorreo:(id)sender {
+    
+    MFMailComposeViewController *mailController = [[MFMailComposeViewController alloc] init];
+	mailController.mailComposeDelegate = self;
+    
+    
+    //Add Asunto
+	[mailController setSubject:@"Prueba esta útil aplicación - Remedios Caseros Tradicionales"];
+    
+    // Add Mensaje 
+    NSMutableString* strMessage = [[[NSMutableString alloc] init]autorelease];	
+    [strMessage appendString:[NSString stringWithFormat:@"<p align=justify> Es una aplicación gratuita para iPhone/iPod que contiene una serie de recetas y tips sobre belleza, salud y el hogar. Incluye un glosario para que conozcas algunos de los ingredientes utilizados, así como una nueva sección de Videos</p>La puedes bajar aquí: <a href=url>http://itun.es/isr2KS</a>"]];
+    NSString *emailBody =  strMessage;         
+	[mailController setMessageBody:emailBody isHTML:YES];
+    
+    //    Add imagen
+    UIImage *img = [UIImage imageNamed:@"remedios_114x114.png"];    
+    NSData *imageData = UIImagePNGRepresentation(img);    
+    [mailController addAttachmentData:imageData mimeType:@"image/png" fileName:@"Image"];
+    
+    //Presenta Correo
+    [self presentModalViewController:mailController animated:YES];
+	[mailController release];
+    
+}
+
+- (void)mailComposeController:(MFMailComposeViewController*)mailController didFinishWithResult:(MFMailComposeResult)result error:(NSError*)error {
+	[self becomeFirstResponder];
+	[self dismissModalViewControllerAnimated:YES];
+}
+
 @end
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
