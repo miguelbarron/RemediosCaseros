@@ -37,7 +37,6 @@
 		1279A285158A7D7500351027 /* ParseXML.m in Sources */ = {isa = PBXBuildFile; fileRef = 1279A284158A7D7500351027 /* ParseXML.m */; };
 		1279A28D158A7F6400351027 /* DetalleVideosViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1279A28B158A7F6400351027 /* DetalleVideosViewController.m */; };
 		1279A28E158A7F6400351027 /* DetalleVideosViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1279A28C158A7F6400351027 /* DetalleVideosViewController.xib */; };
-		8B335C78153DE41F0041D1C4 /* RemediosCaseros.sqlite in Resources */ = {isa = PBXBuildFile; fileRef = 8B335C77153DE41F0041D1C4 /* RemediosCaseros.sqlite */; };
 		8B335C97153DF9910041D1C4 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8B335C96153DF9910041D1C4 /* SystemConfiguration.framework */; };
 		8B335CA4153E0D9A0041D1C4 /* generico_glosario.png in Resources */ = {isa = PBXBuildFile; fileRef = 8B335CA0153E0D9A0041D1C4 /* generico_glosario.png */; };
 		8B335CA5153E0D9A0041D1C4 /* generico_glosario@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 8B335CA1153E0D9A0041D1C4 /* generico_glosario@2x.png */; };
@@ -186,6 +185,8 @@
 		D990C14F152B7779004F6B73 /* icono_basura_compras.png in Resources */ = {isa = PBXBuildFile; fileRef = D990C14E152B7779004F6B73 /* icono_basura_compras.png */; };
 		D990C151152B7EE0004F6B73 /* fondo_compras.png in Resources */ = {isa = PBXBuildFile; fileRef = D990C150152B7EE0004F6B73 /* fondo_compras.png */; };
 		D990C157152B8AF3004F6B73 /* fondo_general@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D990C156152B8AF3004F6B73 /* fondo_general@2x.png */; };
+		D99CB655158BBD800049BA27 /* Compras.m in Sources */ = {isa = PBXBuildFile; fileRef = D99CB654158BBD800049BA27 /* Compras.m */; };
+		D99CB658158BBE450049BA27 /* RemediosCaseros.sqlite in Resources */ = {isa = PBXBuildFile; fileRef = D99CB657158BBE450049BA27 /* RemediosCaseros.sqlite */; };
 		D9BD7C12152231CA007162AD /* glosarioViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D9BD7C10152231CA007162AD /* glosarioViewController.m */; };
 		D9BD7C13152231CA007162AD /* glosarioViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D9BD7C11152231CA007162AD /* glosarioViewController.xib */; };
 		D9C4F52A152CEBC300533412 /* fondo_general.png in Resources */ = {isa = PBXBuildFile; fileRef = D9C4F529152CEBC300533412 /* fondo_general.png */; };
@@ -297,7 +298,6 @@
 		1279A28A158A7F6400351027 /* DetalleVideosViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DetalleVideosViewController.h; sourceTree = "<group>"; };
 		1279A28B158A7F6400351027 /* DetalleVideosViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DetalleVideosViewController.m; sourceTree = "<group>"; };
 		1279A28C158A7F6400351027 /* DetalleVideosViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DetalleVideosViewController.xib; sourceTree = "<group>"; };
-		8B335C77153DE41F0041D1C4 /* RemediosCaseros.sqlite */ = {isa = PBXFileReference; lastKnownFileType = file; path = RemediosCaseros.sqlite; sourceTree = "<group>"; };
 		8B335C96153DF9910041D1C4 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
 		8B335CA0153E0D9A0041D1C4 /* generico_glosario.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = generico_glosario.png; sourceTree = "<group>"; };
 		8B335CA1153E0D9A0041D1C4 /* generico_glosario@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "generico_glosario@2x.png"; sourceTree = "<group>"; };
@@ -468,6 +468,9 @@
 		D990C14E152B7779004F6B73 /* icono_basura_compras.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icono_basura_compras.png; sourceTree = "<group>"; };
 		D990C150152B7EE0004F6B73 /* fondo_compras.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = fondo_compras.png; sourceTree = "<group>"; };
 		D990C156152B8AF3004F6B73 /* fondo_general@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "fondo_general@2x.png"; sourceTree = "<group>"; };
+		D99CB653158BBD800049BA27 /* Compras.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Compras.h; sourceTree = SOURCE_ROOT; };
+		D99CB654158BBD800049BA27 /* Compras.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Compras.m; sourceTree = SOURCE_ROOT; };
+		D99CB657158BBE450049BA27 /* RemediosCaseros.sqlite */ = {isa = PBXFileReference; lastKnownFileType = file; path = RemediosCaseros.sqlite; sourceTree = "<group>"; };
 		D9BD7C0F152231CA007162AD /* glosarioViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = glosarioViewController.h; sourceTree = "<group>"; };
 		D9BD7C10152231CA007162AD /* glosarioViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = glosarioViewController.m; sourceTree = "<group>"; };
 		D9BD7C11152231CA007162AD /* glosarioViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = glosarioViewController.xib; sourceTree = "<group>"; };
@@ -890,6 +893,8 @@
 				D9DC36BD1537358B0024AED0 /* Remedios.m */,
 				D9DC36BF153735970024AED0 /* Glosario.h */,
 				D9DC36C0153735970024AED0 /* Glosario.m */,
+				D99CB653158BBD800049BA27 /* Compras.h */,
+				D99CB654158BBD800049BA27 /* Compras.m */,
 			);
 			name = Clases;
 			path = Classes;
@@ -898,10 +903,10 @@
 		D9DC36BA153734EC0024AED0 /* Modelo De Datos */ = {
 			isa = PBXGroup;
 			children = (
+				D99CB657158BBE450049BA27 /* RemediosCaseros.sqlite */,
 				D9FC47F6151A6CFE002F1D4B /* Test */,
 				D980365715238E79000F8DE6 /* Clases */,
 				D9F89BFD1519268C00DDCBAC /* Model.xcdatamodeld */,
-				8B335C77153DE41F0041D1C4 /* RemediosCaseros.sqlite */,
 			);
 			name = "Modelo De Datos";
 			sourceTree = "<group>";
@@ -1242,7 +1247,6 @@
 				8B3E284915377E3600E0A378 /* Valeriana@2x.png in Resources */,
 				8B3E284A15377E3600E0A378 /* Verbena@2x.png in Resources */,
 				8B3E284B15377E3600E0A378 /* Violeta@2x.png in Resources */,
-				8B335C78153DE41F0041D1C4 /* RemediosCaseros.sqlite in Resources */,
 				8B335CA4153E0D9A0041D1C4 /* generico_glosario.png in Resources */,
 				8B335CA5153E0D9A0041D1C4 /* generico_glosario@2x.png in Resources */,
 				8B335CA6153E0D9A0041D1C4 /* generico_remedio.png in Resources */,
@@ -1312,6 +1316,7 @@
 				D9621D0B158B8C9A008693A5 /* IconoVideos@2x.png in Resources */,
 				D9621D0C158B8C9A008693A5 /* IconoExtras.png in Resources */,
 				D9621D0D158B8C9A008693A5 /* IconoExtras@2x.png in Resources */,
+				D99CB658158BBE450049BA27 /* RemediosCaseros.sqlite in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1350,6 +1355,7 @@
 				1279A27E158A7D1900351027 /* TBXML.m in Sources */,
 				1279A285158A7D7500351027 /* ParseXML.m in Sources */,
 				1279A28D158A7F6400351027 /* DetalleVideosViewController.m in Sources */,
+				D99CB655158BBD800049BA27 /* Compras.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
