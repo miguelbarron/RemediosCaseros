@@ -7,6 +7,7 @@
 //
 
 #import "DetalleVideosViewController.h"
+#import "Analytics.h"
 
 @interface DetalleVideosViewController ()
 
@@ -14,6 +15,8 @@
 
 @implementation DetalleVideosViewController
 @synthesize url = _url;
+@synthesize paquete = _paquete;
+
 - (id)initWithStyle:(UITableViewStyle)style
 {
     self = [super initWithStyle:style];
@@ -29,6 +32,13 @@
 
     PX = [ParseXML sharedInstance];
     [PX grabRSSVideos:self.url];
+    
+    Analytics *Tracker = [Analytics sharedInstance];
+    
+    NSString*trackPaquete = [NSString stringWithFormat:@"Videos del %@",self.paquete];
+    [Tracker track:trackPaquete];
+    
+
     // Uncomment the following line to preserve selection between presentations.
     // self.clearsSelectionOnViewWillAppear = NO;
  

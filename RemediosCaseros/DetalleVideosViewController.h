@@ -14,4 +14,5 @@
 }
 
 @property (nonatomic,retain)NSString *url;
+@property (nonatomic,retain)NSString *paquete;
 @end

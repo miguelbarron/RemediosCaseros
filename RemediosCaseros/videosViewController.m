@@ -8,6 +8,8 @@
 
 #import "videosViewController.h"
 #import "DetalleVideosViewController.h"
+#import "Analytics.h"
+
 @implementation videosViewController
 @synthesize btnComparte;
 @synthesize btnLogout;
@@ -55,6 +57,13 @@
     
     btnLogout.tintColor=[UIColor colorWithRed:0.192 green:0.255 blue:0.349 alpha:1.0];
     btnComparte.tintColor=[UIColor colorWithRed:0.192 green:0.255 blue:0.349 alpha:1.0];
+    
+    Analytics *Tracker = [Analytics sharedInstance];
+    
+    [Tracker track:@"Extra"];
+    
+ 
+    
     ObjFB = [FacebookMethods sharedInstance];
     if([ObjFB logged])
     {
@@ -151,14 +160,15 @@
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
     
-    NSString *paquete1 = @"http://gdata.youtube.com/feeds/api/playlists/93F0FD865BA8F4BD";
+
     
     
     DetalleVideosViewController *detailViewController = [[    DetalleVideosViewController alloc] initWithNibName:@"DetalleVideosViewController" bundle:nil];
     // ...      
     // Pass the selected object to the new view controller.
-
+    NSString *paquete1 = @"http://gdata.youtube.com/feeds/api/playlists/93F0FD865BA8F4BD";
     detailViewController.url = paquete1;
+    detailViewController.paquete  = @"Paquete 1";
     
     [self.navigationController pushViewController:detailViewController animated:YES];
     [detailViewController release];
