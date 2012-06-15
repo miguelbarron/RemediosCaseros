@@ -287,7 +287,7 @@
         
         
         NSMutableString* strMessage = [[NSMutableString alloc] init];	
-        [strMessage appendString:[NSString stringWithFormat:@"<font face=\"helvetica\"><center><b>%@</b></center></font><font face=\"helvetica\"><br>%@<p><br>Descarga la app para iPhone <a href=url>http://itun.es/isr2KS</a>",[dic objectForKey:@"title"],[dic objectForKey:@"description"]]];
+        [strMessage appendString:[NSString stringWithFormat:@"<font face=\"helvetica\"><center><b>%@</b></center></font><font face=\"helvetica\"><br>%@<p><br>Descarga la app para iPhone <a href=http://itun.es/isr2KS>http://itun.es/isr2KS</a>",[dic objectForKey:@"title"],[dic objectForKey:@"description"]]];
         
         NSString *emailBody =  strMessage;
         if ([dic objectForKey:@"picture"]) {

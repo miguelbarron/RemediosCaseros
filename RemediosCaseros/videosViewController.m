@@ -126,7 +126,7 @@
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
     
    
-    return 2;
+    return 1;
     
 }
 
@@ -142,7 +142,7 @@
     
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier];
     if (cell == nil) {
-        cell = [[[UITableViewCell alloc] initWithStyle:UITableViewCellStyleSubtitle reuseIdentifier:CellIdentifier] autorelease];
+        cell = [[[UITableViewCell alloc] initWithStyle:UITableViewCellStyleValue1 reuseIdentifier:CellIdentifier] autorelease];
         
         //============Se Cambia el color al momento de selecionar una celda=========//
         UIView *vistaCellVideos = [[[UIView alloc] init] autorelease];
@@ -152,8 +152,11 @@
     }
     
     // Configure the cell...
-    
-    
+    cell.accessoryType=UITableViewCellAccessoryDisclosureIndicator;
+    cell.detailTextLabel.textColor=[UIColor redColor];
+    cell.textLabel.text=@"Videos";
+    cell.detailTextLabel.text=@"Desbloquea";
+    cell.imageView.image= [UIImage imageNamed:@"IconoVideos.png"];
     return cell;
 }
 
@@ -171,6 +174,7 @@
     detailViewController.paquete  = @"Paquete 1";
     
     [self.navigationController pushViewController:detailViewController animated:YES];
+    [tableView deselectRowAtIndexPath:indexPath animated:YES];
     [detailViewController release];
     
     
@@ -206,7 +210,7 @@
     
     // Add Mensaje 
     NSMutableString* strMessage = [[[NSMutableString alloc] init]autorelease];	
-    [strMessage appendString:[NSString stringWithFormat:@"<p align=justify> Es una aplicación gratuita para iPhone/iPod que contiene una serie de recetas y tips sobre belleza, salud y el hogar. Incluye un glosario para que conozcas algunos de los ingredientes utilizados, así como una nueva sección de Videos</p>La puedes bajar aquí: <a href=url>http://itun.es/isr2KS</a>"]];
+    [strMessage appendString:[NSString stringWithFormat:@"<p align=justify> Es una aplicación gratuita para iPhone/iPod que contiene una serie de recetas y tips sobre belleza, salud y el hogar. Incluye un glosario para que conozcas algunos de los ingredientes utilizados, así como una nueva sección de Videos</p>La puedes bajar aquí: <a href=http://itun.es/isr2KS>http://itun.es/isr2KS</a>"]];
     NSString *emailBody =  strMessage;         
 	[mailController setMessageBody:emailBody isHTML:YES];
     
