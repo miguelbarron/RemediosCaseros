@@ -25,4 +25,5 @@
 @property (retain, nonatomic) IBOutlet UIButton *btnComparte;
 @property (retain,nonatomic) NSFetchedResultsController *fetchedResultsController;
 @property (retain,nonatomic)NSManagedObjectContext *managedObjectContext;
+- (BOOL) connectedToNetwork;
 @end

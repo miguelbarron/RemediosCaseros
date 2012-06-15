@@ -10,6 +10,11 @@
 #import "DetalleVideosViewController.h"
 #import "Analytics.h"
 #import "Compras.h"
+#import <SystemConfiguration/SCNetworkReachability.h>
+//#import <sys/socket.h>
+#import <netinet/in.h>
+//#import <arpa/inet.h>
+//#import <netdb.h>
 
 @implementation videosViewController
 @synthesize btnComparte;
@@ -30,12 +35,12 @@
         label.shadowColor = [UIColor colorWithWhite:0.0 alpha:0.5];
         label.textAlignment = UITextAlignmentCenter;
         label.textColor = [UIColor whiteColor];        
-        label.text =@"Extra"; 
+        label.text =@"Extras"; 
         self.navigationItem.titleView = label;
         [label sizeToFit];
         
         //info tab bar
-        self.title =@"Extra";
+        self.title =@"Extras";
         self.tabBarItem.image = [UIImage imageNamed:@"IconoExtras.png"];
         
     }
@@ -166,9 +171,15 @@
     }
     
     
-    
+    Compras *compra= [fetchedResultsController objectAtIndexPath:indexPath];
+    if ([compra.comprarVideos intValue]>0)
+    {
 
-    
+        cell.accessoryType=UITableViewCellAccessoryDisclosureIndicator;
+        cell.textLabel.text=@"Videos";        
+        cell.imageView.image= [UIImage imageNamed:@"IconoVideos.png"];
+        return cell;    
+    }
     
     
     // Configure the cell...
@@ -184,16 +195,30 @@
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
     
 
-    Compras *comprar=nil;
-    
+    Compras *comprar=nil;    
     comprar = [fetchedResultsController objectAtIndexPath:indexPath];
+    
+
+    // verificar en la bd si esta comprado
     if ([comprar.comprarVideos intValue]>0){
-        NSLog(@"Esta Comprado");
-    
-    
+        
+        NSLog(@"Videos Comprados");
+        //verificar si ahy red de datos
+        if ((![self connectedToNetwork])) {
+            NSLog(@"NO HAY CONEXION");
+            // no hay red de datos
+            UIAlertView * alertViewSinConexion = [[UIAlertView alloc] initWithTitle:@"Sin conexiòn" message:@"Debes estar conectado a una red de datos o WI-FI para ver los videos" delegate:self cancelButtonTitle:@"Aceptar" otherButtonTitles:Nil];
+            [alertViewSinConexion show];        
+            [alertViewSinConexion release];
+            [tableView deselectRowAtIndexPath:indexPath animated:YES];
+            return;
+            
+        }
+        
+        else{    
+    // si se cuenta con red y esta comprado
     DetalleVideosViewController *detailViewController = [[    DetalleVideosViewController alloc] initWithNibName:@"DetalleVideosViewController" bundle:nil];
-    // ...      
-    // Pass the selected object to the new view controller.
+    
     NSString *paquete1 = @"http://gdata.youtube.com/feeds/api/playlists/93F0FD865BA8F4BD";
     detailViewController.url = paquete1;
     detailViewController.paquete  = @"Paquete 1";
@@ -201,11 +226,26 @@
     [self.navigationController pushViewController:detailViewController animated:YES];
     [tableView deselectRowAtIndexPath:indexPath animated:YES];
     [detailViewController release];
-    
+        } 
     }
     
-    
+    //los videos no estan comprados
     else{
+        
+        //verificar si ahy red
+        if ((![self connectedToNetwork])) {
+            NSLog(@"NO HAY CONEXION");
+            // no hay red de datos
+            UIAlertView * alertViewSinConexion = [[UIAlertView alloc] initWithTitle:@"Sin conexiòn" message:@"Debes estar conectado a una red de datos o WI-FI para ver los videos" delegate:self cancelButtonTitle:@"Aceptar" otherButtonTitles:Nil];
+            [alertViewSinConexion show];        
+            [alertViewSinConexion release];
+            [tableView deselectRowAtIndexPath:indexPath animated:YES];
+            return;
+            
+        }
+        
+        
+        
         UIAlertView * alertViewCompra = [[UIAlertView alloc] initWithTitle:@"Confirma tu compra dentro de la App" message:@"¿Quieres comprar una unidad de Extra: Videos a $12.00?" delegate:self cancelButtonTitle:@"Cancelar" otherButtonTitles:@"Aceptar",Nil];
         [alertViewCompra show];        
         [alertViewCompra release];
@@ -321,11 +361,39 @@
     }
     
     else if (buttonIndex == 1){
-        NSLog(@"HACER PROCESO DE COMPRA Y CAMBIAR BASE DE DATOS A 1");
         
+        NSLog(@"HACER PROCESO DE COMPRA Y CAMBIAR BASE DE DATOS A 1");
         
     }
 }
+
+#pragma mark Conexion a datos o wifi
+- (BOOL) connectedToNetwork
+{
+	// Create zero addy
+	struct sockaddr_in zeroAddress;
+	bzero(&zeroAddress, sizeof(zeroAddress));
+	zeroAddress.sin_len = sizeof(zeroAddress);
+	zeroAddress.sin_family = AF_INET;
+	
+	// Recover reachability flags
+	SCNetworkReachabilityRef defaultRouteReachability = SCNetworkReachabilityCreateWithAddress(NULL, (struct sockaddr *)&zeroAddress);
+	SCNetworkReachabilityFlags flags;
+	
+	BOOL didRetrieveFlags = SCNetworkReachabilityGetFlags(defaultRouteReachability, &flags);
+	CFRelease(defaultRouteReachability);
+	
+	if (!didRetrieveFlags)
+	{
+		return NO;
+	}
+	
+	BOOL isReachable = flags & kSCNetworkFlagsReachable;
+	BOOL needsConnection = flags & kSCNetworkFlagsConnectionRequired;
+	return (isReachable && !needsConnection) ? YES : NO;
+}
+
+
 @end
 
 

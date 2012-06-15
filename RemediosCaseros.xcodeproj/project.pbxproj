@@ -903,10 +903,10 @@
 		D9DC36BA153734EC0024AED0 /* Modelo De Datos */ = {
 			isa = PBXGroup;
 			children = (
-				D99CB657158BBE450049BA27 /* RemediosCaseros.sqlite */,
 				D9FC47F6151A6CFE002F1D4B /* Test */,
 				D980365715238E79000F8DE6 /* Clases */,
 				D9F89BFD1519268C00DDCBAC /* Model.xcdatamodeld */,
+				D99CB657158BBE450049BA27 /* RemediosCaseros.sqlite */,
 			);
 			name = "Modelo De Datos";
 			sourceTree = "<group>";
