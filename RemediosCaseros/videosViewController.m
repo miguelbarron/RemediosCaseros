@@ -9,11 +9,13 @@
 #import "videosViewController.h"
 #import "DetalleVideosViewController.h"
 #import "Analytics.h"
+#import "Compras.h"
 
 @implementation videosViewController
 @synthesize btnComparte;
 @synthesize btnLogout;
-
+@synthesize fetchedResultsController;
+@synthesize managedObjectContext;
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -53,6 +55,10 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    
+    AppDelegate *appDelegate=(AppDelegate *)[[UIApplication sharedApplication]delegate];
+    managedObjectContext=appDelegate.managedObjectContext;
+    
     self.navigationController.navigationBar.tintColor = [UIColor colorWithRed:0.192 green:0.255 blue:0.349 alpha:1.0];
     
     btnLogout.tintColor=[UIColor colorWithRed:0.192 green:0.255 blue:0.349 alpha:1.0];
@@ -73,6 +79,14 @@
     {
         btnLogout.enabled=NO;
     }
+    
+    NSError *error = nil;
+	if (![[self fetchedResultsController] performFetch:&error]) {
+		
+		NSLog(@"Unresolved error %@, %@", error, [error userInfo]);
+		abort();
+	}
+
     
     // Do any additional setup after loading the view from its nib.
 }
@@ -151,6 +165,12 @@
         //=====================//        
     }
     
+    
+    
+
+    
+    
+    
     // Configure the cell...
     cell.accessoryType=UITableViewCellAccessoryDisclosureIndicator;
     cell.detailTextLabel.textColor=[UIColor redColor];
@@ -164,6 +184,11 @@
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
     
 
+    Compras *comprar=nil;
+    
+    comprar = [fetchedResultsController objectAtIndexPath:indexPath];
+    if ([comprar.comprarVideos intValue]>0){
+        NSLog(@"Esta Comprado");
     
     
     DetalleVideosViewController *detailViewController = [[    DetalleVideosViewController alloc] initWithNibName:@"DetalleVideosViewController" bundle:nil];
@@ -176,6 +201,19 @@
     [self.navigationController pushViewController:detailViewController animated:YES];
     [tableView deselectRowAtIndexPath:indexPath animated:YES];
     [detailViewController release];
+    
+    }
+    
+    
+    else{
+        UIAlertView * alertViewCompra = [[UIAlertView alloc] initWithTitle:@"Confirma tu compra dentro de la App" message:@"¿Quieres comprar una unidad de Extra: Videos a $12.00?" delegate:self cancelButtonTitle:@"Cancelar" otherButtonTitles:@"Aceptar",Nil];
+        [alertViewCompra show];        
+        [alertViewCompra release];
+        [tableView deselectRowAtIndexPath:indexPath animated:YES];
+        return;
+        
+    }
+    
     
     
     
@@ -230,6 +268,64 @@
 	[self dismissModalViewControllerAnimated:YES];
 }
 
+#pragma mark fetchedResultsController
+- (NSFetchedResultsController *)fetchedResultsController {
+    
+    
+    if (fetchedResultsController != nil) {
+        return fetchedResultsController;
+    }
+    
+    NSFetchRequest *fetchRequest = [[NSFetchRequest alloc] init];
+    // Edit the entity name as appropriate.
+    NSEntityDescription *entity = [NSEntityDescription entityForName:@"Compras" inManagedObjectContext:managedObjectContext];
+    [fetchRequest setEntity:entity];
+    
+    // Set the batch size to a suitable number.
+    [fetchRequest setFetchBatchSize:20];
+    //  NSPredicate *predicate =[NSPredicate predicateWithFormat:@"Categoria.titulo = %@" , self.remedio];  
+    //[NSFetchedResultsController deleteCacheWithName:nil];
+    
+    //[fetchRequest setPredicate:predicate];
+    
+//     Edit the sort key as appropriate.
+    NSSortDescriptor *sortDescriptor = [[NSSortDescriptor alloc] initWithKey:@"comprarVideos" ascending:YES];
+    
+    // Edit the sort key as appropriate.
+    //NSSortDescriptor *sortDescriptor = [[NSSortDescriptor alloc] initWithKey:@"numero" ascending:YES];
+    NSArray *sortDescriptors = [[NSArray alloc] initWithObjects:sortDescriptor, nil];
+    
+    [fetchRequest setSortDescriptors:sortDescriptors];
+    NSFetchedResultsController *aFetchedResultsController = [[NSFetchedResultsController alloc] initWithFetchRequest:fetchRequest managedObjectContext:managedObjectContext sectionNameKeyPath:@"comprarVideos" cacheName:@"Root"];
+    aFetchedResultsController.delegate = self;
+    self.fetchedResultsController = aFetchedResultsController;
+    
+    [aFetchedResultsController release];
+    [fetchRequest release];
+    [sortDescriptor release];
+    [sortDescriptors release];
+    
+    return fetchedResultsController;
+}
+
+
+
+
+#pragma mark AlertViewCompras
+
+- (void)alertView:(UIAlertView *)alertView clickedButtonAtIndex:(NSInteger)buttonIndex
+{
+	if (buttonIndex == 0) {
+        NSLog(@"CANCELAR COMPRA!!!");
+        return;
+    }
+    
+    else if (buttonIndex == 1){
+        NSLog(@"HACER PROCESO DE COMPRA Y CAMBIAR BASE DE DATOS A 1");
+        
+        
+    }
+}
 @end
 
 
