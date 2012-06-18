@@ -37,6 +37,8 @@
 		1279A285158A7D7500351027 /* ParseXML.m in Sources */ = {isa = PBXBuildFile; fileRef = 1279A284158A7D7500351027 /* ParseXML.m */; };
 		1279A28D158A7F6400351027 /* DetalleVideosViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1279A28B158A7F6400351027 /* DetalleVideosViewController.m */; };
 		1279A28E158A7F6400351027 /* DetalleVideosViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1279A28C158A7F6400351027 /* DetalleVideosViewController.xib */; };
+		12F0CAE3158FA818003FE08F /* VideoPlayerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 12F0CAE1158FA818003FE08F /* VideoPlayerViewController.m */; };
+		12F0CAE4158FA818003FE08F /* VideoPlayerViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 12F0CAE2158FA818003FE08F /* VideoPlayerViewController.xib */; };
 		8B335C97153DF9910041D1C4 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8B335C96153DF9910041D1C4 /* SystemConfiguration.framework */; };
 		8B335CA4153E0D9A0041D1C4 /* generico_glosario.png in Resources */ = {isa = PBXBuildFile; fileRef = 8B335CA0153E0D9A0041D1C4 /* generico_glosario.png */; };
 		8B335CA5153E0D9A0041D1C4 /* generico_glosario@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 8B335CA1153E0D9A0041D1C4 /* generico_glosario@2x.png */; };
@@ -338,6 +340,9 @@
 		1279A28A158A7F6400351027 /* DetalleVideosViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DetalleVideosViewController.h; sourceTree = "<group>"; };
 		1279A28B158A7F6400351027 /* DetalleVideosViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DetalleVideosViewController.m; sourceTree = "<group>"; };
 		1279A28C158A7F6400351027 /* DetalleVideosViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DetalleVideosViewController.xib; sourceTree = "<group>"; };
+		12F0CAE0158FA818003FE08F /* VideoPlayerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VideoPlayerViewController.h; sourceTree = "<group>"; };
+		12F0CAE1158FA818003FE08F /* VideoPlayerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VideoPlayerViewController.m; sourceTree = "<group>"; };
+		12F0CAE2158FA818003FE08F /* VideoPlayerViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = VideoPlayerViewController.xib; sourceTree = "<group>"; };
 		8B335C96153DF9910041D1C4 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
 		8B335CA0153E0D9A0041D1C4 /* generico_glosario.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = generico_glosario.png; sourceTree = "<group>"; };
 		8B335CA1153E0D9A0041D1C4 /* generico_glosario@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "generico_glosario@2x.png"; sourceTree = "<group>"; };
@@ -714,6 +719,9 @@
 				1279A28A158A7F6400351027 /* DetalleVideosViewController.h */,
 				1279A28B158A7F6400351027 /* DetalleVideosViewController.m */,
 				1279A28C158A7F6400351027 /* DetalleVideosViewController.xib */,
+				12F0CAE0158FA818003FE08F /* VideoPlayerViewController.h */,
+				12F0CAE1158FA818003FE08F /* VideoPlayerViewController.m */,
+				12F0CAE2158FA818003FE08F /* VideoPlayerViewController.xib */,
 				06624A2414ABA1B100FDAFA7 /* lasdo.plist */,
 				06624A2014ABA1B100FDAFA7 /* glosario.plist */,
 				0662492A14A8F2A900FDAFA7 /* Supporting Files */,
@@ -1485,6 +1493,7 @@
 				D9EF22C2158F88C2006C95EE /* TEiman@2x.png in Resources */,
 				D9EF22C3158F88C2006C95EE /* TEcamara2@2x.png in Resources */,
 				D9EF22C4158F88C2006C95EE /* TEdatos@2x.png in Resources */,
+				12F0CAE4158FA818003FE08F /* VideoPlayerViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1524,6 +1533,7 @@
 				1279A285158A7D7500351027 /* ParseXML.m in Sources */,
 				1279A28D158A7F6400351027 /* DetalleVideosViewController.m in Sources */,
 				D99CB655158BBD800049BA27 /* Compras.m in Sources */,
+				12F0CAE3158FA818003FE08F /* VideoPlayerViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

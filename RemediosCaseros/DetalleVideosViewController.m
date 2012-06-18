@@ -8,6 +8,7 @@
 
 #import "DetalleVideosViewController.h"
 #import "Analytics.h"
+#import "VideoPlayerViewController.h"
 
 @interface DetalleVideosViewController ()
 
@@ -155,14 +156,16 @@
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    // Navigation logic may go here. Create and push another view controller.
-    /*
-     <#DetailViewController#> *detailViewController = [[<#DetailViewController#> alloc] initWithNibName:@"<#Nib name#>" bundle:nil];
+     VideoPlayerViewController *detailViewController = [[VideoPlayerViewController alloc] initWithNibName:@"VideoPlayerViewController" bundle:nil];
      // ...
      // Pass the selected object to the new view controller.
+    
+
+      detailViewController.url = [[PX.videos objectAtIndex:indexPath.row]objectForKey:@"url"];
+          detailViewController.nombre = [[PX.videos objectAtIndex:indexPath.row]objectForKey:@"Name"];
      [self.navigationController pushViewController:detailViewController animated:YES];
      [detailViewController release];
-     */
+     
 }
 
 @end

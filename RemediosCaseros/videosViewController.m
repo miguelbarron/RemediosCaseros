@@ -216,6 +216,7 @@
         }
         
         else{    
+ 
     // si se cuenta con red y esta comprado
     DetalleVideosViewController *detailViewController = [[    DetalleVideosViewController alloc] initWithNibName:@"DetalleVideosViewController" bundle:nil];
     

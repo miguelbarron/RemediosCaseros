@@ -9,5 +9,11 @@
 #import <UIKit/UIKit.h>
 
 @interface VideoPlayerViewController : UIViewController
+{
+
+    IBOutlet UILabel *nombre_;
+}
+@property(nonatomic,retain) NSString *url;
+@property(nonatomic,retain) NSString *nombre;
 
 @end
