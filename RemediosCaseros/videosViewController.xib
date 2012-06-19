@@ -56,7 +56,7 @@
 					<object class="IBUITableView" id="387433275">
 						<reference key="NSNextResponder" ref="191373211"/>
 						<int key="NSvFlags">274</int>
-						<string key="NSFrameSize">{320, 135}</string>
+						<string key="NSFrameSize">{320, 84}</string>
 						<reference key="NSSuperview" ref="191373211"/>
 						<reference key="NSWindow"/>
 						<reference key="NSNextKeyView" ref="685457014"/>
@@ -167,7 +167,7 @@
 							<int key="NSColorSpace">1</int>
 							<bytes key="NSRGB">MC4xOTYwNzg0MzE0IDAuMzA5ODAzOTIxNiAwLjUyMTU2ODYyNzUAA</bytes>
 						</object>
-						<string key="IBUINormalTitle">Comparte</string>
+						<string key="IBUINormalTitle">Recomendar por correo</string>
 						<reference key="IBUIHighlightedTitleColor" ref="266947588"/>
 						<object class="NSColor" key="IBUINormalTitleColor">
 							<int key="NSColorSpace">1</int>
@@ -306,9 +306,9 @@
 							<reference ref="794997780"/>
 							<reference ref="371869502"/>
 							<reference ref="685457014"/>
+							<reference ref="512226896"/>
 							<reference ref="387433275"/>
 							<reference ref="203620002"/>
-							<reference ref="512226896"/>
 						</array>
 						<reference key="parent" ref="0"/>
 					</object>
@@ -362,7 +362,7 @@
 				<string key="-2.IBPluginDependency">com.apple.InterfaceBuilder.IBCocoaTouchPlugin</string>
 				<string key="1.IBPluginDependency">com.apple.InterfaceBuilder.IBCocoaTouchPlugin</string>
 				<string key="13.IBPluginDependency">com.apple.InterfaceBuilder.IBCocoaTouchPlugin</string>
-				<real value="2" key="13.IBUIButtonInspectorSelectedStateConfigurationMetadataKey"/>
+				<real value="0.0" key="13.IBUIButtonInspectorSelectedStateConfigurationMetadataKey"/>
 				<string key="14.IBPluginDependency">com.apple.InterfaceBuilder.IBCocoaTouchPlugin</string>
 				<string key="4.IBPluginDependency">com.apple.InterfaceBuilder.IBCocoaTouchPlugin</string>
 				<string key="7.IBPluginDependency">com.apple.InterfaceBuilder.IBCocoaTouchPlugin</string>
