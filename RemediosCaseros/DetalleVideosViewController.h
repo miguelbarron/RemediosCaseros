@@ -11,6 +11,8 @@
 @interface DetalleVideosViewController : UITableViewController
 {
     ParseXML *PX;
+    
+    NSMutableArray * arrImagenes;
 }
 
 @property (nonatomic,retain)NSString *url;

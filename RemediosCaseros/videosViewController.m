@@ -227,7 +227,9 @@
     [self.navigationController pushViewController:detailViewController animated:YES];
     [tableView deselectRowAtIndexPath:indexPath animated:YES];
     [detailViewController release];
-        } 
+      
+       
+       } 
     }
     
     //los videos no estan comprados

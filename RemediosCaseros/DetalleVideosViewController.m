@@ -38,7 +38,23 @@
     
     NSString*trackPaquete = [NSString stringWithFormat:@"Videos del %@",self.paquete];
     [Tracker track:trackPaquete];
+
+    arrImagenes = [[NSMutableArray alloc]init] ;
     
+    for (int i =0; i<[PX.videos count]; i++) {
+
+        NSString* imageURL = [[PX.videos objectAtIndex:i]objectForKey:@"thumb"];
+        NSData* imageData = [[NSData alloc]initWithContentsOfURL:[NSURL URLWithString:imageURL]];
+        
+
+        [arrImagenes addObject:imageData];
+    }
+
+    NSLog(@"array data: %i",[arrImagenes count]);
+    
+    NSLog(@"array data: %@",[arrImagenes description]);
+    
+
 
     // Uncomment the following line to preserve selection between presentations.
     // self.clearsSelectionOnViewWillAppear = NO;
@@ -99,9 +115,10 @@
     
     
     
-    NSString* imageURL = [[PX.videos objectAtIndex:indexPath.row]objectForKey:@"thumb"];
-    NSData* imageData = [[NSData alloc]initWithContentsOfURL:[NSURL URLWithString:imageURL]];
+  //  NSString* imageURL = [[PX.videos objectAtIndex:indexPath.row]objectForKey:@"thumb"];
+    NSData* imageData = [[NSData alloc]init];
 	
+    imageData = [arrImagenes objectAtIndex:indexPath.row];
     UIImage* image = [[UIImage alloc] initWithData:imageData];
 
     cell.imageView.image = image;
